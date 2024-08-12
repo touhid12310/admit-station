@@ -1,114 +1,102 @@
 <div>
     <!-- footer-area-start -->
     <footer>
-        <div class="tp-footer-4">
-        <div class="tp-footer-4-bg tp-footer-inner">
-            <div class="container">
-                <div class="tp-footer-4-top">
-                    <div class="row">
-                    <div class="col-lg-6">
-                        <h4 class="tp-footer-4-top-title">Sign now for offers <br> and keep yourself informed!</h4>
+        <div class="tp-footer-main grey-bg pt-80 pb-55">
+           <div class="container">
+              <div class="row">
+                 <div class="col-xl-4 col-lg-3 col-sm-6">
+                    <div class="tp-footer-widget tp-footer-col-1 mb-30">
+                       <div class="tp-footer-widget-logo mb-20 tp-header-logo">
+                          <a href="index.html"><img src="assets/img/logo/logo-red.png" alt=""></a>
+                       </div>
+                       <div class="tp-footer-widget-content">
+                          <p>Lorem ipsum dolor sit amet, consectetur <br> adipisc ing elit.</p>
+                       </div>
+                       <div class="tp-footer-contact">
+                          <span>Got Questions? Call us</span>
+                          <a href="tel:012345678">+670 413 90 762</a>
+                       </div>
+                       <div class="tp-footer-contact-mail">
+                          <a href="mailto:acadia@gmail.com">
+                             <span>
+                                <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                   <path d="M1 5C1 2.2 2.6 1 5 1H13C15.4 1 17 2.2 17 5V10.6C17 13.4 15.4 14.6 13 14.6H5" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                   <path d="M13 5.40039L10.496 7.40015C9.672 8.05607 8.32 8.05607 7.496 7.40015L5 5.40039" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                   <path d="M1 11.4004H5.8" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                   <path d="M1 8.19922H3.4" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                             </span> 
+                          acadia@gmail.com</a>
+                       </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="tp-footer-4-top-form">
-                            <form action="#">
-                                <input type="text" placeholder="Enter your email...">
-                            <button class="tp-footer-4-top-btn">Send
-                                <span>
-                                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M10.0029 1L15.0029 6L10.0029 11" stroke="currentColor" stroke-width="1.5"
-                                            stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M1 6H14.8633" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </span>
-                                </button>
-                            </form>
-                        </div>
+                 </div>
+                 <div class="col-xl-2 col-lg-3 col-sm-6">
+                    <div class="tp-footer-widget tp-footer-col-2 mb-30">
+                       <h4 class="tp-footer-widget-title mb-20">About</h4>
+                       <div class="tp-footer-widget-link">
+                          <ul>
+                             <li><a href="about.html">About Us</a></li>
+                             <li><a href="#">Courses</a></li>
+                             <li><a href="#">News & Blogs</a></li>
+                             <li><a href="#">Become a Teacher</a></li>
+                             <li><a href="#">Events</a></li>
+                             <li><a href="#">Contact</a></li>
+                          </ul>
+                       </div>
                     </div>
+                 </div>
+                 <div class="col-xl-2 col-lg-2 col-sm-4">
+                    <div class="tp-footer-widget tp-footer-col-3 mb-30">
+                       <h4 class="tp-footer-widget-title mb-20">Quick links</h4>
+                       <div class="tp-footer-widget-link">
+                          <ul>
+                             <li><a href="#">Students</a></li>
+                             <li><a href="#">Addmition</a></li>
+                             <li><a href="#">Faculty & Staffs</a></li>
+                             <li><a href="#">Media Relations</a></li>
+                             <li><a href="#">Alumni</a></li>
+                             <li><a href="#">Visit</a></li>
+                          </ul>
+                       </div>
                     </div>
-                </div>
-                <div class="tp-footer-4-main pt-90 pb-70">
-                    <div class="row">
-                    <div class="col-lg-2 col-md-6">
-                        <div class="tp-footer-widget tp-footer-4-col-1 mb-30">
-                            <div class="tp-footer-4-btn tp-footer-btn-inner">
-                                <a class="active" href="university-apply.html">Apply Now</a>
-                                <a href="contact.html">Contact Us</a>
-                                <a href="contact.html">Visit Us</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="tp-footer-widget tp-footer-widget-4 has-border tp-footer-4-col-2 mb-30">
-                            <div class="tp-footer-widget-link">
-                                <ul>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="#">Courses</a></li>
-                                <li><a href="#">Parent Portal</a></li>
-                                <li><a href="#">News & Blogs</a></li>
-                                <li><a href="#">Events</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="tp-footer-widget tp-footer-widget-4 tp-footer-4-col-3 mb-30">
-                            <div class="tp-footer-widget-link">
-                                <ul>
-                                <li><a href="#">Students</a></li>
-                                <li><a href="#">Addmition</a></li>
-                                <li><a href="#">Faculty & Staffs</a></li>
-                                <li><a href="#">Tuition & Fees</a></li>
-                                <li><a href="#">Dress Code</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="tp-footer-widget tp-footer-widget-4 tp-footer-4-col-4 mb-30">
-                            <div class="tp-footer-4-info">
-                                <span>Germany — <br> 785 15h Street, Office 478 Berlin, De 81566</span>
-                                <div class="tp-footer-4-mail">
-                                <a href="mailto:info@email.com">info@email.com</a>
+                 </div>
+                 <div class="col-xl-4 col-lg-4 col-sm-8">
+                    <div class="p-footer-widget tp-footer-col-4 mb-30">
+                       <h4 class="tp-footer-widget-title mb-20">Our Newsletter</h4>
+                       <div class="tp-footer-newsletter-wrap">
+                          <p>Enter your email and we'll send you <br> more information</p>
+                          <form action="#">
+                             <div class="tp-footer-newsletter-wrapper mb-30">
+                                <div class="tp-footer-newsletter-input">
+                                   <input type="email" placeholder="Your email">
                                 </div>
-                                <div class="tp-footer-4-phone">
-                                <a href="tel:0123456789">+(402) 763 282 46</a>
+                                <div class="tp-footer-newsletter-submit">
+                                   <button class="tp-btn">Subscribe</button>
                                 </div>
-                            </div>
-                        </div>
+                             </div>
+                          </form>
+                          <div class="tp-footer-newsletter-social">
+                             <a class="social-fb" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                             <a class="social-twit" href="#"><i class="fa-brands fa-twitter"></i></a>
+                             <a class="social-lnkd" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                             <a class="social-yout" href="#"><i class="fa-brands fa-youtube"></i></a>
+                          </div>
+                       </div>
                     </div>
-                    </div>
-                </div>
-            </div>
+                 </div>
+              </div>
+           </div>
         </div>
-        <div class="tp-footer-4-bottom tp-footer-inner-bottom">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-xl-3 col-lg-2 col-md-3">
-                    <div class="tp-footer-4-logo tp-header-logo">
-                        <a href="#"><img src="assets/img/logo/logo-white.png" alt=""></a>
+        <div class="tp-footer-bottom">
+           <div class="container">
+              <div class="row">
+                 <div class="col-lg-12">
+                    <div class="tp-footer-copyright text-center">
+                       <span>© 2024 <a href="#">Acadia</a>. All rights reserved.</span>
                     </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-7 col-md-5">
-                    <div class="tp-footer-4-copyright text-start text-md-center">
-                        <span>Copyright © 2024 <a href="#">ThemePure</a></span>
-                        <span><a href="#">All Rights Reserved</a></span>
-                        <span><a href="#">Privacy & Policy</a></span>
-                    </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4">
-                    <div class="tp-footer-4-social text-md-end">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                 </div>
+              </div>
+           </div>
         </div>
     </footer>
     <!-- footer-area-end -->
