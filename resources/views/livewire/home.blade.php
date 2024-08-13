@@ -27,7 +27,7 @@
                           </div>
                        </div>
                     </div>
-                    <div class="tp-hero-bg" data-background="assets/img/hero/hero-bg-1.jpg"></div>
+                    <div class="tp-hero-bg" data-background="assets/images/hero-image-1.jpg"></div>
                  </div>
               </div>
               <div class="swiper-slide">
@@ -54,7 +54,7 @@
                           </div>
                        </div>
                     </div>
-                    <div class="tp-hero-bg" data-background="assets/img/hero/hero-bg-2.jpg"></div>
+                    <div class="tp-hero-bg" data-background="assets/images/hero-image-2.jpg"></div>
                  </div>
               </div>
               <div class="swiper-slide">
@@ -81,7 +81,7 @@
                           </div>
                        </div>
                     </div>
-                    <div class="tp-hero-bg" data-background="assets/img/hero/hero-bg-3.jpg"></div>
+                    <div class="tp-hero-bg" data-background="assets/images/hero-image-3.jpg"></div>
                  </div>
               </div>
            </div>

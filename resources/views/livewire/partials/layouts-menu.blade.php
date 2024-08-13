@@ -7,11 +7,11 @@
                  <div class="col-lg-6">
                     <div class="tp-heder-info d-flex justify-content-center justify-content-lg-start align-items-center">
                        <div class="tp-header-info-item d-none d-md-block">
-                          <span><a href="#"><i class="fa-brands fa-facebook-f"></i></a>7500k Followers</span>
+                          <span><a href="https://www.facebook.com/people/Admit-Station/61563570187566/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>7500k Followers</span>
                        </div>
                        <div class="tp-header-info-item">
                           <span>
-                             <a href="tel:0123456789"><i><img src="assets/img/icon/calling.svg" alt="phone-img"></i> +(402) 763 282 46</a>
+                             <a href="tel:0123456789"><i><img src="assets/img/icon/calling.svg" alt="phone-img"></i> +880 1839-440444</a>
                           </span>
                        </div>
                        <div class="tp-header-info-item">
@@ -61,8 +61,8 @@
                  <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-6">
                     <div class="tp-header-logo-1 tp-header-logo">
                        <a href="index.html">
-                          <img class="logo-1" src="assets/img/logo/logo.png" alt="logo">
-                          <img class="logo-2" src="assets/img/logo/logo-black-1.png" alt="logo">
+                          <img class="logo-1" src="assets/img/logo/adminStation.jpg" alt="logo">
+                          <img class="logo-2" src="assets/img/logo/adminStation.jpg" alt="logo">
                        </a>
                     </div>
                  </div>
@@ -70,78 +70,8 @@
                     <div class="main-menu text-end">
                        <nav class="tp-main-menu-content">
                           <ul>
-                             <li class="has-dropdown tp-static">
-                                <a class="tp-static" href="index.html">Home</a>
-                                <div class="tp-megamenu-main">
-                                   <div class="megamenu-demo-conteiner p-relative">
-                                      <div class="row tp-gx-20">
-                                         <div class="col-xl-3 col-md-6 col-12">
-                                            <div class="tp-megamenu-home-item text-center p-relative mb-30">
-                                               <div class="tp-megamenu-home-thumb">
-                                                  <a href="index.html"><img src="assets/img/menu/home-1.jpg" alt=""></a>
-                                               </div>
-                                               <h4 class="tp-megamenu-home-title"><a class="red" href="index.html">University Classic</a></h4>
-                                            </div>
-                                         </div>
-                                         <div class="col-xl-3 col-md-6 col-12">
-                                            <div class="tp-megamenu-home-item text-center p-relative mb-30">
-                                               <div class="tp-megamenu-home-thumb">
-                                                  <a href="index-2.html"><img src="assets/img/menu/home-2.jpg" alt=""></a>
-                                               </div>
-                                               <h4 class="tp-megamenu-home-title"><a class="red" href="index-2.html">Online Course</a></h4>
-                                            </div>
-                                         </div>
-                                         <div class="col-xl-3 col-md-6 col-12">
-                                            <div class="tp-megamenu-home-item text-center p-relative mb-30">
-                                               <div class="tp-megamenu-home-thumb">
-                                                  <a href="index-3.html"><img src="assets/img/menu/home-3.jpg" alt=""></a>
-                                               </div>
-                                               <h4 class="tp-megamenu-home-title"><a class="red" href="index-3.html">Kids Education</a></h4>
-                                            </div>
-                                         </div>
-                                         <div class="col-xl-3 col-md-6 col-12">
-                                            <div class="tp-megamenu-home-item text-center p-relative mb-30">
-                                               <div class="tp-megamenu-home-thumb">
-                                                  <a href="index-5.html"><img src="assets/img/menu/home-4.jpg" alt=""></a>
-                                               </div>
-                                               <h4 class="tp-megamenu-home-title"><a class="red" href="index-5.html">Gym Coaching</a></h4>
-                                            </div>
-                                         </div>
-                                         <div class="col-xl-3 col-md-6 col-12">
-                                            <div class="tp-megamenu-home-item text-center p-relative mb-30">
-                                               <div class="tp-megamenu-home-thumb">
-                                                  <a href="index-4.html"><img src="assets/img/menu/home-5.jpg" alt=""></a>
-                                               </div>
-                                               <h4 class="tp-megamenu-home-title"><a class="red" href="index-4.html">High School</a></h4>
-                                            </div>
-                                         </div>
-                                         <div class="col-xl-3 col-md-6 col-12">
-                                            <div class="tp-megamenu-home-item text-center p-relative mb-30">
-                                               <div class="tp-megamenu-home-thumb">
-                                                  <a href="shop.html"><img src="assets/img/menu/shop.jpg" alt=""></a>
-                                               </div>
-                                               <h4 class="tp-megamenu-home-title"><a class="red" href="shop.html">Books Shop</a></h4>
-                                            </div>
-                                         </div>
-                                         <div class="col-xl-3 col-md-6 col-12">
-                                            <div class="tp-megamenu-home-item text-center p-relative mb-30">
-                                               <div class="tp-megamenu-home-thumb">
-                                                  <img src="assets/img/menu/coming-soon-1.jpg" alt="">
-                                               </div>
-                                               <h4 class="tp-megamenu-home-title">Coming Soon</h4>
-                                            </div>
-                                         </div>
-                                         <div class="col-xl-3 col-md-6 col-12">
-                                            <div class="tp-megamenu-home-item text-center p-relative mb-30">
-                                               <div class="tp-megamenu-home-thumb">
-                                                  <img src="assets/img/menu/coming-soon-2.jpg" alt="">
-                                               </div>
-                                               <h4 class="tp-megamenu-home-title">Coming Soon</h4>
-                                            </div>
-                                         </div>
-                                      </div>
-                                   </div>
-                                </div>
+                             <li class="tp-static">
+                                <a class="tp-static" href="{{route('home')}}" wire:navigate>Home</a>
                              </li>
                              <li class="has-dropdown">
                                 <a href="about.html">Academics</a>
