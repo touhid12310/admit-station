@@ -7,7 +7,7 @@
                  <div class="col-xl-4 col-lg-3 col-sm-6">
                     <div class="tp-footer-widget tp-footer-col-1 mb-30">
                        <div class="tp-footer-widget-logo mb-20 tp-header-logo">
-                          <a href="index.html"><img src="assets/img/logo/logo-red.png" alt=""></a>
+                          <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
                        </div>
                        <div class="tp-footer-widget-content">
                           <p>1st floor,Agrabad shopping complex,1742 Sheikh Mujib Road, Beside Orchid Business Hotel,Chowmuhony,Agrabad , Chittagong, Bangladesh</p>

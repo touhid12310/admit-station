@@ -58,7 +58,7 @@
                                 </svg>
                                 </button>
                             </div>
-                            <div class="tp-search-course-wrap">
+                            {{-- <div class="tp-search-course-wrap">
                                 <h3 class="tp-search-course-title">OUR TOP Program</h3>
                                 <div class="row">
                                 <div class="col-xl-3 col-lg-4 col-sm-6">
@@ -202,7 +202,7 @@
                                     </div>
                                 </div>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                     </div>

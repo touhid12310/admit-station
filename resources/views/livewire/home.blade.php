@@ -12,7 +12,7 @@
                                 <span class="tp-hero-subtitle">Be apart of our history</span>
                                 <h2 class="tp-hero-title">Landmark to Create the Future.</h2>
                                 <div class="tp-hero-btn">
-                                   <a class="tp-btn" href="university-program.html">
+                                   <a class="tp-btn" href="#">
                                       Enroll Now 
                                       <span>
                                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
@@ -204,18 +204,10 @@
                     <div class="tp-about-wrap mb-60 wow fadeInLeft" data-wow-delay=".3s">
                     <div class="tp-about-thumb-wrapper">
                         <div class="tp-about-thumb-1">
-                            <img src="assets/img/about/about-thumb-1.jpg" alt="">
+                            {{-- <img src="assets/images/about-section-img-1.jpg" alt=""> --}}
                         </div>
                         <div class="tp-about-thumb-2">
-                            <img src="assets/img/about/about-thumb-2.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="tp-about-shape">
-                        <div class="tp-about-shape-1">
-                            <img src="assets/img/about/about-shape-1.jpg" alt="">
-                        </div>
-                        <div class="tp-about-shape-2">
-                            <img src="assets/img/about/about-shape-2.jpg" alt="">
+                            <img src="assets/images/about-section-img-1.jpg" alt="">
                         </div>
                     </div>
                     <div class="tp-about-exprience">
@@ -231,9 +223,9 @@
                 <div class="col-lg-6">
                     <div class="tp-about-wrapper mb-60 wow fadeInRight" data-wow-delay=".3s">
                     <div class="tp-section mb-40">
-                        <h5 class="tp-section-subtitle">About Our University</h5>
+                        <h5 class="tp-section-subtitle">About Our Agency</h5>
                         <h3 class="tp-section-title mb-30">A few words <br> about the 
-                            <span> University <svg width="180" height="13" viewBox="0 0 180 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <span> Admit Station <svg width="180" height="13" viewBox="0 0 180 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M173.163 12.3756C97.1838 -3.8242 30.6496 5.67799 7.32494 12.2553C5.30414 12.8252 2.43544 12.6722 0.917529 11.9135C-0.600387 11.1549 -0.192718 10.0779 1.82808 9.50807C27.5427 2.25675 98.002 -7.60121 177.683 9.38783C179.881 9.85641 180.65 10.9051 179.402 11.7301C178.154 12.5552 175.361 12.8442 173.163 12.3756Z" fill="currentColor" />
                                 </svg>
                             </span>

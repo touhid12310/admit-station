@@ -1,7 +1,8 @@
 <div>
      <!-- contact area start -->
      <section class="tp-contact-area tp-contact-p fix p-relative pt-150 pb-125">
-        <div class="tp-contact-bg" data-background="assets/img/live/contact-bg.png"></div>
+  {{--       <div class="tp-contact-bg" data-background="assets/images/contact-image.jpg"></div> --}}
+        <div class="tp-contact-bg" data-bg-color="#57595F"></div>
         <div class="tp-contact-shape">
            <span>
               <svg width="1920" height="559" viewBox="0 0 1920 559" fill="none" xmlns="http://www.w3.org/2000/svg">

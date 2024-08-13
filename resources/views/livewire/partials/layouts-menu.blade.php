@@ -48,8 +48,7 @@
                        <a href="{{ route('FAQs') }}" wire:navigate>FAQs</a>
                        <a href="{{ route('contact-us') }}" wire:navigate>contact-us</a>
                        <a href="{{ route('privacy-policy') }}" wire:navigate>privacy-policy</a>
-                       <a href="{{ route('4o4-page') }}" wire:navigate> 4o4 </a>
-                       <a href="#">Help Desk</a>
+                       <a href="{{ route('4o4-page') }}" wire:navigate> Help Desk </a>
                     </div>
                  </div>
               </div>
@@ -61,8 +60,8 @@
                  <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-6">
                     <div class="tp-header-logo-1 tp-header-logo">
                        <a href="index.html">
-                          <img class="logo-1" src="assets/img/logo/adminStation.jpg" alt="logo">
-                          <img class="logo-2" src="assets/img/logo/adminStation.jpg" alt="logo">
+                          <img class="logo-1" src="assets/images/logo.png" alt="logo">
+                          <img class="logo-2" src="assets/images/logo.png" alt="logo">
                        </a>
                     </div>
                  </div>
@@ -252,7 +251,7 @@
                           </button>
                        </div>
                        <div class="tp-header-btn d-none d-md-block ml-30">
-                          <a href="university-application-form.html">Apply Now </a>
+                          <a href="{{ route('university-list')}}">Apply Now </a>
                        </div>
                        <div class="tp-header-bar d-xl-none ml-30">
                           <button class="offcanvas-open-btn"><i class="fa-solid fa-bars"></i></button>
