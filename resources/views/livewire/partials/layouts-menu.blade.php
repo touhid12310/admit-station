@@ -45,10 +45,10 @@
                  </div>
                  <div class="col-lg-6 col-md-6 d-none d-lg-block">
                     <div class="tp-header-right-list d-flex justify-content-md-end">
-                       <a href="#">Campus</a>
-                       <a href="#">Students</a>
-                       <a href="#"> Staffs</a>
-                       <a href="#"> Alumni </a>
+                       <a href="{{ route('FAQs') }}" wire:navigate>FAQs</a>
+                       <a href="{{ route('contact-us') }}" wire:navigate>contact-us</a>
+                       <a href="{{ route('privacy-policy') }}" wire:navigate>privacy-policy</a>
+                       <a href="{{ route('4o4-page') }}" wire:navigate> 4o4 </a>
                        <a href="#">Help Desk</a>
                     </div>
                  </div>
