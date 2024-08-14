@@ -1,7 +1,7 @@
 <div>
     <div class="tpd-user-sidebar d-none d-md-block">
         <div class="tp-user-wrap">
-            <div class="tp-user-menu">
+            <div class="tp-user-menu ">
                 <nav>
                     <ul>
                     <li class="tp-user-menu-title">Welcome</li>
