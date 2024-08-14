@@ -22,13 +22,19 @@
          @livewireStyles
     </head>
    <body>
-      
-      @livewire('partials.layouts-head')
-      @livewire('partials.layouts-menu')
-         <main>
-            {{ $slot }}
-         </main>
-      @livewire('partials.layouts-footer')
+      @if (Route::has('login'))
+         @auth
+            @livewire('partials.layouts-dashboard-menu')
+         @else
+            @livewire('partials.layouts-head')
+            @livewire('partials.layouts-menu')
+         @endauth
+         
+            <main>
+               {{ $slot }}
+            </main>
+         @livewire('partials.layouts-footer')
+      @endif
       
       <!-- JS here  -->
       @vite([
