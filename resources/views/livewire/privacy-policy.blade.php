@@ -1,10 +1,10 @@
 <div>
     <!-- privacy policy stat -->
-    <section class="tp-privacy-area pt-120 pb-120" data-bg-color="#EAECF3">
+    <section class="tp-privacy-area pt-150 pb-120" data-bg-color="#D6D6D6">
         <div class="container">
            <div class="row justify-content-center">
               <div class="col-lg-10">
-                 <div class="tp-privacy-heading">
+                 <div class="tp-privacy-heading pt-50 ">
                     <h3 class="tp-privacy-title">Privacy Policy </h3>
                  </div>
               </div>
