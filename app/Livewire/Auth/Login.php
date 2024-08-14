@@ -7,7 +7,8 @@ use Livewire\Component;
 #[Title('Login | Admit-Station')]
 class Login extends Component
 {
-
+ 
+    
     public $email;
     public $password;
 
