@@ -59,9 +59,8 @@
               <div class="row align-items-center">
                  <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-6">
                     <div class="tp-header-logo-1 tp-header-logo">
-                       <a href="index.html">
+                       <a href="{{ route('home')}}" wire:navigate>
                           <img class="logo-1" src="assets/images/logo.png" alt="logo">
-                          <img class="logo-2" src="assets/images/logo.png" alt="logo">
                        </a>
                     </div>
                  </div>
@@ -278,7 +277,7 @@
             <div class="offcanvas__content">
                 <div class="offcanvas__top mb-90 d-flex justify-content-between align-items-center">
                     <div class="offcanvas__logo tp-header-logo">
-                    <a href="index.html">
+                    <a href="{{ route('home')}}">
                         <img src="assets/img/logo/logo-black.png" alt="logo">
                     </a>
                     </div>

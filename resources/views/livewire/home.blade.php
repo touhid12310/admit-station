@@ -1,6 +1,6 @@
 <div>
     <!-- hero-area-start -->
-    <section class="tp-hero-area">
+    <section class="tp-hero-area" wire:ignore>
         <div class="swiper tp-slider-active">
            <div class="swiper-wrapper">
               <div class="swiper-slide">

@@ -34,13 +34,13 @@ Route::middleware('guest')->group(function () {
 });
 
 
-Route::middleware('auth')->group(function () {
+// Route::middleware('auth')->group(function () {
     Route::get('/logout', [Login::class, 'logout'])->name('logout');
     Route::get('/student-dashboard', StudentDashboard::class)->name('student-dashboard');
     Route::get('/student-profile', StudentProfile::class)->name('student-profile');
     Route::get('/student-reviews', StudentReviews::class)->name('student-reviews');
     Route::get('/student-setting-profile', StudentSettingProfile::class)->name('student-setting-profile');
-});
+// });
 
 
 
