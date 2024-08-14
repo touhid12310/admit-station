@@ -186,7 +186,7 @@
                  <div class="col-xxl-3 col-xl-3 col-lg-6 col-6">
                     <div class="tp-header-2-right d-flex align-items-center">
                        <div class="tp-header-inner-logo tp-header-logo">
-                          <a href="{{route('student-dashboard')}}">
+                          <a href="{{ url('/') }}">
                              <img src="assets/images/logo.png" alt="logo">
                           </a>
                        </div>

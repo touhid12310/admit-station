@@ -45,10 +45,10 @@
                  </div>
                  <div class="col-lg-6 col-md-6 d-none d-lg-block">
                     <div class="tp-header-right-list d-flex justify-content-md-end">
-                       <a href="{{ route('FAQs') }}" wire:navigate>FAQs</a>
-                       <a href="{{ route('contact-us') }}" wire:navigate>contact-us</a>
-                       <a href="{{ route('privacy-policy') }}" wire:navigate>privacy-policy</a>
-                       <a href="{{ route('4o4-page') }}" wire:navigate> Help Desk </a>
+                       <a href="{{ route('FAQs') }}">FAQs</a>
+                       <a href="{{ route('contact-us') }}">contact-us</a>
+                       <a href="{{ route('privacy-policy') }}">privacy-policy</a>
+                       <a href="{{ route('4o4-page') }}"> Help Desk </a>
                     </div>
                  </div>
               </div>
@@ -59,7 +59,7 @@
               <div class="row align-items-center">
                  <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-6">
                     <div class="tp-header-logo-1 tp-header-logo">
-                       <a href="{{ route('home')}}" wire:navigate>
+                       <a href="{{ url('/')}}">
                           <img class="logo-1" src="assets/images/logo.png" alt="logo">
                        </a>
                     </div>
@@ -69,7 +69,7 @@
                        <nav class="tp-main-menu-content">
                           <ul>
                              <li class="tp-static">
-                                <a class="tp-static" href="{{route('home')}}" wire:navigate>Home</a>
+                                <a class="tp-static" href="{{url('/')}}">Home</a>
                              </li>
                              <li class="has-dropdown">
                                 <a href="about.html">Academics</a>
@@ -277,7 +277,7 @@
             <div class="offcanvas__content">
                 <div class="offcanvas__top mb-90 d-flex justify-content-between align-items-center">
                     <div class="offcanvas__logo tp-header-logo">
-                    <a href="{{ route('home')}}">
+                    <a href="{{ url('/')}}">
                         <img src="assets/img/logo/logo-black.png" alt="logo">
                     </a>
                     </div>

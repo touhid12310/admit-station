@@ -12,7 +12,7 @@
                     <div class="tp-error-content">
                        <h4 class="tp-error-title-sm">Something went Wrong...</h4>
                        <p>Sorry, we couldn't find your page.</p>
-                       <a class="tp-btn-inner" href="{{route('home')}}" wire:navigate>Back to Home</a>
+                       <a class="tp-btn-inner" href="{{url('/')}}" wire:navigate>Back to Home</a>
                     </div>
                  </div>
               </div>
