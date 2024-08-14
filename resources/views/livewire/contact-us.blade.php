@@ -1,7 +1,7 @@
 <div>
      <!-- contact area start -->
      <section class="tp-contact-area tp-contact-p fix p-relative pt-150 pb-125">
-  {{--       <div class="tp-contact-bg" data-background="assets/images/contact-image.jpg"></div> --}}
+        <div class="tp-contact-bg" data-background="assets/images/contact-image.jpg"></div>
         <div class="tp-contact-bg" data-bg-color="#57595F"></div>
         <div class="tp-contact-shape">
            <span>
