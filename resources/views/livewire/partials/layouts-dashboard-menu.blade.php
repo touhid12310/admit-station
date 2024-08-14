@@ -196,7 +196,7 @@
                     <div class="main-menu text-xl-center d-none d-xl-block">
                        <nav class="tp-main-menu-content">
                           <ul>
-                             <li class="has-dropdown">
+                              <li class="has-dropdown">
                                 <a href="#">Dashboard</a>
                                 <ul class="tp-submenu">
                                    <li class="has-dropdown"><a href="instructor-dashboard.html">Instructor Dashboard</a>
@@ -215,19 +215,22 @@
                                          <li><a href="instructor-setting-profile.html">Settings</a></li>
                                       </ul>
                                    </li>
-                                   <li class="has-dropdown"><a href="student-dashboard.html">Student Dashboard</a>
-                                      <ul class="tp-submenu">
-                                         <li><a href="student-dashboard.html">Dashboard</a></li>
-                                         <li><a href="student-profile.html">Profile</a></li>
-                                         <li><a href="student-enroll-course.html">Enrolled Courses</a></li>
-                                         <li><a href="student-wishlist.html">Wishlist</a></li>
-                                         <li><a href="student-reviews.html">Reviews</a></li>
-                                         <li><a href="student-my-quiz.html">My Quiz Attempts</a></li>
-                                         <li><a href="student-setting-profile.html">Settings</a></li>
-                                      </ul>
-                                   </li>
                                 </ul>
-                             </li>
+                              </li>
+                              <li class="has-dropdown"><a href="student-dashboard.html">Student Dashboard</a>
+                                 <ul class="tp-submenu">
+                                    <li><a href="{{route('student-dashboard')}}">Dashboard</a></li>
+                                    <li><a href="{{route('student-profile')}}">Profile</a></li>
+                                    <li><a href="#">Enrolled Courses</a></li>
+                                    <li><a href="#">Wishlist</a></li>
+                                    <li><a href="{{route('student-reviews')}}">Reviews</a></li>
+                                    <li><a href="student-my-quiz.html">My Quiz Attempts</a></li>
+                                    <li><a href="{{route('student-setting-profile')}}">Settings</a></li>
+                                 </ul>
+                              </li>
+                              <li class="">
+                                 <a href="{{route('logout')}}">Logout</a>
+                              </li>
                           </ul>
                        </nav>
                     </div>
