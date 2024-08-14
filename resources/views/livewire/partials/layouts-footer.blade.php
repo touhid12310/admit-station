@@ -38,7 +38,7 @@
                              <li><a href="about.html">About Us</a></li>
                              <li><a href="{{route('FAQs')}}" wire:navigate>FAQs</a></li>
                              <li><a href="{{route('privacy-policy')}}" wire:navigate>Privacy Policy</a></li>
-                             <li><a href="#">Become a Teacher</a></li>
+                             <li><a href="{{route('become-a-agent')}}">Become a Agent</a></li>
                              <li><a href="#">Events</a></li>
                              <li><a href="{{route('contact-us')}}" wire:navigate>Contact Us</a></li>
                           </ul>

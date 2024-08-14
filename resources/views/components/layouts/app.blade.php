@@ -24,6 +24,9 @@
    <body>
       
       @livewire('partials.layouts-head')
+      @auth
+         @livewire('partials.layouts-dashboard-menu')
+      @endauth
       @livewire('partials.layouts-menu')
          <main>
             {{ $slot }}
