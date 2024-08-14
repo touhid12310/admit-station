@@ -1,6 +1,6 @@
 <div>
     <!-- login area start -->
-    <section class="tp-login-area">
+    <section class="tp-login-area p-5">
         <div class="tp-login-register-box d-flex align-items-center">
            <div class="tp-login-register-banner-box p-relative" data-background="assets/img/login/login-register-bg.jpg">
               <div class="tp-login-register-logo tp-header-logo">
@@ -32,14 +32,14 @@
                         <div class="col-12">
                            <div class="tp-login-input p-relative">
                               <label>Email or Phone</label>
-                              <input type="text" placeholder="Type your email or phone number">
+                              <input type="text" wire:model="email" placeholder="Type your email or phone number">
                            </div>
                         </div>
                         <div class="col-12">
                            <div class="tp-login-input p-relative">
                               <label>Password</label>
                               <div class="password-input p-relative">
-                                 <input type="password" placeholder="Password">
+                                 <input type="password" wire:model="password" placeholder="Password">
                                  <div class="tp-login-input-eye password-show-toggle">
                                     <span class="open-eye open-eye-icon">
                                       <svg width="18" height="14" viewBox="0 0 18 14" fill="none" >
@@ -102,10 +102,7 @@
                                 Continue with Google
                              </a>
                           </div>
-                          <div class="tp-login-from-autor text-center">
-                             <p><span>Instructor:</span>   Instructor@gmail.com   |   123456</p>
-                             <p><span>Student: </span>  student@gmail.com   |   123456</p>
-                          </div>
+                          
                        </div>
                     </div>
                  </div>

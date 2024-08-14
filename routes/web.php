@@ -15,11 +15,12 @@ use App\Livewire\StudentSettingProfile;
 use App\Livewire\UniversityList;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/login', function(){
+/* Route::get('/login', function(){
     return view('login');
-})->name('login');
+})->name('login'); */
 
 Route::middleware('guest')->group(function () {
+    Route::get('/login', Login::class)->name('login');
     Route::get('/register', Register::class)->name('register');
     Route::get('/', Home::class)->name('home');
     Route::get('/Faqs', Faqs::class)->name('FAQs');
@@ -34,6 +35,7 @@ Route::middleware('guest')->group(function () {
 
 
 Route::middleware('auth')->group(function () {
+    Route::get('/logout', [Login::class, 'logout'])->name('logout');
     Route::get('/student-dashboard', StudentDashboard::class)->name('student-dashboard');
     Route::get('/student-profile', StudentProfile::class)->name('student-profile');
     Route::get('/student-reviews', StudentReviews::class)->name('student-reviews');
