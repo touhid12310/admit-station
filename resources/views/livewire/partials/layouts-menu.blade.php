@@ -71,46 +71,8 @@
                              <li class="tp-static">
                                 <a class="tp-static" href="{{url('/')}}">Home</a>
                              </li>
-                             <li class="has-dropdown">
-                                <a href="about.html">Academics</a>
-                                <div class="tp-megamenu-main">
-                                   <div class="megamenu-demo-small p-relative">
-                                      <div class="tp-megamenu-small-content">
-                                         <div class="row tp-gx-50">
-                                            <div class="col-xl-6">
-                                               <div class="tp-megamenu-list">
-                                                  <a href="university-admission-overview.html">Overview</a>
-                                                  <a href="university-program.html">Undergraduate</a>
-                                                  <a href="university-program.html">Graduate Program</a>
-                                                  <a href="university-program.html">Schools</a>
-                                               </div>
-                                            </div>
-                                            <div class="col-xl-6">
-                                               <div class="tp-megamenu-list">
-                                                  <a href="course-with-filter.html">Online Education</a>
-                                                  <a href="course-with-filter.html">Off- campus learning</a>
-                                                  <a href="university-leadership.html">Faculty</a>
-                                               </div>
-                                            </div>
-                                         </div>
-                                      </div>
-                                      <div class="tp-megamenu-small-cta-wrap d-none d-xl-block">
-                                         <div class="row">
-                                            <div class="col-xl-12">
-                                               <div class="tp-megamenu-small-cta d-flex">
-                                                  <div class="tp-megamenu-small-cta-thumb">
-                                                     <img src="assets/img/cta/menu-cta-shape.png" alt="">
-                                                  </div>
-                                                  <h4 class="tp-megamenu-small-cta-title">All signature programs</h4>
-                                                  <div class="tp-megamenu-small-cta-btn">
-                                                     <a class="tp-btn" href="university-application-form.html">Apply now</a>
-                                                  </div>
-                                               </div>
-                                            </div>
-                                         </div>
-                                      </div>
-                                   </div>
-                                </div>
+                             <li class="tp-static">
+                                <a class="tp-static" href="{{url('/error')}}">About</a>
                              </li>
                              <li class="has-dropdown">
                                 <a href="#">Admissions</a>
@@ -123,107 +85,7 @@
                                    <li><a href="university-schedule.html">Schedule a Tour</a></li>
                                 </ul>
                              </li>
-                             <li class="has-dropdown tp-static">
-                                <a class="tp-static" href="#">Pages</a>
-                                <div class="tp-megamenu-main">
-                                   <div class="megamenu-demo-fullwidth p-relative">
-                                      <div class="row">
-                                         <div class="col-xl-8 col-lg-12">
-                                            <div class="tp-megamenu-fullwidth-list-wrapper">
-                                               <div class="row tp-gx-90">
-                                                  <div class="col-xl-3 ">
-                                                     <div class="tp-megamenu-fullwidth-list">
-                                                        <h4 class="tp-megamenu-fullwidth-title">About</h4>
-                                                        <ul>
-                                                           <li><a href="about.html">About Us</a></li>
-                                                           <li><a href="university-about.html">University About</a></li>
-                                                           <li><a href="university-campus.html">Campus</a></li>
-                                                           <li><a href="university-mission.html">Mission & Values</a></li>
-                                                           <li><a href="university-history.html">History</a></li>
-                                                           <li><a href="university-leadership.html">Our Leadership</a></li>
-                                                        </ul>
-                                                     </div>
-                                                  </div>
-                                                  <div class="col-xl-6 ">
-                                                     <div class="tp-megamenu-fullwidth-list ">
-                                                        <h4 class="tp-megamenu-fullwidth-title">Get started</h4>
-                                                        <div class="tp-megamenu-fullwidth-list-wrap">
-                                                           <div class="row">
-                                                              <div class="col-xl-6 col-12">
-                                                                 <ul>
-                                                                    <li><a href="event.html">Events</a></li>
-                                                                    <li><a href="event-details.html">Event Details</a></li>
-                                                                    <li><a href="instructor.html">Instructor</a></li>
-                                                                    <li><a href="my-profile.html">Profile</a></li>
-                                                                    <li><a href="become-instructor.html">Become a Instructor</a></li>
-                                                                    <li><a href="up-coming.html">Maintenance</a></li>
-                                                                 </ul>
-                                                              </div>
-                                                              <div class="col-xl-6 col-12">
-                                                                 <ul>
-                                                                    <li><a href="contact.html">Contact Us</a></li>
-                                                                    <li><a href="membership-plans.html">Membership plans</a></li>
-                                                                    <li><a href="faq.html">FAQs</a></li>
-                                                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                                                                    <li><a href="error.html">404 Page</a></li>
-                                                                 </ul>
-                                                              </div>
-                                                           </div>
-                                                        </div>
-                                                     </div>
-                                                  </div>
-                                                  <div class="col-xl-3 ">
-                                                     <div class="tp-megamenu-fullwidth-list">
-                                                        <h4 class="tp-megamenu-fullwidth-title">Shop page</h4>
-                                                        <ul>
-                                                           <li><a href="shop-grid.html">Shop</a></li>
-                                                           <li><a href="shop-details.html">Single Product</a></li>
-                                                           <li><a href="cart.html">Cart Page</a></li>
-                                                           <li><a href="wishlist.html">Wishlist page</a></li>
-                                                           <li><a href="my-account.html">My Account</a></li>
-                                                           <li><a href="login.html">Login & Register</a></li>
-                                                        </ul>
-                                                     </div>
-                                                  </div>
-                                               </div>
-                                            </div>
-                                         </div>
-                                         <div class="col-xl-4 col-lg-12">
-                                            <div class="tp-megamenu-fullwidth-item-wrap d-none d-xl-block">
-                                               <div class="row">
-                                                  <div class="col-lg-12">
-                                                     <div class="tp-megamenu-fullwidth-item d-flex justify-content-between align-items-center mb-8">
-                                                        <div class="tp-megamenu-fullwidth-content blue">
-                                                           <h4 class="tp-megamenu-fullwidth-content-title">Online <br> Learning Platforms</h4>
-                                                           <a class="tp-btn" href="course-with-filter.html">All Course <span><svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
-                                                              <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            </svg></span></a>
-                                                        </div>
-                                                        <div class="tp-megamenu-fullwidth-content-thumb">
-                                                           <img src="assets/img/shape/menu-shape-1.png" alt="">
-                                                        </div>
-                                                     </div>
-                                                  </div>
-                                                  <div class="col-lg-12">
-                                                     <div class="tp-megamenu-fullwidth-item bg d-flex justify-content-between align-items-center">
-                                                        <div class="tp-megamenu-fullwidth-content">
-                                                           <h4 class="tp-megamenu-fullwidth-content-title">Accelerated <br> Degree Programs</h4>
-                                                           <a class="tp-btn" href="university-program.html">All Programs <span><svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
-                                                              <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                            </svg></span></a>
-                                                        </div>
-                                                        <div class="tp-megamenu-fullwidth-content-thumb">
-                                                           <img src="assets/img/shape/menu-shape-2.png" alt="">
-                                                        </div>
-                                                     </div>
-                                                  </div>
-                                               </div>
-                                            </div>
-                                         </div>
-                                      </div>
-                                   </div>
-                                </div>
-                             </li>
+                             
                              <li class="has-dropdown">
                                 <a href="blog-stories.html">Blog</a>
                                 <ul class="tp-submenu">
