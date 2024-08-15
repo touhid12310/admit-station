@@ -249,8 +249,10 @@
                <div class="row align-items-center">
                   <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-6">
                      <div class="tp-header-logo-1 tp-header-logo">
+                        <!-- logo-1 for default and  logo-2 for scroll-->
                         <a href="{{ url('/')}}">
                            <img class="logo-1" src="assets/images/logo.png" alt="logo">
+                           <img class="logo-2" src="assets/images/logo.png" alt="logo">
                         </a>
                      </div>
                   </div>
@@ -302,7 +304,7 @@
                            </button>
                         </div>
                         <div class="tp-header-btn d-none d-md-block ml-30">
-                           <a href="{{ route('university-list')}}">Apply Now </a>
+                           <a href="{{ route('login')}}">Apply Now </a>
                         </div>
                         <div class="tp-header-bar d-xl-none ml-30">
                            <button class="offcanvas-open-btn"><i class="fa-solid fa-bars"></i></button>
