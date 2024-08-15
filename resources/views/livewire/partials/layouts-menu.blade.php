@@ -252,7 +252,7 @@
                         <!-- logo-1 for default and  logo-2 for scroll-->
                         <a href="{{ url('/')}}">
                            <img class="logo-1" src="{{ asset('assets/images/logo.png') }}" alt="logo">
-                           {{-- <img class="logo-2" src="{{ asset('assets/images/logo.png') }}" alt="logo"> --}}
+                           <img class="logo-2" src="{{ asset('assets/images/logo.png') }}" alt="logo">
                         </a>
                      </div>
                   </div>
@@ -309,7 +309,7 @@
                            </div>
                         @else  
                            <div class="tp-header-btn d-none d-md-block ml-30">
-                              <a href="{{ route('login')}}">Apply Now </a>
+                              <a href="{{ route('login')}}">Login</a>
                            </div>
                         @endauth
                         
