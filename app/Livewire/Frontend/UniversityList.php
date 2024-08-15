@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Livewire;
+namespace App\Livewire\Frontend;
 
 use Livewire\Attributes\Title;
 use Livewire\Component;
@@ -9,6 +9,6 @@ class UniversityList extends Component
 {
     public function render()
     {
-        return view('livewire.university-list');
+        return view('livewire.frontend.university-list');
     }
 }

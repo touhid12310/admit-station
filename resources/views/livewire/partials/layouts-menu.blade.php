@@ -262,7 +262,7 @@
                                  <a class="tp-static" href="{{url('/')}}">Home</a>
                               </li>
                               <li class="tp-static">
-                                 <a class="tp-static" href="{{url('/error')}}">About</a>
+                                 <a class="tp-static" href="{{route('about')}}">About</a>
                               </li>
                               <li class="has-dropdown">
                                  <a href="#">Admissions</a>
