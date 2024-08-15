@@ -244,7 +244,7 @@
                </div>
             </div>
          </div>
-         <div id="header-sticky" class="tp-header-mob-space tp-header-1">
+         <div id="header-sticky" class="tp-header-mob-space tp-header-1" style="background: #a7a1a1">
             <div class="container">
                <div class="row align-items-center">
                   <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-6">
@@ -252,7 +252,7 @@
                         <!-- logo-1 for default and  logo-2 for scroll-->
                         <a href="{{ url('/')}}">
                            <img class="logo-1" src="{{ asset('assets/images/logo.png') }}" alt="logo">
-                           <img class="logo-2" src="{{ asset('assets/images/logo.png') }}" alt="logo">
+                           {{-- <img class="logo-2" src="{{ asset('assets/images/logo.png') }}" alt="logo"> --}}
                         </a>
                      </div>
                   </div>

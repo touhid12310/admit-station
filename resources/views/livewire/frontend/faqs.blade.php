@@ -1,7 +1,7 @@
 <div>
   <!-- faq breadcrumb start -->
   <section class="tp-breadcrumb__area pt-60 pb-60 p-relative z-index-1 fix mt-5">
-    <div class="tp-breadcrumb__bg" data-bg-color="#D6D6D6"></div>
+    <div class="tp-breadcrumb__bg" data-bg-color="#860104"></div>
     <div class="container">
        <div class="row align-items-center">
           <div class="col-sm-12">
