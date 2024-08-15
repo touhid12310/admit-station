@@ -28,10 +28,14 @@ Route::get('/university-list', UniversityList::class)->name('university-list');
 Route::get('/become-a-agent', BecomeAAgent::class)->name('become-a-agent');
 
 
+
 Route::middleware('auth')->group(function () {
+    
     Route::get('/logout', [Login::class, 'logout'])->name('logout');
-    Route::get('/student-dashboard', StudentDashboard::class)->name('student-dashboard');
-    Route::get('/student-profile', StudentProfile::class)->name('student-profile');
-    Route::get('/student-reviews', StudentReviews::class)->name('student-reviews');
-    Route::get('/student-setting-profile', StudentSettingProfile::class)->name('student-setting-profile');
+    Route::prefix('student')->group(function () {
+        Route::get('/', StudentDashboard::class)->name('student-dashboard');
+        Route::get('/profile', StudentProfile::class)->name('student-profile');
+        Route::get('/reviews', StudentReviews::class)->name('student-reviews');
+        Route::get('/setting-profile', StudentSettingProfile::class)->name('student-setting-profile');
+    });
 });

@@ -27,7 +27,7 @@ class Login extends Component
             return;
         }
 
-        $this->redirect('/student-dashboard');
+        return redirect()->route('student-dashboard');
     }
     public function render()
     {

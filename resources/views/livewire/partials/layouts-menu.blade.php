@@ -251,8 +251,8 @@
                      <div class="tp-header-logo-1 tp-header-logo">
                         <!-- logo-1 for default and  logo-2 for scroll-->
                         <a href="{{ url('/')}}">
-                           <img class="logo-1" src="assets/images/logo.png" alt="logo">
-                           <img class="logo-2" src="assets/images/logo.png" alt="logo">
+                           <img class="logo-1" src="{{ asset('assets/images/logo.png') }}" alt="logo">
+                           <img class="logo-2" src="{{ asset('assets/images/logo.png') }}" alt="logo">
                         </a>
                      </div>
                   </div>

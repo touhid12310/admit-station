@@ -22,17 +22,15 @@
          @livewireStyles
     </head>
    <body>
-      @if (Route::has('login'))
-         @auth
+         @if(Route::is('student*'))
             @livewire('partials.layouts-dashboard-menu')
          @else
             @livewire('partials.layouts-menu')
-         @endauth
+         @endif
             <main>
                {{ $slot }}
             </main>
          @livewire('partials.layouts-footer')
-      @endif
       
       <!-- JS here  -->
       @vite([

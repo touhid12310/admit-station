@@ -3,15 +3,15 @@
 
         <!-- dashboard-banner-area-start -->
         <section class="tp-dashboard-banner-wrap">
-            <div class="tp-dashboard-banner-shape"><img src="assets/img/dashboard/bg/dashboard-bg-shape-1.jpg" alt=""></div>
+            <div class="tp-dashboard-banner-shape"><img src="{{ asset('assets/img/dashboard/bg/dashboard-bg-shape-1.jpg') }}" alt=""></div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="tp-dashboard-banner-bg mt-30" data-background="assets/img/dashboard/bg/dashboard-bg-1.jpg" style="background-image: url(assets/img/dashboard/bg/dashboard-bg-1.jpg);">
+                        <div class="tp-dashboard-banner-bg mt-30" data-background="{{ asset('assets/img/dashboard/bg/dashboard-bg-1.jpg') }}') }}" style="background-image: url({{ asset('assets/img/dashboard/bg/dashboard-bg-1.jpg') }}') }});">
                         <div class="tp-instructor-wrap d-flex justify-content-between">
                             <div class="tp-instructor-info d-flex">
                                 <div class="tp-instructor-avatar">
-                                    <img src="assets/img/dashboard/profile/dashboard-profile-2.jpg" alt="">
+                                    <img src="{{ asset('assets/img/dashboard/profile/dashboard-profile-2.jpg') }}" alt="">
                                 </div>
                                 <div class="tp-instructor-content">
                                     <h4 class="tp-instructor-title">Indigo Violet</h4>
@@ -72,7 +72,7 @@
                                     <span>Active Courses</span>
                                 </div>
                                 <div class="tp-fact-icon">
-                                    <span><img src="assets/img/dashboard/icon/fact/teacher.svg" alt="fact-icon"></span>
+                                    <span><img src="{{ asset('assets/img/dashboard/icon/fact/teacher.svg') }}" alt="fact-icon"></span>
                                 </div>
                             </div>
                             </div>
@@ -83,7 +83,7 @@
                                     <span>Enrolled Courses</span>
                                 </div>
                                 <div class="tp-fact-icon">
-                                    <span class="common-pale-yellow"><img src="assets/img/dashboard/icon/fact/enroll-icon.svg" alt="fact-icon"></span>
+                                    <span class="common-pale-yellow"><img src="{{ asset('assets/img/dashboard/icon/fact/enroll-icon.svg') }}" alt="fact-icon"></span>
                                 </div>
                             </div>
                             </div>
@@ -94,7 +94,7 @@
                                     <span>Completed Courses</span>
                                 </div>
                                 <div class="tp-fact-icon">
-                                    <span class="common-pale-pacific"><img src="assets/img/dashboard/icon/fact/cup.svg" alt="fact-icon"></span>
+                                    <span class="common-pale-pacific"><img src="{{ asset('assets/img/dashboard/icon/fact/cup.svg') }}" alt="fact-icon"></span>
                                 </div>
                             </div>
                             </div>
@@ -105,7 +105,7 @@
                                     <span>Total Students</span>
                                 </div>
                                 <div class="tp-fact-icon">
-                                    <span class="common-pale-green"><img src="assets/img/dashboard/icon/fact/students.svg" alt="fact-icon"></span>
+                                    <span class="common-pale-green"><img src="{{ asset('assets/img/dashboard/icon/fact/students.svg') }}" alt="fact-icon"></span>
                                 </div>
                             </div>
                             </div>
@@ -116,7 +116,7 @@
                                     <span>Total Courses</span>
                                 </div>
                                 <div class="tp-fact-icon">
-                                    <span class="common-pale-blue"><img src="assets/img/dashboard/icon/fact/course-total.svg" alt="fact-icon"></span>
+                                    <span class="common-pale-blue"><img src="{{ asset('assets/img/dashboard/icon/fact/course-total.svg') }}" alt="fact-icon"></span>
                                 </div>
                             </div>
                             </div>
@@ -127,7 +127,7 @@
                                     <span>Total Earnings</span>
                                 </div>
                                 <div class="tp-fact-icon">
-                                    <span class="common-pale-purple"><img src="assets/img/dashboard/icon/fact/card-pos.svg" alt="fact-icon"></span>
+                                    <span class="common-pale-purple"><img src="{{ asset('assets/img/dashboard/icon/fact/card-pos.svg') }}" alt="fact-icon"></span>
                                 </div>
                             </div>
                             </div>
