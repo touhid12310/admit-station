@@ -688,7 +688,6 @@
     </div>
     <!-- instagram-area-end -->
 
-     
     <!-- cta-area-start -->
     <section class="cta-area tp-cta-bg grey-bg" data-background="assets/img/cta/cta-bg-1.jpg">
         <div class="container">
