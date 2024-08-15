@@ -1,7 +1,7 @@
 <div>
     @livewire('partials.layouts-pre-loader')
     <!-- hero-area-start -->
-    <section class="tp-hero-area" wire:ignore>
+    <section class="tp-hero-area">
         <div class="swiper tp-slider-active">
            <div class="swiper-wrapper">
               <div class="swiper-slide">
