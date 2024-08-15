@@ -7,7 +7,7 @@
                  <div class="col-lg-12">
                     <div class="tp-about-banner mb-80">
                        <span class="">About our Agency</span>
-                       <h3 class="tp-about-banner-title">We providing the <br>
+                       <h3 class="tp-about-banner-title" style="color: #AB0C2F">We providing the <br>
                           best quality service.</h3>
                     </div>
                  </div>
@@ -19,7 +19,7 @@
                  <div class="col-xl-6 col-lg-12"></div>
                  <div class="col-xl-6 col-lg-12">
                     <div class="tp-about-banner-content p-relative">
-                       <span class="span">Our Stories</span>
+                       <span class="span" style="background-color: #AB0C2F">Our Stories</span>
                        <p>When you design products and <br> services in close partnership with <br> clients, you are creating a solution <br> that is tailored to their specific <br> needs.</p>
                        <a href="instructor.html">Meet the Team <span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                           <path d="M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -52,7 +52,7 @@
                            </svg></span>
                            <p>Know about classes</p>
                        </div>
-                       <h3 class="tp-about-tutor-title">We create unique <br>
+                       <h3 class="tp-about-tutor-title" style="color: #AB0C2F">We create unique <br>
                        digital media experiences.</h3>
                     </div>
                  </div>
@@ -118,9 +118,8 @@
 
 
         <!-- counter-area-start -->
-        <section class="tp-instructor-counter-area p-relative tp-instructor-bg fix" 
-        data-background="assets/img/instructor/instructor-bg.jpg">
-           <div class="container">
+        <section class="tp-instructor-counter-area p-relative tp-instructor-bg fix" data-background="assets/img/instructor/instructor-bg.jpg">
+           <div class="container-fluid" style="background-color: #AB0C2F">
               <div class="row">
                  <div class="col-lg-3 col-sm-6">
                     <div class="tp-instructor-counter-item text-center">
@@ -172,7 +171,7 @@
                  <div class="col-lg-8">
                     <div class="tp-our-mission-wrapper wow fadeInUp" data-wow-delay=".5s">
                        <div class="tp-our-mission-heading">
-                          <h3 class="tp-our-mission-title">Mission and values</h3>
+                          <h3 class="tp-our-mission-title" style="color: #AB0C2F">Mission and values</h3>
                           <p>We prepare you to launch your career by providing a supportive, creative, <br>
                              and professional. Our mission is to prepare students to understand, contribute <br>
                              to, and succeed in a rapidly changing society,</p>
@@ -180,12 +179,12 @@
                        
                        <div class="tp-our-mission-item about d-flex align-items-center justify-content-center justify-content-md-between mb-20">
                           <div class="tp-our-mission-item-content">
-                             <h4 class="tp-our-mission-item-title">Creativity</h4>
+                             <h4 class="tp-our-mission-item-title" style="color: #AB0C2F">Creativity</h4>
                              <p>Encouraging behaviours which <br>
                                 encompass notions of originality, and <br>
                                 problem-solving in all that we do.</p>
                              <div class="tp-our-mission-item-btn">
-                                <a class="tp-btn-3" href="#">Learn More <i>
+                                <a class="tp-btn-3" href="#" style="background-color: #AB0C2F">Learn More <i>
                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
                                       <path d="M1.5 6H11.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                       <path d="M6.5 1L11.5 6L6.5 11" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -201,12 +200,12 @@
                        </div>
                        <div class="tp-our-mission-item about d-flex align-items-center justify-content-center justify-content-md-between mb-20">
                           <div class="tp-our-mission-item-content">
-                             <h4 class="tp-our-mission-item-title">Scholarship</h4>
+                             <h4 class="tp-our-mission-item-title" style="color: #AB0C2F">Scholarship</h4>
                              <p>Encouraging behaviours which <br>
                                 encompass notions of originality, and <br>
                                 problem-solving in all that we do.</p>
-                             <div class="tp-our-mission-item-btn">
-                                <a class="tp-btn-3" href="#">Learn More <i>
+                             <div class="tp-our-mission-item-btn border-none">
+                                <a class="tp-btn-3" href="#" style="background-color: #AB0C2F">Learn More <i>
                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
                                       <path d="M1.5 6H11.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                       <path d="M6.5 1L11.5 6L6.5 11" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -222,12 +221,12 @@
                        </div>
                        <div class="tp-our-mission-item about d-flex align-items-center justify-content-center justify-content-md-between">
                           <div class="tp-our-mission-item-content">
-                             <h4 class="tp-our-mission-item-title">Community</h4>
+                             <h4 class="tp-our-mission-item-title" style="color: #AB0C2F">Community</h4>
                              <p>Encouraging behaviours which <br>
                                 encompass notions of originality, and <br>
                                 problem-solving in all that we do.</p>
                              <div class="tp-our-mission-item-btn">
-                                <a class="tp-btn-3" href="#">Learn More <i>
+                                <a class="tp-btn-3" href="#" style="background-color: #AB0C2F">Learn More <i>
                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="12" viewBox="0 0 13 12" fill="none">
                                       <path d="M1.5 6H11.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                                       <path d="M6.5 1L11.5 6L6.5 11" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>

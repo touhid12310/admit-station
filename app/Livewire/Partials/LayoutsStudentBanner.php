@@ -4,10 +4,10 @@ namespace App\Livewire\Partials;
 
 use Livewire\Component;
 
-class LayoutsDashboardMenu extends Component
+class LayoutsStudentBanner extends Component
 {
     public function render()
     {
-        return view('livewire.partials.layouts-dashboard-menu');
+        return view('livewire.partials.layouts-student-banner');
     }
 }

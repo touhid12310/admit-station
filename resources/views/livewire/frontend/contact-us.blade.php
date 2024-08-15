@@ -20,11 +20,11 @@
               <div class="col-lg-10">
                  <div class="tp-contact-wrap p-relative">
                     <div class="tp-contact-heading text-center">
-                       <h3 class="tp-contact-title ">Get in Touch</h3>
+                       <h3 class="tp-contact-title" style="color: #AB0C2F">Get in Touch</h3>
                        <p>We are here to answer any question you may have.</p>
                     </div>
                     <div class="tp-contact-from-box shadow-lg">
-                       <h3 class="tp-contact-from-title">Send a Message 👍🏻</h3>
+                       <h3 class="tp-contact-from-title" style="color: #AB0C2F">Send a Message 👍🏻</h3>
                        <form id="contact-form" action="assets/mail.php" method="post">
                           <div class="tp-contact-input-form">
                              <div class="row">
@@ -59,7 +59,7 @@
                                    </div>
                                 </div>
                                 <div class="tp-contact-btn">
-                                   <button type="submit" class="tp-btn-inner">Send message</button>
+                                   <button type="submit" class="tp-btn-inner" style="background-color: #AB0C2F">Send message</button>
                                    <p style="display: none;" class="ajax-response text-danger mt-1 mb-0"></p>
                                 </div>
                              </div>

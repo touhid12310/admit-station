@@ -16,3 +16,9 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
     php artisan make:livewire student.student-dashboard
 
+## background-color
+    style="background-color: #AB0C2F"
+
+##  color
+    style="color: #AB0C2F"
+

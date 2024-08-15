@@ -1,6 +1,6 @@
 <div>
      <!-- event breadcrumb start -->
-     <div class="tp-breadcrumb__area pt-15 pb-15 p-relative z-index-1 fix">
+     <div class="tp-breadcrumb__area pt-150 pb-15 p-relative z-index-1 fix">
         <div class="tp-breadcrumb__bg" data-background="assets/img/breadcrumb/breadcrumb-bg.jpg"></div>
         <div class="container">
            <div class="row align-items-center">
@@ -30,7 +30,7 @@
                     <div class="tp-blog-stories-tag-wrap">
                        <a href="#">Education</a>
                     </div>
-                    <h3 class="tp-blog-details-title">Make you love and hate <br> Education.</h3>
+                    <h3 class="tp-blog-details-title" style="color: #AB0C2F">Make you love and hate <br> Education.</h3>
                     <div class="tp-blog-details-user d-flex justify-content-between">
                        <div class="tp-blog-details-user-box">
                           <span><img src="assets/img/blog/blog-stories/blog-stories-user-2.jpg" alt=""> Eleanor Pena</span>

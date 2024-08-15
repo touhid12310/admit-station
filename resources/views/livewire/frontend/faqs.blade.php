@@ -12,7 +12,7 @@
                    <span>Pages</span>
                    <span class="color">Faq Page</span>
                 </div>
-                <h3 class="tp-breadcrumb__title white">Faq Page</h3>
+                <h3 class="tp-breadcrumb__title white" style="color: #AB0C2F">Faq Page</h3>
              </div>
           </div>
        </div>

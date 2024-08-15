@@ -6,7 +6,7 @@
             <div class="row justify-content-center">
                <div class="col-lg-10">
                   <div class="tp-privacy-heading pt-50 ">
-                     <h3 class="tp-privacy-title">Privacy Policy </h3>
+                     <h3 class="tp-privacy-title" style="color: #AB0C2F">Privacy Policy </h3>
                   </div>
                </div>
                <div class="col-lg-10">

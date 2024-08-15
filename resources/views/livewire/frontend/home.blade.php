@@ -1,5 +1,5 @@
 <div>
-    {{-- @livewire('partials.layouts-pre-loader') --}}
+
     <!-- hero-area-start -->
     <section class="tp-hero-area">
         <div class="swiper tp-slider-active">
@@ -89,7 +89,6 @@
         </div>
     </section>
     <!-- hero-area-end -->
-
 
     <!-- service-area-start -->
     <section class="service-area tp-service-bg" data-background="assets/img/bg/services-bg.jpg">
@@ -186,7 +185,6 @@
     </section>
     <!-- service-area-end -->
 
-
     <!-- about-area-start -->
     <section class="about-area tp-about-bg grey-bg pt-105">
         <div class="container">
@@ -270,7 +268,7 @@
 
     <!-- counter-area-start -->
     <section class="counter-area tp-counter-wrap mb-90">
-        <div class="container">
+        <div class="container-fluid">
             <div class="tp-counter-bg wow fadeInUp" data-wow-delay=".3s" data-background="assets/img/bg/counter-bg.jpg">
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
@@ -286,7 +284,7 @@
                         <h3 class="tp-counter-count mb-10">
                             <span data-purecounter-duration="1" data-purecounter-end="300"  class="purecounter">300</span>
                         </h3>
-                        <p>Professors</p>
+                        <p>Universitys</p>
                     </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -294,7 +292,7 @@
                         <h3 class="tp-counter-count mb-10">
                             <span data-purecounter-duration="1" data-purecounter-end="48"  class="purecounter">48</span>k
                         </h3>
-                        <p>Programs</p>
+                        <p>Schools</p>
                     </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -302,7 +300,7 @@
                         <h3 class="tp-counter-count mb-10">
                             <span data-purecounter-duration="1" data-purecounter-end="2"  class="purecounter">2</span>k
                         </h3>
-                        <p>Research</p>
+                        <p>Colleges</p>
                     </div>
                     </div>
                 </div>
@@ -311,122 +309,6 @@
     </section>
     <!-- counter-area-end -->
 
-
-    <!-- program-area-start -->
-    <section class="program-area mb-75">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="tp-program-wrap wow fadeInUp" data-wow-delay=".3s">
-                    <div class="tp-section text-center mb-55">
-                        <h3 class="tp-section-title"><span> Academic <img class="tp-underline-shape-2 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".4s" src="assets/img/unlerline/program-1-svg-1.svg" alt=""></span> Programs</h3>
-                        <p>Focusing on high education with the best quality.</p>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="swiper tp-program-active wow fadeInUp" data-wow-delay=".6s">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide tp-program-item grey-bg mb-50">
-                            <div class="tp-program-thumb fix">
-                                <a href="university-application-form.html"><img src="assets/images/program/program-thumb-1.jpg" alt="program-thumb"></a>
-                            </div>
-                            <div class="tp-program-content">
-                                <h3 class="tp-program-title"><a href="university-application-form.html">Major in Economics</a></h3>
-                                <p>The Economics Major can be combined <br> with a Major in another subject in order Double Major Degree.</p>
-                                <div class="tp-program-tag">
-                                <p><span><img src="assets/img/icon/program-tag-1.svg" alt="program-icon"></span>Economics</p>
-                                </div>
-                            </div>
-                            <div class="tp-program-btn">
-                                <a href="university-application-form.html">Apply Now</a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide tp-program-item grey-bg mb-50">
-                            <div class="tp-program-thumb fix">
-                                <a href="university-application-form.html"><img src="assets/images/program/program-thumb-2.jpg" alt="program-thumb"></a>
-                            </div>
-                            <div class="tp-program-content">
-                                <h3 class="tp-program-title"><a href="university-application-form.html">Business Media</a></h3>
-                                <p>The Economics Major can be combined <br> with a Major in another subject in order Double Major Degree.</p>
-                                <div class="tp-program-tag">
-                                <p><span><img src="assets/img/icon/program-tag-1.svg" alt="program-icon"></span>Business & Administration</p>
-                                </div>
-                            </div>
-                            <div class="tp-program-btn">
-                                <a href="university-application-form.html">Apply Now</a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide tp-program-item grey-bg mb-50">
-                            <div class="tp-program-thumb fix">
-                                <a href="university-application-form.html"><img src="assets/images/program/program-thumb-3.jpg" alt="program-thumb"></a>
-                            </div>
-                            <div class="tp-program-content">
-                                <h3 class="tp-program-title"><a href="university-application-form.html">Major in Economics</a></h3>
-                                <p>The Economics Major can be combined <br> with a Major in another subject in order Double Major Degree.</p>
-                                <div class="tp-program-tag">
-                                <p><span><img src="assets/img/icon/program-tag-1.svg" alt="program-icon"></span>Sciences</p>
-                                </div>
-                            </div>
-                            <div class="tp-program-btn">
-                                <a href="university-application-form.html">Apply Now</a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide tp-program-item grey-bg mb-50">
-                            <div class="tp-program-thumb fix">
-                                <a href="university-application-form.html"><img src="assets/images/program/program-thumb-1.jpg" alt="program-thumb"></a>
-                            </div>
-                            <div class="tp-program-content">
-                                <h3 class="tp-program-title"><a href="university-application-form.html">Major in Economics</a></h3>
-                                <p>The Economics Major can be combined <br> with a Major in another subject in order Double Major Degree.</p>
-                                <div class="tp-program-tag">
-                                <p><span><img src="assets/img/icon/program-tag-1.svg" alt="program-icon"></span>Economics</p>
-                                </div>
-                            </div>
-                            <div class="tp-program-btn">
-                                <a href="university-application-form.html">Apply Now</a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide tp-program-item grey-bg mb-50">
-                            <div class="tp-program-thumb fix">
-                                <a href="university-application-form.html"><img src="assets/images/program/program-thumb-2.jpg" alt="program-thumb"></a>
-                            </div>
-                            <div class="tp-program-content">
-                                <h3 class="tp-program-title"><a href="university-application-form.html">Business Media</a></h3>
-                                <p>The Economics Major can be combined <br> with a Major in another subject in order Double Major Degree.</p>
-                                <div class="tp-program-tag">
-                                <p><span><img src="assets/img/icon/program-tag-1.svg" alt="program-icon"></span>Business & Administration</p>
-                                </div>
-                            </div>
-                            <div class="tp-program-btn">
-                                <a href="university-application-form.html">Apply Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="tp-program-dot text-center"></div>
-                </div>
-                <div class="col-12">
-                    <div class="tp-program-all text-center">
-                    <p>Explore the most appropriate promgram.​​ <a href="university-program.html">View all Programs <span>
-                        <svg width="10" height="10" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 6H11" stroke="#AB0C2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M6 1L11 6L6 11" stroke="#AB0C2F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </span></a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- program-area-end -->
-
-
-     
     <!-- testimonial-area-start -->
     <section class="testimonial-area tp-testimonial-bg fix p-relative" data-background="assets/images/testimonial/testimonial-bg-2.jpg">
         <div class="tp-testimonial-themebg">
@@ -525,7 +407,6 @@
     </section>
     <!-- testimonial-area-end -->
 
-     
     <!-- blog-area-start -->
     <section class="blog-area grey-bg pt-110 pb-95">
         <div class="container">
@@ -549,12 +430,12 @@
                 <div class="col-lg-6">
                     <div class="tp-blog-item text-center mb-40 wow fadeInLeft" data-wow-delay=".4s">
                     <div class="tp-blog-thumb fix">
-                        <a href="blog-details.html"><img src="assets/images/blog/blog-thumb-1.jpg" alt="blog-thumb"></a>
+                        <a href="{{route('blog-list-details')}}"><img src="assets/images/blog/blog-thumb-1.jpg" alt="blog-thumb"></a>
                     </div>
                     <div class="tp-blog-content">
                         <span class="tp-blog-tag">Video & Tips</span>
                         <h4 class="tp-blog-title">
-                            <a href="blog-details.html">The Importance Of Intrinsic Motivation for Students</a>
+                            <a href="{{route('blog-list-details')}}">The Importance Of Intrinsic Motivation for Students</a>
                         </h4>
                         <div class="tp-blog-meta">
                             <span>
@@ -577,7 +458,7 @@
                             </span>
                         </div>
                         <div class="tp-blog-btn">
-                            <a href="blog-details.html">
+                            <a href="{{route('blog-list-details')}}">
                                 <span class="tp-blog-btn-bg blog-btn-bg"></span>
                                 <span class="tp-blog-btn-border blog-btn-border"></span>
                                 <span class="icon">
@@ -594,14 +475,14 @@
                 <div class="col-lg-6">
                     <div class="tp-blog-item text-center mb-40 wow fadeInRight" data-wow-delay=".4s">
                     <div class="tp-blog-thumb fix">
-                        <a href="blog-details.html">
+                        <a href="{{route('blog-list-details')}}">
                             <img src="assets/images/blog/blog-thumb-2.jpg" alt="blog-thumb">
                         </a>
                     </div>
                     <div class="tp-blog-content">
                         <span class="tp-blog-tag">Video & Tips</span>
                         <h4 class="tp-blog-title">
-                            <a href="blog-details.html">Those Other College Expenses You Aren`t Thinking About</a>
+                            <a href="{{route('blog-list-details')}}">Those Other College Expenses You Aren`t Thinking About</a>
                         </h4>
                         <div class="tp-blog-meta">
                             <span>
@@ -624,7 +505,7 @@
                             </span>
                         </div>
                         <div class="tp-blog-btn">
-                            <a href="blog-details.html">
+                            <a href="{{route('blog-list-details')}}">
                                 <span class="tp-blog-btn-bg blog-btn-bg"></span>
                                 <span class="tp-blog-btn-border blog-btn-border"></span>
                                 <span class="icon">
@@ -642,51 +523,6 @@
         </div>
     </section>
     <!-- blog-area-end -->
-
-    
-    <!-- instagram-area-start -->
-    <div class="instagram-area tp-instagram-wrapper grey-bg pb-20">
-        <div class="swiper tp-instagram-active">
-            <div class="swiper-wrapper wow fadeInUp" data-wow-delay=".2s">
-                <div class="swiper-slide tp-instagram-item">
-                    <a class="popup-image" href="assets/images/instagram/instagram-thumb-1.jpg">
-                    <img src="assets/images/instagram/instagram-thumb-1.jpg" alt=""></a>
-                    <div class="tp-instagram-shape">
-                    <img src="assets/img/instagram/instagram-shape.svg" alt="">
-                    </div>
-                </div>
-                <div class="swiper-slide tp-instagram-item">
-                    <a class="popup-image" href="assets/images/instagram/instagram-thumb-2.jpg">
-                    <img src="assets/images/instagram/instagram-thumb-2.jpg" alt=""></a>
-                    <div class="tp-instagram-shape">
-                    <img src="assets/img/instagram/instagram-shape.svg" alt="">
-                    </div>
-                </div>
-                <div class="swiper-slide tp-instagram-item">
-                    <a class="popup-image" href="assets/images/instagram/instagram-thumb-3.jpg">
-                    <img src="assets/images/instagram/instagram-thumb-3.jpg" alt=""></a>
-                    <div class="tp-instagram-shape">
-                    <img src="assets/img/instagram/instagram-shape.svg" alt="">
-                    </div>
-                </div>
-                <div class="swiper-slide tp-instagram-item">
-                    <a class="popup-image" href="assets/images/instagram/instagram-thumb-4.jpg">
-                    <img src="assets/images/instagram/instagram-thumb-4.jpg" alt=""></a>
-                    <div class="tp-instagram-shape">
-                    <img src="assets/img/instagram/instagram-shape.svg" alt="">
-                    </div>
-                </div>
-                <div class="swiper-slide tp-instagram-item">
-                    <a class="popup-image" href="assets/images/instagram/instagram-thumb-5.jpg">
-                    <img src="assets/images/instagram/instagram-thumb-5.jpg" alt=""></a>
-                    <div class="tp-instagram-shape">
-                    <img src="assets/img/instagram/instagram-shape.svg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- instagram-area-end -->
 
     <!-- cta-area-start -->
     <section class="cta-area tp-cta-bg grey-bg" data-background="assets/img/cta/cta-bg-1.jpg">
@@ -721,4 +557,5 @@
         </div>
     </section>
     <!-- cta-area-end -->
+
 </div>

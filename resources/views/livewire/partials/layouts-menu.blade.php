@@ -271,7 +271,7 @@
                               </li>
                               
                               <li class="tp-static">
-                                 <a class="tp-static" href="blog-stories.html">Blog</a>
+                                 <a class="tp-static" href="{{route('blog-list')}}" wire:navigate>Blog</a>
                               </li>
                            </ul>
                         </nav>

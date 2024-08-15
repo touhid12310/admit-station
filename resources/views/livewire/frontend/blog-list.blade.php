@@ -1,6 +1,6 @@
 <div>
     <!-- event breadcrumb start -->
-    <section class="tp-breadcrumb__area pt-60 pb-60 p-relative z-index-1 fix">
+    <section class="tp-breadcrumb__area pt-200 pb-60 p-relative z-index-1 fix">
         <div class="tp-breadcrumb__bg" data-background="assets/img/breadcrumb/breadcrumb-bg.jpg"></div>
         <div class="container">
            <div class="row align-items-center">
@@ -12,7 +12,7 @@
                        </svg></a></span>
                        <span>Our Blog</span>
                     </div>
-                    <h3 class="tp-breadcrumb__title white">Right Sidebar</h3>
+                    <h3 class="tp-breadcrumb__title white" style="color: #AB0C2F">Right Sidebar</h3>
                  </div>
               </div>
            </div>
@@ -39,7 +39,7 @@
                                 <a href="#">Education</a>
                                 <span>August 24, 2023</span>
                              </div>
-                             <h3 class="tp-postbox-item-list-title"><a href="blog-details.html">The oldest trick in the book</a></h3>
+                             <h3 class="tp-postbox-item-list-title" style="color: #AB0C2F"><a href="blog-details.html">The oldest trick in the book</a></h3>
                              <p>Aliquam eget turpis vehicula, auctor elit ac, rutrum turpis. Donec enim elit, interdum eu tellus quis, fermentum vehicula dolor.Phasellus scelerisque, massa ut venenatis tristique […]</p>
                              <div class="tp-postbox-btn">
                                 <a href="blog-details.html">Read More <span><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,7 +61,7 @@
                                 <a class="yeallow" href="#">Education</a>
                                 <span>August 24, 2023</span>
                              </div>
-                             <h3 class="tp-postbox-item-list-title"><a href="blog-details.html">Make you love and hate Education.</a></h3>
+                             <h3 class="tp-postbox-item-list-title" style="color: #AB0C2F"><a href="blog-details.html">Make you love and hate Education.</a></h3>
                              <p>Aliquam eget turpis vehicula, auctor elit ac, rutrum turpis. Donec enim elit, interdum eu tellus quis, fermentum vehicula dolor.Phasellus scelerisque, massa ut venenatis tristique […]</p>
                              <div class="tp-postbox-btn">
                                 <a href="blog-details.html">Read More <span><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -105,10 +105,10 @@
                                 <a class="sky" href="#">Education</a>
                                 <span>August 24, 2023</span>
                              </div>
-                             <h3 class="tp-postbox-item-list-title"><a href="blog-details.html">The Modern Rules Of Education.</a></h3>
+                             <h3 class="tp-postbox-item-list-title" style="color: #AB0C2F"><a href="blog-details.html">The Modern Rules Of Education.</a></h3>
                              <p>Aliquam eget turpis vehicula, auctor elit ac, rutrum turpis. Donec enim elit, interdum eu tellus quis, fermentum vehicula dolor.Phasellus scelerisque, massa ut venenatis tristique […]</p>
                              <div class="tp-postbox-btn">
-                                <a href="blog-details.html">Read More <span><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <a href="blog-details.html" style="hover-color: #AB0C2F">Read More <span><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                    <path d="M1.5 11L6.5 6L1.5 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                    </svg></span></a>
                              </div>
@@ -127,7 +127,7 @@
                                 <a class="yeallow" href="#">Education</a>
                                 <span>August 24, 2023</span>
                              </div>
-                             <h3 class="tp-postbox-item-list-title"><a href="blog-details.html">Make you love and hate Education.</a></h3>
+                             <h3 class="tp-postbox-item-list-title" style="color: #AB0C2F"><a href="blog-details.html">Make you love and hate Education.</a></h3>
                              <p>Aliquam eget turpis vehicula, auctor elit ac, rutrum turpis. Donec enim elit, interdum eu tellus quis, fermentum vehicula dolor.Phasellus scelerisque, massa ut venenatis tristique […]</p>
                              <div class="tp-postbox-btn">
                                 <a href="blog-details.html">Read More <span><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -165,7 +165,7 @@
                                 <a href="#">Education</a>
                                 <span>August 24, 2023</span>
                              </div>
-                             <h3 class="tp-postbox-item-list-title"><a href="blog-details.html">The Latest Trend In Education.</a></h3>
+                             <h3 class="tp-postbox-item-list-title" style="color: #AB0C2F"><a href="blog-details.html">The Latest Trend In Education.</a></h3>
                              <p>Aliquam eget turpis vehicula, auctor elit ac, rutrum turpis. Donec enim elit, interdum eu tellus quis, fermentum vehicula dolor.Phasellus scelerisque, massa ut venenatis tristique […]</p>
                              <div class="tp-postbox-btn">
                                 <a href="blog-details.html">Read More <span><svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -232,7 +232,7 @@
                     </div>
                     <div class="tp-sidebar-widget mb-50">
                        <div class="tp-sidebar-content">
-                          <h5 class="tp-sidebar-widget-title">Categories</h5>
+                          <h5 class="tp-sidebar-widget-title" style="color: #AB0C2F">Categories</h5>
                           <ul>
                           <li><a href="blog-standard.html">Articles <span>(8)</span></a></li>
                           <li><a href="blog-standard.html">Business <span>(4)</span></a></li>
@@ -244,7 +244,7 @@
                        </div>
                     </div>
                     <div class="tp-sidebar-widget mb-50">
-                       <h5 class="tp-sidebar-widget-title">Recent Posts</h5>
+                       <h5 class="tp-sidebar-widget-title" style="color: #AB0C2F">Recent Posts</h5>
                        <div class="tp-recent-post-content">
                           <span class="tp-recent-post-span">UI Design</span>
                           <h5 class="tp-recent-post-title"><a href="blog-details.html">Google without having to hire <br>
@@ -273,7 +273,7 @@
                     </div>
                     <div class="tp-sidebar-widget mb-50">
                        <div class="tp-sidebar-content">
-                          <h5 class="tp-sidebar-widget-title">Tag</h5>
+                          <h5 class="tp-sidebar-widget-title" style="color: #AB0C2F">Tag</h5>
                           <div class="tagcloud">
                              <a href="#">News</a>
                              <a href="#">Counseling</a>

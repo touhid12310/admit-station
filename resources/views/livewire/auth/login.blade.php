@@ -24,7 +24,7 @@
            <div class="tp-login-register-wrapper d-flex justify-content-center align-items-center">
               <div class="tp-login-from-box">
                  <div class="tp-login-from-heading text-center">
-                    <h4 class="tp-login-from-title">Sign in</h4>
+                    <h4 class="tp-login-from-title" style="color: #AB0C2F">Sign in</h4>
                     <p>Dont have an account? <a href="{{route('register')}}">Create Now</a></p>
                  </div>
                  <form wire:submit.prevent='save' class="mb-3">
@@ -78,7 +78,7 @@
                               </div>
                            </div>
                            <div class="tp-login-from-btn">
-                              <button class="tp-btn-inner w-100 text-center">Sign In</button>
+                              <button class="tp-btn-inner w-100 text-center" style="background-color: #AB0C2F">Sign In</button>
                            </div>
                         </div>
                      </div>
