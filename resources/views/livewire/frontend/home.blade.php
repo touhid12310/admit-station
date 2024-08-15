@@ -101,7 +101,7 @@
                         <div class="tp-service-icon">
                             <span><img src="assets/img/icon/service/service-icon-1.svg" alt="service-icon"></span>
                         </div>
-                        <h4 class="tp-service-title"><a href="university-about.html">Why study at <br> Acadia?</a></h4>
+                        <h4 class="tp-service-title"><a href="university-about.html">Why study at <br> Abroad?</a></h4>
                         <div class="tp-service-btn">
                             <a href="university-about.html"><span><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 6H11" stroke="#161613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -205,10 +205,10 @@
                     <div class="tp-about-wrap mb-60 wow fadeInLeft" data-wow-delay=".3s">
                     <div class="tp-about-thumb-wrapper">
                         <div class="tp-about-thumb-1">
-                            {{-- <img src="assets/images/about-section-img-1.jpg" alt=""> --}}
+                            <img src="assets/images/about/about-thumb-1.jpg" alt="">
                         </div>
                         <div class="tp-about-thumb-2">
-                            <img src="assets/images/about-section-img-1.jpg" alt="">
+                            <img src="assets/images/about/about-thumb-2.jpg" alt="">
                         </div>
                     </div>
                     <div class="tp-about-exprience">
@@ -269,7 +269,6 @@
         </div>
     </section>
     <!-- about-area-end -->
-
 
     <!-- counter-area-start -->
     <section class="counter-area tp-counter-wrap mb-90">
@@ -334,7 +333,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide tp-program-item grey-bg mb-50">
                             <div class="tp-program-thumb fix">
-                                <a href="university-application-form.html"><img src="assets/img/program/program-thumb-1.jpg" alt="program-thumb"></a>
+                                <a href="university-application-form.html"><img src="assets/images/program/program-thumb-1.jpg" alt="program-thumb"></a>
                             </div>
                             <div class="tp-program-content">
                                 <h3 class="tp-program-title"><a href="university-application-form.html">Major in Economics</a></h3>
@@ -349,7 +348,7 @@
                         </div>
                         <div class="swiper-slide tp-program-item grey-bg mb-50">
                             <div class="tp-program-thumb fix">
-                                <a href="university-application-form.html"><img src="assets/img/program/program-thumb-2.jpg" alt="program-thumb"></a>
+                                <a href="university-application-form.html"><img src="assets/images/program/program-thumb-2.jpg" alt="program-thumb"></a>
                             </div>
                             <div class="tp-program-content">
                                 <h3 class="tp-program-title"><a href="university-application-form.html">Business Media</a></h3>
@@ -364,7 +363,7 @@
                         </div>
                         <div class="swiper-slide tp-program-item grey-bg mb-50">
                             <div class="tp-program-thumb fix">
-                                <a href="university-application-form.html"><img src="assets/img/program/program-thumb-3.jpg" alt="program-thumb"></a>
+                                <a href="university-application-form.html"><img src="assets/images/program/program-thumb-3.jpg" alt="program-thumb"></a>
                             </div>
                             <div class="tp-program-content">
                                 <h3 class="tp-program-title"><a href="university-application-form.html">Major in Economics</a></h3>
@@ -379,7 +378,7 @@
                         </div>
                         <div class="swiper-slide tp-program-item grey-bg mb-50">
                             <div class="tp-program-thumb fix">
-                                <a href="university-application-form.html"><img src="assets/img/program/program-thumb-1.jpg" alt="program-thumb"></a>
+                                <a href="university-application-form.html"><img src="assets/images/program/program-thumb-1.jpg" alt="program-thumb"></a>
                             </div>
                             <div class="tp-program-content">
                                 <h3 class="tp-program-title"><a href="university-application-form.html">Major in Economics</a></h3>
@@ -394,7 +393,7 @@
                         </div>
                         <div class="swiper-slide tp-program-item grey-bg mb-50">
                             <div class="tp-program-thumb fix">
-                                <a href="university-application-form.html"><img src="assets/img/program/program-thumb-2.jpg" alt="program-thumb"></a>
+                                <a href="university-application-form.html"><img src="assets/images/program/program-thumb-2.jpg" alt="program-thumb"></a>
                             </div>
                             <div class="tp-program-content">
                                 <h3 class="tp-program-title"><a href="university-application-form.html">Business Media</a></h3>
@@ -429,166 +428,9 @@
     <!-- program-area-end -->
 
 
-    <!-- event-area -->
-    <section class="event-area grey-bg pt-85 pb-110">
-        <div class="container"> 
-            <div class="row align-items-end">
-                <div class="col-xl-5 col-md-8">
-                    <div class="tp-event-section mb-60 wow fadeInUp" data-wow-delay=".2s">
-                    <div class="tp-section">
-                        <h3 class="tp-section-2-title">Recent & Upcoming 
-                        <span> Events <img class="tp-underline-shape-3 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".4s" src="assets/img/unlerline/event-1-svg-1.svg" alt="">
-                        </span>
-                        </h3>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-xl-7 col-md-4">
-                    <div class="tp-event-btn text-md-end mb-70">
-                    <a class="tp-btn" href="event.html">See More Events 
-                        <span>
-                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 7H13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M7 1L13 7L7 13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </span>
-                    </a>
-                    </div>
-                </div>
-            </div>
-            <div class="tp-event-wrap wow fadeInUp" data-wow-delay=".3s">
-                <div class="tp-event-item">
-                    <div class="row align-items-center">
-                    <div class="col-md-2">
-                        <div class="tp-event-list">
-                            <h4 class="tp-event-list-count">08</h4>
-                            <span>Des, 2024</span>
-                        </div>
-                    </div>
-                    <div class="col-md-9">
-                        <div class="tp-event-content">
-                            <h3 class="tp-event-title"><a class="tp-img-reveal tp-img-reveal-item" href="event-details.html" data-img="assets/img/event/event-thumb-1.jpg" data-fx="1">Street Performance: Call for Artist</a></h3>
-                            <div class="tp-event-info">
-                                <span><i class="fa-sharp fa-light fa-clock"></i>8:00AM - 10:00AM</span>
-                                <span><i class="fa-sharp fa-light fa-location-dot"></i>United States</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="tp-event-arrow text-lg-end">
-                            <a href="event-details.html">
-                                <span>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 10H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M10 1L19 10L10 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="tp-event-item">
-                    <div class="row align-items-center">
-                    <div class="col-md-2">
-                        <div class="tp-event-list">
-                            <h4 class="tp-event-list-count">12</h4>
-                            <span>Aug, 2024</span>
-                        </div>
-                    </div>
-                    <div class="col-md-9">
-                        <div class="tp-event-content">
-                            <h3 class="tp-event-title"><a class="tp-img-reveal tp-img-reveal-item" href="event-details.html" data-img="assets/img/event/event-thumb-2.jpg" data-fx="1">The Middle East in the Twentieth Century</a></h3>
-                            <div class="tp-event-info">
-                                <span><i class="fa-sharp fa-light fa-clock"></i>8:00AM - 10:00AM</span>
-                                <span><i class="fa-sharp fa-light fa-location-dot"></i>United States</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="tp-event-arrow text-lg-end">
-                            <a href="event-details.html">
-                                <span>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 10H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M10 1L19 10L10 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="tp-event-item">
-                    <div class="row align-items-center">
-                    <div class="col-md-2">
-                        <div class="tp-event-list">
-                            <h4 class="tp-event-list-count">03</h4>
-                            <span>Sept, 2024</span>
-                        </div>
-                    </div>
-                    <div class="col-md-9">
-                        <div class="tp-event-content">
-                            <h3 class="tp-event-title"><a class="tp-img-reveal tp-img-reveal-item" href="event-details.html" data-img="assets/img/event/event-thumb-3.jpg" data-fx="1">Global Education Fall Meeting for Everyone</a></h3>
-                            <div class="tp-event-info">
-                                <span><i class="fa-sharp fa-light fa-clock"></i>8:00AM - 10:00AM</span>
-                                <span><i class="fa-sharp fa-light fa-location-dot"></i>United States</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="tp-event-arrow text-lg-end">
-                            <a href="event-details.html">
-                                <span>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 10H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M10 1L19 10L10 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="tp-event-item">
-                    <div class="row align-items-center">
-                    <div class="col-md-2">
-                        <div class="tp-event-list">
-                            <h4 class="tp-event-list-count">20</h4>
-                            <span>jun, 2024</span>
-                        </div>
-                    </div>
-                    <div class="col-md-9">
-                        <div class="tp-event-content">
-                            <h3 class="tp-event-title"><a class="tp-img-reveal tp-img-reveal-item" href="event-details.html" data-img="assets/img/event/event-thumb-4.jpg" data-fx="1">Painting Art Contest 2020</a></h3>
-                            <div class="tp-event-info">
-                                <span><i class="fa-sharp fa-light fa-clock"></i>8:00AM - 10:00AM</span>
-                                <span><i class="fa-sharp fa-light fa-location-dot"></i>United States</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-1">
-                        <div class="tp-event-arrow text-lg-end">
-                            <a href="event-details.html">
-                                <span>
-                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 10H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M10 1L19 10L10 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- event-area-end -->
-
      
     <!-- testimonial-area-start -->
-    <section class="testimonial-area tp-testimonial-bg fix p-relative" data-background="assets/img/bg/testimonial-bg-2.jpg">
+    <section class="testimonial-area tp-testimonial-bg fix p-relative" data-background="assets/images/testimonial/testimonial-bg-2.jpg">
         <div class="tp-testimonial-themebg">
             <span></span>
             <div class="tp-testimonial-themebg-shape">
@@ -621,20 +463,20 @@
                     </div>
                     <div class="tp-testimonial-shape">
                         <div class="tp-testimonial-shape-1">
-                            <img src="assets/img/testimonial/testimonial-shape-1.png" alt="testimonial-shape">
+                            <img src="assets/images/testimonial/testimonial-shape-1.png" alt="testimonial-shape">
                         </div>
                         <div class="tp-testimonial-shape-2">
-                            <img src="assets/img/testimonial/testimonial-shape-2.png" alt="testimonial-shape">
+                            <img src="assets/images/testimonial/testimonial-shape-2.png" alt="testimonial-shape">
                         </div>
                         <div class="tp-testimonial-shape-3 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".4s">
-                            <img src="assets/img/testimonial/testimonial-shape-3.svg" alt="testimonial-shape">
+                            <img src="assets/images/testimonial/testimonial-shape-3.svg" alt="testimonial-shape">
                         </div>
                     </div>
                     <div class="swiper tp-testimonial-active">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide tp-testimonial-item">
                                 <div class="tp-testimonial-avatar">
-                                <img src="assets/img/testimonial/testimonial-avatar-1.png" alt="testimonial-avatar">
+                                <img src="assets/images/testimonial/test-2-avatar-4.png" alt="testimonial-avatar">
                                 </div>
                                 <div class="tp-testimonial-content">
                                 <p>“Sollicitudin venenatis risus dolor in dictumst faucibus egestas.
@@ -648,7 +490,7 @@
                             </div>
                             <div class="swiper-slide tp-testimonial-item">
                                 <div class="tp-testimonial-avatar">
-                                <img src="assets/img/testimonial/test-2-avatar-4.png" alt="testimonial-avatar">
+                                <img src="assets/images/testimonial/test-2-avatar-5.png" alt="testimonial-avatar">
                                 </div>
                                 <div class="tp-testimonial-content">
                                 <p>“Sollicitudin venenatis risus dolor in dictumst faucibus egestas.
@@ -709,7 +551,7 @@
                 <div class="col-lg-6">
                     <div class="tp-blog-item text-center mb-40 wow fadeInLeft" data-wow-delay=".4s">
                     <div class="tp-blog-thumb fix">
-                        <a href="blog-details.html"><img src="assets/img/blog/blog-thumb-1.jpg" alt="blog-thumb"></a>
+                        <a href="blog-details.html"><img src="assets/images/blog/blog-thumb-1.jpg" alt="blog-thumb"></a>
                     </div>
                     <div class="tp-blog-content">
                         <span class="tp-blog-tag">Video & Tips</span>
@@ -755,7 +597,7 @@
                     <div class="tp-blog-item text-center mb-40 wow fadeInRight" data-wow-delay=".4s">
                     <div class="tp-blog-thumb fix">
                         <a href="blog-details.html">
-                            <img src="assets/img/blog/blog-thumb-2.jpg" alt="blog-thumb">
+                            <img src="assets/images/blog/blog-thumb-2.jpg" alt="blog-thumb">
                         </a>
                     </div>
                     <div class="tp-blog-content">
@@ -809,36 +651,36 @@
         <div class="swiper tp-instagram-active">
             <div class="swiper-wrapper wow fadeInUp" data-wow-delay=".2s">
                 <div class="swiper-slide tp-instagram-item">
-                    <a class="popup-image" href="assets/img/instagram/instagram-thumb-1.jpg">
-                    <img src="assets/img/instagram/instagram-thumb-1.jpg" alt=""></a>
+                    <a class="popup-image" href="assets/images/instagram/instagram-thumb-1.jpg">
+                    <img src="assets/images/instagram/instagram-thumb-1.jpg" alt=""></a>
                     <div class="tp-instagram-shape">
                     <img src="assets/img/instagram/instagram-shape.svg" alt="">
                     </div>
                 </div>
                 <div class="swiper-slide tp-instagram-item">
-                    <a class="popup-image" href="assets/img/instagram/instagram-thumb-2.jpg">
-                    <img src="assets/img/instagram/instagram-thumb-2.jpg" alt=""></a>
+                    <a class="popup-image" href="assets/images/instagram/instagram-thumb-2.jpg">
+                    <img src="assets/images/instagram/instagram-thumb-2.jpg" alt=""></a>
                     <div class="tp-instagram-shape">
                     <img src="assets/img/instagram/instagram-shape.svg" alt="">
                     </div>
                 </div>
                 <div class="swiper-slide tp-instagram-item">
-                    <a class="popup-image" href="assets/img/instagram/instagram-thumb-3.jpg">
-                    <img src="assets/img/instagram/instagram-thumb-3.jpg" alt=""></a>
+                    <a class="popup-image" href="assets/images/instagram/instagram-thumb-3.jpg">
+                    <img src="assets/images/instagram/instagram-thumb-3.jpg" alt=""></a>
                     <div class="tp-instagram-shape">
                     <img src="assets/img/instagram/instagram-shape.svg" alt="">
                     </div>
                 </div>
                 <div class="swiper-slide tp-instagram-item">
-                    <a class="popup-image" href="assets/img/instagram/instagram-thumb-4.jpg">
-                    <img src="assets/img/instagram/instagram-thumb-4.jpg" alt=""></a>
+                    <a class="popup-image" href="assets/images/instagram/instagram-thumb-4.jpg">
+                    <img src="assets/images/instagram/instagram-thumb-4.jpg" alt=""></a>
                     <div class="tp-instagram-shape">
                     <img src="assets/img/instagram/instagram-shape.svg" alt="">
                     </div>
                 </div>
                 <div class="swiper-slide tp-instagram-item">
-                    <a class="popup-image" href="assets/img/instagram/instagram-thumb-5.jpg">
-                    <img src="assets/img/instagram/instagram-thumb-5.jpg" alt=""></a>
+                    <a class="popup-image" href="assets/images/instagram/instagram-thumb-5.jpg">
+                    <img src="assets/images/instagram/instagram-thumb-5.jpg" alt=""></a>
                     <div class="tp-instagram-shape">
                     <img src="assets/img/instagram/instagram-shape.svg" alt="">
                     </div>

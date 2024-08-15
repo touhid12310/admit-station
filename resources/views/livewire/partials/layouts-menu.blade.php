@@ -303,9 +303,16 @@
                               </svg>
                            </button>
                         </div>
-                        <div class="tp-header-btn d-none d-md-block ml-30">
-                           <a href="{{ route('login')}}">Apply Now </a>
-                        </div>
+                        @auth
+                           <div class="tp-header-btn d-none d-md-block ml-30">
+                              <a href="{{ route('student-dashboard')}}">Dashboad</a>
+                           </div>
+                        @else  
+                           <div class="tp-header-btn d-none d-md-block ml-30">
+                              <a href="{{ route('login')}}">Apply Now </a>
+                           </div>
+                        @endauth
+                        
                         <div class="tp-header-bar d-xl-none ml-30">
                            <button class="offcanvas-open-btn"><i class="fa-solid fa-bars"></i></button>
                         </div>

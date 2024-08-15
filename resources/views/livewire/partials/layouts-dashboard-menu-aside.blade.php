@@ -6,7 +6,7 @@
                     <ul>
                     <li class="tp-user-menu-title">Welcome</li>
                     <li>
-                        <a class="{{ request()->is('student-dashboard') ? 'active' : '' }}" 
+                        <a class="{{ request()->is('student-dashboard') ? 'active':'' }}" 
                             href="{{ route('student-dashboard')}}" wire:navigate>
                             <span>
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

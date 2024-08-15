@@ -9,10 +9,10 @@ use App\Livewire\Frontend\Faqs;
 use App\Livewire\Frontend\About;
 use App\Livewire\Frontend\Home;
 use  App\Livewire\Frontend\PrivacyPolicy;
-use App\Livewire\Dashboard\StudentDashboard;
-use App\Livewire\Dashboard\StudentProfile;
-use App\Livewire\Dashboard\StudentReviews;
-use App\Livewire\Dashboard\StudentSettingProfile;
+use App\Livewire\Student\StudentDashboard;
+use App\Livewire\Student\StudentProfile;
+use App\Livewire\Student\StudentReviews;
+use App\Livewire\Student\StudentSettingProfile;
 use  App\Livewire\Frontend\UniversityList;
 use Illuminate\Support\Facades\Route;
 
