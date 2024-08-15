@@ -7,7 +7,7 @@
            <div class="container">
               <div class="row">
                  <div class="col-lg-12">
-                    <div class="tp-dashboard-banner-bg mt-30" data-background="assets/img/dashboard/bg/dashboard-bg-1.jpg" style="background-image: url(assets/img/dashboard/bg/dashboard-bg-1.jpg);">
+                    <div class="tp-dashboard-banner-bg mt-30" data-background="assets/img/dashboard/bg/dashboard-bg-1.jpg">
                        <div class="tp-instructor-wrap d-flex justify-content-between">
                           <div class="tp-instructor-info d-flex">
                              <div class="tp-instructor-avatar">

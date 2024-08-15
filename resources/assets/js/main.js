@@ -145,23 +145,26 @@
 
     ////////////////////////////////////////////////////
     // 05. Common Js
-    $("[data-background").each(function () {
-        $(this).css(
-            "background-image",
-            "url( " + $(this).attr("data-background") + "  )"
-        );
-    });
 
-    $("[data-width]").each(function () {
-        $(this).css("width", $(this).attr("data-width"));
-    });
+    document.addEventListener("livewire:navigated", function () {
+        $("[data-background").each(function () {
+            $(this).css(
+                "background-image",
+                "url( " + $(this).attr("data-background") + "  )"
+            );
+        });
 
-    $("[data-bg-color]").each(function () {
-        $(this).css("background-color", $(this).attr("data-bg-color"));
-    });
+        $("[data-width]").each(function () {
+            $(this).css("width", $(this).attr("data-width"));
+        });
 
-    $("[data-text-color]").each(function () {
-        $(this).css("color", $(this).attr("data-text-color"));
+        $("[data-bg-color]").each(function () {
+            $(this).css("background-color", $(this).attr("data-bg-color"));
+        });
+
+        $("[data-text-color]").each(function () {
+            $(this).css("color", $(this).attr("data-text-color"));
+        });
     });
 
     ////////////////////////////////////////////////////
@@ -336,108 +339,115 @@
         });
     });
 
-    // home one
-    var slider = new Swiper(".tp-slider-active", {
-        slidesPerView: 1,
-        effect: "fade",
-        loop: true,
-        autoplay: {
-            delay: 3500,
-        },
-        // Navigation arrows
-        pagination: {
-            el: ".tp-program-dot",
-            clickable: true,
-        },
+    document.addEventListener("livewire:navigated", function () {
+        // home one
+        var slider = new Swiper(".tp-slider-active", {
+            slidesPerView: 1,
+            effect: "fade",
+            loop: true,
+            autoplay: {
+                delay: 3500,
+            },
+            // Navigation arrows
+            pagination: {
+                el: ".tp-program-dot",
+                clickable: true,
+            },
+        });
     });
 
-    // home one
-    var slider = new Swiper(".tp-program-active", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        loop: true,
-        // Navigation arrows
-        pagination: {
-            el: ".tp-program-dot",
-            clickable: true,
-        },
-        breakpoints: {
-            1200: {
-                slidesPerView: 3,
+    document.addEventListener("livewire:navigated", function () {
+        // academic program
+        var slider = new Swiper(".tp-program-active", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            // Navigation arrows
+            pagination: {
+                el: ".tp-program-dot",
+                clickable: true,
             },
-            992: {
-                slidesPerView: 3,
+            breakpoints: {
+                1200: {
+                    slidesPerView: 3,
+                },
+                992: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                576: {
+                    slidesPerView: 1,
+                },
+                0: {
+                    slidesPerView: 1,
+                },
             },
-            768: {
-                slidesPerView: 2,
-            },
-            576: {
-                slidesPerView: 1,
-            },
-            0: {
-                slidesPerView: 1,
-            },
-        },
+        });
     });
 
-    // home one
-    var swiper = new Swiper(".tp-testimonial-active", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        loop: true,
-        // Navigation arrows
-        navigation: {
-            nextEl: ".tp-testimonial-next",
-            prevEl: ".tp-testimonial-prev",
-        },
-        autoplay: {
-            delay: 2000,
-        },
-        breakpoints: {
-            1200: {
-                slidesPerView: 1,
+    document.addEventListener("livewire:navigated", function () {
+        var swiper = new Swiper(".tp-testimonial-active", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            // Navigation arrows
+            navigation: {
+                nextEl: ".tp-testimonial-next",
+                prevEl: ".tp-testimonial-prev",
             },
-            992: {
-                slidesPerView: 1,
+            autoplay: {
+                delay: 2000,
             },
-            768: {
-                slidesPerView: 1,
+            breakpoints: {
+                1200: {
+                    slidesPerView: 1,
+                },
+                992: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 1,
+                },
+                576: {
+                    slidesPerView: 1,
+                },
+                0: {
+                    slidesPerView: 1,
+                },
             },
-            576: {
-                slidesPerView: 1,
-            },
-            0: {
-                slidesPerView: 1,
-            },
-        },
+        });
     });
 
-    // home one
-    var swiper = new Swiper(".tp-instagram-active", {
-        slidesPerView: 5,
-        spaceBetween: 10,
-        freeMode: false,
-        loop: true,
-        autoplay: {
-            delay: 3500,
-        },
-        breakpoints: {
-            1200: {
-                slidesPerView: 5,
+    document.addEventListener("livewire:navigated", function () {
+        // instagram
+        var swiper = new Swiper(".tp-instagram-active", {
+            slidesPerView: 5,
+            spaceBetween: 10,
+            freeMode: false,
+            loop: true,
+            autoplay: {
+                delay: 3500,
             },
-            992: {
-                slidesPerView: 4,
+            breakpoints: {
+                1200: {
+                    slidesPerView: 5,
+                },
+                992: {
+                    slidesPerView: 4,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                576: {
+                    slidesPerView: 2,
+                },
+                0: {
+                    slidesPerView: 2,
+                },
             },
-            768: {
-                slidesPerView: 3,
-            },
-            576: {
-                slidesPerView: 2,
-            },
-            0: {
-                slidesPerView: 2,
-            },
-        },
+        });
     });
 
     // campus life
