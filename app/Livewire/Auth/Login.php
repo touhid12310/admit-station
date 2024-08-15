@@ -31,6 +31,10 @@ class Login extends Component
     }
     public function render()
     {
+        if(auth()->check()){
+            $this->redirectRoute('student-dashboard');
+        }
+
         return view('livewire.auth.login');
     }
 
