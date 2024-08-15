@@ -450,58 +450,62 @@
         });
     });
 
-    // campus life
-    var swiper = new Swiper(".tp-campus-life-active", {
-        slidesPerView: "auto",
-        spaceBetween: 130,
-        loop: true,
-        navigation: {
-            nextEl: ".tp-campus-next",
-            prevEl: ".tp-campus-prev",
-        },
-        breakpoints: {
-            1200: {
-                spaceBetween: 130,
+    document.addEventListener("livewire:navigated", function () {
+        // campus life
+        var swiper = new Swiper(".tp-campus-life-active", {
+            slidesPerView: "auto",
+            spaceBetween: 130,
+            loop: true,
+            navigation: {
+                nextEl: ".tp-campus-next",
+                prevEl: ".tp-campus-prev",
             },
-            768: {
-                spaceBetween: 80,
+            breakpoints: {
+                1200: {
+                    spaceBetween: 130,
+                },
+                768: {
+                    spaceBetween: 80,
+                },
+                400: {
+                    spaceBetween: 50,
+                },
             },
-            400: {
-                spaceBetween: 50,
-            },
-        },
+        });
     });
 
-    // home Two
-    var slider = new Swiper(".tp-team-2-active", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        loop: true,
-        autoplay: {
-            delay: 5000,
-        },
-        // Navigation arrows
-        navigation: {
-            nextEl: ".tp-team-2-next",
-            prevEl: ".tp-team-2-prev",
-        },
-        breakpoints: {
-            1200: {
-                slidesPerView: 4,
+    document.addEventListener("livewire:navigated", function () {
+        // home Two
+        var slider = new Swiper(".tp-team-2-active", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 5000,
             },
-            992: {
-                slidesPerView: 3,
+            // Navigation arrows
+            navigation: {
+                nextEl: ".tp-team-2-next",
+                prevEl: ".tp-team-2-prev",
             },
-            768: {
-                slidesPerView: 2,
+            breakpoints: {
+                1200: {
+                    slidesPerView: 4,
+                },
+                992: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                576: {
+                    slidesPerView: 2,
+                },
+                0: {
+                    slidesPerView: 1,
+                },
             },
-            576: {
-                slidesPerView: 2,
-            },
-            0: {
-                slidesPerView: 1,
-            },
-        },
+        });
     });
 
     // home Two
