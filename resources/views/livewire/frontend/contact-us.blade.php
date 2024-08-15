@@ -1,8 +1,6 @@
 <div>
      <!-- contact area start -->
      <section class="tp-contact-area tp-contact-p fix p-relative pt-150 pb-125">
-        <div class="tp-contact-bg" data-background="assets/images/contact-image.jpg"></div>
-        <div class="tp-contact-bg" data-bg-color="#57595F"></div>
         <div class="tp-contact-shape">
            <span>
               <svg width="1920" height="559" viewBox="0 0 1920 559" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -17,15 +15,15 @@
         <div class="tp-contact-shape-2">
            <img src="assets/img/live/contact-shape-2.svg" alt="">
         </div>
-        <div class="container">
+        <div class="container ">
            <div class="row justify-content-center">
               <div class="col-lg-10">
                  <div class="tp-contact-wrap p-relative">
                     <div class="tp-contact-heading text-center">
-                       <h3 class="tp-contact-title">Get in Touch</h3>
+                       <h3 class="tp-contact-title ">Get in Touch</h3>
                        <p>We are here to answer any question you may have.</p>
                     </div>
-                    <div class="tp-contact-from-box">
+                    <div class="tp-contact-from-box shadow-lg">
                        <h3 class="tp-contact-from-title">Send a Message 👍🏻</h3>
                        <form id="contact-form" action="assets/mail.php" method="post">
                           <div class="tp-contact-input-form">

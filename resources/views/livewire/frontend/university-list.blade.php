@@ -1,19 +1,18 @@
 <div>
-
+    @livewire('partials.layouts-pre-loader')
     <!-- event breadcrumb start -->
     <section class="tp-breadcrumb__area pt-60 pb-60 p-relative z-index-1 fix">
-        <div class="tp-breadcrumb__bg" data-background="assets/images/hero-image-1.jpg"></div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-sm-12">
-                <div class="tp-breadcrumb__content text-white">
+                <div class="tp-breadcrumb__content">
                     <div class="tp-breadcrumb__list pt-120">
-                        <span><a href="index.html"><svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <span><a href="{{url('/')}}"><svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M8.07207 0C8.19331 0 8.31107 0.0404348 8.40664 0.114882L16.1539 6.14233L15.4847 6.98713L14.5385 6.25079V12.8994C14.538 13.1843 14.4243 13.4574 14.2225 13.6589C14.0206 13.8604 13.747 13.9738 13.4616 13.9743H2.69231C2.40688 13.9737 2.13329 13.8603 1.93146 13.6588C1.72962 13.4573 1.61597 13.1843 1.61539 12.8994V6.2459L0.669148 6.98235L0 6.1376L7.7375 0.114882C7.83308 0.0404348 7.95083 0 8.07207 0ZM8.07694 1.22084L2.69231 5.40777V12.8994H13.4616V5.41341L8.07694 1.22084Z" fill="currentColor"/>
                         </svg></a></span>
-                        <span>Course With Sidebar</span>
+                        <span>List of all</span>
                     </div>
-                    <h3 class="tp-breadcrumb__title white text-white">Course With Sidebar</h3>
+                    <h3 class="tp-breadcrumb__title whit"> School, College & University</h3>
                 </div>
                 </div>
             </div>
@@ -31,7 +30,7 @@
                     <div class="tp-course-grid-sidebar-left d-flex align-items-center">
                         <div class="tp-course-grid-sidebar-search p-relative mr-30 d-none d-lg-block">
                             <form action="#">
-                            <input type="text" placeholder="Search Courses...">
+                            <input type="text" placeholder="Search...">
                             <button class="tp-sidebar-search-btn" type="submit">
                                 <span>
                                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -75,10 +74,8 @@
                         <div class="tp-course-grid-select tp-course-grid-sidebar-select">
                             <select class="wide">
                             <option>Short by:  Latest</option>
-                            <option value="Cleaning">Popularity</option>
-                            <option value="Iron">Latest</option>
-                            <option value="Service">Price: low to high</option>
-                            <option value="Carpet">Price: high to low</option>
+                            <option value="Popularity">Popularity</option>
+                            <option value="Latest">Latest</option>
                             </select>
                         </div>
                     </div>
@@ -105,43 +102,19 @@
                                     <li>
                                         <div class="from-checkbox">
                                         <input id="remeber" type="checkbox">
-                                        <label for="remeber">Design (9)</label>
+                                        <label for="remeber">School <span> (9)</span></label>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="from-checkbox">
                                         <input id="Business" type="checkbox">
-                                        <label for="Business">Business (12)</label>
+                                        <label for="Business">Colleges <span> (12)</span></label>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="from-checkbox">
                                         <input id="Development" type="checkbox">
-                                        <label for="Development">Development (10)</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="from-checkbox">
-                                        <input id="Music" type="checkbox">
-                                        <label for="Music">Music (8)</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="from-checkbox">
-                                        <input id="Marketing" type="checkbox">
-                                        <label for="Marketing">Marketing (8)</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="from-checkbox">
-                                        <input id="Data" type="checkbox">
-                                        <label for="Data">Data Science (7)</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="from-checkbox">
-                                        <input id="Lifestyle" type="checkbox">
-                                        <label for="Lifestyle">Lifestyle (9)</label>
+                                        <label for="Development">Universitys (10)</label>
                                         </div>
                                     </li>
                                 </ul>
@@ -149,108 +122,84 @@
                             </div>
                         </div>
                         <div class="tp-grid-widget-item">
-                            <h4 class="tp-grid-widget-title">Instructors</h4>
+                            <h4 class="tp-grid-widget-title">Country</h4>
                             <div class="tp-grid-widget-content">
-                            <div class="tp-grid-widget-checkbox">
-                                <ul>
-                                    <li>
-                                        <div class="from-checkbox">
-                                        <input id="Alex" type="checkbox">
-                                        <label for="Alex">Alex Itzel (6)</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="from-checkbox">
-                                        <input id="Emilee" type="checkbox">
-                                        <label for="Emilee">Emilee Logan (12)</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="from-checkbox">
-                                        <input id="Donald" type="checkbox">
-                                        <label for="Donald">Donald Logan (11)</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="from-checkbox">
-                                        <input id="Oliver" type="checkbox">
-                                        <label for="Oliver">Oliver Porter (9)</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="from-checkbox">
-                                        <input id="Jane" type="checkbox">
-                                        <label for="Jane">Jane Cooper( 10)</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="tp-grid-widget-item">
-                            <h4 class="tp-grid-widget-title">Price</h4>
-                            <div class="tp-filter-widget-radio">
-                            <ul>
-                                <li>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
-                                        <label class="form-check-label" for="flexRadioDefault6">
-                                        All (20)
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault7">
-                                        <label class="form-check-label" for="flexRadioDefault7">
-                                        Free (2)
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault8">
-                                        <label class="form-check-label" for="flexRadioDefault8">
-                                        Paid (18)
-                                        </label>
-                                    </div>
-                                </li>
-                            </ul>
+                                <div class="tp-grid-widget-checkbox">
+                                    <ul>
+                                        <li>
+                                            <div class="from-checkbox">
+                                            <input id="Alex" type="checkbox">
+                                            <label for="Alex">Alex Itzel (6)</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="from-checkbox">
+                                            <input id="Emilee" type="checkbox">
+                                            <label for="Emilee">Emilee Logan (12)</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="from-checkbox">
+                                            <input id="Donald" type="checkbox">
+                                            <label for="Donald">Donald Logan (11)</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="from-checkbox">
+                                            <input id="Oliver" type="checkbox">
+                                            <label for="Oliver">Oliver Porter (9)</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="from-checkbox">
+                                            <input id="Jane" type="checkbox">
+                                            <label for="Jane">Jane Cooper( 10)</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                         <div class="tp-grid-widget-item">
-                            <h4 class="tp-grid-widget-title">Skill level</h4>
+                            <h4 class="tp-grid-widget-title">City</h4>
                             <div class="tp-grid-widget-content">
-                            <div class="tp-grid-widget-checkbox">
-                                <ul>
-                                    <li>
-                                        <div class="from-checkbox">
-                                        <input id="Levels" type="checkbox">
-                                        <label for="Levels">All Levels (52)</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="from-checkbox">
-                                        <input id="Beginner" type="checkbox">
-                                        <label for="Beginner">Beginner (35)</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="from-checkbox">
-                                        <input id="Intermediate" type="checkbox">
-                                        <label for="Intermediate">Intermediate (21)</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="from-checkbox">
-                                        <input id="Expert" type="checkbox">
-                                        <label for="Expert">Expert (10)</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+                                <div class="tp-grid-widget-checkbox">
+                                    <ul>
+                                        <li>
+                                            <div class="from-checkbox">
+                                            <input id="Alex" type="checkbox">
+                                            <label for="Alex">Alex Itzel (6)</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="from-checkbox">
+                                            <input id="Emilee" type="checkbox">
+                                            <label for="Emilee">Emilee Logan (12)</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="from-checkbox">
+                                            <input id="Donald" type="checkbox">
+                                            <label for="Donald">Donald Logan (11)</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="from-checkbox">
+                                            <input id="Oliver" type="checkbox">
+                                            <label for="Oliver">Oliver Porter (9)</label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="from-checkbox">
+                                            <input id="Jane" type="checkbox">
+                                            <label for="Jane">Jane Cooper( 10)</label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
+                       
                         <div class="tp-grid-widget-item">
                             <h4 class="tp-grid-widget-title">Language</h4>
                             <div class="tp-grid-widget-content">

@@ -24,7 +24,7 @@ Route::get('/Faqs', Faqs::class)->name('FAQs');
 Route::get('/contact-us', ContactUs::class)->name('contact-us');
 Route::get('/privacy-policy', PrivacyPolicy::class)->name('privacy-policy');
 Route::get('/error', Error::class)->name('4o4-page');
-Route::get('/university-list', UniversityList::class)->name('university-list');
+Route::get('/enroll', UniversityList::class)->name('university-list');
 Route::get('/become-a-agent', BecomeAAgent::class)->name('become-a-agent');
 
 

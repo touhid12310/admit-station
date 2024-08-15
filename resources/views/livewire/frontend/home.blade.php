@@ -13,7 +13,7 @@
                                 <span class="tp-hero-subtitle">Be apart of our history</span>
                                 <h2 class="tp-hero-title">Landmark to Create the Future.</h2>
                                 <div class="tp-hero-btn">
-                                   <a class="tp-btn" href="#">
+                                   <a class="tp-btn" href="{{route('university-list')}}">
                                       Enroll Now 
                                       <span>
                                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
@@ -40,7 +40,7 @@
                                 <span class="tp-hero-subtitle">Be apart of our history</span>
                                 <h2 class="tp-hero-title">Education to Create the Future.</h2>
                                 <div class="tp-hero-btn">
-                                   <a class="tp-btn" href="university-program.html">
+                                   <a class="tp-btn" href="{{route('university-list')}}">
                                       Enroll Now 
                                       <span>
                                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
@@ -67,7 +67,7 @@
                                 <span class="tp-hero-subtitle">Be apart of our history</span>
                                 <h2 class="tp-hero-title">Discipline to Create the Future.</h2>
                                 <div class="tp-hero-btn">
-                                   <a class="tp-btn" href="university-program.html">
+                                   <a class="tp-btn" href="{{route('university-list')}}">
                                       Enroll Now 
                                       <span>
                                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"

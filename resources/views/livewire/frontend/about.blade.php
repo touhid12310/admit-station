@@ -1,22 +1,20 @@
 <div>
-    <main>
-      
+   @livewire('partials.layouts-pre-loader')
         <!-- about banner area start -->
         <section class="tp-about-pt fix p-relative pt-200">
-           <div class="tp-about-bg-main" data-background="assets/img/about/about/about-bg.png"></div>
            <div class="container">
               <div class="row align-items-center">
                  <div class="col-lg-12">
                     <div class="tp-about-banner mb-80">
-                       <span>About our classes</span>
+                       <span class="">About our Agency</span>
                        <h3 class="tp-about-banner-title">We providing the <br>
-                          best quality online courses.</h3>
+                          best quality service.</h3>
                     </div>
                  </div>
               </div>
            </div>
            <div class="container-fluid p-0">
-              <div class="tp-about-banner-bg" data-background="assets/img/about/about/about-thumb-1.jpg">
+              <div class="tp-about-banner-bg" data-background="assets/images/mission/about-thumb-1.jpg">
               <div class="row g-0">
                  <div class="col-xl-6 col-lg-12"></div>
                  <div class="col-xl-6 col-lg-12">
@@ -168,7 +166,7 @@
               <div class="row">
                  <div class="col-lg-4">
                     <div class="tp-our-mission-thumb wow fadeInUp" data-wow-delay=".3s">
-                       <img src="assets/img/our-mission/thumb-1.png" alt="">
+                       <img src="assets/images/mission/thumb-1.png" alt="">
                     </div>
                  </div>
                  <div class="col-lg-8">
@@ -197,7 +195,7 @@
                           </div>
                           <div class="tp-our-mission-item-thumb">
                              <div class="tp-our-mission-item-thumb-1">
-                                <img src="assets/img/our-mission/mission-item-1.jpg" alt="">
+                                <img src="assets/images/mission/mission-item-1.jpg" alt="">
                              </div>
                           </div>
                        </div>
@@ -218,7 +216,7 @@
                           </div>
                           <div class="tp-our-mission-item-thumb">
                              <div class="tp-our-mission-item-thumb-3">
-                                <img src="assets/img/our-mission/mission-item-2.jpg" alt="">
+                                <img src="assets/images/mission/mission-item-2.jpg" alt="">
                              </div>
                           </div>
                        </div>
@@ -239,7 +237,7 @@
                           </div>
                           <div class="tp-our-mission-item-thumb">
                              <div class="tp-our-mission-item-thumb-2">
-                                <img src="assets/img/our-mission/mission-item-3.jpg" alt="">
+                                <img src="assets/images/mission/mission-item-3.jpg" alt="">
                              </div>
                           </div>
                        </div>
@@ -433,5 +431,5 @@
            </div>
         </section>
         <!-- brand-area-end -->
-     </main>
+ 
 </div>
