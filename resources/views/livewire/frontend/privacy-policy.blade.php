@@ -10,7 +10,7 @@
                   </div>
                </div>
                <div class="col-lg-10">
-                  <div class="tp-privacy-box">
+                  <div class="tp-privacy-box shadow-lg">
                      <div class="tp-privacy-content">
                         <h4 class="tp-privacy-content-title">Introduction</h4>
                         <p>At Acadia, we value your privacy and are committed to protecting your personal information. This Privacy Policy is designed to help you understand how we collect, use, disclose, and safeguard your data. By using our website or services, you consent to the practices described in this policy.</p>

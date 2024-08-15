@@ -1,7 +1,7 @@
 <div>
     @livewire('partials.layouts-pre-loader')
     <!-- hero-area-start -->
-    <section class="tp-hero-area">
+    <section class="tp-hero-area" wire:ignore>
         <div class="swiper tp-slider-active">
            <div class="swiper-wrapper">
               <div class="swiper-slide">
@@ -14,7 +14,7 @@
                                 <h2 class="tp-hero-title">Landmark to Create the Future.</h2>
                                 <div class="tp-hero-btn">
                                    <a class="tp-btn" href="{{route('university-list')}}">
-                                      Enroll Now 
+                                      Get Started 
                                       <span>
                                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
@@ -41,7 +41,7 @@
                                 <h2 class="tp-hero-title">Education to Create the Future.</h2>
                                 <div class="tp-hero-btn">
                                    <a class="tp-btn" href="{{route('university-list')}}">
-                                      Enroll Now 
+                                        Get Started  
                                       <span>
                                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +68,7 @@
                                 <h2 class="tp-hero-title">Discipline to Create the Future.</h2>
                                 <div class="tp-hero-btn">
                                    <a class="tp-btn" href="{{route('university-list')}}">
-                                      Enroll Now 
+                                        Get Started 
                                       <span>
                                          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
@@ -141,7 +141,7 @@
                         <div class="tp-service-icon">
                             <span><img src="assets/img/icon/service/service-icon-3.svg" alt="service-icon"></span>
                         </div>
-                        <h4 class="tp-service-title"><a href="university-admission-overview.html">Graduate <br> Admissions</a></h4>
+                        <h4 class="tp-service-title"><a href="university-admission-overview.html">Student <br> VISA</a></h4>
                         <div class="tp-service-btn">
                             <a href="university-admission-overview.html"><span><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 6H11" stroke="#161613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -151,7 +151,7 @@
                         </div>
                     </div>
                     <div class="tp-service-content">
-                        <p>We have students coming from different backgrounds,cultures, & nationalities as well.</p>
+                        <p>With us you will get expert guidelines regarding all your Study abroad needs.</p>
                     </div>
                     </div>
                 </div>
@@ -176,17 +176,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="tp-service-all text-center">
-                    <span>Trusted by the worlds <a href="university-about.html">Best University <svg width="10" height="10" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 6H11" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M6 1L11 6L6 11" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg></a>
-                    </span>
-                    </div>
-                </div>
-            </div>
+            
         </div>
         <div class="tp-service-shape">
             <div class="tp-service-shape-1 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".4s">
@@ -211,6 +201,14 @@
                             <img src="assets/images/about/about-thumb-2.jpg" alt="">
                         </div>
                     </div>
+                    <div class="tp-about-shape">
+                        <div class="tp-about-shape-1">
+                           <img src="assets/images/about/about-shape-1.jpg" alt="">
+                        </div>
+                        <div class="tp-about-shape-2">
+                           <img src="assets/images/about/about-shape-2.jpg" alt="">
+                        </div>
+                     </div>
                     <div class="tp-about-exprience">
                         <div class="tp-about-exprience-text d-flex">
                             <h3 class="tp-about-exprience-count">
@@ -231,7 +229,7 @@
                                 </svg>
                             </span>
                         </h3>
-                        <p>Our community is being called to reimagine the future. As the <br> only university where a renowned design school comes together <br> with premier colleges, we are making learning more relevant <br> and transformational.</p>
+                        <p>Admit Station a top consultancy firm in Bangladesh, We&#039;re your one-stop solution, whether you&#039;re searching for a study abroad consultancy firm near Banani or exploring options for studying abroad from Dhaka.</p>
                     </div>
                     <div class="tp-about-list">
                         <div class="tp-about-list-item d-flex align-items-center mb-35">
@@ -701,15 +699,15 @@
                         <a href="index.html"><img src="assets/img/cta/cta-logo-1.png" alt=""></a>
                     </div>
                     <div class="tp-cta-content">
-                        <span>COURSES FOR FREE, REGISTER NOW</span>
-                        <h3 class="tp-cta-title">CREATIVE IN RESEARCH AND TEACHING.</h3>
+                        <span>FREE, REGISTER NOW</span>
+                        <h3 class="tp-cta-title">CREATIVE IN RESEARCH AND LEARN.</h3>
                     </div>
                     </div>
                 </div>
                 <div class="col-xxl-2 col-lg-3">
                     <div class="tp-cta-btn-wrap">
                     <div class="tp-cta-btn text-lg-end">
-                        <a class="tp-btn" href="university-apply.html">Apply Now <span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a class="tp-btn" href="{{route('university-list')}}">Get Started <span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 7H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M7 1L13 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg></span>

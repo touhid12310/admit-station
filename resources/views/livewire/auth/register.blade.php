@@ -1,6 +1,6 @@
 <div>
     <!-- register area start -->
-    <section class="tp-login-area">
+    <section class="tp-login-area p-5">
         <div class="tp-login-register-box d-flex align-items-center">
            <div class="tp-login-register-banner-box p-relative" data-background="assets/img/login/login-register-bg.jpg">
               <div class="tp-login-register-logo tp-header-logo">
@@ -22,7 +22,7 @@
               </div>
            </div>
            <div class="tp-login-register-wrapper d-flex justify-content-center align-items-center">
-              <div class="tp-login-from-box">
+              <div class="tp-login-from-box pt-5">
                  <div class="tp-login-from-heading text-center">
                     <h4 class="tp-login-from-title">Create an Account</h4>
                     <p>Already have an account? <a href="login.html"> Sign In</a></p>

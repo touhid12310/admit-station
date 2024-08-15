@@ -216,7 +216,17 @@
                                           </svg>
                                        </span>
                                     </a>
-               
+                                    <ul class="header-bottom__lang-submenu">
+                                       <li>
+                                          <a href="#">Arabic</a>
+                                       </li>
+                                       <li>
+                                          <a href="#">Spanish</a>
+                                       </li>
+                                       <li>
+                                          <a href="#">Mandarin</a>
+                                       </li>
+                                    </ul>
                                  </li>
                               </ul>
                            </div>
@@ -226,7 +236,7 @@
                   <div class="col-lg-6 col-md-6 d-none d-lg-block">
                      <div class="tp-header-right-list d-flex justify-content-md-end">
                         <a href="{{ route('FAQs') }}">FAQs</a>
-                        <a href="{{ route('contact-us') }}" wire:navigate>contact-us</a>
+                        <a href="{{ route('contact-us') }}">contact-us</a>
                         <a href="{{ route('privacy-policy') }}">privacy-policy</a>
                         <a href="{{ route('4o4-page') }}"> Help Desk </a>
                      </div>
@@ -253,9 +263,11 @@
                               <li class="tp-static">
                                  <a class="tp-static" href="{{url('/')}}">Home</a>
                               </li>
+                              
                               <li class="tp-static">
-                                 <a class="tp-static" href="{{route('about')}}" wire:navigate>About</a>
+                                 <a class="tp-static" href="{{route('about')}}">About</a>
                               </li>
+                              
                               <li class="has-dropdown">
                                  <a href="#">Admissions</a>
                                  <ul class="tp-submenu">
@@ -268,16 +280,8 @@
                                  </ul>
                               </li>
                               
-                              <li class="has-dropdown">
-                                 <a href="blog-stories.html">Blog</a>
-                                 <ul class="tp-submenu">
-                                    <li><a href="blog-stories.html">Blog</a></li>
-                                    <li><a href="blog-stories-sidebar.html">Blog Grid</a></li>
-                                    <li><a href="blog-list.html">Blog List</a></li>
-                                    <li><a href="blog-standard.html">Blog Standard</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                    <li><a href="blog-full-width.html">Blog Details Full Width</a></li>
-                                 </ul>
+                              <li class="tp-static">
+                                 <a class="tp-static" href="blog-stories.html">Blog</a>
                               </li>
                            </ul>
                         </nav>

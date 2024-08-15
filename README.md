@@ -14,5 +14,5 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 ## Create livewire user dashboard Page
 
-    php artisan make:livewire dashboard.student-dashboard
+    php artisan make:livewire student.student-dashboard
 

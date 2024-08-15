@@ -25,7 +25,7 @@
               <div class="tp-login-from-box">
                  <div class="tp-login-from-heading text-center">
                     <h4 class="tp-login-from-title">Sign in</h4>
-                    <p>Dont have an account? <a href="register.html">Create Now</a></p>
+                    <p>Dont have an account? <a href="{{route('register')}}">Create Now</a></p>
                  </div>
                  <form wire:submit.prevent='save' class="mb-3">
                      <div class="row">

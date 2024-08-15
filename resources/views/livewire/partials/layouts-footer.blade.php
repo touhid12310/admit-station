@@ -4,10 +4,10 @@
         <div class="tp-footer-main grey-bg pt-80 pb-55">
            <div class="container">
               <div class="row">
-                 <div class="col-xl-4 col-lg-3 col-sm-6">
+                 <div class="col-xl-6 col-lg-6 col-sm-6">
                     <div class="tp-footer-widget tp-footer-col-1 mb-30">
                        <div class="tp-footer-widget-logo mb-20 tp-header-logo">
-                          <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                          <a href="{{url('/')}}"><img src="assets/images/logo.png" alt=""></a>
                        </div>
                        <div class="tp-footer-widget-content">
                           <p>1st floor,Agrabad shopping complex,1742 Sheikh Mujib Road, Beside Orchid Business Hotel,Chowmuhony,Agrabad , Chittagong, Bangladesh</p>
@@ -30,32 +30,16 @@
                        </div>
                     </div>
                  </div>
-                 <div class="col-xl-2 col-lg-3 col-sm-6">
+                 <div class="col-xl-2 col-lg-2 col-sm-6">
                     <div class="tp-footer-widget tp-footer-col-2 mb-30">
                        <h4 class="tp-footer-widget-title mb-20">About</h4>
                        <div class="tp-footer-widget-link">
                           <ul>
-                             <li><a href="about.html">About Us</a></li>
+                             <li><a href="{{route('about')}}">About Us</a></li>
                              <li><a href="{{route('FAQs')}}" wire:navigate>FAQs</a></li>
                              <li><a href="{{route('privacy-policy')}}" wire:navigate>Privacy Policy</a></li>
                              <li><a href="{{route('become-a-agent')}}">Become a Agent</a></li>
-                             <li><a href="#">Events</a></li>
                              <li><a href="{{route('contact-us')}}" wire:navigate>Contact Us</a></li>
-                          </ul>
-                       </div>
-                    </div>
-                 </div>
-                 <div class="col-xl-2 col-lg-2 col-sm-4">
-                    <div class="tp-footer-widget tp-footer-col-3 mb-30">
-                       <h4 class="tp-footer-widget-title mb-20">Quick links</h4>
-                       <div class="tp-footer-widget-link">
-                          <ul>
-                             <li><a href="#">Students</a></li>
-                             <li><a href="#">Addmition</a></li>
-                             <li><a href="#">Faculty & Staffs</a></li>
-                             <li><a href="#">Media Relations</a></li>
-                             <li><a href="#">Alumni</a></li>
-                             <li><a href="#">Visit</a></li>
                           </ul>
                        </div>
                     </div>
