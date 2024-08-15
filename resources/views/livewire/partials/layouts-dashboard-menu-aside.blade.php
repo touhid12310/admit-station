@@ -65,7 +65,7 @@
                    
                     <li class="tp-user-menu-title space-gap">User</li>
                     <li>
-                        <a class="{{ request()->is('student-setting-profile') ? 'active' : '' }}"
+                        <a wire:navigate class="{{ request()->is('student-setting-profile') ? 'active' : '' }}"
                             href="{{route('student-setting-profile')}}">
                             <span>
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -77,7 +77,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="{{ request()->is('logout') ? 'active' : '' }}"
+                        <a wire:navigate class="{{ request()->is('logout') ? 'active' : '' }}"
                             href="{{route('logout')}}">
                             <span>
                                 <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">

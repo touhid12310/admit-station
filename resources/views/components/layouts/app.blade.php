@@ -26,10 +26,8 @@
          @auth
             @livewire('partials.layouts-dashboard-menu')
          @else
-            @livewire('partials.layouts-head')
             @livewire('partials.layouts-menu')
          @endauth
-         
             <main>
                {{ $slot }}
             </main>

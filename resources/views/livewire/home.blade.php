@@ -1,4 +1,5 @@
 <div>
+    @livewire('partials.layouts-pre-loader')
     <!-- hero-area-start -->
     <section class="tp-hero-area" wire:ignore>
         <div class="swiper tp-slider-active">
