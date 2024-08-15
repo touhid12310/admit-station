@@ -216,17 +216,7 @@
                                           </svg>
                                        </span>
                                     </a>
-                                    <ul class="header-bottom__lang-submenu">
-                                       <li>
-                                          <a href="#">Arabic</a>
-                                       </li>
-                                       <li>
-                                          <a href="#">Spanish</a>
-                                       </li>
-                                       <li>
-                                          <a href="#">Mandarin</a>
-                                       </li>
-                                    </ul>
+
                                  </li>
                               </ul>
                            </div>
@@ -236,7 +226,7 @@
                   <div class="col-lg-6 col-md-6 d-none d-lg-block">
                      <div class="tp-header-right-list d-flex justify-content-md-end">
                         <a href="{{ route('FAQs') }}">FAQs</a>
-                        <a href="{{ route('contact-us') }}">contact-us</a>
+                        <a href="{{ route('contact-us') }}" wire:navigated>contact-us</a>
                         <a href="{{ route('privacy-policy') }}">privacy-policy</a>
                         <a href="{{ route('4o4-page') }}"> Help Desk </a>
                      </div>
@@ -261,11 +251,11 @@
                         <nav class="tp-main-menu-content">
                            <ul>
                               <li class="tp-static">
-                                 <a class="tp-static" href="{{url('/')}}">Home</a>
+                                 <a class="tp-static" href="{{url('/')}}" wire:navigate>Home</a>
                               </li>
                               
                               <li class="tp-static">
-                                 <a class="tp-static" href="{{route('about')}}">About</a>
+                                 <a class="tp-static" href="{{route('about')}}" wire:navigate>About</a>
                               </li>
                               
                               <li class="has-dropdown">

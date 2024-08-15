@@ -462,39 +462,36 @@
         },
     });
 
-
-    document.addEventListener('livewire:navigated', () => {
-        // home Two
-        var slider = new Swiper(".tp-team-2-active", {
-            slidesPerView: 4,
-            spaceBetween: 30,
-            loop: true,
-            autoplay: {
-                delay: 5000,
+    // home Two
+    var slider = new Swiper(".tp-team-2-active", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+        },
+        // Navigation arrows
+        navigation: {
+            nextEl: ".tp-team-2-next",
+            prevEl: ".tp-team-2-prev",
+        },
+        breakpoints: {
+            1200: {
+                slidesPerView: 4,
             },
-            // Navigation arrows
-            navigation: {
-                nextEl: ".tp-team-2-next",
-                prevEl: ".tp-team-2-prev",
+            992: {
+                slidesPerView: 3,
             },
-            breakpoints: {
-                1200: {
-                    slidesPerView: 4,
-                },
-                992: {
-                    slidesPerView: 3,
-                },
-                768: {
-                    slidesPerView: 2,
-                },
-                576: {
-                    slidesPerView: 2,
-                },
-                0: {
-                    slidesPerView: 1,
-                },
+            768: {
+                slidesPerView: 2,
             },
-        });
+            576: {
+                slidesPerView: 2,
+            },
+            0: {
+                slidesPerView: 1,
+            },
+        },
     });
 
     // home Two

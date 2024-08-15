@@ -1,5 +1,5 @@
 <div>
-   @livewire('partials.layouts-pre-loader')
+   {{-- @livewire('partials.layouts-pre-loader') --}}
         <!-- about banner area start -->
         <section class="tp-about-pt fix p-relative pt-200">
            <div class="container">
