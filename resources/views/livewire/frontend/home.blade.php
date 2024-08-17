@@ -119,7 +119,8 @@
                             </div>
                         </div>
                         <div class="tp-service-content">
-                            <p>Secure the best education for your child in top international schools. We handle the details.</p>
+                            <p>Secure the best education for your child in top international schools. We handle the
+                                details.</p>
                         </div>
                     </div>
                 </div>
@@ -188,7 +189,8 @@
                             </div>
                         </div>
                         <div class="tp-service-content">
-                            <p>Pursue your academic dreams at leading universities worldwide. We're with you every step.</p>
+                            <p>Pursue your academic dreams at leading universities worldwide. We're with you every step.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -401,13 +403,15 @@
                                             alt="testimonial-avatar">
                                     </div>
                                     <div class="tp-testimonial-content">
-                                        <p>“Sollicitudin venenatis risus dolor in dictumst faucibus egestas.
-                                            Justo at nibh odio lectus malesuada. Enim cras vitae libero nibh
-                                            tincidunt justo scelerisque. In adipiscing quis eros.”</p>
+                                        <p>Studying at the University of Malaya was a life-changing experience. The visa
+                                            process seemed daunting at first, but with the expert guidance I received,
+                                            everything went smoothly. I’m now pursuing my degree at one of the top
+                                            universities in Malaysia, and I couldn’t be happier with my decision.”</p>
                                     </div>
                                     <div class="tp-testimonial-avatar-info">
-                                        <h4 class="tp-testimonial-avatar-title">William Smith</h4>
-                                        <span>Alumnus</span>
+                                        <h4 class="tp-testimonial-avatar-title">Emily Johnson</h4>
+                                        <span>International Student at University of Malaya
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="swiper-slide tp-testimonial-item">
@@ -416,13 +420,12 @@
                                             alt="testimonial-avatar">
                                     </div>
                                     <div class="tp-testimonial-content">
-                                        <p>“Sollicitudin venenatis risus dolor in dictumst faucibus egestas.
-                                            Justo at nibh odio lectus malesuada. Enim cras vitae libero nibh
-                                            tincidunt justo scelerisque. In adipiscing quis eros.”</p>
+                                        <p>UKM was my dream, and thanks to the seamless visa process, I was able to make that dream a reality. The support I received was outstanding, making the transition to life in Malaysia effortless. I’m now proud to be an alumnus of such a prestigious institution.”</p>
                                     </div>
                                     <div class="tp-testimonial-avatar-info">
-                                        <h4 class="tp-testimonial-avatar-title">Sakil Khan</h4>
-                                        <span>Alumnus</span>
+                                        <h4 class="tp-testimonial-avatar-title">James Lee</h4>
+                                        <span>Alumnus, Universiti Kebangsaan Malaysia (UKM)
+                                        </span>
                                     </div>
                                 </div>
                             </div>
