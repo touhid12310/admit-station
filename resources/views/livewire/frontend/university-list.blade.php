@@ -26,60 +26,70 @@
         <div class="container">
             <div class="tp-course-grid-sidebar p-relative">
                 <div class="row">
-                <div class="col-lg-8">
-                    <div class="tp-course-grid-sidebar-left d-flex align-items-center">
-                        <div class="tp-course-grid-sidebar-search p-relative mr-30 d-none d-lg-block">
-                            <form action="#">
-                            <input type="text" placeholder="Search...">
-                            <button class="tp-sidebar-search-btn" type="submit">
-                                <span>
-                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11.8496 11.85L14.9996 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        <path d="M13.6 7.29998C13.6 3.8206 10.7794 1 7.29998 1C3.8206 1 1 3.8206 1 7.29998C1 10.7794 3.8206 13.6 7.29998 13.6C10.7794 13.6 13.6 10.7794 13.6 7.29998Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
-                                    </svg>
-                                </span>
-                            </button>
-                            </form>
-                        </div>
-                        <div class="tp-course-grid-sidebar-tab tp-tab">
-                            <ul class="nav nav-tabs" id="filterTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
-                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.66667 1H1V5.66667H5.66667V1Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M12.9997 1H8.33301V5.66667H12.9997V1Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M12.9997 8.33337H8.33301V13H12.9997V8.33337Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M5.66667 8.33337H1V13H5.66667V8.33337Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
-                                    <svg width="14" height="14" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M15 7.11108H1" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M15 1H1" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        <path d="M15 13.2222H1" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </svg>
-                                </button>
-                            </li>
-                            </ul>
-                        </div>
-                        <div class="tp-course-filter-top-result">
-                            <p>Showing 1–14 of 26 results</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="tp-course-grid-sidebar-right d-flex justify-content-start justify-content-lg-end">
-                        <div class="tp-course-grid-select tp-course-grid-sidebar-select">
-                            <select class="wide">
-                            <option>Short by:  Latest</option>
-                            <option value="Popularity">Popularity</option>
-                            <option value="Latest">Latest</option>
-                            </select>
+                    <div class="col-lg-8">
+                        <div class="tp-course-grid-sidebar-left d-flex align-items-center">
+                            <div class="tp-course-grid-sidebar-search p-relative mr-30 d-none d-lg-block">
+                                <form action="#">
+                                    <input type="text" placeholder="Search...">
+                                    <button class="tp-sidebar-search-btn" type="submit">
+                                        <span>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.8496 11.85L14.9996 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M13.6 7.29998C13.6 3.8206 10.7794 1 7.29998 1C3.8206 1 1 3.8206 1 7.29998C1 10.7794 3.8206 13.6 7.29998 13.6C10.7794 13.6 13.6 10.7794 13.6 7.29998Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </form>
+                            </div>
+                            <div class="tp-course-grid-sidebar-tab tp-tab">
+                                <ul class="nav nav-tabs" id="filterTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="false">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M5.66667 1H1V5.66667H5.66667V1Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M12.9997 1H8.33301V5.66667H12.9997V1Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M12.9997 8.33337H8.33301V13H12.9997V8.33337Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M5.66667 8.33337H1V13H5.66667V8.33337Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </li>
+
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="true">
+                                            <svg width="14" height="14" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M15 7.11108H1" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M15 1H1" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M15 13.2222H1" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tp-course-filter-top-result">
+                                <p>Showing 1–14 of 26 results</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="col-lg-4">
+                        <div class="tp-course-grid-sidebar-right d-flex justify-content-start justify-content-lg-end">
+                            
+                            <div class="tp-course-grid-select tp-course-grid-sidebar-select">
+                                <select class="wide">
+                                <option>Select Country</option>
+                                <option value="Popularity">Popularity</option>
+                                <option value="Latest">Latest</option>
+                                </select>
+                            </div>
+
+                            <div class="tp-course-grid-select tp-course-grid-sidebar-select ml-10">
+                                <select class="wide">
+                                <option>Select City</option>
+                                <option value="Popularity">Popularity</option>
+                                <option value="Latest">Latest</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -121,127 +131,13 @@
                                 </div>
                                 </div>
                             </div>
-                            <div class="tp-grid-widget-item">
-                                <h4 class="tp-grid-widget-title">Country</h4>
-                                <div class="tp-grid-widget-content">
-                                    <div class="tp-grid-widget-checkbox">
-                                        <ul>
-                                            <li>
-                                                <div class="from-checkbox">
-                                                <input id="Alex" type="checkbox">
-                                                <label for="Alex">Alex Itzel (6)</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="from-checkbox">
-                                                <input id="Emilee" type="checkbox">
-                                                <label for="Emilee">Emilee Logan (12)</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="from-checkbox">
-                                                <input id="Donald" type="checkbox">
-                                                <label for="Donald">Donald Logan (11)</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="from-checkbox">
-                                                <input id="Oliver" type="checkbox">
-                                                <label for="Oliver">Oliver Porter (9)</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="from-checkbox">
-                                                <input id="Jane" type="checkbox">
-                                                <label for="Jane">Jane Cooper( 10)</label>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tp-grid-widget-item">
-                                <h4 class="tp-grid-widget-title">City</h4>
-                                <div class="tp-grid-widget-content">
-                                    <div class="tp-grid-widget-checkbox">
-                                        <ul>
-                                            <li>
-                                                <div class="from-checkbox">
-                                                <input id="Alex" type="checkbox">
-                                                <label for="Alex">Alex Itzel (6)</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="from-checkbox">
-                                                <input id="Emilee" type="checkbox">
-                                                <label for="Emilee">Emilee Logan (12)</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="from-checkbox">
-                                                <input id="Donald" type="checkbox">
-                                                <label for="Donald">Donald Logan (11)</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="from-checkbox">
-                                                <input id="Oliver" type="checkbox">
-                                                <label for="Oliver">Oliver Porter (9)</label>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="from-checkbox">
-                                                <input id="Jane" type="checkbox">
-                                                <label for="Jane">Jane Cooper( 10)</label>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            <div class="tp-grid-widget-item">
-                                <h4 class="tp-grid-widget-title">Language</h4>
-                                <div class="tp-grid-widget-content">
-                                <div class="tp-grid-widget-checkbox">
-                                    <ul>
-                                        <li>
-                                            <div class="from-checkbox">
-                                            <input id="English" type="checkbox">
-                                            <label for="English">English (1)</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="from-checkbox">
-                                            <input id="Italian" type="checkbox">
-                                            <label for="Italian">Italian (1)</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="from-checkbox">
-                                            <input id="Russian" type="checkbox">
-                                            <label for="Russian">Russian (1)</label>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tp-grid-widget-btn mt-15">
-                            <a href="#"> <span>
-                                <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                <path d="M1 1L9 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </span> Clear all Filters</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-9">
                 <div class="tab-content" id="myTabContent">
                     <!-- Grid View -->
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <div class="tp-grid-sidebar-right">
                             <div class="row">
                                 <div class="col-xl-4 col-md-6">
@@ -305,7 +201,7 @@
                     </div><!--/ end Grid View -->
 
                     <!-- Single View -->
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                         <div class="tp-list-sidebar-right">
                             <div class="row">
 
