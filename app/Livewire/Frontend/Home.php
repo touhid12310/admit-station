@@ -4,7 +4,7 @@ namespace App\Livewire\Frontend;
 
 use Livewire\Attributes\Title;
 use Livewire\Component;
-#[Title('Home')]
+#[Title('Home | Admit-Station')]
 class Home extends Component
 {
     public function render()

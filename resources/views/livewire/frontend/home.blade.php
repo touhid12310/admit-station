@@ -28,7 +28,7 @@
                           </div>
                        </div>
                     </div>
-                    <div class="tp-hero-bg" data-background="assets/images/hero-image-1.jpg"></div>
+                    <div class="tp-hero-bg" data-background="assets/images/hero/hero-image-1.jpg"></div>
                  </div>
               </div>
               <div class="swiper-slide">
@@ -55,7 +55,7 @@
                           </div>
                        </div>
                     </div>
-                    <div class="tp-hero-bg" data-background="assets/images/hero-image-2.jpg"></div>
+                    <div class="tp-hero-bg" data-background="assets/images/hero/hero-image-2.jpg"></div>
                  </div>
               </div>
               <div class="swiper-slide">
@@ -82,7 +82,7 @@
                           </div>
                        </div>
                     </div>
-                    <div class="tp-hero-bg" data-background="assets/images/hero-image-3.jpg"></div>
+                    <div class="tp-hero-bg" data-background="assets/images/hero/hero-image-3.jpg"></div>
                  </div>
               </div>
            </div>
@@ -91,7 +91,7 @@
     <!-- hero-area-end -->
 
     <!-- service-area-start -->
-    <section class="service-area tp-service-bg" data-background="assets/img/bg/services-bg.jpg">
+    <section class="service-area tp-service-bg" data-background="assets/images/bg/services-bg.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
@@ -100,9 +100,9 @@
                         <div class="tp-service-icon">
                             <span><img src="assets/img/icon/service/service-icon-1.svg" alt="service-icon"></span>
                         </div>
-                        <h4 class="tp-service-title"><a href="university-about.html">Why study at <br> Abroad?</a></h4>
+                        <h4 class="tp-service-title"><a href="#">Tourist Visa </a></h4>
                         <div class="tp-service-btn">
-                            <a href="university-about.html"><span><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a href="#"><span><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 6H11" stroke="#161613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M6 1L11 6L6 11" stroke="#161613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg></span>
@@ -110,7 +110,7 @@
                         </div>
                     </div>
                     <div class="tp-service-content">
-                        <p>We have students coming from different backgrounds,cultures, & nationalities as well.</p>
+                        <p>Visit new places to discover with a Tourist Visa. We deliver your documents.</p>
                     </div>
                     </div>
                 </div>
@@ -118,11 +118,11 @@
                     <div class="tp-service-item text-center mb-40 wow fadeInUp" data-wow-delay=".5s">
                     <div class="tp-service-wrap">
                         <div class="tp-service-icon">
-                            <span><img src="assets/img/icon/service/service-icon-2.svg" alt="service-icon"></span>
+                            <span><img src="assets/images/service/counter-4-icon-4.svg" alt="service-icon"></span>
                         </div>
-                        <h4 class="tp-service-title"><a href="university-requirements.html">Certification <br> Guarantee</a></h4>
+                        <h4 class="tp-service-title"><a href="#">Commercial Visa</a></h4>
                         <div class="tp-service-btn">
-                            <a href="university-requirements.html"><span><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a href="#"><span><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 6H11" stroke="#161613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M6 1L11 6L6 11" stroke="#161613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg></span>
@@ -130,7 +130,7 @@
                         </div>
                     </div>
                     <div class="tp-service-content">
-                        <p>We have students coming from different backgrounds,cultures, & nationalities as well.</p>
+                        <p>Developing your trade, setting up new sales channels Your visa is ready.</p>
                     </div>
                     </div>
                 </div>
@@ -140,9 +140,9 @@
                         <div class="tp-service-icon">
                             <span><img src="assets/img/icon/service/service-icon-3.svg" alt="service-icon"></span>
                         </div>
-                        <h4 class="tp-service-title"><a href="university-admission-overview.html">Student <br> VISA</a></h4>
+                        <h4 class="tp-service-title"><a href="#">Student Visa</a></h4>
                         <div class="tp-service-btn">
-                            <a href="university-admission-overview.html"><span><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a href="#"><span><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 6H11" stroke="#161613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M6 1L11 6L6 11" stroke="#161613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg></span>
@@ -150,7 +150,7 @@
                         </div>
                     </div>
                     <div class="tp-service-content">
-                        <p>With us you will get expert guidelines regarding all your Study abroad needs.</p>
+                        <p>Embarking on a journey of higher education in a foreign country opens doors to.</p>
                     </div>
                     </div>
                 </div>
@@ -158,11 +158,11 @@
                     <div class="tp-service-item text-center mb-40 wow fadeInUp" data-wow-delay=".9s">
                     <div class="tp-service-wrap">
                         <div class="tp-service-icon">
-                            <span><img src="assets/img/icon/service/service-icon-4.svg" alt="service-icon"></span>
+                            <span><img src="assets/images/service/counter-4-icon-2.svg" alt="service-icon"></span>
                         </div>
-                        <h4 class="tp-service-title"><a href="university-tuition-fees.html">Scholarships <br> & fees</a></h4>
+                        <h4 class="tp-service-title"><a href="#">Residence Visa</a></h4>
                         <div class="tp-service-btn">
-                            <a href="university-tuition-fees.html"><span><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <a href="#"><span><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 6H11" stroke="#161613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M6 1L11 6L6 11" stroke="#161613" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg></span>
@@ -170,7 +170,7 @@
                         </div>
                     </div>
                     <div class="tp-service-content">
-                        <p>We have students coming from different backgrounds,cultures, & nationalities as well.</p>
+                        <p>Expert Guidance for a Seamless Immigration Journey Expert Guidance.</p>
                     </div>
                     </div>
                 </div>
@@ -232,7 +232,7 @@
                     <div class="tp-about-list">
                         <div class="tp-about-list-item d-flex align-items-center mb-35">
                             <div class="tp-about-list-icon">
-                                <span><img src="assets/img/icon/about/about-icon-1.svg" alt="about-icon"></span>
+                                <span><img src="assets/images/about/about-icon-1.svg" alt="about-icon"></span>
                             </div>
                             <div class="tp-about-list-content">
                                 <h5 class="tp-about-list-title">Building Trust</h5>
@@ -241,7 +241,7 @@
                         </div>
                         <div class="tp-about-list-item d-flex align-items-center mb-35">
                             <div class="tp-about-list-icon">
-                                <span><img src="assets/img/icon/about/about-icon-2.svg" alt="about-icon"></span>
+                                <span><img src="assets/images/about/about-icon-2.svg" alt="about-icon"></span>
                             </div>
                             <div class="tp-about-list-content">
                                 <h5 class="tp-about-list-title">Trusted by Students</h5>
@@ -249,7 +249,7 @@
                             </div>
                         </div>
                         <div class="tp-about-btn pt-10">
-                            <a class="tp-btn tp-btn-sm" href="university-apply.html">Book an Appointment 
+                            <a class="tp-btn tp-btn-sm" href="{{ url('/')}}">Book an Appointment 
                                 <span>
                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M1 7H13" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -269,7 +269,7 @@
     <!-- counter-area-start -->
     <section class="counter-area tp-counter-wrap mb-90">
         <div class="container-fluid">
-            <div class="tp-counter-bg wow fadeInUp" data-wow-delay=".3s" data-background="assets/img/bg/counter-bg.jpg">
+            <div class="tp-counter-bg wow fadeInUp" data-wow-delay=".3s" data-background="assets/images/bg/counter-bg.jpg">
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
                     <div class="tp-counter-item text-center">
@@ -525,13 +525,13 @@
     <!-- blog-area-end -->
 
     <!-- cta-area-start -->
-    <section class="cta-area tp-cta-bg grey-bg" data-background="assets/img/cta/cta-bg-1.jpg">
+    <section class="cta-area tp-cta-bg grey-bg" data-background="assets/images/bg/cta-bg-1.jpg">
         <div class="container">
             <div class="row align-items-center wow fadeInUp" data-wow-delay=".2s">
                 <div class="col-xxl-10 col-lg-9">
                     <div class="tp-cta-wrapper d-flex align-items-center">
                     <div class="tp-cta-logo">
-                        <a href="index.html"><img src="assets/img/cta/cta-logo-1.png" alt=""></a>
+                        <a href="{{url('/')}}"><img src="assets/images/cta-logo-1.png" alt=""></a>
                     </div>
                     <div class="tp-cta-content">
                         <span>FREE, REGISTER NOW</span>
@@ -542,7 +542,7 @@
                 <div class="col-xxl-2 col-lg-3">
                     <div class="tp-cta-btn-wrap">
                     <div class="tp-cta-btn text-lg-end">
-                        <a class="tp-btn" href="{{route('university-list')}}">Get Started <span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a class="tp-btn" href="{{route('register')}}">Get Started <span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 7H13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M7 1L13 7L7 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg></span>

@@ -118,8 +118,8 @@
 
 
         <!-- counter-area-start -->
-        <section class="tp-instructor-counter-area p-relative tp-instructor-bg fix" data-background="assets/img/instructor/instructor-bg.jpg">
-           <div class="container-fluid" style="background-color: #AB0C2F">
+        <section class="tp-instructor-counter-area p-relative tp-instructor-bg fix" data-background="assets/images/bg/counter-bg-2.jpg">
+           <div class="container">
               <div class="row">
                  <div class="col-lg-3 col-sm-6">
                     <div class="tp-instructor-counter-item text-center">

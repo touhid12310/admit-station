@@ -76,7 +76,7 @@
               <div class="row">
                  <div class="col-lg-12">
                     <div class="tp-footer-copyright text-center">
-                       <span>© 2024 <a href="{{url('/')}}" wire:navigate>Admin Station</a>. All rights reserved.</span>
+                       <span>© {{ date('Y') }} <a href="{{url('/')}}" wire:navigate>Admit Station </a>. All rights reserved.</span>
                     </div>
                  </div>
               </div>
