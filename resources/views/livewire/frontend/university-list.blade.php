@@ -10,9 +10,9 @@
                         <span><a href="{{url('/')}}"><svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M8.07207 0C8.19331 0 8.31107 0.0404348 8.40664 0.114882L16.1539 6.14233L15.4847 6.98713L14.5385 6.25079V12.8994C14.538 13.1843 14.4243 13.4574 14.2225 13.6589C14.0206 13.8604 13.747 13.9738 13.4616 13.9743H2.69231C2.40688 13.9737 2.13329 13.8603 1.93146 13.6588C1.72962 13.4573 1.61597 13.1843 1.61539 12.8994V6.2459L0.669148 6.98235L0 6.1376L7.7375 0.114882C7.83308 0.0404348 7.95083 0 8.07207 0ZM8.07694 1.22084L2.69231 5.40777V12.8994H13.4616V5.41341L8.07694 1.22084Z" fill="currentColor"/>
                         </svg></a></span>
-                        <span>List of all</span>
+                        <span> Choose Your</span>
                     </div>
-                    <h3 class="tp-breadcrumb__title whit"> School, College & University</h3>
+                    <h3 class="tp-breadcrumb__title whit" style="color: #AB0C2F">Favorite Institute </h3>
                 </div>
                 </div>
             </div>
@@ -92,929 +92,275 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-                <div class="tp-grid-sidebar-left">
-                    <div class="tp-grid-widget-box">
-                        <div class="tp-grid-widget-item">
-                            <h4 class="tp-grid-widget-title">All categories</h4>
-                            <div class="tp-grid-widget-content">
-                            <div class="tp-grid-widget-checkbox">
-                                <ul>
-                                    <li>
-                                        <div class="from-checkbox">
-                                        <input id="remeber" type="checkbox">
-                                        <label for="remeber">School <span> (9)</span></label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="from-checkbox">
-                                        <input id="Business" type="checkbox">
-                                        <label for="Business">Colleges <span> (12)</span></label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="from-checkbox">
-                                        <input id="Development" type="checkbox">
-                                        <label for="Development">Universitys (10)</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            </div>
-                        </div>
-                        <div class="tp-grid-widget-item">
-                            <h4 class="tp-grid-widget-title">Country</h4>
-                            <div class="tp-grid-widget-content">
+                    <div class="tp-grid-sidebar-left">
+                        <div class="tp-grid-widget-box">
+                            <div class="tp-grid-widget-item">
+                                <h4 class="tp-grid-widget-title">All categories</h4>
+                                <div class="tp-grid-widget-content">
                                 <div class="tp-grid-widget-checkbox">
                                     <ul>
                                         <li>
                                             <div class="from-checkbox">
-                                            <input id="Alex" type="checkbox">
-                                            <label for="Alex">Alex Itzel (6)</label>
+                                            <input id="remeber" type="checkbox">
+                                            <label for="remeber">School <span> (9)</span></label>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="from-checkbox">
-                                            <input id="Emilee" type="checkbox">
-                                            <label for="Emilee">Emilee Logan (12)</label>
+                                            <input id="Business" type="checkbox">
+                                            <label for="Business">Colleges <span> (12)</span></label>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="from-checkbox">
-                                            <input id="Donald" type="checkbox">
-                                            <label for="Donald">Donald Logan (11)</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="from-checkbox">
-                                            <input id="Oliver" type="checkbox">
-                                            <label for="Oliver">Oliver Porter (9)</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="from-checkbox">
-                                            <input id="Jane" type="checkbox">
-                                            <label for="Jane">Jane Cooper( 10)</label>
+                                            <input id="Development" type="checkbox">
+                                            <label for="Development">Universitys (10)</label>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="tp-grid-widget-item">
-                            <h4 class="tp-grid-widget-title">City</h4>
-                            <div class="tp-grid-widget-content">
+                            <div class="tp-grid-widget-item">
+                                <h4 class="tp-grid-widget-title">Country</h4>
+                                <div class="tp-grid-widget-content">
+                                    <div class="tp-grid-widget-checkbox">
+                                        <ul>
+                                            <li>
+                                                <div class="from-checkbox">
+                                                <input id="Alex" type="checkbox">
+                                                <label for="Alex">Alex Itzel (6)</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from-checkbox">
+                                                <input id="Emilee" type="checkbox">
+                                                <label for="Emilee">Emilee Logan (12)</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from-checkbox">
+                                                <input id="Donald" type="checkbox">
+                                                <label for="Donald">Donald Logan (11)</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from-checkbox">
+                                                <input id="Oliver" type="checkbox">
+                                                <label for="Oliver">Oliver Porter (9)</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from-checkbox">
+                                                <input id="Jane" type="checkbox">
+                                                <label for="Jane">Jane Cooper( 10)</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tp-grid-widget-item">
+                                <h4 class="tp-grid-widget-title">City</h4>
+                                <div class="tp-grid-widget-content">
+                                    <div class="tp-grid-widget-checkbox">
+                                        <ul>
+                                            <li>
+                                                <div class="from-checkbox">
+                                                <input id="Alex" type="checkbox">
+                                                <label for="Alex">Alex Itzel (6)</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from-checkbox">
+                                                <input id="Emilee" type="checkbox">
+                                                <label for="Emilee">Emilee Logan (12)</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from-checkbox">
+                                                <input id="Donald" type="checkbox">
+                                                <label for="Donald">Donald Logan (11)</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from-checkbox">
+                                                <input id="Oliver" type="checkbox">
+                                                <label for="Oliver">Oliver Porter (9)</label>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="from-checkbox">
+                                                <input id="Jane" type="checkbox">
+                                                <label for="Jane">Jane Cooper( 10)</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="tp-grid-widget-item">
+                                <h4 class="tp-grid-widget-title">Language</h4>
+                                <div class="tp-grid-widget-content">
                                 <div class="tp-grid-widget-checkbox">
                                     <ul>
                                         <li>
                                             <div class="from-checkbox">
-                                            <input id="Alex" type="checkbox">
-                                            <label for="Alex">Alex Itzel (6)</label>
+                                            <input id="English" type="checkbox">
+                                            <label for="English">English (1)</label>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="from-checkbox">
-                                            <input id="Emilee" type="checkbox">
-                                            <label for="Emilee">Emilee Logan (12)</label>
+                                            <input id="Italian" type="checkbox">
+                                            <label for="Italian">Italian (1)</label>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="from-checkbox">
-                                            <input id="Donald" type="checkbox">
-                                            <label for="Donald">Donald Logan (11)</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="from-checkbox">
-                                            <input id="Oliver" type="checkbox">
-                                            <label for="Oliver">Oliver Porter (9)</label>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="from-checkbox">
-                                            <input id="Jane" type="checkbox">
-                                            <label for="Jane">Jane Cooper( 10)</label>
+                                            <input id="Russian" type="checkbox">
+                                            <label for="Russian">Russian (1)</label>
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
+                                </div>
                             </div>
                         </div>
-                       
-                        <div class="tp-grid-widget-item">
-                            <h4 class="tp-grid-widget-title">Language</h4>
-                            <div class="tp-grid-widget-content">
-                            <div class="tp-grid-widget-checkbox">
-                                <ul>
-                                    <li>
-                                        <div class="from-checkbox">
-                                        <input id="English" type="checkbox">
-                                        <label for="English">English (1)</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="from-checkbox">
-                                        <input id="Italian" type="checkbox">
-                                        <label for="Italian">Italian (1)</label>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="from-checkbox">
-                                        <input id="Russian" type="checkbox">
-                                        <label for="Russian">Russian (1)</label>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            </div>
+                        <div class="tp-grid-widget-btn mt-15">
+                            <a href="#"> <span>
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M1 1L9 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span> Clear all Filters</a>
                         </div>
                     </div>
-                    <div class="tp-grid-widget-btn mt-15">
-                        <a href="#"> <span>
-                            <svg width="10" height="10" viewBox="0 0 10 10" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M9 1L1 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M1 1L9 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </span> Clear all Filters</a>
-                    </div>
-                </div>
                 </div>
                 <div class="col-lg-9">
                 <div class="tab-content" id="myTabContent">
+                    <!-- Grid View -->
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <div class="tp-grid-sidebar-right">
                             <div class="row">
-                            <div class="col-xl-4 col-md-6">
-                                <div class="tp-course-item p-relative fix mb-30">
-                                    <div class="tp-course-teacher mb-15">
-                                        <span><img src="assets/img/teacher/teacher-1.png" alt="">Hilary Ouse</span>
-                                    </div>
-                                    <div class="tp-course-thumb sidebar">
-                                        <a href="course-details-3.html"><img class="course-pink" src="assets/img/course/course-thumb-1.jpg" alt=""></a>
-                                    </div>
-                                    <div class="tp-course-content">
-                                        <div class="tp-course-tag mb-10">
-                                        <span>Art & Design</span>
+                                <div class="col-xl-4 col-md-6">
+                                    <div class="tp-course-item p-relative fix mb-30">
+                                        <div class="tp-course-teacher mb-15">
+                                            <span><img src="{{ asset('assets/images/dashboard-profile-2.jpg') }}" alt="">Hilary Ouse</span>
                                         </div>
-                                        <div class="tp-course-meta">
-                                        <span>
-                                            <span>
-                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M13.9228 10.0426V2.29411C13.9228 1.51825 13.2949 0.953997 12.5252 1.01445H12.4847C11.1276 1.12529 9.07163 1.82055 7.91706 2.53596L7.80567 2.6065C7.62337 2.71733 7.30935 2.71733 7.11692 2.6065L6.9549 2.50573C5.81046 1.79033 3.75452 1.1152 2.3974 1.00437C1.62768 0.943911 0.999756 1.51827 0.999756 2.28405V10.0426C0.999756 10.6573 1.50613 11.2417 2.12393 11.3122L2.30622 11.3425C3.70386 11.5238 5.87126 12.2392 7.10685 12.9143L7.1372 12.9244C7.30937 13.0252 7.59293 13.0252 7.75498 12.9244C8.99057 12.2393 11.1681 11.5339 12.5758 11.3425L12.7885 11.3122C13.4164 11.2417 13.9228 10.6674 13.9228 10.0426Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M7.46118 2.81787V12.4506" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            12 Lessons
-                                        </span>
-                                        <span>
-                                            <span>
-                                                <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6.57134 7.5C8.36239 7.5 9.81432 6.04493 9.81432 4.25C9.81432 2.45507 8.36239 1 6.57134 1C4.7803 1 3.32837 2.45507 3.32837 4.25C3.32837 6.04493 4.7803 7.5 6.57134 7.5Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M12.1426 14C12.1426 11.4845 9.64553 9.44995 6.57119 9.44995C3.49684 9.44995 0.999756 11.4845 0.999756 14" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            45 Student
-                                        </span>
+                                        <div class="tp-course-thumb sidebar">
+                                            <a href="{{route('university-list')}}"><img class="course-pink" src="assets/images/hero/hero-image-1.jpg" alt=""></a>
                                         </div>
-                                        <h4 class="tp-course-title">
-                                        <a href="course-details-3.html">Interior design Masterclass</a>
-                                        </h4>
-                                        <div class="tp-course-rating d-flex align-items-end justify-content-between">
-                                        <div class="tp-course-rating-star">
-                                            <p>5.0<span> /5</span></p>
-                                            <div class="tp-course-rating-icon">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
+                                        <div class="tp-course-content">
+                                            <div class="tp-course-tag mb-10">
+                                            <span>Art & Design</span>
+                                            </div>
+                                            <div class="tp-course-meta">
+                                            <span>
+                                                <span>
+                                                    <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13.9228 10.0426V2.29411C13.9228 1.51825 13.2949 0.953997 12.5252 1.01445H12.4847C11.1276 1.12529 9.07163 1.82055 7.91706 2.53596L7.80567 2.6065C7.62337 2.71733 7.30935 2.71733 7.11692 2.6065L6.9549 2.50573C5.81046 1.79033 3.75452 1.1152 2.3974 1.00437C1.62768 0.943911 0.999756 1.51827 0.999756 2.28405V10.0426C0.999756 10.6573 1.50613 11.2417 2.12393 11.3122L2.30622 11.3425C3.70386 11.5238 5.87126 12.2392 7.10685 12.9143L7.1372 12.9244C7.30937 13.0252 7.59293 13.0252 7.75498 12.9244C8.99057 12.2393 11.1681 11.5339 12.5758 11.3425L12.7885 11.3122C13.4164 11.2417 13.9228 10.6674 13.9228 10.0426Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M7.46118 2.81787V12.4506" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </span>
+                                                12 Lessons
+                                            </span>
+                                            <span>
+                                                <span>
+                                                    <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6.57134 7.5C8.36239 7.5 9.81432 6.04493 9.81432 4.25C9.81432 2.45507 8.36239 1 6.57134 1C4.7803 1 3.32837 2.45507 3.32837 4.25C3.32837 6.04493 4.7803 7.5 6.57134 7.5Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M12.1426 14C12.1426 11.4845 9.64553 9.44995 6.57119 9.44995C3.49684 9.44995 0.999756 11.4845 0.999756 14" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </span>
+                                                45 Student
+                                            </span>
+                                            </div>
+                                            <h4 class="tp-course-title">
+                                            <a href="{{route('university-list-details')}}">Interior design Masterclass</a>
+                                            </h4>
+                                            <div class="tp-course-rating d-flex align-items-end justify-content-between">
+                                            <div class="tp-course-rating-star">
+                                                <p>5.0<span> /5</span></p>
+                                                <div class="tp-course-rating-icon">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                            </div>
+                                            <div class="tp-course-pricing">
+                                                <span>Free</span>
+                                            </div>
                                             </div>
                                         </div>
-                                        <div class="tp-course-pricing">
-                                            <span>Free</span>
+                                        <div class="tp-course-btn">
+                                            <a href="{{route('university-list-details')}}">Preview this Course</a>
                                         </div>
-                                        </div>
-                                    </div>
-                                    <div class="tp-course-btn">
-                                        <a href="course-details-3.html">Preview this Course</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-xl-4 col-md-6">
-                                <div class="tp-course-item p-relative fix mb-30">
-                                    <div class="tp-course-teacher mb-15">
-                                        <span><img src="assets/img/teacher/teacher-2.png" alt="">Joss Sticks</span>
-                                        <span class="discount">-25%</span>
-                                    </div>
-                                    <div class="tp-course-thumb sidebar">
-                                        <a href="course-details-3.html"><img class="course-lightblue" src="assets/img/course/course-thumb-2.jpg" alt=""></a>
-                                    </div>
-                                    <div class="tp-course-content">
-                                        <div class="tp-course-tag mb-10">
-                                        <span>Business</span>
-                                        </div>
-                                        <div class="tp-course-meta">
-                                        <span>
-                                            <span>
-                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M13.9228 10.0426V2.29411C13.9228 1.51825 13.2949 0.953997 12.5252 1.01445H12.4847C11.1276 1.12529 9.07163 1.82055 7.91706 2.53596L7.80567 2.6065C7.62337 2.71733 7.30935 2.71733 7.11692 2.6065L6.9549 2.50573C5.81046 1.79033 3.75452 1.1152 2.3974 1.00437C1.62768 0.943911 0.999756 1.51827 0.999756 2.28405V10.0426C0.999756 10.6573 1.50613 11.2417 2.12393 11.3122L2.30622 11.3425C3.70386 11.5238 5.87126 12.2392 7.10685 12.9143L7.1372 12.9244C7.30937 13.0252 7.59293 13.0252 7.75498 12.9244C8.99057 12.2393 11.1681 11.5339 12.5758 11.3425L12.7885 11.3122C13.4164 11.2417 13.9228 10.6674 13.9228 10.0426Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M7.46118 2.81787V12.4506" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            12 Lessons
-                                        </span>
-                                        <span>
-                                            <span>
-                                                <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6.57134 7.5C8.36239 7.5 9.81432 6.04493 9.81432 4.25C9.81432 2.45507 8.36239 1 6.57134 1C4.7803 1 3.32837 2.45507 3.32837 4.25C3.32837 6.04493 4.7803 7.5 6.57134 7.5Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M12.1426 14C12.1426 11.4845 9.64553 9.44995 6.57119 9.44995C3.49684 9.44995 0.999756 11.4845 0.999756 14" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            45 Student
-                                        </span>
-                                        </div>
-                                        <h4 class="tp-course-title">
-                                        <a href="course-details-3.html">Starting seo as your based business</a>
-                                        </h4>
-                                        <div class="tp-course-rating d-flex align-items-end justify-content-between">
-                                        <div class="tp-course-rating-star">
-                                            <p>5.0<span> /5</span></p>
-                                            <div class="tp-course-rating-icon">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <div class="tp-course-pricing">
-                                            <del>$26.00</del>
-                                            <span>$54.00</span>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div class="tp-course-btn">
-                                        <a href="course-details-3.html">Preview this Course</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-md-6">
-                                <div class="tp-course-item p-relative fix mb-30">
-                                    <div class="tp-course-teacher mb-15">
-                                        <span><img src="assets/img/teacher/teacher-3.png" alt="">Gustav Purpleson</span>
-                                    </div>
-                                    <div class="tp-course-thumb sidebar">
-                                        <a href="course-details-3.html"><img class="course-sky" src="assets/img/course/course-thumb-3.jpg" alt=""></a>
-                                    </div>
-                                    <div class="tp-course-content">
-                                        <div class="tp-course-tag mb-10">
-                                        <span>Marketing</span>
-                                        </div>
-                                        <div class="tp-course-meta">
-                                        <span>
-                                            <span>
-                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M13.9228 10.0426V2.29411C13.9228 1.51825 13.2949 0.953997 12.5252 1.01445H12.4847C11.1276 1.12529 9.07163 1.82055 7.91706 2.53596L7.80567 2.6065C7.62337 2.71733 7.30935 2.71733 7.11692 2.6065L6.9549 2.50573C5.81046 1.79033 3.75452 1.1152 2.3974 1.00437C1.62768 0.943911 0.999756 1.51827 0.999756 2.28405V10.0426C0.999756 10.6573 1.50613 11.2417 2.12393 11.3122L2.30622 11.3425C3.70386 11.5238 5.87126 12.2392 7.10685 12.9143L7.1372 12.9244C7.30937 13.0252 7.59293 13.0252 7.75498 12.9244C8.99057 12.2393 11.1681 11.5339 12.5758 11.3425L12.7885 11.3122C13.4164 11.2417 13.9228 10.6674 13.9228 10.0426Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M7.46118 2.81787V12.4506" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            12 Lessons
-                                        </span>
-                                        <span>
-                                            <span>
-                                                <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6.57134 7.5C8.36239 7.5 9.81432 6.04493 9.81432 4.25C9.81432 2.45507 8.36239 1 6.57134 1C4.7803 1 3.32837 2.45507 3.32837 4.25C3.32837 6.04493 4.7803 7.5 6.57134 7.5Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M12.1426 14C12.1426 11.4845 9.64553 9.44995 6.57119 9.44995C3.49684 9.44995 0.999756 11.4845 0.999756 14" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            45 Student
-                                        </span>
-                                        </div>
-                                        <h4 class="tp-course-title">
-                                        <a href="course-details-3.html">Grow personal financial security</a>
-                                        </h4>
-                                        <div class="tp-course-rating d-flex align-items-end justify-content-between">
-                                        <div class="tp-course-rating-star">
-                                            <p>5.0<span> /5</span></p>
-                                            <div class="tp-course-rating-icon">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <div class="tp-course-pricing">
-                                            <span>$86.00</span>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div class="tp-course-btn">
-                                        <a href="course-details-3.html">Preview this Course</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-md-6">
-                                <div class="tp-course-item p-relative fix mb-30">
-                                    <div class="tp-course-teacher mb-15">
-                                        <span><img src="assets/img/teacher/teacher-5.png" alt="">Benjamin Evalent</span>
-                                        <span class="discount">-25%</span>
-                                    </div>
-                                    <div class="tp-course-thumb sidebar">
-                                        <a href="course-details-3.html"><img class="course-pink" src="assets/img/course/course-thumb-5.jpg" alt=""></a>
-                                    </div>
-                                    <div class="tp-course-content">
-                                        <div class="tp-course-tag mb-10">
-                                        <span>Data Science</span>
-                                        </div>
-                                        <div class="tp-course-meta">
-                                        <span>
-                                            <span>
-                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M13.9228 10.0426V2.29411C13.9228 1.51825 13.2949 0.953997 12.5252 1.01445H12.4847C11.1276 1.12529 9.07163 1.82055 7.91706 2.53596L7.80567 2.6065C7.62337 2.71733 7.30935 2.71733 7.11692 2.6065L6.9549 2.50573C5.81046 1.79033 3.75452 1.1152 2.3974 1.00437C1.62768 0.943911 0.999756 1.51827 0.999756 2.28405V10.0426C0.999756 10.6573 1.50613 11.2417 2.12393 11.3122L2.30622 11.3425C3.70386 11.5238 5.87126 12.2392 7.10685 12.9143L7.1372 12.9244C7.30937 13.0252 7.59293 13.0252 7.75498 12.9244C8.99057 12.2393 11.1681 11.5339 12.5758 11.3425L12.7885 11.3122C13.4164 11.2417 13.9228 10.6674 13.9228 10.0426Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M7.46118 2.81787V12.4506" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            12 Lessons
-                                        </span>
-                                        <span>
-                                            <span>
-                                                <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6.57134 7.5C8.36239 7.5 9.81432 6.04493 9.81432 4.25C9.81432 2.45507 8.36239 1 6.57134 1C4.7803 1 3.32837 2.45507 3.32837 4.25C3.32837 6.04493 4.7803 7.5 6.57134 7.5Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M12.1426 14C12.1426 11.4845 9.64553 9.44995 6.57119 9.44995C3.49684 9.44995 0.999756 11.4845 0.999756 14" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            45 Student
-                                        </span>
-                                        </div>
-                                        <h4 class="tp-course-title">
-                                        <a href="course-details-3.html">The complete guide to build application</a>
-                                        </h4>
-                                        <div class="tp-course-rating d-flex align-items-end justify-content-between">
-                                        <div class="tp-course-rating-star">
-                                            <p>5.0<span> /5</span></p>
-                                            <div class="tp-course-rating-icon">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <div class="tp-course-pricing">
-                                            <span>Free</span>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div class="tp-course-btn">
-                                        <a href="course-details-3.html">Preview this Course</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-md-6">
-                                <div class="tp-course-item p-relative fix mb-30">
-                                    <div class="tp-course-teacher mb-15">
-                                        <span><img src="assets/img/teacher/teacher-4.png" alt="">Indigo Violet</span>
-                                        <span class="discount">-25%</span>
-                                    </div>
-                                    <div class="tp-course-thumb sidebar">
-                                        <a href="course-details-3.html"><img class="course-sky" src="assets/img/course/course-thumb-4.jpg" alt=""></a>
-                                    </div>
-                                    <div class="tp-course-content">
-                                        <div class="tp-course-tag mb-10">
-                                        <span>Art & Design</span>
-                                        </div>
-                                        <div class="tp-course-meta">
-                                        <span>
-                                            <span>
-                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M13.9228 10.0426V2.29411C13.9228 1.51825 13.2949 0.953997 12.5252 1.01445H12.4847C11.1276 1.12529 9.07163 1.82055 7.91706 2.53596L7.80567 2.6065C7.62337 2.71733 7.30935 2.71733 7.11692 2.6065L6.9549 2.50573C5.81046 1.79033 3.75452 1.1152 2.3974 1.00437C1.62768 0.943911 0.999756 1.51827 0.999756 2.28405V10.0426C0.999756 10.6573 1.50613 11.2417 2.12393 11.3122L2.30622 11.3425C3.70386 11.5238 5.87126 12.2392 7.10685 12.9143L7.1372 12.9244C7.30937 13.0252 7.59293 13.0252 7.75498 12.9244C8.99057 12.2393 11.1681 11.5339 12.5758 11.3425L12.7885 11.3122C13.4164 11.2417 13.9228 10.6674 13.9228 10.0426Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M7.46118 2.81787V12.4506" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            12 Lessons
-                                        </span>
-                                        <span>
-                                            <span>
-                                                <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6.57134 7.5C8.36239 7.5 9.81432 6.04493 9.81432 4.25C9.81432 2.45507 8.36239 1 6.57134 1C4.7803 1 3.32837 2.45507 3.32837 4.25C3.32837 6.04493 4.7803 7.5 6.57134 7.5Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M12.1426 14C12.1426 11.4845 9.64553 9.44995 6.57119 9.44995C3.49684 9.44995 0.999756 11.4845 0.999756 14" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            45 Student
-                                        </span>
-                                        </div>
-                                        <h4 class="tp-course-title">
-                                        <a href="course-details-3.html">Computer science mathematical</a>
-                                        </h4>
-                                        <div class="tp-course-rating d-flex align-items-end justify-content-between">
-                                        <div class="tp-course-rating-star">
-                                            <p>5.0<span> /5</span></p>
-                                            <div class="tp-course-rating-icon">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <div class="tp-course-pricing">
-                                            <del>$26.00</del>
-                                            <span>$54.00</span>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div class="tp-course-btn">
-                                        <a href="course-details-3.html">Preview this Course</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-md-6">
-                                <div class="tp-course-item p-relative fix mb-30">
-                                    <div class="tp-course-teacher mb-15">
-                                        <span><img src="assets/img/teacher/teacher-6.png" alt="">Hanson Deck</span>
-                                        <span class="discount">-25%</span>
-                                    </div>
-                                    <div class="tp-course-thumb sidebar">
-                                        <a href="course-details-3.html"><img class="course-lightblue" src="assets/img/course/course-thumb-6.jpg" alt=""></a>
-                                    </div>
-                                    <div class="tp-course-content">
-                                        <div class="tp-course-tag mb-10">
-                                        <span>Development</span>
-                                        </div>
-                                        <div class="tp-course-meta">
-                                        <span>
-                                            <span>
-                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M13.9228 10.0426V2.29411C13.9228 1.51825 13.2949 0.953997 12.5252 1.01445H12.4847C11.1276 1.12529 9.07163 1.82055 7.91706 2.53596L7.80567 2.6065C7.62337 2.71733 7.30935 2.71733 7.11692 2.6065L6.9549 2.50573C5.81046 1.79033 3.75452 1.1152 2.3974 1.00437C1.62768 0.943911 0.999756 1.51827 0.999756 2.28405V10.0426C0.999756 10.6573 1.50613 11.2417 2.12393 11.3122L2.30622 11.3425C3.70386 11.5238 5.87126 12.2392 7.10685 12.9143L7.1372 12.9244C7.30937 13.0252 7.59293 13.0252 7.75498 12.9244C8.99057 12.2393 11.1681 11.5339 12.5758 11.3425L12.7885 11.3122C13.4164 11.2417 13.9228 10.6674 13.9228 10.0426Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M7.46118 2.81787V12.4506" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            12 Lessons
-                                        </span>
-                                        <span>
-                                            <span>
-                                                <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6.57134 7.5C8.36239 7.5 9.81432 6.04493 9.81432 4.25C9.81432 2.45507 8.36239 1 6.57134 1C4.7803 1 3.32837 2.45507 3.32837 4.25C3.32837 6.04493 4.7803 7.5 6.57134 7.5Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M12.1426 14C12.1426 11.4845 9.64553 9.44995 6.57119 9.44995C3.49684 9.44995 0.999756 11.4845 0.999756 14" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            45 Student
-                                        </span>
-                                        </div>
-                                        <h4 class="tp-course-title">
-                                        <a href="course-details-3.html">Machine learning hands-on python </a>
-                                        </h4>
-                                        <div class="tp-course-rating d-flex align-items-end justify-content-between">
-                                        <div class="tp-course-rating-star">
-                                            <p>5.0<span> /5</span></p>
-                                            <div class="tp-course-rating-icon">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <div class="tp-course-pricing">
-                                            <del>$26.00</del>
-                                            <span>$84.00</span>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div class="tp-course-btn">
-                                        <a href="course-details-3.html">Preview this Course</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-md-6">
-                                <div class="tp-course-item p-relative fix mb-30">
-                                    <div class="tp-course-teacher mb-15">
-                                        <span><img src="assets/img/teacher/teacher-2.png" alt="">Joss Sticks</span>
-                                        <span class="discount">-25%</span>
-                                    </div>
-                                    <div class="tp-course-thumb sidebar">
-                                        <a href="course-details-3.html"><img class="course-lightblue" src="assets/img/course/course-thumb-2.jpg" alt=""></a>
-                                    </div>
-                                    <div class="tp-course-content">
-                                        <div class="tp-course-tag mb-10">
-                                        <span>Music</span>
-                                        </div>
-                                        <div class="tp-course-meta">
-                                        <span>
-                                            <span>
-                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M13.9228 10.0426V2.29411C13.9228 1.51825 13.2949 0.953997 12.5252 1.01445H12.4847C11.1276 1.12529 9.07163 1.82055 7.91706 2.53596L7.80567 2.6065C7.62337 2.71733 7.30935 2.71733 7.11692 2.6065L6.9549 2.50573C5.81046 1.79033 3.75452 1.1152 2.3974 1.00437C1.62768 0.943911 0.999756 1.51827 0.999756 2.28405V10.0426C0.999756 10.6573 1.50613 11.2417 2.12393 11.3122L2.30622 11.3425C3.70386 11.5238 5.87126 12.2392 7.10685 12.9143L7.1372 12.9244C7.30937 13.0252 7.59293 13.0252 7.75498 12.9244C8.99057 12.2393 11.1681 11.5339 12.5758 11.3425L12.7885 11.3122C13.4164 11.2417 13.9228 10.6674 13.9228 10.0426Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M7.46118 2.81787V12.4506" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            12 Lessons
-                                        </span>
-                                        <span>
-                                            <span>
-                                                <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6.57134 7.5C8.36239 7.5 9.81432 6.04493 9.81432 4.25C9.81432 2.45507 8.36239 1 6.57134 1C4.7803 1 3.32837 2.45507 3.32837 4.25C3.32837 6.04493 4.7803 7.5 6.57134 7.5Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M12.1426 14C12.1426 11.4845 9.64553 9.44995 6.57119 9.44995C3.49684 9.44995 0.999756 11.4845 0.999756 14" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            45 Student
-                                        </span>
-                                        </div>
-                                        <h4 class="tp-course-title">
-                                        <a href="course-details-3.html">Starting seo as your based business</a>
-                                        </h4>
-                                        <div class="tp-course-rating d-flex align-items-end justify-content-between">
-                                        <div class="tp-course-rating-star">
-                                            <p>5.0<span> /5</span></p>
-                                            <div class="tp-course-rating-icon">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <div class="tp-course-pricing">
-                                            <del>$26.00</del>
-                                            <span>$54.00</span>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div class="tp-course-btn">
-                                        <a href="course-details-3.html">Preview this Course</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-md-6">
-                                <div class="tp-course-item p-relative fix mb-30">
-                                    <div class="tp-course-teacher mb-15">
-                                        <span><img src="assets/img/teacher/teacher-3.png" alt="">Gustav Purpleson</span>
-                                    </div>
-                                    <div class="tp-course-thumb sidebar">
-                                        <a href="course-details-3.html"><img class="course-sky" src="assets/img/course/course-thumb-3.jpg" alt=""></a>
-                                    </div>
-                                    <div class="tp-course-content">
-                                        <div class="tp-course-tag mb-10">
-                                        <span>Art & Design</span>
-                                        </div>
-                                        <div class="tp-course-meta">
-                                        <span>
-                                            <span>
-                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M13.9228 10.0426V2.29411C13.9228 1.51825 13.2949 0.953997 12.5252 1.01445H12.4847C11.1276 1.12529 9.07163 1.82055 7.91706 2.53596L7.80567 2.6065C7.62337 2.71733 7.30935 2.71733 7.11692 2.6065L6.9549 2.50573C5.81046 1.79033 3.75452 1.1152 2.3974 1.00437C1.62768 0.943911 0.999756 1.51827 0.999756 2.28405V10.0426C0.999756 10.6573 1.50613 11.2417 2.12393 11.3122L2.30622 11.3425C3.70386 11.5238 5.87126 12.2392 7.10685 12.9143L7.1372 12.9244C7.30937 13.0252 7.59293 13.0252 7.75498 12.9244C8.99057 12.2393 11.1681 11.5339 12.5758 11.3425L12.7885 11.3122C13.4164 11.2417 13.9228 10.6674 13.9228 10.0426Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M7.46118 2.81787V12.4506" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            12 Lessons
-                                        </span>
-                                        <span>
-                                            <span>
-                                                <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6.57134 7.5C8.36239 7.5 9.81432 6.04493 9.81432 4.25C9.81432 2.45507 8.36239 1 6.57134 1C4.7803 1 3.32837 2.45507 3.32837 4.25C3.32837 6.04493 4.7803 7.5 6.57134 7.5Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M12.1426 14C12.1426 11.4845 9.64553 9.44995 6.57119 9.44995C3.49684 9.44995 0.999756 11.4845 0.999756 14" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            45 Student
-                                        </span>
-                                        </div>
-                                        <h4 class="tp-course-title">
-                                        <a href="course-details-3.html">Grow personal financial security</a>
-                                        </h4>
-                                        <div class="tp-course-rating d-flex align-items-end justify-content-between">
-                                        <div class="tp-course-rating-star">
-                                            <p>5.0<span> /5</span></p>
-                                            <div class="tp-course-rating-icon">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <div class="tp-course-pricing">
-                                            <span>$86.00</span>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div class="tp-course-btn">
-                                        <a href="course-details-3.html">Preview this Course</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-xl-4 col-md-6">
-                                <div class="tp-course-item p-relative fix mb-30">
-                                    <div class="tp-course-teacher mb-15">
-                                        <span><img src="assets/img/teacher/teacher-5.png" alt="">Benjamin Evalent</span>
-                                        <span class="discount">-25%</span>
-                                    </div>
-                                    <div class="tp-course-thumb sidebar">
-                                        <a href="course-details-3.html"><img class="course-pink" src="assets/img/course/course-thumb-5.jpg" alt=""></a>
-                                    </div>
-                                    <div class="tp-course-content">
-                                        <div class="tp-course-tag mb-10">
-                                        <span>Marketing</span>
-                                        </div>
-                                        <div class="tp-course-meta">
-                                        <span>
-                                            <span>
-                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M13.9228 10.0426V2.29411C13.9228 1.51825 13.2949 0.953997 12.5252 1.01445H12.4847C11.1276 1.12529 9.07163 1.82055 7.91706 2.53596L7.80567 2.6065C7.62337 2.71733 7.30935 2.71733 7.11692 2.6065L6.9549 2.50573C5.81046 1.79033 3.75452 1.1152 2.3974 1.00437C1.62768 0.943911 0.999756 1.51827 0.999756 2.28405V10.0426C0.999756 10.6573 1.50613 11.2417 2.12393 11.3122L2.30622 11.3425C3.70386 11.5238 5.87126 12.2392 7.10685 12.9143L7.1372 12.9244C7.30937 13.0252 7.59293 13.0252 7.75498 12.9244C8.99057 12.2393 11.1681 11.5339 12.5758 11.3425L12.7885 11.3122C13.4164 11.2417 13.9228 10.6674 13.9228 10.0426Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M7.46118 2.81787V12.4506" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            12 Lessons
-                                        </span>
-                                        <span>
-                                            <span>
-                                                <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6.57134 7.5C8.36239 7.5 9.81432 6.04493 9.81432 4.25C9.81432 2.45507 8.36239 1 6.57134 1C4.7803 1 3.32837 2.45507 3.32837 4.25C3.32837 6.04493 4.7803 7.5 6.57134 7.5Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M12.1426 14C12.1426 11.4845 9.64553 9.44995 6.57119 9.44995C3.49684 9.44995 0.999756 11.4845 0.999756 14" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </span>
-                                            45 Student
-                                        </span>
-                                        </div>
-                                        <h4 class="tp-course-title">
-                                        <a href="course-details-3.html">The complete guide to build restful </a>
-                                        </h4>
-                                        <div class="tp-course-rating d-flex align-items-end justify-content-between">
-                                        <div class="tp-course-rating-star">
-                                            <p>5.0<span> /5</span></p>
-                                            <div class="tp-course-rating-icon">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <div class="tp-course-pricing">
-                                            <span>Free</span>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div class="tp-course-btn">
-                                        <a href="course-details-3.html">Preview this Course</a>
-                                    </div>
-                                </div>
-                            </div>
                             </div>
                         </div>
-                    </div>
+                    </div><!--/ end Grid View -->
 
+                    <!-- Single View -->
                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                         <div class="tp-list-sidebar-right">
                             <div class="row">
-                            <div class="tp-course-filter-item mb-25 d-flex">
-                                <div class="tp-course-list-thumb">
-                                    <a href="course-details-3.html"><img class="course-pink" src="assets/img/course/course-sidebar/course-sidebar-1.png" alt=""></a>
-                                </div>
-                                <div class="tp-course-filter-content">
-                                    <div class="tp-course-filter-tag mb-10">
-                                        <span class="tag-span">Art & Design</span>
+
+                                <div class="tp-course-filter-item mb-25 d-flex">
+                                    <div class="tp-course-list-thumb">
+                                        <a href="{{route('university-list-details')}}"><img class="course-pink" src="assets/images/hero/hero-image-1.jpg" alt=""></a>
                                     </div>
-                                    <h4 class="tp-course-list-title">
-                                        <a href="course-details-3.html">Interior design concepts Masterclass</a>
-                                    </h4>
-                                    <div class="tp-course-filter-meta">
-                                        <span><img src="assets/img/teacher/teacher-1.png" alt="">Hilary Ouse</span>
-                                        <span>
-                                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13.9228 10.0426V2.29411C13.9228 1.51825 13.2949 0.953997 12.5252 1.01445H12.4847C11.1276 1.12529 9.07163 1.82055 7.91706 2.53596L7.80567 2.6065C7.62337 2.71733 7.30935 2.71733 7.11692 2.6065L6.9549 2.50573C5.81046 1.79033 3.75452 1.1152 2.3974 1.00437C1.62768 0.943911 0.999756 1.51827 0.999756 2.28405V10.0426C0.999756 10.6573 1.50613 11.2417 2.12393 11.3122L2.30622 11.3425C3.70386 11.5238 5.87126 12.2392 7.10685 12.9143L7.1372 12.9244C7.30937 13.0252 7.59293 13.0252 7.75498 12.9244C8.99057 12.2393 11.1681 11.5339 12.5758 11.3425L12.7885 11.3122C13.4164 11.2417 13.9228 10.6674 13.9228 10.0426Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M7.46118 2.81787V12.4506" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        12 Lessons
-                                        </span>
-                                        <span>
-                                        <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M6.57134 7.5C8.36239 7.5 9.81432 6.04493 9.81432 4.25C9.81432 2.45507 8.36239 1 6.57134 1C4.7803 1 3.32837 2.45507 3.32837 4.25C3.32837 6.04493 4.7803 7.5 6.57134 7.5Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M12.1426 14C12.1426 11.4845 9.64553 9.44995 6.57119 9.44995C3.49684 9.44995 0.999756 11.4845 0.999756 14" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        45 Student
-                                        </span>
-                                    </div>
-                                    <div class="tp-course-list-p">
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                        Aenean commodo ligula eget dolor. </p>
-                                    </div>
-                                    <div class="tp-course-filter-pricing d-flex align-items-center justify-content-between">
-                                        <div class="tp-course-rating-star">
-                                        <p>5.0<span> /5</span></p>
-                                        <div class="tp-course-rating-icon">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
+                                    <div class="tp-course-filter-content">
+                                        <div class="tp-course-filter-tag mb-10">
+                                            <span class="tag-span">Art & Design</span>
                                         </div>
+                                        <h4 class="tp-course-list-title">
+                                            <a href="{{route('university-list-details')}}">Interior design concepts Masterclass</a>
+                                        </h4>
+                                        <div class="tp-course-filter-meta">
+                                            <span><img src="{{ asset('assets/images/dashboard-profile-2.jpg') }}" alt="">Hilary Ouse</span>
+                                            <span>
+                                            <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13.9228 10.0426V2.29411C13.9228 1.51825 13.2949 0.953997 12.5252 1.01445H12.4847C11.1276 1.12529 9.07163 1.82055 7.91706 2.53596L7.80567 2.6065C7.62337 2.71733 7.30935 2.71733 7.11692 2.6065L6.9549 2.50573C5.81046 1.79033 3.75452 1.1152 2.3974 1.00437C1.62768 0.943911 0.999756 1.51827 0.999756 2.28405V10.0426C0.999756 10.6573 1.50613 11.2417 2.12393 11.3122L2.30622 11.3425C3.70386 11.5238 5.87126 12.2392 7.10685 12.9143L7.1372 12.9244C7.30937 13.0252 7.59293 13.0252 7.75498 12.9244C8.99057 12.2393 11.1681 11.5339 12.5758 11.3425L12.7885 11.3122C13.4164 11.2417 13.9228 10.6674 13.9228 10.0426Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M7.46118 2.81787V12.4506" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            12 Lessons
+                                            </span>
+                                            <span>
+                                            <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6.57134 7.5C8.36239 7.5 9.81432 6.04493 9.81432 4.25C9.81432 2.45507 8.36239 1 6.57134 1C4.7803 1 3.32837 2.45507 3.32837 4.25C3.32837 6.04493 4.7803 7.5 6.57134 7.5Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12.1426 14C12.1426 11.4845 9.64553 9.44995 6.57119 9.44995C3.49684 9.44995 0.999756 11.4845 0.999756 14" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            45 Student
+                                            </span>
                                         </div>
-                                        <span>Free</span>
-                                    </div>
-                                </div>
-                            </div>
-        
-                            <div class="tp-course-filter-item mb-25 d-flex">
-                                <div class="tp-course-list-thumb">
-                                    <a href="course-details-3.html">
-                                        <img class="course-lightblue" src="assets/img/course/course-sidebar/course-sidebar-2.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="tp-course-filter-content">
-                                    <div class="tp-course-filter-tag mb-10">
-                                        <span class="tag-span">Business</span>
-                                    </div>
-                                    <h4 class="tp-course-list-title">
-                                        <a href="course-details-3.html">Master of Business Administration</a>
-                                    </h4>
-                                    <div class="tp-course-filter-meta">
-                                        <span><img src="assets/img/teacher/teacher-5.png" alt="">Hilary Ouse</span>
-                                        <span>
-                                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13.9228 10.0426V2.29411C13.9228 1.51825 13.2949 0.953997 12.5252 1.01445H12.4847C11.1276 1.12529 9.07163 1.82055 7.91706 2.53596L7.80567 2.6065C7.62337 2.71733 7.30935 2.71733 7.11692 2.6065L6.9549 2.50573C5.81046 1.79033 3.75452 1.1152 2.3974 1.00437C1.62768 0.943911 0.999756 1.51827 0.999756 2.28405V10.0426C0.999756 10.6573 1.50613 11.2417 2.12393 11.3122L2.30622 11.3425C3.70386 11.5238 5.87126 12.2392 7.10685 12.9143L7.1372 12.9244C7.30937 13.0252 7.59293 13.0252 7.75498 12.9244C8.99057 12.2393 11.1681 11.5339 12.5758 11.3425L12.7885 11.3122C13.4164 11.2417 13.9228 10.6674 13.9228 10.0426Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M7.46118 2.81787V12.4506" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        12 Lessons
-                                        </span>
-                                        <span>
-                                        <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M6.57134 7.5C8.36239 7.5 9.81432 6.04493 9.81432 4.25C9.81432 2.45507 8.36239 1 6.57134 1C4.7803 1 3.32837 2.45507 3.32837 4.25C3.32837 6.04493 4.7803 7.5 6.57134 7.5Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M12.1426 14C12.1426 11.4845 9.64553 9.44995 6.57119 9.44995C3.49684 9.44995 0.999756 11.4845 0.999756 14" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        45 Student
-                                        </span>
-                                    </div>
-                                    <div class="tp-course-list-p">
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                        Aenean commodo ligula eget dolor. </p>
-                                    </div>
-                                    <div class="tp-course-filter-pricing d-flex align-items-center justify-content-between">
-                                        <div class="tp-course-rating-star">
-                                        <p>5.0<span> /5</span></p>
-                                        <div class="tp-course-rating-icon">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
+                                        <div class="tp-course-list-p">
+                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                            Aenean commodo ligula eget dolor. </p>
                                         </div>
+                                        <div class="tp-course-filter-pricing d-flex align-items-center justify-content-between">
+                                            <div class="tp-course-rating-star">
+                                            <p>5.0<span> /5</span></p>
+                                            <div class="tp-course-rating-icon">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                            </div>
+                                            <span>Free</span>
                                         </div>
-                                        <span>$84.00</span>
                                     </div>
                                 </div>
-                            </div>
-        
-                            <div class="tp-course-filter-item mb-25 d-flex">
-                                <div class="tp-course-list-thumb">
-                                    <a href="course-details-3.html">
-                                        <img class="course-sky" src="assets/img/course/course-sidebar/course-sidebar-3.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="tp-course-filter-content">
-                                    <div class="tp-course-filter-tag mb-10">
-                                        <span class="tag-span">Data Science</span>
-                                    </div>
-                                    <h4 class="tp-course-list-title">
-                                        <a href="course-details-3.html">Web Design Training with Elementor</a>
-                                    </h4>
-                                    <div class="tp-course-filter-meta">
-                                        <span><img src="assets/img/teacher/teacher-2.png" alt="">Hilary Ouse</span>
-                                        <span>
-                                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13.9228 10.0426V2.29411C13.9228 1.51825 13.2949 0.953997 12.5252 1.01445H12.4847C11.1276 1.12529 9.07163 1.82055 7.91706 2.53596L7.80567 2.6065C7.62337 2.71733 7.30935 2.71733 7.11692 2.6065L6.9549 2.50573C5.81046 1.79033 3.75452 1.1152 2.3974 1.00437C1.62768 0.943911 0.999756 1.51827 0.999756 2.28405V10.0426C0.999756 10.6573 1.50613 11.2417 2.12393 11.3122L2.30622 11.3425C3.70386 11.5238 5.87126 12.2392 7.10685 12.9143L7.1372 12.9244C7.30937 13.0252 7.59293 13.0252 7.75498 12.9244C8.99057 12.2393 11.1681 11.5339 12.5758 11.3425L12.7885 11.3122C13.4164 11.2417 13.9228 10.6674 13.9228 10.0426Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M7.46118 2.81787V12.4506" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        12 Lessons
-                                        </span>
-                                        <span>
-                                        <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M6.57134 7.5C8.36239 7.5 9.81432 6.04493 9.81432 4.25C9.81432 2.45507 8.36239 1 6.57134 1C4.7803 1 3.32837 2.45507 3.32837 4.25C3.32837 6.04493 4.7803 7.5 6.57134 7.5Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M12.1426 14C12.1426 11.4845 9.64553 9.44995 6.57119 9.44995C3.49684 9.44995 0.999756 11.4845 0.999756 14" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        45 Student
-                                        </span>
-                                    </div>
-                                    <div class="tp-course-list-p">
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                        Aenean commodo ligula eget dolor. </p>
-                                    </div>
-                                    <div class="tp-course-filter-pricing d-flex align-items-center justify-content-between">
-                                        <div class="tp-course-rating-star">
-                                        <p>5.0<span> /5</span></p>
-                                        <div class="tp-course-rating-icon">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                        </div>
-                                        <span>Free</span>
-                                    </div>
-                                </div>
-                            </div>
-        
-                            <div class="tp-course-filter-item mb-25 d-flex">
-                                <div class="tp-course-list-thumb">
-                                    <a href="course-details-3.html">
-                                        <img class="course-lightblue" src="assets/img/course/course-sidebar/course-sidebar-4.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="tp-course-filter-content">
-                                    <div class="tp-course-filter-tag mb-10">
-                                        <span class="tag-span">Development</span>
-                                    </div>
-                                    <h4 class="tp-course-list-title">
-                                        <a href="course-details-3.html">People Making Music with Other</a>
-                                    </h4>
-                                    <div class="tp-course-filter-meta">
-                                        <span><img src="assets/img/teacher/teacher-3.png" alt="">Hilary Ouse</span>
-                                        <span>
-                                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13.9228 10.0426V2.29411C13.9228 1.51825 13.2949 0.953997 12.5252 1.01445H12.4847C11.1276 1.12529 9.07163 1.82055 7.91706 2.53596L7.80567 2.6065C7.62337 2.71733 7.30935 2.71733 7.11692 2.6065L6.9549 2.50573C5.81046 1.79033 3.75452 1.1152 2.3974 1.00437C1.62768 0.943911 0.999756 1.51827 0.999756 2.28405V10.0426C0.999756 10.6573 1.50613 11.2417 2.12393 11.3122L2.30622 11.3425C3.70386 11.5238 5.87126 12.2392 7.10685 12.9143L7.1372 12.9244C7.30937 13.0252 7.59293 13.0252 7.75498 12.9244C8.99057 12.2393 11.1681 11.5339 12.5758 11.3425L12.7885 11.3122C13.4164 11.2417 13.9228 10.6674 13.9228 10.0426Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M7.46118 2.81787V12.4506" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        12 Lessons
-                                        </span>
-                                        <span>
-                                        <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M6.57134 7.5C8.36239 7.5 9.81432 6.04493 9.81432 4.25C9.81432 2.45507 8.36239 1 6.57134 1C4.7803 1 3.32837 2.45507 3.32837 4.25C3.32837 6.04493 4.7803 7.5 6.57134 7.5Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M12.1426 14C12.1426 11.4845 9.64553 9.44995 6.57119 9.44995C3.49684 9.44995 0.999756 11.4845 0.999756 14" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        45 Student
-                                        </span>
-                                    </div>
-                                    <div class="tp-course-list-p">
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                        Aenean commodo ligula eget dolor. </p>
-                                    </div>
-                                    <div class="tp-course-filter-pricing d-flex align-items-center justify-content-between">
-                                        <div class="tp-course-rating-star">
-                                        <p>5.0<span> /5</span></p>
-                                        <div class="tp-course-rating-icon">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                        </div>
-                                        <span>$96.00</span>
-                                    </div>
-                                </div>
-                            </div>
-        
-                            <div class="tp-course-filter-item mb-25 d-flex">
-                                <div class="tp-course-list-thumb">
-                                    <a href="course-details-3.html">
-                                        <img class="course-pink" src="assets/img/course/course-sidebar/course-sidebar-5.jpg" alt="">
-                                    </a>
-                                </div>
-                                <div class="tp-course-filter-content">
-                                    <div class="tp-course-filter-tag mb-10">
-                                        <span class="tag-span">Music</span>
-                                    </div>
-                                    <h4 class="tp-course-list-title">
-                                        <a href="course-details-3.html">Making Music with Other People</a>
-                                    </h4>
-                                    <div class="tp-course-filter-meta">
-                                        <span><img src="assets/img/teacher/teacher-4.png" alt="">Hilary Ouse</span>
-                                        <span>
-                                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13.9228 10.0426V2.29411C13.9228 1.51825 13.2949 0.953997 12.5252 1.01445H12.4847C11.1276 1.12529 9.07163 1.82055 7.91706 2.53596L7.80567 2.6065C7.62337 2.71733 7.30935 2.71733 7.11692 2.6065L6.9549 2.50573C5.81046 1.79033 3.75452 1.1152 2.3974 1.00437C1.62768 0.943911 0.999756 1.51827 0.999756 2.28405V10.0426C0.999756 10.6573 1.50613 11.2417 2.12393 11.3122L2.30622 11.3425C3.70386 11.5238 5.87126 12.2392 7.10685 12.9143L7.1372 12.9244C7.30937 13.0252 7.59293 13.0252 7.75498 12.9244C8.99057 12.2393 11.1681 11.5339 12.5758 11.3425L12.7885 11.3122C13.4164 11.2417 13.9228 10.6674 13.9228 10.0426Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M7.46118 2.81787V12.4506" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        12 Lessons
-                                        </span>
-                                        <span>
-                                        <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M6.57134 7.5C8.36239 7.5 9.81432 6.04493 9.81432 4.25C9.81432 2.45507 8.36239 1 6.57134 1C4.7803 1 3.32837 2.45507 3.32837 4.25C3.32837 6.04493 4.7803 7.5 6.57134 7.5Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M12.1426 14C12.1426 11.4845 9.64553 9.44995 6.57119 9.44995C3.49684 9.44995 0.999756 11.4845 0.999756 14" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>
-                                        45 Student
-                                        </span>
-                                    </div>
-                                    <div class="tp-course-list-p">
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                        Aenean commodo ligula eget dolor. </p>
-                                    </div>
-                                    <div class="tp-course-filter-pricing d-flex align-items-center justify-content-between">
-                                        <div class="tp-course-rating-star">
-                                        <p>5.0<span> /5</span></p>
-                                        <div class="tp-course-rating-icon">
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                        </div>
-                                        </div>
-                                        <span>Free</span>
-                                    </div>
-                                </div>
-                            </div>
+            
                             </div>
                         </div>
-                    </div>
-                    </div>
+                    </div><!--/end Single View -->
+                </div>
                     
                 <div class="tp-event-inner-pagination">
                     <div class="tp-dashboard-pagination pt-20">
