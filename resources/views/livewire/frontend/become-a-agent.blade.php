@@ -48,7 +48,7 @@
                            </div>
                            <div class="col-lg-5">
                               <div class="tp-instructor-become-thumb text-start text-xl-end">
-                                 <img src="assets/images/agent-thumb.png" alt="">
+                                 <img src="assets/images/mission/thumb-1.png" alt="" width="100%">
                               </div>
                            </div>
                         </div>
@@ -70,7 +70,7 @@
                   <div class="row">
                      <div class="col-lg-4">
                         <div class="tp-instructor-apply-thumb">
-                           <img src="assets/images/Agent-thumb-contact.png" alt="">
+                           <img src="assets/images/Agent-thumb-contact.png" alt="" class="pt-10 rounded-md" style="width: 100%">
                         </div>
                      </div>
                      <div class="col-lg-8">

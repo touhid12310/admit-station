@@ -4,7 +4,7 @@ namespace App\Livewire\Student;
 
 use Livewire\Attributes\Title;
 use Livewire\Component;
-#[Title('Dashboard | Orders')]
+#[Title('Student | Orders')]
 class StudentOrder extends Component
 {
     public function render()

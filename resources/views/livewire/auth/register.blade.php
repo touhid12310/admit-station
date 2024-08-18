@@ -25,7 +25,7 @@
               <div class="tp-login-from-box pt-5">
                  <div class="tp-login-from-heading text-center">
                     <h4 class="tp-login-from-title">Create an Account</h4>
-                    <p>Already have an account? <a href="login.html"> Sign In</a></p>
+                    <p>Already have an account? <a href="{{route('login')}}" wire:navigate> Sign In</a></p>
                  </div>
                  <div class="tp-login-input-form">
                     <div class="row">

@@ -6,8 +6,7 @@
                     <ul>
                     <li class="tp-user-menu-title">Welcome</li>
                     <li>
-                        <a class="{{ request()->is('student-dashboard') ? 'active':'' }}" 
-                            href="{{ route('student-dashboard')}}" wire:navigate>
+                        <a class="{{ request()->is('student-dashboard') ? 'active' : '' }}" href="{{ route('student-dashboard')}}" wire:navigate>
                             <span>
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path opacity="0.4" d="M16.0041 5.216V1.584C16.0041 0.456 15.4921 0 14.2201 0H10.9881C9.7161 0 9.2041 0.456 9.2041 1.584V5.208C9.2041 6.344 9.7161 6.792 10.9881 6.792H14.2201C15.4921 6.8 16.0041 6.344 16.0041 5.216Z" fill="currentColor"/>
@@ -20,7 +19,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="{{ request()->is('student-profile') ? 'active' : '' }}" 
+                        <a class="{{ request()->is('student-profile') ? 'active' : ' ' }}" 
                             href="{{ route('student-profile')}}" wire:navigate>
                             <span>
                                 <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,7 +31,7 @@
                         </a>
                     </li>
                     <li>
-                        <a  wire:navigate class="{{ request()->is('student-order') ? 'active' : '' }}"
+                        <a  wire:navigate class="{{ request()->is('student-order') ? 'active' : ' ' }}"
                             href="{{route('student-order')}}">
                             <span>
                                 <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path opacity="0.4" d="M13.4349 9.71387V13.9033C13.4349 14.9826 12.593 16.1383 11.581 16.4782L8.86831 17.379C8.3921 17.5404 7.61825 17.5404 7.15054 17.379L4.43782 16.4782C3.41736 16.1383 2.58398 14.9826 2.58398 13.9033L2.59249 9.71387L6.35118 12.1613C7.26959 12.7646 8.78328 12.7646 9.70169 12.1613L13.4349 9.71387Z" fill="currentColor"/><path d="M14.7945 4.29218L9.70074 0.952512C8.78233 0.349163 7.26865 0.349163 6.35023 0.952512L1.23093 4.29218C-0.41031 5.35441 -0.41031 7.75931 1.23093 8.83004L2.59154 9.71382L6.35023 12.1612C7.26865 12.7646 8.78233 12.7646 9.70074 12.1612L13.4339 9.71382L14.5989 8.94901V11.5494C14.5989 11.8978 14.8881 12.1867 15.2367 12.1867C15.5854 12.1867 15.8745 11.8978 15.8745 11.5494V7.36841C16.2147 6.27218 15.866 4.9975 14.7945 4.29218Z" fill="currentColor"/>
@@ -43,7 +42,7 @@
                     </li>
                    
                     <li>
-                        <a class="{{ request()->is('student-reviews') ? 'active' : '' }}"
+                        <a class="{{ request()->is('student-reviews') ? 'active' : ' ' }}"
                             href="{{ route('student-reviews')}}" wire:navigate>
                             <span>
                                 <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -58,7 +57,7 @@
                    
                     <li class="tp-user-menu-title space-gap">User</li>
                     <li>
-                        <a wire:navigate class="{{ request()->is('student-setting-profile') ? 'active' : '' }}"
+                        <a wire:navigate class="{{ request()->is('student-setting-profile') ? 'active' : ' ' }}"
                             href="{{route('student-setting-profile')}}">
                             <span>
                                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -70,7 +69,7 @@
                         </a>
                     </li>
                     <li>
-                        <a wire:navigate class="{{ request()->is('logout') ? 'active' : '' }}"
+                        <a wire:navigate
                             href="{{route('logout')}}">
                             <span>
                                 <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">

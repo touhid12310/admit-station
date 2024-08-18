@@ -13,7 +13,7 @@
            </span>
         </div>
         <div class="tp-contact-shape-2">
-           <img src="assets/img/live/contact-shape-2.svg" alt="">
+           <img src="assets/images/bg/contact-shape-2.svg" alt="">
         </div>
         <div class="container ">
            <div class="row justify-content-center">
@@ -93,7 +93,7 @@
                           </div>
                           <h4 class="tp-contact-info-title">Feedbacks</h4>
                           <p>Speak to our Friendly team.</p>
-                          <a href="mailto:Support@gmail.com">Support@gmail.com</a>
+                          <a href="mailto:admitstation24@gmail.com">admitstation24@gmail.com</a>
                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
@@ -104,8 +104,8 @@
                               </svg></span>
                           </div>
                           <h4 class="tp-contact-info-title">Call Us</h4>
-                          <p>Mon-Fri from 8am to 5pm</p>
-                          <a href="tel:555000-0000">+1(555) 000-0000</a>
+                          <p>Sat-Fri from 8am to 8pm</p>
+                          <a href="tel:01839440444">+880 1839-440444</a>
                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
@@ -125,7 +125,7 @@
                           </div>
                           <h4 class="tp-contact-info-title">Visit Us</h4>
                           <p>Visit our office HQ.</p>
-                          <a href="#">77 Robinson Road #33-01</a>
+                          <a href="#">Agrabad , Chittagong.</a>
                        </div>
                     </div>
                  </div>

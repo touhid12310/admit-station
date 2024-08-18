@@ -40,7 +40,7 @@ Route::middleware('auth')->group(function () {
     
     Route::get('/logout', [Login::class, 'logout'])->name('logout');
     Route::prefix('student')->group(function () {
-        Route::get('/', StudentDashboard::class)->name('student-dashboard');
+        Route::get('/dashboard', StudentDashboard::class)->name('student-dashboard');
         Route::get('/profile', StudentProfile::class)->name('student-profile');
         Route::get('/order', StudentOrder::class)->name('student-order');
         Route::get('/reviews', StudentReviews::class)->name('student-reviews');

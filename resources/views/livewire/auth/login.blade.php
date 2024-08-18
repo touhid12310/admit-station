@@ -25,7 +25,7 @@
               <div class="tp-login-from-box">
                  <div class="tp-login-from-heading text-center">
                     <h4 class="tp-login-from-title" style="color: #AB0C2F">Sign in</h4>
-                    <p>Dont have an account? <a href="{{route('register')}}">Create Now</a></p>
+                    <p>Dont have an account? <a href="{{route('register')}}" wire:navigate>Create Now</a></p>
                  </div>
                  <form wire:submit.prevent='save' class="mb-3">
                      <div class="row">
@@ -78,7 +78,14 @@
                               </div>
                            </div>
                            <div class="tp-login-from-btn">
-                              <button class="tp-btn-inner w-100 text-center" style="background-color: #AB0C2F">Sign In</button>
+                              <button class="tp-btn-inner w-100 text-center" style="background-color: #AB0C2F">
+                                 <span wire:loading.remove>Sign in</span>
+                                 <span wire:loading>
+                                    <div class="spinner-border text-light" role="status">
+                                          <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                 </span>
+                              </button>
                            </div>
                         </div>
                      </div>
@@ -91,6 +98,7 @@
                           <div class="tp-login-from-subtitle-heading">
                              <h5 class="tp-login-from-subtitle">Or Sign In with email</h5>
                           </div>
+
                           <div class="tp-login-from-google-btn">
                              <a class="w-100" href="#">
                                 <svg class="mr-10" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
