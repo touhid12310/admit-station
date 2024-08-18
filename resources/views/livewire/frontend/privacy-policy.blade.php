@@ -13,7 +13,7 @@
                   <div class="tp-privacy-box shadow-lg">
                      <div class="tp-privacy-content">
                         <h4 class="tp-privacy-content-title">Introduction</h4>
-                        <p>At Acadia, we value your privacy and are committed to protecting your personal information. This Privacy Policy is designed to help you understand how we collect, use, disclose, and safeguard your data. By using our website or services, you consent to the practices described in this policy.</p>
+                        <p>At Admit Station, we value your privacy and are committed to protecting your personal information. This Privacy Policy is designed to help you understand how we collect, use, disclose, and safeguard your data. By using our website or services, you consent to the practices described in this policy.</p>
                      </div>
                      <div class="tp-privacy-content">
                         <h4 class="tp-privacy-content-title">Information We Collect</h4>
@@ -58,10 +58,10 @@
                      </div>
                      <div class="tp-privacy-content">
                         <h4 class="tp-privacy-content-title">Contact Us</h4>
-                        <p>If you have any questions or concerns regarding this Privacy Policy, please contact us at support@acadia.net</p>
+                        <p>If you have any questions or concerns regarding this Privacy Policy, please contact us at admitstation24@gmail.com</p>
                      </div>
                      <div class="tp-privacy-content-bottom mt-30">
-                        <p>Last updated on October 15, 2023. ThemePure reserves the right to change or modify the above contents at any time without any prior notice.</p>
+                        <p>Last updated on {{date('M-d-Y')}}.<a href="https://leetwise.com/" target="_balnk">Leetwise</a> reserves the right to change or modify the above contents at any time without any prior notice.</p>
                      </div>
                   </div>
                </div>

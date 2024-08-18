@@ -2,12 +2,12 @@
     <!-- login area start -->
     <section class="tp-login-area p-5">
         <div class="tp-login-register-box d-flex align-items-center">
-           <div class="tp-login-register-banner-box p-relative" data-background="assets/img/login/login-register-bg.jpg">
+           <div class="tp-login-register-banner-box p-relative" data-background="{{asset('assets/img/login/login-register-bg.jpg')}}">
               <div class="tp-login-register-logo tp-header-logo">
-                 <a href="index.html"><img src="assets/img/logo/logo-white.png" alt=""></a>
+                 <a href="index.html"><img src="{{asset('assets/images/logo.png')}}" alt=""></a>
               </div>
               <div class="tp-login-register-heading">
-                 <h3 class="tp-login-register-title">Discover world <br> best online courses here.</h3>
+                 <h3 class="tp-login-register-title">Discover world <br> best Schools, Colleges, Universitys here.</h3>
               </div>
               <div class="tp-login-register-shape">
                  <div class="shape-1">

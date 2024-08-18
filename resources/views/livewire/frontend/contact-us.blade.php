@@ -13,7 +13,7 @@
            </span>
         </div>
         <div class="tp-contact-shape-2">
-           <img src="assets/images/bg/contact-shape-2.svg" alt="">
+           <img src="{{asset('assets/images/bg/contact-shape-2.svg')}}" alt="">
         </div>
         <div class="container ">
            <div class="row justify-content-center">

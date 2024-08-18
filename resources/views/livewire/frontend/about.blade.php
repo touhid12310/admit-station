@@ -14,7 +14,7 @@
               </div>
            </div>
            <div class="container-fluid p-0">
-              <div class="tp-about-banner-bg" data-background="assets/images/mission/about-thumb-1.jpg">
+              <div class="tp-about-banner-bg" data-background="{{asset('assets/images/mission/about-thumb-1.jpg')}}">
               <div class="row g-0">
                  <div class="col-xl-6 col-lg-12"></div>
                  <div class="col-xl-6 col-lg-12">
@@ -94,7 +94,7 @@
                  <div class="col-lg-4 col-sm-6">
                     <div class="tp-instructor-counter-item item-end text-center">
                        <h3 class="tp-counter-count mb-10">
-                          <span data-purecounter-duration="1" data-purecounter-end="1"  class="purecounter">1</span>Day
+                          <span data-purecounter-duration="1" data-purecounter-end="60"  class="purecounter">60</span>Day's
                        </h3>
                        <p>Application Approval Processing Time</p>
                     </div>
@@ -111,7 +111,7 @@
               <div class="row">
                  <div class="col-lg-4">
                     <div class="tp-our-mission-thumb wow fadeInUp" data-wow-delay=".3s">
-                       <img src="assets/images/mission/thumb-1.png" alt="" style="width: 100%">
+                       <img src="{{asset('assets/images/mission/thumb-1.png')}}" alt="" style="width: 100%">
                     </div>
                  </div>
                  <div class="col-lg-8">
@@ -136,7 +136,7 @@
                           </div>
                           <div class="tp-our-mission-item-thumb">
                              <div class="tp-our-mission-item-thumb-1">
-                                <img src="assets/images/mission/mission-item-1.jpg" alt="">
+                                <img src="{{asset('assets/images/mission/mission-item-1.jpg')}}" alt="">
                              </div>
                           </div>
                        </div>
@@ -155,7 +155,7 @@
                           </div>
                           <div class="tp-our-mission-item-thumb">
                              <div class="tp-our-mission-item-thumb-3">
-                                <img src="assets/images/mission/mission-item-2.jpg" alt="">
+                                <img src="{{asset('assets/images/mission/mission-item-2.jpg')}}" alt="">
                              </div>
                           </div>
                        </div>
@@ -174,7 +174,7 @@
                           </div>
                           <div class="tp-our-mission-item-thumb">
                              <div class="tp-our-mission-item-thumb-2">
-                                <img src="assets/images/mission/mission-item-3.jpg" alt="">
+                                <img src="{{asset('assets/images/mission/mission-item-3.jpg')}}" alt="">
                              </div>
                           </div>
                        </div>
