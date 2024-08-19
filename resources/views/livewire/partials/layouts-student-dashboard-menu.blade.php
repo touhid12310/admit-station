@@ -227,11 +227,15 @@
                            <div class="tp-header-user-content">
                               <div class="tp-header-user-profile d-flex align-items-center">
                                  <div class="tp-header-user-profile-thumb">
-                                    <img src="{{ asset('assets/images/dashboard-profile-2.jpg') }}" alt="">
+                                    @if (auth()->user()->photo)
+                                       <img src="{{ asset(auth()->user()->photo) }}" alt=""/>
+                                    @else
+                                       <img src="{{ asset('assets/images/dashboard-profile-2.jpg') }}" alt="">
+                                    @endif
                                  </div>
                                  <div class="tp-header-user-profile-content">
-                                    <h4>Floyd Miles</h4>
-                                    <span>Founder</span>
+                                    <h4>{{Auth::user()->name}}</h4>
+                                    <span>{{Auth::user()->user_type}}</span>
                                  </div>
                               </div>
                               <div class="tp-header-user-list">

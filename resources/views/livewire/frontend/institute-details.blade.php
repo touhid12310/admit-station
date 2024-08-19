@@ -466,3 +466,4 @@
         </section>
         <!-- Course details area end -->
 </div>
+

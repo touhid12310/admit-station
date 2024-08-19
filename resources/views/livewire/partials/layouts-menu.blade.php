@@ -259,14 +259,11 @@
                               </li>
                               
                               <li class="has-dropdown">
-                                 <a href="#">Admissions</a>
+                                 <a href="#">Application</a>
                                  <ul class="tp-submenu">
-                                    <li><a href="university-admission-overview.html">Overview</a></li>
-                                    <li><a href="university-apply.html">How to Apply</a></li>
-                                    <li><a href="university-tuition-fees.html">Tuition & Fees</a></li>
-                                    <li><a href="university-financial.html">Financial Aid</a></li>
-                                    <li><a href="university-deadlines.html">Dates & Deadlines </a></li>
-                                    <li><a href="university-schedule.html">Schedule a Tour</a></li>
+                                    <li><a href="{{ route('institute-list')}}" wire:navigate>Study Abroad</a></li>
+                                    <li><a href="{{ route('become-a-agent')}}" wire:navigate>Become An Agent</a></li>
+                                    <li><a href="#">Register Institute</a></li>
                                  </ul>
                               </li>
                               
