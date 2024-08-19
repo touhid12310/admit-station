@@ -69,7 +69,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4" wire:ignore>
                         <div class="tp-course-grid-sidebar-right d-flex justify-content-start justify-content-lg-end">
                             
                             <div class="tp-course-grid-select tp-course-grid-sidebar-select">
