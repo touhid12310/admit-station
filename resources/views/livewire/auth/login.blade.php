@@ -28,6 +28,9 @@
                     <p>Dont have an account? <a href="{{route('register')}}" wire:navigate>Create Now</a></p>
                  </div>
                  <form wire:submit.prevent='save' class="mb-3">
+                      <!-- flash message -->
+                      @include('livewire.partials.flash-msg')
+                      <!-- /flash message -->
                      <div class="row">
                         <div class="col-12">
                            <div class="tp-login-input p-relative">
