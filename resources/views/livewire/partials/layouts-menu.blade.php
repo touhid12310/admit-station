@@ -261,9 +261,10 @@
                               <li class="has-dropdown">
                                  <a href="#">Application</a>
                                  <ul class="tp-submenu">
-                                    <li><a href="{{ route('institute-list')}}" wire:navigate>Study Abroad</a></li>
-                                    <li><a href="{{ route('become-a-agent')}}" wire:navigate>Become An Agent</a></li>
-                                    <li><a href="#">Register Institute</a></li>
+                                    <li><a href="{{ route('institute-list')}}" wire:navigate>Chose an Institute</a></li>
+                                    <li><a href="{{ route('become-a-agent')}}" wire:navigate>Become an Agent</a></li>
+                                    <li><a href="#">Register an Institute</a></li>
+                                    <li><a href="#">Book an Appointment </a></li>
                                  </ul>
                               </li>
                               

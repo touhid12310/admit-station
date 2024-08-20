@@ -32,7 +32,7 @@ Route::get('/become-a-agent', BecomeAAgent::class)->name('become-a-agent');
 Route::get('/institute-list', InstituteList::class)->name('institute-list');
 Route::get('/institute-details/{id}', InstituteDetails::class)->name('institute-details');
 Route::get('/blog-list', BlogList::class)->name('blog-list');
-Route::get('/blog-list-details', BlogDetails::class)->name('blog-list-details');
+Route::get('/blog-details', BlogDetails::class)->name('blog-details');
 
 
 

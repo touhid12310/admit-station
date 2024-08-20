@@ -108,22 +108,22 @@
                                 <div class="tp-grid-widget-content">
                                 <div class="tp-grid-widget-checkbox">
                                     <ul>
-                                        <li>
+                                        <li wire:key = "School">
                                             <div class="from-checkbox">
-                                            <input id="remeber" type="checkbox">
-                                            <label for="remeber">School <span> (9)</span></label>
+                                                <input id="remeber" type="checkbox" wire:model.live="selected_schools">
+                                                <label for="remeber">School <span> ({{ $SchoolCount }})</span></label>
                                             </div>
                                         </li>
-                                        <li>
+                                        <li wire:key = "College">
                                             <div class="from-checkbox">
-                                            <input id="Business" type="checkbox">
-                                            <label for="Business">Colleges <span> (12)</span></label>
+                                            <input id="Business" type="checkbox" wire:model.live="selected_colleges">
+                                            <label for="Business">Colleges <span> ({{ $CollegeCount }})</span></label>
                                             </div>
                                         </li>
-                                        <li>
-                                            <div class="from-checkbox">
+                                        <li wire:key = "Universitiy">
+                                            <div class="from-checkbox" wire:model.live="selected_universitis">
                                             <input id="Development" type="checkbox">
-                                            <label for="Development">Universitys (10)</label>
+                                            <label for="Development">Universitys ({{ $UniversityCount }})</label>
                                             </div>
                                         </li>
                                     </ul>
@@ -161,7 +161,7 @@
                                                                 <path d="M7.46118 2.81787V12.4506" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                                                             </svg>
                                                         </span>
-                                                        12 Lessons
+                                                        {{ $vendor->country }}
                                                     </span>
                                                     <span>
                                                         <span>
@@ -170,7 +170,7 @@
                                                                 <path d="M12.1426 14C12.1426 11.4845 9.64553 9.44995 6.57119 9.44995C3.49684 9.44995 0.999756 11.4845 0.999756 14" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
                                                             </svg>
                                                         </span>
-                                                        45 Student
+                                                        {{ $vendor->city }}
                                                     </span>
                                                     </div>
                                                     <h4 class="tp-course-title">
@@ -222,20 +222,14 @@
                                                 <a href="{{ route('institute-details', $vendor->id) }}">{{$vendor->name}}</a>
                                             </h4>
                                             <div class="tp-course-filter-meta">
-                                                <span><img src="{{$vendor->logo}}" alt=""></span>
+                                                <span><img src="{{ $vendor->logo }}" alt=""></span>
                                                 <span>
-                                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M13.9228 10.0426V2.29411C13.9228 1.51825 13.2949 0.953997 12.5252 1.01445H12.4847C11.1276 1.12529 9.07163 1.82055 7.91706 2.53596L7.80567 2.6065C7.62337 2.71733 7.30935 2.71733 7.11692 2.6065L6.9549 2.50573C5.81046 1.79033 3.75452 1.1152 2.3974 1.00437C1.62768 0.943911 0.999756 1.51827 0.999756 2.28405V10.0426C0.999756 10.6573 1.50613 11.2417 2.12393 11.3122L2.30622 11.3425C3.70386 11.5238 5.87126 12.2392 7.10685 12.9143L7.1372 12.9244C7.30937 13.0252 7.59293 13.0252 7.75498 12.9244C8.99057 12.2393 11.1681 11.5339 12.5758 11.3425L12.7885 11.3122C13.4164 11.2417 13.9228 10.6674 13.9228 10.0426Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M7.46118 2.81787V12.4506" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                12 Lessons
+                                                    <i class="fa-solid fa-house"></i>
+                                                    {{ $vendor->country }}
                                                 </span>
                                                 <span>
-                                                <svg width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6.57134 7.5C8.36239 7.5 9.81432 6.04493 9.81432 4.25C9.81432 2.45507 8.36239 1 6.57134 1C4.7803 1 3.32837 2.45507 3.32837 4.25C3.32837 6.04493 4.7803 7.5 6.57134 7.5Z" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M12.1426 14C12.1426 11.4845 9.64553 9.44995 6.57119 9.44995C3.49684 9.44995 0.999756 11.4845 0.999756 14" stroke="#94928E" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                45 Student
+                                                    <i class="fa-solid fa-location-dot"></i>
+                                                    {{ $vendor->city }}
                                                 </span>
                                             </div>
                                             <div class="tp-course-list-p">
@@ -253,7 +247,9 @@
                                                     <i class="fa-solid fa-star"></i>
                                                 </div>
                                                 </div>
-                                                <span>Free</span>
+                                                <span>
+                                                    <a class="tp-btn w-100 text-center" href="{{route('login')}}">Apply Now</a>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>

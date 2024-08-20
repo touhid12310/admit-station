@@ -11,7 +11,7 @@
                                 <div class="col-xxl-9 col-lg-11">
                                     <div class="tp-hero-wrapper">
                                         <span class="tp-hero-subtitle">Be apart of our history</span>
-                                        <h2 class="tp-hero-title">Landmark to Create the Future.</h2>
+                                        <h2 class="tp-hero-title">Study Abroad from Bangladesh.</h2>
                                         <div class="tp-hero-btn">
                                             <a class="tp-btn" href="{{ route('login') }}">
                                                 Get Started
@@ -489,14 +489,14 @@
                 <div class="col-lg-6">
                     <div class="tp-blog-item text-center mb-40 wow fadeInLeft" data-wow-delay=".4s">
                         <div class="tp-blog-thumb fix">
-                            <a href="{{ route('blog-list-details') }}">
+                            <a href="{{ route('blog-details') }}">
                                 <img src="{{asset('assets/images/blog/blog-thumb-1.jpg')}}" alt="blog-thumb">
                             </a>
                         </div>
                         <div class="tp-blog-content">
                             <span class="tp-blog-tag">Video & Tips</span>
                             <h4 class="tp-blog-title">
-                                <a href="{{ route('blog-list-details') }}">The Importance Of Intrinsic Motivation for
+                                <a href="{{ route('blog-details') }}">The Importance Of Intrinsic Motivation for
                                     Students</a>
                             </h4>
                             <div class="tp-blog-meta">
@@ -532,7 +532,7 @@
                                 </span>
                             </div>
                             <div class="tp-blog-btn">
-                                <a href="{{ route('blog-list-details') }}">
+                                <a href="{{ route('blog-details') }}">
                                     <span class="tp-blog-btn-bg blog-btn-bg"></span>
                                     <span class="tp-blog-btn-border blog-btn-border"></span>
                                     <span class="icon">
@@ -552,14 +552,14 @@
                 <div class="col-lg-6">
                     <div class="tp-blog-item text-center mb-40 wow fadeInRight" data-wow-delay=".4s">
                         <div class="tp-blog-thumb fix">
-                            <a href="{{ route('blog-list-details') }}">
+                            <a href="{{ route('blog-details') }}">
                                 <img src="{{asset('assets/images/blog/blog-thumb-2.jpg')}}" alt="blog-thumb">
                             </a>
                         </div>
                         <div class="tp-blog-content">
                             <span class="tp-blog-tag">Video & Tips</span>
                             <h4 class="tp-blog-title">
-                                <a href="{{ route('blog-list-details') }}">Those Other College Expenses You Aren`t
+                                <a href="{{ route('blog-details') }}">Those Other College Expenses You Aren`t
                                     Thinking About</a>
                             </h4>
                             <div class="tp-blog-meta">
@@ -595,7 +595,7 @@
                                 </span>
                             </div>
                             <div class="tp-blog-btn">
-                                <a href="{{ route('blog-list-details') }}">
+                                <a href="{{ route('blog-details') }}">
                                     <span class="tp-blog-btn-bg blog-btn-bg"></span>
                                     <span class="tp-blog-btn-border blog-btn-border"></span>
                                     <span class="icon">
