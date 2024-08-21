@@ -464,21 +464,18 @@
                     <div class="tp-course-requrement-widget-box">
                         <div class="tp-course-requrement-widget mb-30">
                             <div class="tp-course-requrement-widget-content">
-                                <a href="university-requirements.html">Degree Requirements</a>
-                                <a href="university-apply.html">How to Apply</a>
-                                <a href="university-leadership.html">Faculty & Staff</a>
-                                <a href="university-financial.html">Financial Add</a>
+                                <a href="#">EIIN : {{$vendor->EIIN}}</a>
+                                <a href="#">ESTD : {{$vendor->E_year}}</a>
+                                <a href="#">Country : {{$vendor->country}}</a>
+                                <a href="#">City :{{$vendor->city}}</a>
                             </div>
                         </div>
                         <div class="tp-course-requrement-widget-btn mb-30">
-                            <a class="tp-btn btn-1 w-100 text-center" href="university-request-info.html">Request
-                                information</a>
-                            <a class="tp-btn btn-2 w-100 text-center" href="{{ route('login') }}">Apply Now</a>
+                            <a class="tp-btn btn-2 w-100 text-center" href="{{ route('ApplyNow') }}">Apply Now</a>
                         </div>
                         <div class="tp-course-requrement-widget-contact mb-30">
                             <h4 class="tp-course-requrement-widget-contact-title">Contact Us</h4>
-                            <p>1810 Campus Way NEBothell,<br>
-                                WA 98011-8246</p>
+                            <p>{{$vendor->address}}<br>{{$vendor->country_code}}{{$vendor->mobile_no}}</p>
                             <a href="mailto:acadia@gmail.com"><span><svg xmlns="http://www.w3.org/2000/svg"
                                         width="18" height="16" viewBox="0 0 18 16" fill="none">
                                         <path opacity="0.4"
@@ -509,7 +506,7 @@
                                 more questions?</h4>
                             <p>Read our <a href="{{ route('FAQs') }}">FAQ</a></p>
                             <div class="tp-course-requrement-widget-faq-thumb">
-                                <img src="assets/img/history/undergraduate/course-contact-bg.png" alt="">
+                                <img src="{{ asset($vendor->thumb_img) }}" alt="{{$vendor->thumb_img}}" wire:ignore style="width: 100%">
                             </div>
                         </div>
                     </div>

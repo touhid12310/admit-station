@@ -10,7 +10,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
     <!-- CSS here -->
 
-    @vite(['resources/assets/css/bootstrap.css', 'resources/assets/css/animate.css', 'resources/assets/css/slick.css', 'resources/assets/css/swiper-bundle.css', 'resources/assets/css/hover-reveal.css', 'resources/assets/css/magnific-popup.css', 'resources/assets/css/font-awesome-pro.css', 'resources/assets/css/spacing.css', 'resources/assets/css/main.css'])
+    @vite(['resources/assets/css/bootstrap.css', 'resources/assets/css/animate.css', 'resources/assets/css/slick.css', 'resources/assets/css/swiper-bundle.css', 'resources/assets/css/hover-reveal.css', 'resources/assets/css/magnific-popup.css', 'resources/assets/css/flatpickr.min.css','resources/assets/css/font-awesome-pro.css', 'resources/assets/css/spacing.css', 'resources/assets/css/main.css'])
     @livewireStyles
 </head>
 

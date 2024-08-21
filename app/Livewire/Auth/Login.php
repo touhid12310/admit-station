@@ -24,11 +24,9 @@ class Login extends Component
                 'icon' => 'error',
             ]);
             return;
-            session()->flash('error', 'Invalidate Credentials');
-            return;
         }
 
-        //return redirect()->route('student-dashboard');
+        return redirect()->intended();
     }
     public function render()
     {
