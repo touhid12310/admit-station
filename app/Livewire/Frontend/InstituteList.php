@@ -20,8 +20,6 @@ class InstituteList extends Component
     public $selected_colleges;
     public $selected_universitis;
 
-   
-
     public function render()
     {
         $SchoolCount     = Vendor::where('vendors_types', 'School')->count();

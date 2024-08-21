@@ -19,11 +19,11 @@ class Login extends Component
         ]);
 
         if(!auth()->attempt(['email' => $this->email, 'password' => $this->password])){
-            /* $this->dispatch('swal', [
+            $this->dispatch('swal', [
                 'title' => 'Invalidate Credentials.',
                 'icon' => 'error',
             ]);
-            return; */
+            return;
             session()->flash('error', 'Invalidate Credentials');
             return;
         }

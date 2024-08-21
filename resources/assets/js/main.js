@@ -274,8 +274,11 @@
 
     ////////////////////////////////////////////////////
     // 12. Nice Select Js
-    $("select").niceSelect();
-    $(".tpd-select select").niceSelect();
+
+    document.addEventListener("livewire:navigated", function () {
+        $("select").niceSelect();
+        $(".tpd-select select").niceSelect();
+    });
 
     ////////////////////////////////////////////////////
     // Active Class
