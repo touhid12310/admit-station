@@ -238,14 +238,13 @@
                                                                 <i class="fa-solid fa-star"></i>
                                                             </div>
                                                         </div>
-                                                        <div class="tp-course-pricing">
-                                                            <span>Free</span>
-                                                        </div>
+                                                       
                                                     </div>
                                                 </div>
                                                 <div class="tp-course-btn">
-                                                    <a href="{{ route('institute-details', $vendor->id) }}">Preview
-                                                        this Course</a>
+                                                    <a href="{{ route('institute-details', $vendor->id) }}">
+                                                        Preview
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -305,7 +304,7 @@
                                                     </div>
                                                     <span>
                                                         <a class="tp-btn w-100 text-center"
-                                                            href="{{ route('login') }}">Apply Now</a>
+                                                            href="{{ route('institute-details', $vendor->id) }}">Preview</a>
                                                     </span>
                                                 </div>
                                             </div>

@@ -201,7 +201,7 @@
                         </div>
                         <div class="tp-header-info-item">
                            <span>
-                              <a href="tel:0123456789"><i><img src="assets/img/icon/calling.svg" alt="phone-img"></i> +880 1839-440444</a>
+                              <a href="tel:0123456789"><i><img src="{{asset('assets/img/icon/calling.svg')}}" alt="phone-img"></i> +880 1839-440444</a>
                            </span>
                         </div>
                         <div class="tp-header-info-item">
@@ -321,7 +321,7 @@
                   <div class="offcanvas__top mb-90 d-flex justify-content-between align-items-center">
                      <div class="offcanvas__logo tp-header-logo">
                      <a href="{{ url('/')}}">
-                           <img src="assets/img/logo/logo-black.png" alt="logo">
+                           <img src="{{ asset('assets/images/logo.png') }}" alt="logo">
                      </a>
                      </div>
                   </div>

@@ -1,7 +1,7 @@
 <div>
     <!-- Course details breadcrumb start -->
     <section class="tp-breadcrumb__area pt-160 pb-150 p-relative z-index-1 fix">
-        <div class="tp-breadcrumb__bg" data-background="assets/img/breadcrumb/breadcrumb-bg.jpg"></div>
+        <div class="tp-breadcrumb__bg" data-background="{{ asset($vendor->thumb_img) }}" wire:ignore></div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-sm-12">
@@ -23,10 +23,6 @@
     </section>
     <!-- Course details breadcrumb end -->
 
-    <div wire:ignore>
-        <img class="course-pink" src="{{ asset($vendor->thumb_img) }}" alt="{{ $vendor->thumb_img }}">
-    </div>
-
     <!-- Course details area start -->
     <section class="tp-course-details-area grey-bg pt-100 pb-120">
         <div class="container">
@@ -34,7 +30,7 @@
                 <div class="col-lg-9">
                     <div class="tp-course-details-wrapper">
                         <div class="tp-course-details-heading">
-                            <h3 class="tp-course-details-title">Computer Science</h3>
+                            <h3 class="tp-course-details-title">{{ $vendor->name }}</h3>
                             <p>Earn a bachelor's in computer science degree from Acadia University and develop the
                                 software engineering, project management and programming skills to impact how technology
                                 will change and transform our world.</p>
