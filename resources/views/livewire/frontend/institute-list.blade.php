@@ -212,14 +212,14 @@
                                     @forelse ($vendors as $vendor)
                                     <div class="tp-course-filter-item mb-25 d-flex">
                                         <div class="tp-course-list-thumb">
-                                            <a href="{{ route('institute-details', $vendor->id) }}"><img class="course-pink" src="{{$vendor->thumb_img}}" alt=""></a>
+                                            <a href="{{ route('institute-details', $vendor->id) }}" wire:navigate><img class="course-pink" src="{{$vendor->thumb_img}}" alt=""></a>
                                         </div>
                                         <div class="tp-course-filter-content">
                                             <div class="tp-course-filter-tag mb-10">
                                                 <span class="tag-span">{{ $vendor->vendors_types }}</span>
                                             </div>
                                             <h4 class="tp-course-list-title">
-                                                <a href="{{ route('institute-details', $vendor->id) }}">{{$vendor->name}}</a>
+                                                <a href="{{ route('institute-details', $vendor->id) }}"wire:navigate>{{$vendor->name}}</a>
                                             </h4>
                                             <div class="tp-course-filter-meta">
                                                 <span><img src="{{ $vendor->logo }}" alt=""></span>
@@ -263,16 +263,18 @@
                     </div>
                     
                     <div class="tp-event-inner-pagination">
-                        {{ $vendors->links() }}
-                       {{--  <div class="tp-dashboard-pagination pt-20">
+                       {{--  {{ $vendors->links() }} --}}
+                        <div class="tp-dashboard-pagination pt-20">
                             <div class="tp-pagination">
                                 <nav>
                                     <ul class="justify-content-center">
                                         <li>
-                                            <a href="course-with-sidebar.html"><svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1.00017 6.77879L14 6.77879" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                <path d="M6.24316 11.9999L0.999899 6.77922L6.24316 1.55762" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            </svg></a>
+                                            <a href="course-with-sidebar.html">
+                                                <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.00017 6.77879L14 6.77879" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M6.24316 11.9999L0.999899 6.77922L6.24316 1.55762" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                            </a>
                                         </li>
                                         <li>
                                             <a href="course-with-sidebar.html">1</a>
@@ -286,15 +288,15 @@
                                         <li>
                                             <a href="course-with-sidebar.html" class="next page-numbers">
                                                 <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M13.9998 6.77883L1 6.77883" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                <path d="M8.75684 1.55767L14.0001 6.7784L8.75684 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M13.9998 6.77883L1 6.77883" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                    <path d="M8.75684 1.55767L14.0001 6.7784L8.75684 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
                                                 </svg>
                                             </a>
                                         </li>
                                     </ul>
                                 </nav>
                             </div>
-                        </div> --}}
+                        </div>
                     </div>
                 </div>
             </div>
