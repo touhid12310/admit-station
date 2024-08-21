@@ -11,7 +11,7 @@
                                     <img src="{{ asset('assets/images/dashboard-profile-2.jpg') }}" alt="">
                                 </div>
                                 <div class="tp-instructor-content">
-                                    <h4 class="tp-instructor-title">Indigo Violet</h4>
+                                    <h4 class="tp-instructor-title">{{ Auth::user()->name }}</h4>
                                     <div class="tp-instructor-rate  d-flex align-items-center">
                                     <div class="tp-instructor-rating">
                                         <i class="fa-solid fa-star"></i>

@@ -8,26 +8,27 @@ use Livewire\Component;
 class Login extends Component
 {
  
-    
     public $email;
     public $password;
 
     public function save(){
          
         $this->validate([
-            'email'     => 'required',
+            'email'     => 'required | email',
             'password'  => 'required|min:6',
         ]);
 
         if(!auth()->attempt(['email' => $this->email, 'password' => $this->password])){
-            $this->dispatch('swal', [
+            /* $this->dispatch('swal', [
                 'title' => 'Invalidate Credentials.',
                 'icon' => 'error',
             ]);
+            return; */
+            session()->flash('error', 'Invalidate Credentials');
             return;
         }
 
-        return redirect()->route('student-dashboard');
+        //return redirect()->route('student-dashboard');
     }
     public function render()
     {

@@ -19,7 +19,7 @@
                         </a>
                     </li>
                     <li>
-                        <a class="{{ request()->is('student-profile') ? 'active' : ' ' }}" 
+                        <a class="{{ request()->is('student-profile') ? 'active' : ' ' }}"
                             href="{{ route('student-profile')}}" wire:navigate>
                             <span>
                                 <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">

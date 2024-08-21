@@ -37,6 +37,9 @@
                               <label>Email or Phone</label>
                               <input type="text" wire:model="email" placeholder="Type your email or phone number">
                            </div>
+                           @error('email')
+                              <div class="m-2 text-danger">{{ $message }}</div>
+                           @enderror
                         </div>
                         <div class="col-12">
                            <div class="tp-login-input p-relative">
@@ -62,6 +65,9 @@
                                     </span>
                                 </div>
                               </div>
+                              @error('password')
+                                 <div class="m-2 text-danger">{{ $message }}</div>
+                              @enderror
                            </div>
                         </div>
                         <div class="col-12">

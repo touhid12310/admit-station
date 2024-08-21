@@ -39,37 +39,28 @@
                                                   <span>Registration Date</span>
                                                </div>
                                                <div class="tp-profile-info-details">
-                                                  <span>October 06, 2024  8:30 am</span>
+                                                  <span>{{ Auth::user()->created_at->format('F j, Y g:i A') }}</span>
                                                </div>
                                             </div>
                                          </li>
                                          <li>
                                             <div class="tp-profile-info d-flex">
                                                <div class="tp-profile-info-tag">
-                                                  <span>First Name</span>
+                                                  <span>Full Name</span>
                                                </div>
                                                <div class="tp-profile-info-details">
-                                                  <span>Indigo</span>
+                                                  <span>{{ Auth::user()->name }}</span>
                                                </div>
                                             </div>
                                          </li>
+                              
                                          <li>
                                             <div class="tp-profile-info d-flex">
                                                <div class="tp-profile-info-tag">
-                                                  <span>Last Name</span>
+                                                  <span>User type</span>
                                                </div>
                                                <div class="tp-profile-info-details">
-                                                  <span>Violet</span>
-                                               </div>
-                                            </div>
-                                         </li>
-                                         <li>
-                                            <div class="tp-profile-info d-flex">
-                                               <div class="tp-profile-info-tag">
-                                                  <span>Username</span>
-                                               </div>
-                                               <div class="tp-profile-info-details">
-                                                  <span>Instructor</span>
+                                                  <span>{{ Auth::user()->user_type }}</span>
                                                </div>
                                             </div>
                                          </li>
@@ -79,7 +70,7 @@
                                                   <span>Email</span>
                                                </div>
                                                <div class="tp-profile-info-details">
-                                                  <span>example@gmail.com</span>
+                                                  <span>{{ Auth::user()->email }}</span>
                                                </div>
                                             </div>
                                          </li>
@@ -89,7 +80,7 @@
                                                   <span>Phone Number</span>
                                                </div>
                                                <div class="tp-profile-info-details">
-                                                  <span>+670 413 90 762</span>
+                                                  <span>{{ Auth::user()->phone_no }}</span>
                                                </div>
                                             </div>
                                          </li>
@@ -99,7 +90,7 @@
                                                   <span>Skill/Occupation</span>
                                                </div>
                                                <div class="tp-profile-info-details">
-                                                  <span>Full Stack Developer</span>
+                                                  <span>{{Auth::user()->occupation}}</span>
                                                </div>
                                             </div>
                                          </li>
@@ -109,9 +100,7 @@
                                                   <span>Biography</span>
                                                </div>
                                                <div class="tp-profile-info-details">
-                                                  <span class="details-zone">I have a degree in Journalism with over 15 years of work experience in the field.
-                                                     Throughout the years, I have worked in several well-known institutions and
-                                                     published several books on that are available.</span>
+                                                  <span class="details-zone">{{Auth::user()->bio}}</span>
                                                </div>
                                             </div>
                                          </li>
