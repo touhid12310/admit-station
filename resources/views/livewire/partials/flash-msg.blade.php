@@ -7,7 +7,6 @@
 
     <script>
         window.addEventListener('swal', function(e) {
-            alert(1)
             Swal.fire({
                 position: "center",
                 icon: e.detail[0].icon, //error or success
