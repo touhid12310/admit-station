@@ -26,7 +26,7 @@
                           <div class="row">
                              <div class="col-lg-6">
                                 <div class="tp-dashboard-section">
-                                   <h2 class="tp-dashboard-title">Order History</h2>
+                                   <h2 class="tp-dashboard-title">Application Details</h2>
                                 </div>
                              </div>
                           </div>
@@ -34,255 +34,69 @@
                              <ul>
                                 <li class="tpd-table-head">
                                    <div class="tpd-table-row">
-                                      <div class="tpd-order-id">
-                                         <h4 class="tpd-table-title">Order ID</h4>
-                                      </div>
+                                      
                                       <div class="tpd-order-name">
-                                         <h4 class="tpd-table-title">Course Name</h4>
+                                         <h4 class="tpd-table-title">Institute Name</h4>
                                       </div>
                                       <div class="tpd-order-date">
-                                         <h4 class="tpd-table-title">Date</h4>
+                                         <h4 class="tpd-table-title">Type</h4>
                                       </div>
-                                      <div class="tpd-order-price">
-                                         <h4 class="tpd-table-title">Price</h4>
-                                      </div>
+                                      
                                       <div class="tpd-order-status">
                                          <h4 class="tpd-table-title">Status</h4>
                                       </div>
                                       <div class="tpd-order-action"></div>
                                    </div>
                                 </li>
+                                @forelse ($applys as $apply)
                                 <li>
-                                   <div class="tpd-table-row">
-                                      <div class="tpd-order-id">
-                                         <h4 class="tpd-common-text">#4024</h4>
-                                      </div>
-                                      <div class="tpd-order-name">
-                                         <h4 class="tpd-common-text">Application</h4>
-                                      </div>
-                                      <div class="tpd-order-date">
-                                         <h4 class="tpd-common-text">March 2, 2024</h4>
-                                      </div>
-                                      <div class="tpd-order-price">
-                                         <h4 class="tpd-common-text">$50.00</h4>
-                                      </div>
-                                      <div class="tpd-order-status">
-                                         <div class="tpd-badge-item">
-                                            <span class="tpd-badge warning">On Hold</span>
-                                         </div>
-                                      </div>
-                                      <div class="tpd-order-action">
-                                         <div class="tpd-action-btn">
-                                            <button>
-                                               <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                  <path d="M13 8.23975V10.7466C13 11.079 12.8595 11.3979 12.6095 11.6329C12.3594 11.868 12.0203 12.0001 11.6667 12.0001H2.33333C1.97971 12.0001 1.64057 11.868 1.39052 11.6329C1.14048 11.3979 1 11.079 1 10.7466V8.23975" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                  <path d="M10.3327 5.38704L6.99935 8.52063L3.66602 5.38704" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                  <path d="M7 1V8.52061" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                  </svg>
-                                               <span class="tpd-action-tooltip">Download</span>
-                                            </button>
-                                         </div>
-                                      </div>
-                                   </div>
-                                </li>
-                                <li>
-                                   <div class="tpd-table-row">
-                                      <div class="tpd-order-id">
-                                         <h4 class="tpd-common-text">#4056</h4>
-                                      </div>
-                                      <div class="tpd-order-name">
-                                         <h4 class="tpd-common-text">Design System in Figma</h4>
-                                      </div>
-                                      <div class="tpd-order-date">
-                                         <h4 class="tpd-common-text">June 2, 2024</h4>
-                                      </div>
-                                      <div class="tpd-order-price">
-                                         <h4 class="tpd-common-text">$100.00</h4>
-                                      </div>
-                                      <div class="tpd-order-status">
-                                         <div class="tpd-badge-item">
-                                            <span class="tpd-badge sucess">Success</span>
-                                         </div>
-                                      </div>
-                                      <div class="tpd-order-action">
-                                         <div class="tpd-action-btn">
-                                            <button>
-                                               <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                  <path d="M13 8.23975V10.7466C13 11.079 12.8595 11.3979 12.6095 11.6329C12.3594 11.868 12.0203 12.0001 11.6667 12.0001H2.33333C1.97971 12.0001 1.64057 11.868 1.39052 11.6329C1.14048 11.3979 1 11.079 1 10.7466V8.23975" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                  <path d="M10.3327 5.38704L6.99935 8.52063L3.66602 5.38704" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                  <path d="M7 1V8.52061" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                  </svg>
-                                               <span class="tpd-action-tooltip">Download</span>
-                                            </button>
-                                         </div>
-                                      </div>
-                                   </div>
-                                </li>
-                                <li>
-                                   <div class="tpd-table-row">
-                                      <div class="tpd-order-id">
-                                         <h4 class="tpd-common-text">#4034</h4>
-                                      </div>
-                                      <div class="tpd-order-name">
-                                         <h4 class="tpd-common-text">App Development</h4>
-                                      </div>
-                                      <div class="tpd-order-date">
-                                         <h4 class="tpd-common-text">May 2, 2024</h4>
-                                      </div>
-                                      <div class="tpd-order-price">
-                                         <h4 class="tpd-common-text">$76.00</h4>
-                                      </div>
-                                      <div class="tpd-order-status">
-                                         <div class="tpd-badge-item">
-                                            <span class="tpd-badge info">Processing</span>
-                                         </div>
-                                      </div>
-                                      <div class="tpd-order-action">
-                                         <div class="tpd-action-btn">
-                                            <button>
-                                               <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                  <path d="M13 8.23975V10.7466C13 11.079 12.8595 11.3979 12.6095 11.6329C12.3594 11.868 12.0203 12.0001 11.6667 12.0001H2.33333C1.97971 12.0001 1.64057 11.868 1.39052 11.6329C1.14048 11.3979 1 11.079 1 10.7466V8.23975" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                  <path d="M10.3327 5.38704L6.99935 8.52063L3.66602 5.38704" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                  <path d="M7 1V8.52061" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                  </svg>
-                                               <span class="tpd-action-tooltip">Download</span>
-                                            </button>
-                                         </div>
-                                      </div>
-                                   </div>
-                                </li>
-                                <li>
-                                   <div class="tpd-table-row">
-                                      <div class="tpd-order-id">
-                                         <h4 class="tpd-common-text">#4018</h4>
-                                      </div>
-                                      <div class="tpd-order-name">
-                                         <h4 class="tpd-common-text">Graphic</h4>
-                                      </div>
-                                      <div class="tpd-order-date">
-                                         <h4 class="tpd-common-text">March 2, 2024</h4>
-                                      </div>
-                                      <div class="tpd-order-price">
-                                         <h4 class="tpd-common-text">$00.00</h4>
-                                      </div>
-                                      <div class="tpd-order-status">
-                                         <div class="tpd-badge-item">
-                                            <span class="tpd-badge danger">Canceled</span>
-                                         </div>
-                                      </div>
-                                      <div class="tpd-order-action">
-                                         <div class="tpd-action-btn">
-                                            <button>
-                                               <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                  <path d="M13 8.23975V10.7466C13 11.079 12.8595 11.3979 12.6095 11.6329C12.3594 11.868 12.0203 12.0001 11.6667 12.0001H2.33333C1.97971 12.0001 1.64057 11.868 1.39052 11.6329C1.14048 11.3979 1 11.079 1 10.7466V8.23975" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                  <path d="M10.3327 5.38704L6.99935 8.52063L3.66602 5.38704" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                  <path d="M7 1V8.52061" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                  </svg>
-                                               <span class="tpd-action-tooltip">Download</span>
-                                            </button>
-                                         </div>
-                                      </div>
-                                   </div>
-                                </li>
-                                <li>
-                                   <div class="tpd-table-row">
-                                      <div class="tpd-order-id">
-                                         <h4 class="tpd-common-text">#4056</h4>
-                                      </div>
-                                      <div class="tpd-order-name">
-                                         <h4 class="tpd-common-text">Digital Marketing Courses</h4>
-                                      </div>
-                                      <div class="tpd-order-date">
-                                         <h4 class="tpd-common-text">June 2, 2024</h4>
-                                      </div>
-                                      <div class="tpd-order-price">
-                                         <h4 class="tpd-common-text">$100.00</h4>
-                                      </div>
-                                      <div class="tpd-order-status">
-                                         <div class="tpd-badge-item">
-                                            <span class="tpd-badge sucess">Success</span>
-                                         </div>
-                                      </div>
-                                      <div class="tpd-order-action">
-                                         <div class="tpd-action-btn">
-                                            <button>
-                                               <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                  <path d="M13 8.23975V10.7466C13 11.079 12.8595 11.3979 12.6095 11.6329C12.3594 11.868 12.0203 12.0001 11.6667 12.0001H2.33333C1.97971 12.0001 1.64057 11.868 1.39052 11.6329C1.14048 11.3979 1 11.079 1 10.7466V8.23975" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                  <path d="M10.3327 5.38704L6.99935 8.52063L3.66602 5.38704" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                  <path d="M7 1V8.52061" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                  </svg>
-                                               <span class="tpd-action-tooltip">Download</span>
-                                            </button>
-                                         </div>
-                                      </div>
-                                   </div>
-                                </li>
-                                <li>
-                                   <div class="tpd-table-row">
-                                      <div class="tpd-order-id">
-                                         <h4 class="tpd-common-text">#4018</h4>
-                                      </div>
-                                      <div class="tpd-order-name">
-                                         <h4 class="tpd-common-text">Application</h4>
-                                      </div>
-                                      <div class="tpd-order-date">
-                                         <h4 class="tpd-common-text">June 2, 2024</h4>
-                                      </div>
-                                      <div class="tpd-order-price">
-                                         <h4 class="tpd-common-text">$100.00</h4>
-                                      </div>
-                                      <div class="tpd-order-status">
-                                         <div class="tpd-badge-item">
-                                            <span class="tpd-badge warning">On Hold</span>
-                                         </div>
-                                      </div>
-                                      <div class="tpd-order-action">
-                                         <div class="tpd-action-btn">
-                                            <button>
-                                               <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                  <path d="M13 8.23975V10.7466C13 11.079 12.8595 11.3979 12.6095 11.6329C12.3594 11.868 12.0203 12.0001 11.6667 12.0001H2.33333C1.97971 12.0001 1.64057 11.868 1.39052 11.6329C1.14048 11.3979 1 11.079 1 10.7466V8.23975" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                  <path d="M10.3327 5.38704L6.99935 8.52063L3.66602 5.38704" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                  <path d="M7 1V8.52061" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                  </svg>
-                                               <span class="tpd-action-tooltip">Download</span>
-                                            </button>
-                                         </div>
-                                      </div>
-                                   </div>
-                                </li>
-                                <li>
-                                   <div class="tpd-table-row">
-                                      <div class="tpd-order-id">
-                                         <h4 class="tpd-common-text">#4056</h4>
-                                      </div>
-                                      <div class="tpd-order-name">
-                                         <h4 class="tpd-common-text">Digital Marketing Courses</h4>
-                                      </div>
-                                      <div class="tpd-order-date">
-                                         <h4 class="tpd-common-text">June 2, 2024</h4>
-                                      </div>
-                                      <div class="tpd-order-price">
-                                         <h4 class="tpd-common-text">$100.00</h4>
-                                      </div>
-                                      <div class="tpd-order-status">
-                                         <div class="tpd-badge-item">
-                                            <span class="tpd-badge sucess">Success</span>
-                                         </div>
-                                      </div>
-                                      <div class="tpd-order-action">
-                                         <div class="tpd-action-btn">
-                                            <button>
-                                               <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                  <path d="M13 8.23975V10.7466C13 11.079 12.8595 11.3979 12.6095 11.6329C12.3594 11.868 12.0203 12.0001 11.6667 12.0001H2.33333C1.97971 12.0001 1.64057 11.868 1.39052 11.6329C1.14048 11.3979 1 11.079 1 10.7466V8.23975" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                  <path d="M10.3327 5.38704L6.99935 8.52063L3.66602 5.38704" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                  <path d="M7 1V8.52061" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                  </svg>
-                                               <span class="tpd-action-tooltip">Download</span>
-                                            </button>
-                                         </div>
-                                      </div>
-                                   </div>
-                                </li>
+                                 <div class="tpd-table-row">
+                                   
+                                    <div class="tpd-order-name">
+                                       <h4 class="tpd-common-text">{{$apply->vendor->name}}</h4>
+                                    </div>
+
+                                    <div class="tpd-order-date">
+                                       <h4 class="tpd-common-text">{{$apply->vendor->vendors_types}}</h4>
+                                    </div>
+                                   
+                                    <div class="tpd-order-status">
+                                       @if ($apply->status == 'Approved')
+                                          <div class="tpd-badge-item">
+                                             <span class="tpd-badge bg-success text-white">{{$apply->status}}</span>
+                                          </div>
+                                       @elseif($apply->status == 'Pending')
+                                          <div class="tpd-badge-item">
+                                             <span class="tpd-badge info">{{$apply->status}}</span>
+                                          </div>
+                                       @else
+                                          <div class="tpd-badge-item">
+                                             <span class="tpd-badge danger">{{$apply->status}}</span>
+                                          </div>
+                                       @endif
+                                       
+                                    </div>
+                                    <div class="tpd-order-action">
+                                       <div class="tpd-action-btn">
+                                          <button>
+                                             <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13 8.23975V10.7466C13 11.079 12.8595 11.3979 12.6095 11.6329C12.3594 11.868 12.0203 12.0001 11.6667 12.0001H2.33333C1.97971 12.0001 1.64057 11.868 1.39052 11.6329C1.14048 11.3979 1 11.079 1 10.7466V8.23975" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M10.3327 5.38704L6.99935 8.52063L3.66602 5.38704" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path d="M7 1V8.52061" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                </svg>
+                                             <span class="tpd-action-tooltip">Download</span>
+                                          </button>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                                @empty
+                                    <li>
+                                       <div class="text-center">Empty</div>
+                                    </li>
+                                @endforelse
+                               
+   
                              </ul>
                           </div>
                        </section>
