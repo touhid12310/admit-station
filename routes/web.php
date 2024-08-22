@@ -18,6 +18,8 @@ use App\Livewire\Student\StudentProfile;
 use App\Livewire\Student\StudentReviews;
 use App\Livewire\Student\StudentSettingProfile;
 use App\Livewire\Student\StudentApplyFor;
+use App\Livewire\Student\StudentPasswordSetting;
+use App\Livewire\Student\StudentSocialProfileSetting;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', Home::class);
@@ -44,5 +46,7 @@ Route::middleware('auth')->group(function () {
         Route::get('/order', StudentApplyFor::class)->name('student-order');
         Route::get('/reviews', StudentReviews::class)->name('student-reviews');
         Route::get('/setting-profile', StudentSettingProfile::class)->name('student-setting-profile');
+        Route::get('/setting-password', StudentPasswordSetting::class)->name('student-password-setting');
+        Route::get('/setting-social-profile', StudentSocialProfileSetting::class)->name('student-social-profile-setting');
     });
 });
