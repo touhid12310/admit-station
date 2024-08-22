@@ -1,6 +1,5 @@
 <?php
 
-use App\Livewire\Apply\ApplyNow;
 use App\Livewire\Auth\Login;
 use App\Livewire\Auth\Register;
 use App\Livewire\Frontend\BecomeAAgent;
@@ -38,7 +37,6 @@ Route::get('/blog-details', BlogDetails::class)->name('blog-details');
 
 
 Route::middleware('auth')->group(function () {
-    Route::get('/apply', ApplyNow::class)->name('ApplyNow');
     Route::get('/logout', [Login::class, 'logout'])->name('logout');
     Route::prefix('student')->group(function () {
         Route::get('/dashboard', StudentDashboard::class)->name('student-dashboard');

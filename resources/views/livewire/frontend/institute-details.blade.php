@@ -471,7 +471,31 @@
                             </div>
                         </div>
                         <div class="tp-course-requrement-widget-btn mb-30">
-                            <a class="tp-btn btn-2 w-100 text-center" href="{{ route('ApplyNow') }}">Apply Now</a>
+                            @auth
+                                <form wire:submit.prevent="apply" class="mb-3">
+                                    <!-- session msg-->
+                                    @include('livewire.partials.flash-msg')
+                                    <!-- end session msg-->
+                                    <input type="hidden" wire:model="vendor_id" value="{{ $vendor->id }}">
+                                    <input type="hidden" wire:model="user_id" value="{{ $user_id }}"> 
+                                    @error('vendor_id')
+                                        <div class="m-2 text-danger">{{ $message }}</div>
+                                    @enderror
+                                    <button class="tp-btn btn-2 w-100 text-center">
+                                        <span wire:loading.remove>Apply Now</span>
+                                        <span wire:loading>
+                                            <div class="spinner-border text-light" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                        </span>
+                                    </button>
+                                </form>
+                            @else  
+                                <div class="tp-btn btn-2 w-100 text-center">
+                                    <a href="{{ route('login')}}">Apply Now</a>
+                                </div>
+                            @endauth
+                            
                         </div>
                         <div class="tp-course-requrement-widget-contact mb-30">
                             <h4 class="tp-course-requrement-widget-contact-title">Contact Us</h4>

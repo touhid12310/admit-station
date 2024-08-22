@@ -75,50 +75,70 @@
                      </div>
                      <div class="col-lg-8">
                         <div class="tp-instructor-apply-from">
-                           <form action="#">
+                           
                               <div class="tp-instructor-apply-heading">
                                  <h3 class="tp-instructor-apply-title">Become an Agent !</h3>
                               </div>
 
                               <div class="tp-instructor-apply-form-wrapper">
-                                 <div class="row">
-                                    <div class="col-lg-6">
-                                       <div class="tp-instructor-apply-input">
-                                          <label>Full Name</label>
-                                          <input type="text" placeholder="Please enter Your Full name">
+                                 <form wire:submit.prevent="applyForAgent">
+                                    <!-- session msg-->
+                                    @include('livewire.partials.flash-msg')
+                                    <!-- end session msg-->
+                                    <div class="row">
+                                       <div class="col-lg-6">
+                                          <div class="tp-instructor-apply-input">
+                                             <label>Full Name</label>
+                                             <input type="text" wire:model="full_name" placeholder="Please enter Your Full name">
+                                          </div>
+                                          @error('full_name')
+                                             <div class="m-2 text-danger">{{ $message }}</div>
+                                          @enderror
+                                       </div>
+                                       <div class="col-lg-6">
+                                          <div class="tp-instructor-apply-input">
+                                             <label>Phone number</label>
+                                             <input type="text" wire:model="phone_number" placeholder="Please enter Phone Number">
+                                          </div>
+                                          @error('phone_number')
+                                             <div class="m-2 text-danger">{{ $message }}</div>
+                                          @enderror
+                                       </div>
+                                       <div class="col-lg-12">
+                                          <div class="tp-instructor-apply-input">
+                                             <label>Email address</label>
+                                             <input type="email" wire:model="email" placeholder="Please enter email">
+                                          </div>
+                                          @error('email')
+                                             <div class="m-2 text-danger">{{ $message }}</div>
+                                          @enderror
+                                       </div>
+                                       
+                                       <div class="col-lg-12">
+                                          <div class="tp-instructor-apply-input">
+                                             <label>Bio</label>
+                                             <textarea type="text" wire:model="bio" placeholder="Please write short description about you."></textarea>
+                                          </div>
+                                          @error('bio')
+                                             <div class="m-2 text-danger">{{ $message }}</div>
+                                          @enderror
+                                       </div>
+                                       <div class="col-lg-12">
+                                          <div class="tp-instructor-apply-input-btn">
+                                             <button class="tp-btn btn-2 w-30 text-center">
+                                                <span wire:loading.remove>Become a Agent</span>
+                                                <span wire:loading>
+                                                    <div class="spinner-border text-light" role="status">
+                                                        <span class="visually-hidden">Loading...</span>
+                                                    </div>
+                                                </span>
+                                            </button>
+                                          </div>
                                        </div>
                                     </div>
-                                    <div class="col-lg-6">
-                                       <div class="tp-instructor-apply-input">
-                                          <label>Phone number</label>
-                                          <input type="text" placeholder="Please enter Phone Number">
-                                       </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                       <div class="tp-instructor-apply-input">
-                                          <label>Email address</label>
-                                          <input type="email" placeholder="Please enter email">
-                                       </div>
-                                    </div>
-                                    
-                                    <div class="col-lg-12">
-                                       <div class="tp-instructor-apply-input">
-                                          <label>Bio</label>
-                                          <textarea type="text" placeholder="Please write short description about you."></textarea>
-                                       </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                       <div class="tp-instructor-apply-input-btn">
-                                          <button class="tp-btn-inner" type="submit" style="background-color: #AB0C2F">Become a Agent 
-                                             <span><svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
-                                             <path d="M1 11L6 6L1 1" stroke="#FEFEFE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                             </svg></span>
-                                          </button>
-                                       </div>
-                                    </div>
-                                 </div>
+                                 </form>
                               </div>
-                           </form>
+                          
                         </div>
                      </div>
                   </div>
