@@ -54,6 +54,9 @@
                                                 </span>
                                             </div>
                                           </div>
+                                          @error('old_password')
+                                                <div class="m-2 text-danger">{{ $message }}</div>
+                                          @enderror
                                        </div>
                                     </div>
                                     <div class="col-lg-8">

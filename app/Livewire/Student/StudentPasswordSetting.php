@@ -15,21 +15,18 @@ class StudentPasswordSetting extends Component
 
     public function update()
     {
-       
-        if ($this->old_password && $this->password) {
-            $password = $this->validate([
-                'old_password' => 'required',
-                'password' => 'required|confirmed|min:6',
+        $this->validate([
+            'old_password' => 'required',
+            'password' => 'required|confirmed|min:6',
+        ]);
+
+        if (!Hash::check($this->old_password, auth()->user()->password)) {
+            $this->dispatch('swal', [
+                'title' => 'The old password is incorrect.',
+                'icon' => 'error',
             ]);
 
-            if (!Hash::check($this->old_password, auth()->user()->password)) {
-                $this->dispatch('swal', [
-                    'title' => 'The old password is incorrect.',
-                    'icon' => 'error',
-                ]);
-
-                return;
-            }
+            return;
         }
 
         $user = User::find(auth()->user()->id)->update([
