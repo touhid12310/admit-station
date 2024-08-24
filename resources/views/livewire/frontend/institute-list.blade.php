@@ -317,9 +317,9 @@
                         <!--/end Single View -->
                     </div>
 
-                    <div class="tp-event-inner-pagination">
-                        {{--  {{ $vendors->links() }} --}}
-                        <div class="tp-dashboard-pagination pt-20">
+                    <div class="tp-event-inner-pagination" wire:ignore>
+                         {{ $vendors->links() }}
+                      {{--   <div class="tp-dashboard-pagination pt-20">
                             <div class="tp-pagination">
                                 <nav>
                                     <ul class="justify-content-center">
@@ -361,7 +361,7 @@
                                     </ul>
                                 </nav>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
