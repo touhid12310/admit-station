@@ -131,24 +131,24 @@
                                 <div class="tp-grid-widget-content">
                                     <div class="tp-grid-widget-checkbox">
                                         <ul>
-                                            <li wire:key = "School">
+                                            <li wire:key = "School" wire:ignore>
                                                 <div class="from-checkbox">
                                                     <input id="remeber" type="checkbox"
-                                                        wire:model.live="selected_schools">
+                                                        wire:model.live="selected_schools"  wire:ignore>
                                                     <label for="remeber">School <span>
                                                             ({{ $SchoolCount }})</span></label>
                                                 </div>
                                             </li>
-                                            <li wire:key = "College">
+                                            <li wire:key = "College" wire:ignore>
                                                 <div class="from-checkbox">
                                                     <input id="Business" type="checkbox"
-                                                        wire:model.live="selected_colleges">
+                                                        wire:model.live="selected_colleges"  wire:ignore>
                                                     <label for="Business">Colleges <span>
                                                             ({{ $CollegeCount }})</span></label>
                                                 </div>
                                             </li>
-                                            <li wire:key = "Universitiy">
-                                                <div class="from-checkbox" wire:model.live="selected_universitis">
+                                            <li wire:key = "Universitiy" wire:ignore>
+                                                <div class="from-checkbox" wire:model.live="selected_universitis"  wire:ignore>
                                                     <input id="Development" type="checkbox">
                                                     <label for="Development">Universitys
                                                         ({{ $UniversityCount }})</label>
