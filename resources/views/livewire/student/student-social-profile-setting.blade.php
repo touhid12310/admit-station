@@ -34,7 +34,8 @@
                                        <!-- end session msg-->
                                        <div class="tpd-setting-social-wrap d-flex align-items-center">
                                           <div class="tpd-setting-social-icon d-flex align-items-center">
-                                             <img src="{{asset('assets/img/dashboard/icon/facebook.png')}}" alt="">
+                                             <a href="{{$facebook}}" target="_blank">
+                                             <img src="{{asset('assets/img/dashboard/icon/facebook.png')}}" alt=""></a>
                                              <h4>Facebook <span><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M1 9L5 5L1 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                              </svg></span></h4>
@@ -50,7 +51,7 @@
                                        </div>
                                        <div class="tpd-setting-social-wrap d-flex align-items-center">
                                           <div class="tpd-setting-social-icon d-flex align-items-center">
-                                             <img src="{{asset('assets/img/dashboard/icon/twetter.png')}}" alt="">
+                                             <a href="{{$twitter}}" target="_blank"><img src="{{asset('assets/img/dashboard/icon/twetter.png')}}" alt=""></a>
                                              <h4>Twitter <span><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M1 9L5 5L1 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                              </svg></span></h4>
@@ -66,7 +67,7 @@
                                        </div>
                                        <div class="tpd-setting-social-wrap d-flex align-items-center">
                                           <div class="tpd-setting-social-icon d-flex align-items-center">
-                                             <img src="{{asset('assets/img/dashboard/icon/linkdin.png')}}" alt="">
+                                             <a href="{{$linkedin}}" target="_blank"><img src="{{asset('assets/img/dashboard/icon/linkdin.png')}}" alt=""></a>
                                              <h4>Linkedin <span><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M1 9L5 5L1 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                              </svg></span></h4>
@@ -82,7 +83,7 @@
                                        </div>
                                        <div class="tpd-setting-social-wrap d-flex align-items-center">
                                           <div class="tpd-setting-social-icon d-flex align-items-center">
-                                             <img src="{{asset('assets/img/dashboard/icon/website.png')}}" alt="">
+                                             <a href="{{$website}}" target="_blank"><img src="{{asset('assets/img/dashboard/icon/website.png')}}" alt=""></a>
                                              <h4>Website <span><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M1 9L5 5L1 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                              </svg></span></h4>
@@ -98,7 +99,7 @@
                                        </div>
                                        <div class="tpd-setting-social-wrap d-flex align-items-center">
                                           <div class="tpd-setting-social-icon d-flex align-items-center">
-                                             <img src="{{asset('assets/img/dashboard/icon/git.png')}}" alt="">
+                                             <a href="{{$github}}" target="_blank"><img src="{{asset('assets/img/dashboard/icon/git.png')}}" alt=""></a>
                                              <h4>Github <span><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M1 9L5 5L1 1" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                              </svg></span></h4>

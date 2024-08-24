@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Student;
 
+use App\Models\User;
 use App\Models\UserSocialProfiles;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Attributes\Title;
@@ -14,6 +15,18 @@ class StudentSocialProfileSetting extends Component
     public $linkedin;
     public $website;
     public $github;
+
+    public function mount()
+    {
+        $user = auth()->user();
+        $socialProfiles = optional($user->UserSocialProfiles);
+
+        $this->facebook = $socialProfiles ? $socialProfiles->facebook : null;
+        $this->twitter = $socialProfiles ? $socialProfiles->twitter : null;
+        $this->linkedin = $socialProfiles ? $socialProfiles->linkedin : null;
+        $this->website = $socialProfiles ? $socialProfiles->website : null;
+        $this->github = $socialProfiles ? $socialProfiles->github : null;
+    }
 
     public function save(){
 
