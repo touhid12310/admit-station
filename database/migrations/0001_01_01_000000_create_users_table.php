@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('certificates_img')->nullable();
             $table->string('phone_no')->nullable();
             $table->string('occupation')->nullable();
-            $table->string('bio')->nullable(); //Biography or About_me
+            $table->text('bio')->nullable(); //Biography or About_me
             $table->enum('user_type', ['admin', 'agent', 'student'])->default('student');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');

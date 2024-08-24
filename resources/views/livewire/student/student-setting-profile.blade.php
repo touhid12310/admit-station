@@ -25,6 +25,10 @@
 
                        <div class="row">
                           <div class="col-12">
+                           <form wire:submit.prevent="update">
+                              <!-- session msg-->
+                              @include('livewire.partials.flash-msg')
+                              <!-- end session msg-->
                              <div class="tpd-setting-box profile">
                                 <div class="tp-dashboard-banner-bg profile mb-100" data-background="{{asset('assets/img/dashboard/bg/dashboard-bg-1.jpg')}}">
                                     <div class="tp-instructor-wrap d-flex justify-content-between">
@@ -37,7 +41,7 @@
                                                 <path d="M19.0035 15.9806C19.8435 15.9806 20.6355 16.2992 21.2275 16.8741C21.8195 17.4568 22.1475 18.2259 22.1475 19.0339C22.1395 19.8808 21.7875 20.6421 21.2195 21.1937C20.6515 21.7454 19.8675 22.0872 19.0035 22.0872C18.1635 22.0872 17.3795 21.7687 16.7795 21.1937C16.1875 20.6111 15.8595 19.8497 15.8595 19.0339C15.8515 18.2259 16.1795 17.4646 16.7715 16.8819C17.3715 16.2992 18.1635 15.9806 19.0035 15.9806ZM19.0035 17.146C18.4835 17.146 17.9955 17.3402 17.6195 17.7054C17.2515 18.0628 17.0515 18.5367 17.0595 19.0262V19.0339C17.0595 19.5389 17.2595 20.0128 17.6275 20.3702C17.9955 20.7276 18.4835 20.9218 19.0035 20.9218C20.0755 20.9218 20.9395 20.075 20.9475 19.0339C20.9475 18.5289 20.7475 18.055 20.3795 17.6976C20.0115 17.3402 19.5235 17.146 19.0035 17.146ZM23.4915 15.7942C23.8915 15.7942 24.2195 16.1127 24.2195 16.5012C24.2195 16.8896 23.8915 17.2004 23.4915 17.2004C23.0915 17.2004 22.7715 16.8896 22.7715 16.5012C22.7715 16.1127 23.0915 15.7942 23.4915 15.7942Z" fill="white" />
                                              </svg></span>
                                           </div>
-                                       </div>
+                                       </div> 
                                        <div class="tp-instructor-course-btn profile tpd-setting-cartificate-content">
                                           <span class="upload-btn">
                                              <input id="tpd-setting-cartificate-input" type="file" accept="image/png, image/jpeg">
@@ -89,8 +93,9 @@
                                       </div>
                                       <div class="tpd-setting-cartificate-content">
                                          <p>Size: 700x430 pixels</p>
+                                         <input id="tpd-setting-cartificate-input" type="file" wire:model="photo">
                                          <span class="upload-btn">
-                                            <input id="tpd-setting-cartificate-input" type="file" accept="image/png, image/jpeg">
+                                            <input id="tpd-setting-cartificate-input" type="file" wire:model="photo">
                                             <label for="tpd-setting-cartificate-input"><span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                <path d="M3.49372 8.93415L0.811853 10.733C0.771427 10.4884 0.75 10.2223 0.75 9.93382V4.06733C0.75 2.94238 1.08242 2.13441 1.60842 1.60842C2.13441 1.08242 2.94238 0.75 4.06733 0.75H9.93382C11.0588 0.75 11.8667 1.08242 12.3927 1.60842C12.9187 2.13441 13.2512 2.94238 13.2512 4.06733V6.70275C12.4225 6.07233 11.1927 6.09857 10.3975 6.78145C10.3974 6.78153 10.3973 6.7816 10.3972 6.78168L7.48523 9.28066L7.48496 9.28088C7.21999 9.50849 6.75316 9.50849 6.48819 9.28088L6.48228 9.27581L6.47627 9.27086L6.2457 9.08098C5.48405 8.42351 4.32392 8.37449 3.49481 8.93341C3.49444 8.93366 3.49408 8.9339 3.49372 8.93415Z" stroke="#556DF5" stroke-width="1.5" />
                                                <path d="M4.90051 5.86792C5.82069 5.86792 6.56665 5.12196 6.56665 4.20178C6.56665 3.2816 5.82069 2.53564 4.90051 2.53564C3.98033 2.53564 3.23438 3.2816 3.23438 4.20178C3.23438 5.12196 3.98033 5.86792 4.90051 5.86792Z" fill="#556DF5" />
@@ -100,10 +105,16 @@
                                       </div>
                                    </div>
                                    <div class="tpd-setting-cartificate-btn">
-                                      <button>Save Changes</button>
+                                      <button> <span wire:loading.remove>Save Changes</span>
+                                       <span wire:loading>
+                                          <div class="spinner-border text-light" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                          </div>
+                                       </span></button>
                                    </div>
                                 </div>
                              </div>
+                           </form>
                           </div>
                        </div>
 
