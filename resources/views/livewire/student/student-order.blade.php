@@ -17,7 +17,9 @@
 
                  </div>
                  <div class="col-lg-9">
-                    
+                    <div class="row">
+                     
+                    </div>
                     <!-- dashboard-content-area-start -->
                     <div class="tpd-content-layout">
   
@@ -30,75 +32,45 @@
                                 </div>
                              </div>
                           </div>
-                          <div class="tpd-table mb-45">
-                             <ul>
-                                <li class="tpd-table-head">
-                                   <div class="tpd-table-row">
-                                      
-                                      <div class="tpd-order-name">
-                                         <h4 class="tpd-table-title">Institute Name</h4>
-                                      </div>
-                                      <div class="tpd-order-date">
-                                         <h4 class="tpd-table-title">Type</h4>
-                                      </div>
-                                      
-                                      <div class="tpd-order-status">
-                                         <h4 class="tpd-table-title">Status</h4>
-                                      </div>
-                                      <div class="tpd-order-action"></div>
-                                   </div>
-                                </li>
-                                @forelse ($applys as $apply)
-                                <li>
-                                 <div class="tpd-table-row">
-                                   
-                                    <div class="tpd-order-name">
-                                       <h4 class="tpd-common-text">{{$apply->vendor->name}}</h4>
-                                    </div>
-
-                                    <div class="tpd-order-date">
-                                       <h4 class="tpd-common-text">{{$apply->vendor->vendors_types}}</h4>
-                                    </div>
-                                   
-                                    <div class="tpd-order-status">
-                                       @if ($apply->status == 'Approved')
-                                          <div class="tpd-badge-item">
-                                             <span class="tpd-badge bg-success text-white">{{$apply->status}}</span>
-                                          </div>
-                                       @elseif($apply->status == 'Pending')
-                                          <div class="tpd-badge-item">
-                                             <span class="tpd-badge info">{{$apply->status}}</span>
-                                          </div>
-                                       @else
-                                          <div class="tpd-badge-item">
-                                             <span class="tpd-badge danger">{{$apply->status}}</span>
-                                          </div>
-                                       @endif
-                                       
-                                    </div>
-                                    <div class="tpd-order-action">
-                                       <div class="tpd-action-btn">
-                                          <button>
-                                             <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M13 8.23975V10.7466C13 11.079 12.8595 11.3979 12.6095 11.6329C12.3594 11.868 12.0203 12.0001 11.6667 12.0001H2.33333C1.97971 12.0001 1.64057 11.868 1.39052 11.6329C1.14048 11.3979 1 11.079 1 10.7466V8.23975" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                <path d="M10.3327 5.38704L6.99935 8.52063L3.66602 5.38704" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                <path d="M7 1V8.52061" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg>
-                                             <span class="tpd-action-tooltip">Download</span>
-                                          </button>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </li>
-                                @empty
-                                    <li>
-                                       <div class="text-center">Empty</div>
-                                    </li>
-                                @endforelse
-                               
-   
-                             </ul>
+                          <div class="bg-white p-5 rounded">
+                           <table class="table table-hover">
+                              <thead>
+                                <tr>
+                                    <th scope="col"  class="tpd-table-title">Institute Name</th>
+                                    <th scope="col"  class="tpd-table-title">Type</th>
+                                    <th scope="col"  class="tpd-table-title">Status</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                 @forelse ($applys as $apply)
+                                    <tr>
+                                       <td class="tpd-common-text">{{$apply->vendor->name}}</td>
+                                       <td class="tpd-common-text">{{$apply->vendor->vendors_types}}</td>
+                                       <td class="tpd-common-text">
+                                          @if ($apply->status == 'Approved')
+                                             <div class="tpd-badge-item">
+                                                <span class="tpd-badge bg-success text-white">{{$apply->status}}</span>
+                                             </div>
+                                          @elseif($apply->status == 'Pending')
+                                             <div class="tpd-badge-item">
+                                                <span class="tpd-badge info">{{$apply->status}}</span>
+                                             </div>
+                                          @else
+                                             <div class="tpd-badge-item">
+                                                <span class="tpd-badge danger">{{$apply->status}}</span>
+                                             </div>
+                                          @endif
+                                       </td>
+                                    </tr>
+                                 @empty
+                                    <tr>
+                                       <td class="text-center" rowspan="3">Mark</td>
+                                    </tr>
+                                 @endforelse
+                              </tbody>
+                            </table>
                           </div>
+                         
                        </section>
                        <!-- order-area-startend -->
   

@@ -40,7 +40,7 @@
                                 <div class="col-xxl-9 col-lg-11">
                                     <div class="tp-hero-wrapper">
                                         <span class="tp-hero-subtitle">Be apart of our history</span>
-                                        <h2 class="tp-hero-title">Education to Create the Future.</h2>
+                                        <h2 class="tp-hero-title">Transform your world.</h2>
                                         <div class="tp-hero-btn">
                                             <a class="tp-btn" href="{{ route('login') }}">
                                                 Get Started
@@ -69,7 +69,7 @@
                                 <div class="col-xxl-9 col-lg-11">
                                     <div class="tp-hero-wrapper">
                                         <span class="tp-hero-subtitle">Be apart of our history</span>
-                                        <h2 class="tp-hero-title">Discipline to Create the Future.</h2>
+                                        <h2 class="tp-hero-title">Learn, and grow into a global citizen.</h2>
                                         <div class="tp-hero-btn">
                                             <a class="tp-btn" href="{{ route('login') }}">
                                                 Get Started

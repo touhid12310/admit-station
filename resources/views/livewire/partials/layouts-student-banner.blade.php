@@ -12,22 +12,22 @@
                                 </div>
                                 <div class="tp-instructor-content">
                                     <h4 class="tp-instructor-title">{{ Auth::user()->name }}</h4>
-                                    <div class="tp-instructor-rate  d-flex align-items-center">
-                                    <div class="tp-instructor-rating">
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                        <i class="fa-solid fa-star"></i>
-                                    </div>
-                                    <span>4.61</span>
-                                    <span>(18 Ratings)</span>
-                                    </div>
+                                    {{-- <div class="tp-instructor-rate  d-flex align-items-center">
+                                        <div class="tp-instructor-rating">
+                                            a<i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span>4.61</span>
+                                        <span>(18 Ratings)</span>
+                                    </div> --}}
                                 </div>
                             </div>
-                            <div class="tp-instructor-course-btn">
+                            {{-- <div class="tp-instructor-course-btn">
                                 <a class="tp-btn-add-course" href="instructor-create-new-course.html"><i class="fa-regular fa-plus"></i> Create a New Course</a>
-                            </div>
+                            </div> --}}
                         </div>
                         </div>
                     </div>
