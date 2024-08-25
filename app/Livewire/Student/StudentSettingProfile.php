@@ -30,16 +30,12 @@ class StudentSettingProfile extends Component
         $this->occupation = $user ? $user->occupation : null;
         $this->bio = $user ? $user->bio : null;
         $this->photo = $user ? $user->photo : null;
+        $this->cover_photo = $user ? $user->cover_photo : null;
     }
 
     public function update(){
          
         $user = User::find(auth()->user()->id);
-    
-        if (!empty($this->photo)) {
-            $photoPath = $this->photo->store('uploads', 'real_public');
-            $user->photo = @$photoPath;
-        }
     
         $user->update([
             'name' => $this->name,
@@ -52,6 +48,42 @@ class StudentSettingProfile extends Component
             'title' => 'Update Successfully.',
             'icon' => 'success',
             'iconColor' => 'blue',
+        ]);
+    }
+
+    function updatedPhoto()
+    {
+
+        $this->validate([
+            'photo' => 'image|max:1024', // 1MB Max
+        ]);
+
+        $upload = $this->photo->store('uploads/Users', 'real_public');
+        $user = User::where('id', auth()->user()->id)->update([
+            'photo' => $upload
+        ]);
+
+        $this->dispatch('swal', [
+            'title' => 'Photo updated successfully.',
+            'icon' => 'success',
+        ]);
+    }
+    
+    function updatedCoverPhoto()
+    {
+
+        $this->validate([
+            'cover_photo' => 'image|max:1024', // 1MB Max
+        ]);
+
+        $cover_upload = $this->cover_photo->store('uploads/Users', 'real_public');
+        $user = User::where('id', auth()->user()->id)->update([
+            'cover_photo' => $cover_upload
+        ]);
+
+        $this->dispatch('swal', [
+            'title' => 'Cover Photo updated successfully.',
+            'icon' => 'success',
         ]);
     }
 

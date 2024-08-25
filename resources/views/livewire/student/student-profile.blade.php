@@ -39,7 +39,7 @@
                                                   <span>Registration Date</span>
                                                </div>
                                                <div class="tp-profile-info-details">
-                                                  <span>{{ Auth::user()->created_at->format('F j, Y g:i A') }}</span>
+                                                  <span>{{ $created_at->format('F j, Y g:i A') }}</span>
                                                </div>
                                             </div>
                                          </li>
@@ -49,7 +49,7 @@
                                                   <span>Full Name</span>
                                                </div>
                                                <div class="tp-profile-info-details">
-                                                  <span>{{ Auth::user()->name }}</span>
+                                                  <span>{{ $name }}</span>
                                                </div>
                                             </div>
                                          </li>
@@ -60,7 +60,7 @@
                                                   <span>User type</span>
                                                </div>
                                                <div class="tp-profile-info-details">
-                                                  <span>{{ Auth::user()->user_type }}</span>
+                                                  <span class="uppercase">{{ $user_type }}</span>
                                                </div>
                                             </div>
                                          </li>
@@ -70,7 +70,7 @@
                                                   <span>Email</span>
                                                </div>
                                                <div class="tp-profile-info-details">
-                                                  <span>{{ Auth::user()->email }}</span>
+                                                  <span>{{ $email }}</span>
                                                </div>
                                             </div>
                                          </li>
@@ -80,7 +80,7 @@
                                                   <span>Phone Number</span>
                                                </div>
                                                <div class="tp-profile-info-details">
-                                                  <span>{{ Auth::user()->phone_no }}</span>
+                                                  <span>{{ $phone_no }}</span>
                                                </div>
                                             </div>
                                          </li>
@@ -90,7 +90,7 @@
                                                   <span>Skill/Occupation</span>
                                                </div>
                                                <div class="tp-profile-info-details">
-                                                  <span>{{Auth::user()->occupation}}</span>
+                                                  <span>{{$occupation}}</span>
                                                </div>
                                             </div>
                                          </li>
@@ -100,7 +100,7 @@
                                                   <span>Biography</span>
                                                </div>
                                                <div class="tp-profile-info-details">
-                                                  <span class="details-zone">{{Auth::user()->bio}}</span>
+                                                  <span class="details-zone">{{$bio}}</span>
                                                </div>
                                             </div>
                                          </li>

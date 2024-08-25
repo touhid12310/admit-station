@@ -4,30 +4,36 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="tp-dashboard-banner-bg mt-30" data-background="{{ asset('assets/images/dashboard-bg-1.jpg') }}">
+                        <div class="tp-dashboard-banner-bg mt-30" data-background="{{ asset($cover_photo) }}">
                         <div class="tp-instructor-wrap d-flex justify-content-between">
                             <div class="tp-instructor-info d-flex">
                                 <div class="tp-instructor-avatar">
-                                    <img src="{{ asset('assets/images/dashboard-profile-2.jpg') }}" alt="">
+                                    <img src="{{ asset($photo) }}" alt="">
                                 </div>
                                 <div class="tp-instructor-content">
-                                    <h4 class="tp-instructor-title">{{ Auth::user()->name }}</h4>
-                                    {{-- <div class="tp-instructor-rate  d-flex align-items-center">
+                                    <h4 class="tp-instructor-title">{{ $name }}</h4>
+                                    <div class="tp-instructor-rate  d-flex align-items-center">
                                         <div class="tp-instructor-rating">
-                                            a<i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
-                                            <i class="fa-solid fa-star"></i>
+                                            <a href="{{$facebook}}" target="_blank">
+                                                <img src="{{asset('assets/img/dashboard/icon/facebook.png')}}" alt="">
+                                            </a>
+                                            <a href="{{$twitter}}" target="_blank">
+                                                <img src="{{asset('assets/img/dashboard/icon/twetter.png')}}" alt="">
+                                            </a>
+                                            <a href="{{$linkedin}}" target="_blank">
+                                                <img src="{{asset('assets/img/dashboard/icon/linkdin.png')}}" alt="">
+                                            </a>
+                                            <a href="{{$website}}" target="_blank">
+                                                <img src="{{asset('assets/img/dashboard/icon/website.png')}}" alt="">
+                                            </a>
+                                            <a href="{{$github}}" target="_blank">
+                                                <img src="{{asset('assets/img/dashboard/icon/git.png')}}" alt="">
+                                            </a>
                                         </div>
-                                        <span>4.61</span>
-                                        <span>(18 Ratings)</span>
-                                    </div> --}}
+                                    </div>
                                 </div>
                             </div>
-                            {{-- <div class="tp-instructor-course-btn">
-                                <a class="tp-btn-add-course" href="instructor-create-new-course.html"><i class="fa-regular fa-plus"></i> Create a New Course</a>
-                            </div> --}}
+                            
                         </div>
                         </div>
                     </div>
