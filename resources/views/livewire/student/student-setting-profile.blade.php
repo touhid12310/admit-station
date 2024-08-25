@@ -29,8 +29,9 @@
                               <!-- session msg-->
                               @include('livewire.partials.flash-msg')
                               <!-- end session msg-->
-                             <div class="tpd-setting-box profile">
-                                <div class="tp-dashboard-banner-bg profile mb-100" data-background="{{asset('assets/img/dashboard/bg/dashboard-bg-1.jpg')}}">
+                              <div class="tpd-setting-box profile">
+
+                                 <div class="tp-dashboard-banner-bg profile mb-100" data-background="{{asset('assets/img/dashboard/bg/dashboard-bg-1.jpg')}}">
                                     <div class="tp-instructor-wrap d-flex justify-content-between">
                                        <div class="tp-instructor-info d-flex">
                                           <div class="tp-instructor-avatar p-relative profile">
@@ -53,67 +54,61 @@
                                           </span>
                                        </div>
                                     </div>
-                                </div>
-                                <div class="tpd-setting-from">
-                                   <div class="row">
-                                      <div class="col-lg-6">
-                                         <div class="tpd-input">
-                                            <label for="">Full Name</label>
-                                            <input type="text" wire:model="name" placeholder="Hasan">
-                                         </div>
-                                      </div>
-                                      
-                                     
-                                      <div class="col-lg-6">
-                                         <div class="tpd-input">
-                                            <label for="">Phone Number</label>
-                                            <input type="text" wire:model="phone_no" placeholder="(+44) 433 962 004">
-                                         </div>
-                                      </div>
-                                      <div class="col-lg-6">
-                                         <div class="tpd-input">
-                                            <label for="">Skill/Occupation</label>
-                                            <input type="text" wire:model="occupation" placeholder="Full Stack Developer">
-                                         </div>
-                                      </div>
-                                      
-                                      <div class="col-lg-12">
-                                         <div class="tpd-input">
-                                            <label for="">About me</label>
-                                            <textarea wire:model="bio" placeholder="I'm the Front-End Developer for London, OR. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences."></textarea>
-                                         </div>
-                                      </div>
-                                   </div>
-                                </div>
-                                <div class="tpd-setting-cartificate">
-                                   <h5 class="tpd-setting-cartificate-title">Certificate Signature</h5>
-                                   <div class="tpd-setting-cartificate-upload d-flex align-items-center">
-                                      <div class="tpd-setting-cartificate-thumb">
-                                         <img src="{{asset('assets/img/dashboard/bg/certificate-2.png')}}" alt="">
-                                      </div>
-                                      <div class="tpd-setting-cartificate-content">
-                                         <p>Size: 700x430 pixels</p>
-                                         <input id="tpd-setting-cartificate-input" type="file" wire:model="photo">
-                                         <span class="upload-btn">
-                                            <input id="tpd-setting-cartificate-input" type="file" wire:model="photo">
-                                            <label for="tpd-setting-cartificate-input"><span><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                               <path d="M3.49372 8.93415L0.811853 10.733C0.771427 10.4884 0.75 10.2223 0.75 9.93382V4.06733C0.75 2.94238 1.08242 2.13441 1.60842 1.60842C2.13441 1.08242 2.94238 0.75 4.06733 0.75H9.93382C11.0588 0.75 11.8667 1.08242 12.3927 1.60842C12.9187 2.13441 13.2512 2.94238 13.2512 4.06733V6.70275C12.4225 6.07233 11.1927 6.09857 10.3975 6.78145C10.3974 6.78153 10.3973 6.7816 10.3972 6.78168L7.48523 9.28066L7.48496 9.28088C7.21999 9.50849 6.75316 9.50849 6.48819 9.28088L6.48228 9.27581L6.47627 9.27086L6.2457 9.08098C5.48405 8.42351 4.32392 8.37449 3.49481 8.93341C3.49444 8.93366 3.49408 8.9339 3.49372 8.93415Z" stroke="#556DF5" stroke-width="1.5" />
-                                               <path d="M4.90051 5.86792C5.82069 5.86792 6.56665 5.12196 6.56665 4.20178C6.56665 3.2816 5.82069 2.53564 4.90051 2.53564C3.98033 2.53564 3.23438 3.2816 3.23438 4.20178C3.23438 5.12196 3.98033 5.86792 4.90051 5.86792Z" fill="#556DF5" />
-                                               <path d="M13.9997 8.32917V9.93231C13.9997 12.4805 12.4806 13.9996 9.93241 13.9996H4.06593C2.28078 13.9996 0.992674 13.2506 0.390625 11.9205L0.467631 11.8645L3.91191 9.55428C4.47196 9.17624 5.26302 9.21825 5.76007 9.65228L5.99809 9.8483C6.54413 10.3173 7.4262 10.3173 7.97225 9.8483L10.8845 7.34909C11.4305 6.88005 12.3126 6.88005 12.8587 7.34909L13.9997 8.32917Z" fill="#556DF5" />
-                                             </svg></span> Upload Image</label>
-                                         </span>
-                                      </div>
-                                   </div>
-                                   <div class="tpd-setting-cartificate-btn">
-                                      <button> <span wire:loading.remove>Save Changes</span>
+                                 </div>
+
+                                 <div class="tpd-setting-from">
+                                    <div class="row">
+                                       <div class="col-lg-6">
+                                          <div class="tpd-input">
+                                             <label for="">Full Name</label>
+                                             <input type="text" wire:model="name" placeholder="Hasan">
+                                          </div>
+                                       </div>
+                                       
+                                       
+                                       <div class="col-lg-6">
+                                          <div class="tpd-input">
+                                             <label for="">Phone Number</label>
+                                             <input type="text" wire:model="phone_no" placeholder="(+44) 433 962 004">
+                                          </div>
+                                       </div>
+                                       <div class="col-lg-6">
+                                          <div class="tpd-input">
+                                             <label for="">Skill/Occupation</label>
+                                             <input type="text" wire:model="occupation" placeholder="Full Stack Developer">
+                                          </div>
+                                       </div>
+                                       
+                                       <div class="col-lg-12">
+                                          <div class="tpd-input">
+                                             <label for="">About me</label>
+                                             <textarea wire:model="bio" placeholder="I'm the Front-End Developer for London, OR. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences."></textarea>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                 <div class="tpd-setting-cartificate">
+                                    <h5 class="tpd-setting-cartificate-title">Certificate Signature</h5>
+                                    <div class="tpd-setting-cartificate-upload d-flex align-items-center">
+                                       <div class="tpd-setting-cartificate-thumb">
+                                          <img src="{{ asset($photo) }}" alt="" width="50%">
+                                       </div>
+                                       <div class="tpd-setting-cartificate-content pr-100">
+                                          <input id="tpd-setting-cartificate-input" type="file" wire:model="photo" >
+                                       </div>
+                                    </div>
+                                    <div class="tpd-setting-cartificate-btn">
+                                       <button> <span wire:loading.remove>Save Changes</span>
                                        <span wire:loading>
                                           <div class="spinner-border text-light" role="status">
                                                 <span class="visually-hidden">Loading...</span>
                                           </div>
                                        </span></button>
-                                   </div>
-                                </div>
-                             </div>
+                                    </div>
+                                 </div>
+
+                              </div>
                            </form>
                           </div>
                        </div>
