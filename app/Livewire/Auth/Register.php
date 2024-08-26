@@ -19,52 +19,54 @@ class Register extends Component
     public $html;
 
    
-    public function userRegister(){
+    public function save(){
 
-        $this->validate([
-            'name'     => 'required | min:3',
-            'email'         => 'email|unique:users',
-            'phone_no'      => 'required | min:11',
-            'password'      => 'required | min:8 ',
-        ]);
+        if ($this->user_type == 'student'){
 
-        $user = User::create([
-            'name'     => $this->name,
-            'email'    => $this->email,
-            'phone_no' => $this->phone_no,
-            'password' => Hash::make($this->password)           
-        ]);
+            $this->validate([
+                'name'     => 'required | min:3',
+                'email'         => 'email|unique:users',
+                'phone_no'      => 'required',
+                'password'      => 'required',
+            ]);
+    
+            $user = User::create([
+                'name'     => $this->name,
+                'email'    => $this->email,
+                'phone_no' => $this->phone_no,
+                'password' => Hash::make($this->password)           
+            ]);
+    
+            auth()->login($user);
+    
+            return redirect()->route('student-dashboard');
 
-        auth()->login($user);
+        }else if($this->user_type == 'institute'){
 
-        return redirect()->route('student-dashboard');
-       
+            $this->validate([
+                'name'     => 'required | min:3',
+                'email'         => 'email|unique:users',
+                'phone_no'      => 'required',
+                'password'      => 'required',
+            ]);
+          
+            User::create([
+                'name'     => $this->name,
+                'email'    => $this->email,
+                'phone_no' => $this->phone_no,
+                'user_type' => 'institute',
+                'password' => Hash::make($this->password)           
+            ]);
+    
+            $this->dispatch('swal', [
+                'title' => 'Apply for Institute Register Successfully.',
+                'icon' => 'success',
+                'iconColor' => 'blue',
+            ]);
+        }
+
     }
 
-    public function vendorRegister(){
-        $this->validate([
-            'name'     => 'required | min:3',
-            'email'         => 'email|unique:users',
-            'phone_no'      => 'required | min:11',
-            'password'      => 'required | min:8 ',
-        ]);
-      
-        $user = User::create([
-            'name'     => $this->name,
-            'email'    => $this->email,
-            'phone_no' => $this->phone_no,
-            'user_type' => 'institute',
-            'password' => Hash::make($this->password)           
-        ]);
-
-        $this->dispatch('swal', [
-            'title' => 'Apply for Institute Register Successfully.',
-            'icon' => 'success',
-            'iconColor' => 'blue',
-        ]);
-
-       
-    }
 
     public function render()
     {
