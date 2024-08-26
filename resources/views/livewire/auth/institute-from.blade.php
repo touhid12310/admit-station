@@ -2,12 +2,17 @@
 <div class="tp-login-input-form pt-20">
     <div class="row">
        <form wire:submit.prevent='vendorRegister' class="mb-3">
+
+          <!-- flash message -->
+          @include('livewire.partials.flash-msg')
+          <!-- /flash message -->
+          
           <div class="col-12">
              <div class="tp-login-input p-relative">
                 <label>Institute Full Name</label>
-                <input type="text" wire:model="full_name" placeholder="Type your fullname" autofocus autocomplete="full_name" >
+                <input type="text" wire:model="name" placeholder="Type your fullname" autofocus autocomplete="full_name" >
              </div>
-             @error('full_name')
+             @error('name')
                 <div class="m-2 text-danger">{{ $message }}</div>
              @enderror
           </div>

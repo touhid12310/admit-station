@@ -34,16 +34,14 @@ class StudentSettingProfile extends Component
     }
 
     public function update(){
-         
-        $user = User::find(auth()->user()->id);
     
-        $user->update([
+        User::where('id', auth()->user()->id)->update([
             'name' => $this->name,
             'phone_no' => $this->phone_no,
             'occupation' => $this->occupation,
             'bio' => $this->bio,
         ]);
-    
+      
         $this->dispatch('swal', [
             'title' => 'Update Successfully.',
             'icon' => 'success',

@@ -89,7 +89,7 @@
                                  </div>
 
                                  <div class="tpd-setting-cartificate">
-                                    <h5 class="tpd-setting-cartificate-title">Certificate Signature</h5>
+                                    <h5 class="tpd-setting-cartificate-title">Profile Photo</h5>
                                     <div class="tpd-setting-cartificate-upload d-flex align-items-center">
                                        <div class="tpd-setting-cartificate-thumb">
                                           <img src="{{ asset($photo) }}" alt="" width="50%">

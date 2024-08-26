@@ -9,7 +9,7 @@ use Livewire\Component;
 #[Title('Register')]
 class Register extends Component
 {
-    public $full_name;
+    public $name;
     public $email;
     public $phone_no;
     public $password;
@@ -22,14 +22,14 @@ class Register extends Component
     public function userRegister(){
 
         $this->validate([
-            'full_name'     => 'required | min:3',
+            'name'     => 'required | min:3',
             'email'         => 'email|unique:users',
             'phone_no'      => 'required | min:11',
             'password'      => 'required | min:8 ',
         ]);
 
         $user = User::create([
-            'name'     => $this->full_name,
+            'name'     => $this->name,
             'email'    => $this->email,
             'phone_no' => $this->phone_no,
             'password' => Hash::make($this->password)           
@@ -42,23 +42,28 @@ class Register extends Component
     }
 
     public function vendorRegister(){
-        $user = $this->validate([
-            'full_name'     => 'required | min:3',
+        $this->validate([
+            'name'     => 'required | min:3',
             'email'         => 'email|unique:users',
             'phone_no'      => 'required | min:11',
             'password'      => 'required | min:8 ',
         ]);
       
         $user = User::create([
-            'name'     => $this->full_name,
+            'name'     => $this->name,
             'email'    => $this->email,
             'phone_no' => $this->phone_no,
             'user_type' => 'institute',
             'password' => Hash::make($this->password)           
         ]);
 
-        auth()->login($user);
-        return redirect()->route('student-dashboard');
+        $this->dispatch('swal', [
+            'title' => 'Apply for Institute Register Successfully.',
+            'icon' => 'success',
+            'iconColor' => 'blue',
+        ]);
+
+       
     }
 
     public function render()
