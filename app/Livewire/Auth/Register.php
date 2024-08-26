@@ -15,6 +15,10 @@ class Register extends Component
     public $password;
     public $conform_password;
 
+    public $user_type;
+    public $html;
+
+   
     public function userRegister(){
 
         $this->validate([
@@ -34,9 +38,38 @@ class Register extends Component
         auth()->login($user);
 
         return redirect()->route('student-dashboard');
+       
     }
+
+    public function vendorRegister(){
+        $user = $this->validate([
+            'full_name'     => 'required | min:3',
+            'email'         => 'email|unique:users',
+            'phone_no'      => 'required | min:11',
+            'password'      => 'required | min:8 ',
+        ]);
+      
+        $user = User::create([
+            'name'     => $this->full_name,
+            'email'    => $this->email,
+            'phone_no' => $this->phone_no,
+            'user_type' => 'institute',
+            'password' => Hash::make($this->password)           
+        ]);
+
+        auth()->login($user);
+        return redirect()->route('student-dashboard');
+    }
+
     public function render()
     {
+        
+        if ($this->user_type == 'student') {
+            $this->html = view('livewire.auth.student-form')->render();
+            
+        }elseif($this->user_type == 'institute') {
+            $this->html = view('livewire.auth.institute-from')->render();
+        }
         return view('livewire.auth.register');
     }
 }

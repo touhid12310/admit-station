@@ -1,5 +1,5 @@
 <div>
-
+   
     <!-- hero-area-start -->
     <section class="tp-hero-area">
         <div class="swiper tp-slider-active">
@@ -97,7 +97,7 @@
     <!-- hero-area-end -->
 
     <!-- service-area-start -->
-    <section class="service-area tp-service-bg" data-background="{{asset('assets/images/bg/services-bg.jpg')}}">
+    <section class="service-area tp-service-bg" data-background="{{asset('assets/images/bg/services-bg.jpg')}}" wire:ignore>
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">

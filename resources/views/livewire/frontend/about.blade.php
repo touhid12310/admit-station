@@ -1,7 +1,7 @@
 <div>
-   @livewire('partials.layouts-pre-loader')
         <!-- about banner area start -->
         <section class="tp-about-pt fix p-relative pt-200">
+         <div class="tp-breadcrumb__bg" data-background="{{asset('assets/img/breadcrumb/breadcrumb-bg.jpg')}}" wire:ignore></div>
            <div class="container">
               <div class="row align-items-center">
                  <div class="col-lg-12">

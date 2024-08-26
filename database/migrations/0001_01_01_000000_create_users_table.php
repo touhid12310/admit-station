@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('phone_no')->nullable();
             $table->string('occupation')->nullable();
             $table->text('bio')->nullable(); //Biography or About_me
-            $table->enum('user_type', ['admin', 'agent', 'student'])->default('student');
+            $table->enum('user_type', ['admin', 'agent', 'student', 'institute'])->default('student');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();

@@ -225,10 +225,10 @@
                   </div>
                   <div class="col-lg-6 col-md-6 d-none d-lg-block">
                      <div class="tp-header-right-list d-flex justify-content-md-end">
-                        <a href="{{ route('FAQs') }}">FAQs</a>
-                        <a href="{{ route('contact-us') }}" wire:navigated>contact-us</a>
-                        <a href="{{ route('privacy-policy') }}">privacy-policy</a>
-                        <a href="{{ route('4o4-page') }}"> Help Desk </a>
+                        <a href="{{ route('FAQs') }}" wire:navigate>FAQs</a>
+                        <a href="{{ route('contact-us') }}" wire:navigate>contact-us</a>
+                        <a href="{{ route('privacy-policy') }}"wire:navigate>privacy-policy</a>
+                        <a href="{{ route('4o4-page') }}"wire:navigate> Help Desk </a>
                      </div>
                   </div>
                </div>
@@ -285,11 +285,11 @@
                         </div>
                         @auth
                            <div class="tp-header-btn d-none d-md-block ml-30">
-                              <a href="{{ route('student-dashboard')}}">Dashboad</a>
+                              <a href="{{ route('student-dashboard')}}" wire:navigate>Dashboad</a>
                            </div>
                         @else  
                            <div class="tp-header-btn d-none d-md-block ml-30">
-                              <a href="{{ route('login')}}">Login</a>
+                              <a href="{{ route('login')}}" wire:navigate>Login</a>
                            </div>
                         @endauth
                         

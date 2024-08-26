@@ -2,7 +2,7 @@
     <!-- login area start -->
     <section class="tp-login-area p-5">
         <div class="tp-login-register-box d-flex align-items-center">
-           <div class="tp-login-register-banner-box p-relative" data-background="{{asset('assets/img/login/login-register-bg.jpg')}}">
+           <div class="tp-login-register-banner-box p-relative" data-background="{{asset('assets/img/login/login-register-bg.jpg')}}" wire:ignore>
               <div class="tp-login-register-logo tp-header-logo">
                  <a href="index.html"><img src="{{asset('assets/images/logo.png')}}" alt=""></a>
               </div>
@@ -11,13 +11,13 @@
               </div>
               <div class="tp-login-register-shape">
                  <div class="shape-1">
-                    <img src="assets/img/login/login-register-shape-2.png" alt="">
+                    <img src="{{asset('assets/img/login/login-register-shape-2.png')}}" alt="">
                  </div>
                  <div class="shape-2">
-                    <img src="assets/img/login/login-register-shape-1.png" alt="">
+                    <img src="{{asset('assets/img/login/login-register-shape-1.png')}}" alt="">
                  </div>
                  <div class="shape-3">
-                    <img src="assets/img/login/login-register-shape-3.png" alt="">
+                    <img src="{{asset('assets/img/login/login-register-shape-3.png')}}" alt="">
                  </div>
               </div>
            </div>
