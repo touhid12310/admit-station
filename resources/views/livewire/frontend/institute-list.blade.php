@@ -1,14 +1,15 @@
 <div>
     <!-- event breadcrumb start -->
     <section class="tp-breadcrumb__area pt-50 pb-20 p-relative z-index-1 fix">
-        <div class="tp-breadcrumb__bg" data-background="{{asset('assets/img/breadcrumb/breadcrumb-bg.jpg')}}" wire:ignore></div>
+        <div class="tp-breadcrumb__bg" data-background="{{ asset('assets/img/breadcrumb/breadcrumb-bg.jpg') }}"
+            wire:ignore></div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-sm-12">
                     <div class="tp-breadcrumb__content">
                         <div class="tp-breadcrumb__list pt-120">
-                            <span><a href="{{ url('/') }}" wire:navigate><svg width="17" height="14" viewBox="0 0 17 14"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <span><a href="{{ url('/') }}" wire:navigate><svg width="17" height="14"
+                                        viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                             d="M8.07207 0C8.19331 0 8.31107 0.0404348 8.40664 0.114882L16.1539 6.14233L15.4847 6.98713L14.5385 6.25079V12.8994C14.538 13.1843 14.4243 13.4574 14.2225 13.6589C14.0206 13.8604 13.747 13.9738 13.4616 13.9743H2.69231C2.40688 13.9737 2.13329 13.8603 1.93146 13.6588C1.72962 13.4573 1.61597 13.1843 1.61539 12.8994V6.2459L0.669148 6.98235L0 6.1376L7.7375 0.114882C7.83308 0.0404348 7.95083 0 8.07207 0ZM8.07694 1.22084L2.69231 5.40777V12.8994H13.4616V5.41341L8.07694 1.22084Z"
                                             fill="currentColor" />
@@ -97,10 +98,10 @@
                         <div class="tp-course-grid-sidebar-right d-flex justify-content-start justify-content-lg-end">
 
                             <div class="tp-course-grid-select tp-course-grid-sidebar-select">
-                                <select class="wide" >
+                                <select class="wide">
                                     <option>Select Country</option>
                                     @foreach ($all_countrys as $list)
-                                        <option value="{{$list->country}}">{{$list->country}}</option>
+                                        <option value="{{ $list->country }}">{{ $list->country }}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -109,7 +110,7 @@
                                 <select class="wide">
                                     <option>Select City</option>
                                     @foreach ($all_cities as $list)
-                                    <option value="{{$list->city}}">{{$list->city}}</option>
+                                        <option value="{{ $list->city }}">{{ $list->city }}</option>
                                     @endforeach
                                 </select>
                             </div>
@@ -137,7 +138,7 @@
                                             <li wire:key = "School" wire:ignore>
                                                 <div class="from-checkbox">
                                                     <input id="remeber" type="checkbox"
-                                                        wire:model.live="selected_schools"  wire:ignore>
+                                                        wire:model.live="selected_schools" wire:ignore>
                                                     <label for="remeber">School <span>
                                                             ({{ $SchoolCount }})</span></label>
                                                 </div>
@@ -145,13 +146,14 @@
                                             <li wire:key = "College" wire:ignore>
                                                 <div class="from-checkbox">
                                                     <input id="Business" type="checkbox"
-                                                        wire:model.live="selected_colleges"  wire:ignore>
+                                                        wire:model.live="selected_colleges" wire:ignore>
                                                     <label for="Business">Colleges <span>
                                                             ({{ $CollegeCount }})</span></label>
                                                 </div>
                                             </li>
                                             <li wire:key = "Universitiy" wire:ignore>
-                                                <div class="from-checkbox" wire:model.live="selected_universitis"  wire:ignore>
+                                                <div class="from-checkbox" wire:model.live="selected_universitis"
+                                                    wire:ignore>
                                                     <input id="Development" type="checkbox">
                                                     <label for="Development">Universitys
                                                         ({{ $UniversityCount }})</label>
@@ -241,7 +243,7 @@
                                                                 <i class="fa-solid fa-star"></i>
                                                             </div>
                                                         </div>
-                                                       
+
                                                     </div>
                                                 </div>
                                                 <div class="tp-course-btn">
@@ -321,8 +323,8 @@
                     </div>
 
                     <div class="tp-event-inner-pagination" wire:ignore>
-                         {{ $vendors->links() }}
-                      {{--   <div class="tp-dashboard-pagination pt-20">
+                        {{ $vendors->links() }}
+                        {{--   <div class="tp-dashboard-pagination pt-20">
                             <div class="tp-pagination">
                                 <nav>
                                     <ul class="justify-content-center">
@@ -373,3 +375,8 @@
     <!-- grid-sidebar-area-end -->
 
 </div>
+@script
+    <script>
+        $("select").niceSelect();
+    </script>
+@endscript
