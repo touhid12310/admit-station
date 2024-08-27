@@ -21,7 +21,7 @@ class Login extends Component
 
         // $student login normal and $institute login guard 
         if (auth()->attempt(['email' => $this->email, 'password' => $this->password, 'user_type' => 'student'])) {
-            return redirect()->intended('student.dashboard');
+            return redirect()->route('student.dashboard');
         } elseif (auth()->guard('institute')->attempt(['email' => $this->email, 'password' => $this->password, 'user_type' => 'institute'])) {
             return redirect()->route('institute.dashboard');
         } else {
