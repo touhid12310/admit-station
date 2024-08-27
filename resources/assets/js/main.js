@@ -275,10 +275,10 @@
     ////////////////////////////////////////////////////
     // 12. Nice Select Js
 
-    document.addEventListener("livewire:navigated", function () {
-        $("select").niceSelect();
-        $(".tpd-select select").niceSelect();
-    });
+    // document.addEventListener("livewire:navigated", function () {
+    //     $("select").niceSelect();
+    //     $(".tpd-select select").niceSelect();
+    // });
 
     ////////////////////////////////////////////////////
     // Active Class

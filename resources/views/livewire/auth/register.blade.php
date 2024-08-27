@@ -23,20 +23,22 @@
                     </div>
                 </div>
             </div>
+
+            @include('livewire.partials.flash-msg')
+
             <div class="tp-login-register-wrapper d-flex justify-content-center align-items-center">
                 <div class="tp-login-from-box">
                     <div class="tp-login-from-heading text-center">
                         <h4 class="tp-login-from-title">Create an Account</h4>
-                        <p>Already have an account? <a href="login.html"> Sign In</a></p>
+                        <p>Already have an account? <a href="{{route('login')}}"> Sign In</a></p>
                     </div>
-
 
                     <div class="tp-login-input-form">
                         <div class="row">
                             <form wire:submit.prevent="save" class="mb-3">
 
                                 <div class="col-12">
-                                    <div class="tp-login-input p-relative tpd-select">
+                                    <div class="tp-login-input p-relative tpd-select" wire:ignore>
                                         <label for="UserType">User Type:</label>
                                         <select class="wide user_type " wire:model="user_type" required>
                                             <option value="">Select your type</option>
@@ -52,7 +54,7 @@
 
                                 @if ($user_type == 'institute')
                                     <!-- Student register area end -->
-                                    <div class="col-12">
+                                    <div class="col-12" wire:ignore>
                                         <div class="tp-login-input p-relative tpd-select">
                                             <label for="UserType">Institute Type:</label>
                                             <select class="wide institute_type " wire:change="institute_type" required>
@@ -69,16 +71,31 @@
                                 @endif
                                 <!-- register form -->
                                 @if ($user_type)
-                                    <div class="col-12">
-                                        <div class="tp-login-input p-relative">
-                                            <label>Institute Full Name</label>
-                                            <input type="text" wire:model="name" placeholder="Enter Institute Name"
-                                                autofocus autocomplete="full_name">
+
+                                    @if ($user_type == 'institute')
+                                        <div class="col-12">
+                                            <div class="tp-login-input p-relative">
+                                                <label>Institute Name</label>
+                                                <input type="text" wire:model="name"
+                                                    placeholder="Enter Institute Name" autofocus
+                                                    autocomplete="full_name">
+                                            </div>
+                                            @error('name')
+                                                <div class="m-2 text-danger">{{ $message }}</div>
+                                            @enderror
                                         </div>
-                                        @error('name')
-                                            <div class="m-2 text-danger">{{ $message }}</div>
-                                        @enderror
-                                    </div>
+                                    @elseif($user_type == 'student')
+                                        <div class="col-12">
+                                            <div class="tp-login-input p-relative">
+                                                <label>Full Name</label>
+                                                <input type="text" wire:model="name" placeholder="Enter Full Name"
+                                                    autofocus autocomplete="full_name">
+                                            </div>
+                                            @error('name')
+                                                <div class="m-2 text-danger">{{ $message }}</div>
+                                            @enderror
+                                        </div>
+                                    @endif
 
                                     <div class="col-12">
                                         <div class="tp-login-input p-relative">
@@ -112,6 +129,19 @@
                                         </div>
                                     </div>
                                     <div class="col-12">
+                                        <div class="tp-login-input p-relative">
+                                            <label>Confirm Password</label>
+                                            <div class="password-input p-relative">
+                                                <input type="password" wire:model="confirmed_password"
+                                                    placeholder="Confirm Password">
+                                            </div>
+                                            @error('confirmed_password')
+                                                <div class="m-2 text-danger">{{ $message }}</div>
+                                            @enderror
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
                                         <div class="tp-login-from-btn">
                                             <button class="tp-btn-inner w-100 text-center">
                                                 <span wire:loading.remove>Register</span>
@@ -139,10 +169,13 @@
 
 @script
     <script>
+        $(".user_type").niceSelect();
+        $(".institute_type").niceSelect();
+
         $('.user_type').on('change', function() {
             @this.set('user_type', this.value);
             setTimeout(() => {
-                $(".user_type").niceSelect();
+                // $(".user_type").niceSelect();
                 $(".institute_type").niceSelect();
             }, 500);
         })
@@ -150,10 +183,10 @@
         // Listen to the change event
         $('body').on('change', '.institute_type', function(e) {
             @this.set('institute_type', this.value); // Update Livewire model manually
-            setTimeout(() => {
-                $(".user_type").niceSelect();
-                $(".institute_type").niceSelect();
-            }, 300);
+            // setTimeout(() => {
+            //     $(".user_type").niceSelect();
+            //     $(".institute_type").niceSelect();
+            // }, 300);
         });
     </script>
 @endscript

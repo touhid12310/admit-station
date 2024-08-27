@@ -16,40 +16,33 @@ class Register extends Component
     public $email;
     public $phone_no;
     public $password;
-    public $conform_password;
+    public $confirmed_password;
 
     public $html;
 
 
     public function save()
     {
-        $this->validate([
+        $data = $this->validate([
             'name' => 'required',
-            'email' => 'email',
+            'email' => 'email|unique:users',
             'phone_no' => 'required',
             'password' => 'required',
+            'confirmed_password' => 'required|same:password',
         ]);
 
-        $user = User::create([
-            'name' => $this->name,
-            'email' => $this->email,
-            'phone_no' => $this->phone_no,
-            'user_type' => $this->user_type,
-            'password' => Hash::make($this->password),
+        unset($data['confirmed_password']);
+        $data['user_type'] = $this->user_type;
+        $data['institute_type'] = $this->institute_type;
+        User::create($data);
+        // $this->reset('user_type', 'institute_type', 'name', 'email', 'phone_no', 'password', 'confirmed_password');
+        $this->reset();
+        // Dispatch the event
+        $this->dispatch('swal', [
+            'title' => 'Registered successfully, You can now login.',
+            'icon' => 'success',
+            'redirectUrl' => route('login'),
         ]);
-
-        if ($this->user_type === 'student') {
-            auth()->login($user);
-            return redirect()->route('student-dashboard');
-        } else {
-
-            $this->dispatch('swal', [
-                'title' => 'Apply for Institute Register Successfully.',
-                'icon' => 'success',
-                'iconColor' => 'blue',
-            ]);
-            return redirect()->route('login');
-        }
     }
 
 
