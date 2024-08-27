@@ -19,9 +19,13 @@ class InstituteList extends Component
     public $selected_schools;
     public $selected_colleges;
     public $selected_universitis;
+    
 
     public function render()
     {
+        $all_countrys   = Vendor::select('country')->distinct()->get('country');
+        $all_cities   = Vendor::select('city')->distinct()->get('city');
+       
         $SchoolCount     = Vendor::where('vendors_types', 'School')->count();
         $CollegeCount     = Vendor::where('vendors_types', 'College')->count();
         $UniversityCount     = Vendor::where('vendors_types', 'University')->count();
@@ -29,6 +33,8 @@ class InstituteList extends Component
             $vendors = Vendor::where('name', 'like', '%'.$this->search.'%')
             ->orWhere('mobile_no', 'like', '%'.$this->search.'%')
             ->orWhere('address', 'like', '%'.$this->search.'%')
+            ->orWhere('country', 'like', '%'.$this->search.'%')
+            ->orWhere('city', 'like', '%'.$this->search.'%')
             ->orderBy('id', 'desc')->paginate($this->rows);
         }elseif($this->selected_schools){
             $vendors = Vendor::where('vendors_types', 'School')->paginate($this->rows);
@@ -44,7 +50,9 @@ class InstituteList extends Component
             'vendors' => $vendors,
             'SchoolCount' =>  $SchoolCount,
             'CollegeCount' =>  $CollegeCount,
-            'UniversityCount' =>  $UniversityCount
+            'UniversityCount' =>  $UniversityCount,
+            'all_countrys' =>  $all_countrys,
+            'all_cities' =>  $all_cities 
         ]);
     }
 }

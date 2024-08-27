@@ -97,18 +97,20 @@
                         <div class="tp-course-grid-sidebar-right d-flex justify-content-start justify-content-lg-end">
 
                             <div class="tp-course-grid-select tp-course-grid-sidebar-select">
-                                <select class="wide">
+                                <select class="wide" >
                                     <option>Select Country</option>
-                                    <option value="Popularity">Popularity</option>
-                                    <option value="Latest">Latest</option>
+                                    @foreach ($all_countrys as $list)
+                                        <option value="{{$list->country}}">{{$list->country}}</option>
+                                    @endforeach
                                 </select>
                             </div>
 
                             <div class="tp-course-grid-select tp-course-grid-sidebar-select ml-10">
                                 <select class="wide">
                                     <option>Select City</option>
-                                    <option value="Popularity">Popularity</option>
-                                    <option value="Latest">Latest</option>
+                                    @foreach ($all_cities as $list)
+                                    <option value="{{$list->city}}">{{$list->city}}</option>
+                                    @endforeach
                                 </select>
                             </div>
                         </div>
