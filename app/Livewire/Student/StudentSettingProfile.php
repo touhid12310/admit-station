@@ -15,17 +15,21 @@ class StudentSettingProfile extends Component
     use WithFileUploads;
 
     public $name;
+    public $email;
     public $phone_no;
     public $occupation;
     public $bio;
     public $photo;
     public $cover_photo;
+
+    public $cartificates = [];
     
     public function mount()
     {
         $user = auth()->user();
 
         $this->name = $user ? $user->name : null;
+        $this->email = $user ? $user->email : null;
         $this->phone_no = $user ? $user->phone_no : null;
         $this->occupation = $user ? $user->occupation : null;
         $this->bio = $user ? $user->bio : null;
@@ -37,6 +41,7 @@ class StudentSettingProfile extends Component
     
         User::where('id', auth()->user()->id)->update([
             'name' => $this->name,
+            'email' => $this->email,
             'phone_no' => $this->phone_no,
             'occupation' => $this->occupation,
             'bio' => $this->bio,

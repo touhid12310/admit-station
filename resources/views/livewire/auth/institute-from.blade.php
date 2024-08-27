@@ -56,7 +56,7 @@
       @enderror
    </div>
 </div>
-<div class="col-12">
+{{-- <div class="col-12">
    <div class="tp-login-input p-relative">
       <label>Confirmed Password </label>
       <div class="password-input p-relative">
@@ -84,7 +84,7 @@
          <div class="m-2 text-danger">{{ $message }}</div>
       @enderror
    </div>
-</div>
+</div> --}}
 <div class="col-12">
    <div class="tp-login-from-remeber">
       <div class="row">

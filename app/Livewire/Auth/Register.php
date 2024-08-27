@@ -19,52 +19,37 @@ class Register extends Component
     public $html;
 
    
-    public function save(){
+    public function save()
+    {
+        $this->validate([
+            'name' => 'required',
+            'email' => 'email',
+            'phone_no' => 'required',
+            'password' => 'required',
+        ]);
 
-        if ($this->user_type == 'student'){
+        $user = User::create([
+            'name' => $this->name,
+            'email' => $this->email,
+            'phone_no' => $this->phone_no,
+            'user_type' => $this->user_type,
+            'password' => Hash::make($this->password),
+        ]);
 
-            $this->validate([
-                'name'     => 'required | min:3',
-                'email'         => 'email|unique:users',
-                'phone_no'      => 'required',
-                'password'      => 'required',
-            ]);
-    
-            $user = User::create([
-                'name'     => $this->name,
-                'email'    => $this->email,
-                'phone_no' => $this->phone_no,
-                'password' => Hash::make($this->password)           
-            ]);
-    
+        if ($this->user_type === 'student') {
             auth()->login($user);
-    
             return redirect()->route('student-dashboard');
-
-        }else if($this->user_type == 'institute'){
-
-            $this->validate([
-                'name'     => 'required | min:3',
-                'email'         => 'email|unique:users',
-                'phone_no'      => 'required',
-                'password'      => 'required',
-            ]);
-          
-            User::create([
-                'name'     => $this->name,
-                'email'    => $this->email,
-                'phone_no' => $this->phone_no,
-                'user_type' => 'institute',
-                'password' => Hash::make($this->password)           
-            ]);
-    
+        }else{
+            
             $this->dispatch('swal', [
                 'title' => 'Apply for Institute Register Successfully.',
                 'icon' => 'success',
                 'iconColor' => 'blue',
             ]);
+            return redirect()->route('login');
         }
 
+       
     }
 
 

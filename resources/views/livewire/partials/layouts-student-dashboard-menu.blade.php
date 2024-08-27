@@ -53,7 +53,7 @@
                <div class="col-xxl-4 col-lg-6 col-6">
                   <div class="tp-header-2-right d-flex align-items-center">
                      <div class="tp-header-shop-logo tp-header-logo pr-20">
-                        <a href="{{ url('/') }}">
+                        <a href="{{ url('/') }}" wire:navigate>
                            <img src="{{ asset('assets/images/logo.png') }}" alt="logo">
                         </a>
                      </div>

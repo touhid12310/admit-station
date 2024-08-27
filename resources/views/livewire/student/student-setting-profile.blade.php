@@ -72,10 +72,24 @@
                                              <input type="text" wire:model="phone_no" placeholder="(+44) 433 962 004">
                                           </div>
                                        </div>
+
+                                       <div class="col-lg-6">
+                                          <div class="tpd-input">
+                                             <label for="">Email</label>
+                                             <input type="text" wire:model="email" placeholder="shihab@example.com" disabled>
+                                          </div>
+                                       </div>
+
                                        <div class="col-lg-6">
                                           <div class="tpd-input">
                                              <label for="">Skill/Occupation</label>
                                              <input type="text" wire:model="occupation" placeholder="Full Stack Developer">
+                                          </div>
+                                       </div>
+                                       <div class="col-lg-6">
+                                          <div class="tpd-input">
+                                             <label for="">Profile Photo</label>
+                                             <input type="file" wire:model="photo" class="p-2">
                                           </div>
                                        </div>
                                        
@@ -88,16 +102,21 @@
                                     </div>
                                  </div>
 
-                                 <div class="tpd-setting-cartificate">
-                                    <h5 class="tpd-setting-cartificate-title">Profile Photo</h5>
+                                 
+                                 {{-- <div class="tpd-setting-cartificate">
+                                    <h5 class="tpd-setting-cartificate-title">Cartificate Photo</h5>
                                     <div class="tpd-setting-cartificate-upload d-flex align-items-center">
                                        <div class="tpd-setting-cartificate-thumb">
                                           <img src="{{ asset($photo) }}" alt="" width="50%">
                                        </div>
                                        <div class="tpd-setting-cartificate-content pr-100">
-                                          <input id="tpd-setting-cartificate-input" type="file" wire:model="photo" >
+                                          <input id="tpd-setting-cartificate-input" type="file" wire:model="cartificates" multiple>
                                        </div>
                                     </div>
+                                 </div> --}}
+
+
+                                 <div class="tpd-setting-cartificate">
                                     <div class="tpd-setting-cartificate-btn">
                                        <button> <span wire:loading.remove>Save Changes</span>
                                        <span wire:loading>

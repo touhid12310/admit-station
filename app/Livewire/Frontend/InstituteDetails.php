@@ -17,16 +17,24 @@ class InstituteDetails extends Component
     
     public function apply(){
         
-        ApplicationHistory::create([
-            'user_id'     => Auth::user()->id,
-            'vendor_id'   => $this->vendor_id,
-        ]);
-        
-        $this->dispatch('swal', [
-            'title' => 'Apply Successfully.',
-            'icon' => 'success',
-            'iconColor' => 'blue',
-        ]);
+        if(!ApplicationHistory::where('user_id', Auth::user()->id)->where('vendor_id', $this->vendor_id)->exists()){
+            ApplicationHistory::create([
+                'user_id'     => Auth::user()->id,
+                'vendor_id'   => $this->vendor_id,
+            ]);
+            
+            $this->dispatch('swal', [
+                'title' => 'Apply Successfully.',
+                'icon' => 'success',
+                'iconColor' => 'blue',
+            ]);
+        }else{
+            $this->dispatch('swal', [
+                'title' => 'You have already applied.',
+                'icon' => 'error',
+                'iconColor' => 'red',
+            ]);
+        }
         
     }
     public function mount($id){
