@@ -32,8 +32,8 @@ Route::get('/contact-us', ContactUs::class)->name('contact-us');
 Route::get('/privacy-policy', PrivacyPolicy::class)->name('privacy-policy');
 Route::get('/404', Error::class)->name('4o4-page');
 Route::get('/become-a-agent', BecomeAAgent::class)->name('become-a-agent');
-Route::get('/institute-list', InstituteList::class)->name('abc-list');
-Route::get('/institute/{id}', InstituteDetails::class)->name('abc-details');
+Route::get('/abc-list', InstituteList::class)->name('abc-list');
+Route::get('/abc/{id}', InstituteDetails::class)->name('abc-details');
 Route::get('/blog-list', BlogList::class)->name('blog-list');
 Route::get('/blog-details', BlogDetails::class)->name('blog-details');
 
