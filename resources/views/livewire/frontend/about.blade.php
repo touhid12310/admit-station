@@ -1,42 +1,28 @@
 <div>
         <!-- about banner area start -->
-        <section class="tp-about-pt fix p-relative pt-200">
-         <div class="tp-breadcrumb__bg" data-background="{{asset('assets/img/breadcrumb/breadcrumb-bg.jpg')}}" wire:ignore></div>
-           <div class="container">
-              <div class="row align-items-center">
-                 <div class="col-lg-12">
-                    <div class="tp-about-banner mb-80">
-                       <span class="">About our Agency</span>
-                       <h3 class="tp-about-banner-title" style="color: #AB0C2F">We providing the <br>
-                          best quality service.</h3>
-                    </div>
-                 </div>
-              </div>
-           </div>
-           <div class="container-fluid p-0">
-              <div class="tp-about-banner-bg" data-background="{{asset('assets/images/mission/about-thumb-1.jpg')}}">
-              <div class="row g-0">
-                 <div class="col-xl-6 col-lg-12"></div>
-                 <div class="col-xl-6 col-lg-12">
-                    <div class="tp-about-banner-content p-relative">
-                       <span class="span" style="background-color: #AB0C2F">Our Stories</span>
-                       <p>We deliver budget-friendly visa solutions, <br> removing financial barriers from your journey. <br>Our goal is to provide quality services <br> at reasonable rates.</p>
-                       <a href="#team">Meet the Team <span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                          <path d="M1 6H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                          <path d="M6 1L11 6L6 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                          </svg></span></a>
-                       <div class="tp-about-banner-content-year">
-                       <span>8</span>
-                       <p>Years of Experience</p>
-                       </div>
-                    </div>
-                 </div>
-              </div>
-              </div>
-           </div>
+        <section class="tp-breadcrumb__area pt-50 pb-20 p-relative z-index-1 fix">
+            <div class="tp-breadcrumb__bg" data-background="{{asset('assets/img/breadcrumb/breadcrumb-bg.jpg')}}" wire:ignore></div>
+            <div class="container">
+               <div class="row align-items-center">
+                  <div class="col-sm-12">
+                        <div class="tp-breadcrumb__content">
+                           <div class="tp-breadcrumb__list pt-120">
+                              <span><a href="{{ url('/') }}" wire:navigate><svg width="17" height="14" viewBox="0 0 17 14"
+                                          fill="none" xmlns="http://www.w3.org/2000/svg">
+                                          <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M8.07207 0C8.19331 0 8.31107 0.0404348 8.40664 0.114882L16.1539 6.14233L15.4847 6.98713L14.5385 6.25079V12.8994C14.538 13.1843 14.4243 13.4574 14.2225 13.6589C14.0206 13.8604 13.747 13.9738 13.4616 13.9743H2.69231C2.40688 13.9737 2.13329 13.8603 1.93146 13.6588C1.72962 13.4573 1.61597 13.1843 1.61539 12.8994V6.2459L0.669148 6.98235L0 6.1376L7.7375 0.114882C7.83308 0.0404348 7.95083 0 8.07207 0ZM8.07694 1.22084L2.69231 5.40777V12.8994H13.4616V5.41341L8.07694 1.22084Z"
+                                                fill="currentColor" />
+                                       </svg></a></span>
+                              <span> Choose Your</span>
+                           </div>
+                           <h3 class="tp-breadcrumb__title" style="color: #AB0C2F">About Us</h3>
+                        </div>
+                  </div>
+               </div>
+            </div>
         </section>
         <!-- about banner area end -->
-
+        
 
         <!-- tutor area start -->
         <section class="tp-about-tutor-area pt-110 pb-90">

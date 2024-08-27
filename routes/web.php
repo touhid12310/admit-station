@@ -29,7 +29,7 @@ Route::get('/register', Register::class)->name('register');
 Route::get('/Faqs', Faqs::class)->name('FAQs');
 Route::get('/contact-us', ContactUs::class)->name('contact-us');
 Route::get('/privacy-policy', PrivacyPolicy::class)->name('privacy-policy');
-Route::get('/error', Error::class)->name('4o4-page');
+Route::get('/404', Error::class)->name('4o4-page');
 Route::get('/become-a-agent', BecomeAAgent::class)->name('become-a-agent');
 Route::get('/institute-list', InstituteList::class)->name('institute-list');
 Route::get('/institute-details/{id}', InstituteDetails::class)->name('institute-details');
@@ -49,4 +49,8 @@ Route::middleware('auth')->group(function () {
         Route::get('/setting-password', StudentPasswordSetting::class)->name('student-password-setting');
         Route::get('/setting-social-profile', StudentSocialProfileSetting::class)->name('student-social-profile-setting');
     });
+});
+
+Route::fallback(function(){
+    return redirect()->route('4o4-page');
 });

@@ -1,6 +1,6 @@
 <div>
      <!-- error area start -->
-     <div class="tp-error-area pt-120 pb-120">
+     <div class="tp-error-area pt-200 pb-120">
         <div class="container">
            <div class="row justify-content-center">
               <div class="col-xl-10">

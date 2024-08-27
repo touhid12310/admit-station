@@ -1,77 +1,98 @@
 <div>
-     <!-- contact area start -->
-     <section class="tp-contact-area tp-contact-p fix p-relative pt-150 pb-125">
-        <div class="tp-contact-shape">
-           <span>
-              <svg width="1920" height="559" viewBox="0 0 1920 559" fill="none" xmlns="http://www.w3.org/2000/svg">
-                 <path d="M1958.7 6.55286C1332.03 310.106 2369.35 119.238 2232.58 220.873C2018.48 379.976 692.5 607.75 254.5 538.145C-27.1058 493.393 1387 130.595 -280 395.595" stroke="url(#paint0_linear_2756_1168)" stroke-width="14"/>
-                 <defs>
-                 <linearGradient id="paint0_linear_2756_1168" x1="92.1912" y1="171.542" x2="1827.4" y2="294.717" gradientUnits="userSpaceOnUse">
-                 </linearGradient>
-                 </defs>
-              </svg>
-           </span>
-        </div>
-        <div class="tp-contact-shape-2">
-           <img src="{{asset('assets/images/bg/contact-shape-2.svg')}}" alt="">
-        </div>
-        <div class="container ">
-           <div class="row justify-content-center">
-              <div class="col-lg-10">
-                 <div class="tp-contact-wrap p-relative">
-                    <div class="tp-contact-heading text-center">
-                       <h3 class="tp-contact-title" style="color: #AB0C2F">Get in Touch</h3>
-                       <p>We are here to answer any question you may have.</p>
-                    </div>
-                    <div class="tp-contact-from-box shadow-lg">
-                       <h3 class="tp-contact-from-title" style="color: #AB0C2F">Send a Message 👍🏻</h3>
-                       <form id="contact-form" action="assets/mail.php" method="post">
-                          <div class="tp-contact-input-form">
-                             <div class="row">
-                                <div class="col-xl-6 col-lg-6">
-                                   <div class="tp-contact-input p-relative">
-                                      <label>Your Name</label>
-                                      <input type="text" name="name">
-                                   </div>
-                                </div>
-                                <div class="col-xl-6 col-lg-6">
-                                   <div class="tp-contact-input p-relative">
-                                      <label>Email Address</label>
-                                      <input type="email" name="email">
-                                   </div>
-                                </div>
-                                <div class="col-xl-12 col-lg-12">
-                                   <div class="tp-contact-input p-relative">
-                                      <label>Subject</label>
-                                      <input type="text" name="subject">
-                                   </div>
-                                </div>
-                                <div class="col-xl-12">
-                                   <div class="tp-contact-input p-relative">
-                                      <label>Your message</label>
-                                      <textarea name="message"></textarea>
-                                   </div>
-                                </div>
-                                <div class="col-xl-12">
-                                   <div class="tp-contact-input-remeber">
-                                      <input id="remeber" type="checkbox">
-                                      <label for="remeber">Save my name, email, and website in this browser for the next time I comment.</label>
-                                   </div>
-                                </div>
-                                <div class="tp-contact-btn">
-                                   <button type="submit" class="tp-btn-inner" style="background-color: #AB0C2F">Send message</button>
-                                   <p style="display: none;" class="ajax-response text-danger mt-1 mb-0"></p>
-                                </div>
-                             </div>
-                          </div>
-                       </form>
-                    </div>
-                 </div>
-              </div>
-           </div>
-        </div>
-     </section>
-     <!-- contact area end -->
+   <section class="tp-breadcrumb__area pt-50 pb-20 p-relative z-index-1 fix">
+      <div class="tp-breadcrumb__bg" data-background="{{asset('assets/img/breadcrumb/breadcrumb-bg.jpg')}}" wire:ignore></div>
+      <div class="container">
+            <div class="row align-items-center">
+               <div class="col-sm-12">
+                  <div class="tp-breadcrumb__content">
+                        <div class="tp-breadcrumb__list pt-120">
+                           <span><a href="{{ url('/') }}" wire:navigate><svg width="17" height="14" viewBox="0 0 17 14"
+                                       fill="none" xmlns="http://www.w3.org/2000/svg">
+                                       <path fill-rule="evenodd" clip-rule="evenodd"
+                                          d="M8.07207 0C8.19331 0 8.31107 0.0404348 8.40664 0.114882L16.1539 6.14233L15.4847 6.98713L14.5385 6.25079V12.8994C14.538 13.1843 14.4243 13.4574 14.2225 13.6589C14.0206 13.8604 13.747 13.9738 13.4616 13.9743H2.69231C2.40688 13.9737 2.13329 13.8603 1.93146 13.6588C1.72962 13.4573 1.61597 13.1843 1.61539 12.8994V6.2459L0.669148 6.98235L0 6.1376L7.7375 0.114882C7.83308 0.0404348 7.95083 0 8.07207 0ZM8.07694 1.22084L2.69231 5.40777V12.8994H13.4616V5.41341L8.07694 1.22084Z"
+                                          fill="currentColor" />
+                                    </svg></a></span>
+                           <span> Choose Your</span>
+                        </div>
+                        <h3 class="tp-breadcrumb__title" style="color: #AB0C2F">Get in Touch</h3>
+                  </div>
+               </div>
+            </div>
+      </div>
+   </section>
+
+   <!-- contact area start -->
+   <section class="tp-contact-area tp-contact-p fix p-relative pt-50 pb-50">
+      <div class="tp-contact-shape">
+         <span>
+            <svg width="1920" height="559" viewBox="0 0 1920 559" fill="none" xmlns="http://www.w3.org/2000/svg">
+               <path d="M1958.7 6.55286C1332.03 310.106 2369.35 119.238 2232.58 220.873C2018.48 379.976 692.5 607.75 254.5 538.145C-27.1058 493.393 1387 130.595 -280 395.595" stroke="url(#paint0_linear_2756_1168)" stroke-width="14"/>
+               <defs>
+               <linearGradient id="paint0_linear_2756_1168" x1="92.1912" y1="171.542" x2="1827.4" y2="294.717" gradientUnits="userSpaceOnUse">
+               </linearGradient>
+               </defs>
+            </svg>
+         </span>
+      </div>
+      <div class="tp-contact-shape-2">
+         <img src="{{asset('assets/images/bg/contact-shape-2.svg')}}" alt="">
+      </div>
+      <div class="container ">
+         <div class="row justify-content-center">
+            <div class="col-lg-10">
+               <div class="tp-contact-wrap p-relative">
+                  <div class="tp-contact-heading text-center">
+                     <p>We are here to answer any question you may have.</p>
+                  </div>
+                  <div class="tp-contact-from-box shadow-lg">
+                     <h3 class="tp-contact-from-title" style="color: #AB0C2F">Send a Message 👍🏻</h3>
+                     <form id="contact-form" action="assets/mail.php" method="post">
+                        <div class="tp-contact-input-form">
+                           <div class="row">
+                              <div class="col-xl-6 col-lg-6">
+                                 <div class="tp-contact-input p-relative">
+                                    <label>Your Name</label>
+                                    <input type="text" name="name">
+                                 </div>
+                              </div>
+                              <div class="col-xl-6 col-lg-6">
+                                 <div class="tp-contact-input p-relative">
+                                    <label>Email Address</label>
+                                    <input type="email" name="email">
+                                 </div>
+                              </div>
+                              <div class="col-xl-12 col-lg-12">
+                                 <div class="tp-contact-input p-relative">
+                                    <label>Subject</label>
+                                    <input type="text" name="subject">
+                                 </div>
+                              </div>
+                              <div class="col-xl-12">
+                                 <div class="tp-contact-input p-relative">
+                                    <label>Your message</label>
+                                    <textarea name="message"></textarea>
+                                 </div>
+                              </div>
+                              <div class="col-xl-12">
+                                 <div class="tp-contact-input-remeber">
+                                    <input id="remeber" type="checkbox">
+                                    <label for="remeber">Save my name, email, and website in this browser for the next time I comment.</label>
+                                 </div>
+                              </div>
+                              <div class="tp-contact-btn">
+                                 <button type="submit" class="tp-btn-inner" style="background-color: #AB0C2F">Send message</button>
+                                 <p style="display: none;" class="ajax-response text-danger mt-1 mb-0"></p>
+                              </div>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- contact area end -->
 
 
      <!-- contact info area start -->

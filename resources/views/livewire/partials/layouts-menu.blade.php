@@ -228,7 +228,7 @@
                         <a href="{{ route('FAQs') }}" wire:navigate>FAQs</a>
                         <a href="{{ route('contact-us') }}" wire:navigate>contact-us</a>
                         <a href="{{ route('privacy-policy') }}"wire:navigate>privacy-policy</a>
-                        <a href="{{ route('4o4-page') }}"wire:navigate> Help Desk </a>
+                        <a href=""wire:navigate> Help Desk </a>
                      </div>
                   </div>
                </div>
