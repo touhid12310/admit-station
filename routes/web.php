@@ -13,6 +13,7 @@ use App\Livewire\Frontend\Home;
 use App\Livewire\Frontend\InstituteDetails;
 use App\Livewire\Frontend\InstituteList;
 use  App\Livewire\Frontend\PrivacyPolicy;
+use App\Livewire\Institute\InstituteDashboard;
 use App\Livewire\Student\StudentDashboard;
 use App\Livewire\Student\StudentProfile;
 use App\Livewire\Student\StudentReviews;
@@ -41,7 +42,7 @@ Route::get('/blog-details', BlogDetails::class)->name('blog-details');
 Route::middleware('auth')->group(function () {
     Route::get('/logout', [Login::class, 'logout'])->name('logout');
     Route::prefix('student')->group(function () {
-        Route::get('/dashboard', StudentDashboard::class)->name('student-dashboard');
+        Route::get('/dashboard', StudentDashboard::class)->name('student.dashboard');
         Route::get('/profile', StudentProfile::class)->name('student-profile');
         Route::get('/order', StudentApplyFor::class)->name('student-order');
         Route::get('/reviews', StudentReviews::class)->name('student-reviews');
@@ -51,6 +52,13 @@ Route::middleware('auth')->group(function () {
     });
 });
 
-Route::fallback(function(){
-    return redirect()->route('4o4-page');
+Route::middleware('auth:institute')->group(function () {
+    Route::get('/logout', [Login::class, 'logout'])->name('logout');
+    Route::prefix('institute')->group(function () {
+        Route::get('/dashboard', InstituteDashboard::class)->name('institute.dashboard');
+    });
 });
+
+// Route::fallback(function(){
+//     return redirect()->route('4o4-page');
+// });

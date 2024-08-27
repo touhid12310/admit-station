@@ -283,9 +283,14 @@
                               </svg>
                            </button>
                         </div>
-                        @auth
+                        @if(auth()->check())
                            <div class="tp-header-btn d-none d-md-block ml-30">
-                              <a href="{{ route('student-dashboard')}}" wire:navigate>Dashboad</a>
+                              <a href="{{ route('student.dashboard')}}" wire:navigate>Dashboad</a>
+                           </div>
+
+                        @elseif(auth()->guard('institute')->check())
+                           <div class="tp-header-btn d-none d-md-block ml-30">
+                              <a href="{{ route('institute.dashboard')}}" wire:navigate>Dashboad</a>
                            </div>
                         @else  
                            <div class="tp-header-btn d-none d-md-block ml-30">
