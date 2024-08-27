@@ -6,19 +6,21 @@ use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Livewire\Attributes\Title;
 use Livewire\Component;
+
 #[Title('Register')]
 class Register extends Component
 {
+    public $user_type;
+    public $institute_type;
     public $name;
     public $email;
     public $phone_no;
     public $password;
     public $conform_password;
 
-    public $user_type;
     public $html;
 
-   
+
     public function save()
     {
         $this->validate([
@@ -39,8 +41,8 @@ class Register extends Component
         if ($this->user_type === 'student') {
             auth()->login($user);
             return redirect()->route('student-dashboard');
-        }else{
-            
+        } else {
+
             $this->dispatch('swal', [
                 'title' => 'Apply for Institute Register Successfully.',
                 'icon' => 'success',
@@ -48,20 +50,11 @@ class Register extends Component
             ]);
             return redirect()->route('login');
         }
-
-       
     }
 
 
     public function render()
     {
-        
-        if ($this->user_type == 'student') {
-            $this->html = view('livewire.auth.student-form')->render();
-            
-        }elseif($this->user_type == 'institute') {
-            $this->html = view('livewire.auth.institute-from')->render();
-        }
         return view('livewire.auth.register');
     }
 }
