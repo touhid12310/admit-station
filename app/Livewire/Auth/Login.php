@@ -46,6 +46,7 @@ class Login extends Component
     public function logout()
     {
         auth()->logout();
+        auth()->guard('institute')->logout();
         return redirect('/');
     }
 }

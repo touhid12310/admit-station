@@ -37,10 +37,10 @@ Route::get('/institute-details/{id}', InstituteDetails::class)->name('institute-
 Route::get('/blog-list', BlogList::class)->name('blog-list');
 Route::get('/blog-details', BlogDetails::class)->name('blog-details');
 
+Route::get('/logout', [Login::class, 'logout'])->name('logout');
 
 
 Route::middleware('auth')->group(function () {
-    Route::get('/logout', [Login::class, 'logout'])->name('logout');
     Route::prefix('student')->group(function () {
         Route::get('/dashboard', StudentDashboard::class)->name('student.dashboard');
         Route::get('/profile', StudentProfile::class)->name('student-profile');
@@ -53,7 +53,6 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::middleware('auth:institute')->group(function () {
-    Route::get('/logout', [Login::class, 'logout'])->name('logout');
     Route::prefix('institute')->group(function () {
         Route::get('/dashboard', InstituteDashboard::class)->name('institute.dashboard');
     });
