@@ -98,9 +98,9 @@
                         <div class="tp-course-grid-sidebar-right d-flex justify-content-start justify-content-lg-end">
 
                             <div class="tp-course-grid-select tp-course-grid-sidebar-select">
-                                <select class="wide">
+                                <select class="wide" wire:model.live="country_name">
                                     <option>Select Country</option>
-                                    @foreach ($all_countrys as $list)
+                                    @foreach ($country as $list)
                                         <option value="{{ $list->country }}">{{ $list->country }}</option>
                                     @endforeach
                                 </select>
@@ -109,9 +109,11 @@
                             <div class="tp-course-grid-select tp-course-grid-sidebar-select ml-10">
                                 <select class="wide">
                                     <option>Select City</option>
+                                    @if(isset($all_cities))
                                     @foreach ($all_cities as $list)
                                         <option value="{{ $list->city }}">{{ $list->city }}</option>
                                     @endforeach
+                                    @endif
                                 </select>
                             </div>
                         </div>
