@@ -17,7 +17,8 @@
 <body>
 
     @if (Route::is('login') or Route::is('register'))
-    @elseif(Route::is('student*'))
+        @livewire('partials.layouts-menu')
+    @elseif(Route::is('student*', 'institute*'))
         @livewire('partials.layouts-student-dashboard-menu')
     @else
         @livewire('partials.layouts-menu')

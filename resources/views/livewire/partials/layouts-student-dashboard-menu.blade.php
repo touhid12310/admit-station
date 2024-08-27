@@ -81,7 +81,7 @@
                            @if (auth()->user()->photo)
                               <img src="{{ asset( Auth::user()->photo) }}" alt="">
                            @else
-                              <img src="{{ asset('assets/images/user.jpg') }}" alt="">
+                              <img src="{{ asset('assets/images/profile.png') }}" alt="">
                            @endif
                         </button>
                         <div class="tp-header-user-box">
@@ -91,7 +91,7 @@
                                     @if (auth()->user()->photo)
                                        <img src="{{ asset( Auth::user()->photo) }}" alt=""/>
                                     @else
-                                       <img src="{{ asset('assets/images/user.jpg') }}" alt="">
+                                       <img src="{{ asset('assets/images/profile.png') }}" alt="">
                                     @endif
                                  </div>
                                  <div class="tp-header-user-profile-content">

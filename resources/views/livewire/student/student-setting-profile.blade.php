@@ -31,11 +31,15 @@
                               <!-- end session msg-->
                               <div class="tpd-setting-box profile">
 
-                                 <div class="tp-dashboard-banner-bg profile mb-100" data-background="{{asset($cover_photo)}}">
+                                 <div class="tp-dashboard-banner-bg profile mb-100" data-background=" @if (auth()->user()->photo) {{ asset($cover_photo) }}  @else {{ asset('assets/images/cover.jpg') }} @endif">
                                     <div class="tp-instructor-wrap d-flex justify-content-between">
                                        <div class="tp-instructor-info d-flex">
                                           <div class="tp-instructor-avatar p-relative profile">
-                                             <img src="{{ asset($photo) }}" alt="">
+                                             @if (auth()->user()->photo)
+                                                <img src="{{ asset( Auth::user()->photo) }}" alt="">
+                                             @else
+                                                <img src="{{ asset('assets/images/profile.png') }}" alt="">
+                                             @endif
                                              <span><svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <circle cx="19" cy="19" r="18" fill="white" stroke="#E6E8F0" />
                                                 <path d="M23.352 13.5172L23.272 13.3463C23.056 12.9034 22.808 12.3907 22.656 12.0954C22.288 11.3962 21.656 11.0078 20.88 11H17.112C16.336 11.0078 15.712 11.3962 15.344 12.0954C15.184 12.4062 14.912 12.9656 14.688 13.424L14.64 13.5172C14.616 13.5794 14.552 13.6104 14.488 13.6104C12.56 13.6104 11 15.1332 11 16.9978V21.6127C11 23.4772 12.56 25 14.488 25H23.512C25.432 25 27 23.4772 27 21.6127V16.9978C27 15.1332 25.432 13.6104 23.512 13.6104C23.44 13.6104 23.384 13.5716 23.352 13.5172Z" fill="#303651" />

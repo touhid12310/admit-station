@@ -1,7 +1,7 @@
 <div>
     <!-- login area start -->
-    <section class="tp-login-area">
-        <div class="tp-login-register-box d-flex align-items-center">
+    <section class="tp-login-area p-5">
+        <div class="tp-login-register-box d-flex align-items-center pt-200 pb-80">
             <div class="tp-login-register-banner-box p-relative"
                 data-background="{{ asset('assets/images/bg/services-bg.jpg') }}" wire:ignore>
                 <div class="tp-login-register-logo tp-header-logo">

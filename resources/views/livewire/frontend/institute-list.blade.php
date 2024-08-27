@@ -182,7 +182,7 @@
                                                         Ouse</span>
                                                 </div>
                                                 <div class="tp-course-thumb sidebar">
-                                                    <a href="{{ route('institute-details', $vendor->id) }}"><img
+                                                    <a href="{{ route('abc-details', $vendor->id) }}"><img
                                                             class="course-pink" src="{{ $vendor->thumb_img }}"
                                                             alt=""></a>
                                                 </div>
@@ -230,7 +230,7 @@
                                                     </div>
                                                     <h4 class="tp-course-title">
                                                         <a
-                                                            href="{{ route('institute-details', $vendor->id) }}">{{ $vendor->name }}</a>
+                                                            href="{{ route('abc-details', $vendor->id) }}">{{ $vendor->name }}</a>
                                                     </h4>
                                                     <div
                                                         class="tp-course-rating d-flex align-items-end justify-content-between">
@@ -248,7 +248,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="tp-course-btn">
-                                                    <a href="{{ route('institute-details', $vendor->id) }}">
+                                                    <a href="{{ route('abc-details', $vendor->id) }}">
                                                         Preview
                                                     </a>
                                                 </div>
@@ -269,7 +269,7 @@
                                     @forelse ($vendors as $vendor)
                                         <div class="tp-course-filter-item mb-25 d-flex">
                                             <div class="tp-course-list-thumb">
-                                                <a href="{{ route('institute-details', $vendor->id) }}"
+                                                <a href="{{ route('abc-details', $vendor->id) }}"
                                                     wire:navigate><img class="course-pink"
                                                         src="{{ $vendor->thumb_img }}" alt=""></a>
                                             </div>
@@ -279,7 +279,7 @@
                                                 </div>
                                                 <h4 class="tp-course-list-title">
                                                     <a
-                                                        href="{{ route('institute-details', $vendor->id) }}"wire:navigate>{{ $vendor->name }}</a>
+                                                        href="{{ route('abc-details', $vendor->id) }}"wire:navigate>{{ $vendor->name }}</a>
                                                 </h4>
                                                 <div class="tp-course-filter-meta">
                                                     <span><img src="{{ $vendor->logo }}" alt=""></span>
@@ -310,7 +310,7 @@
                                                     </div>
                                                     <span>
                                                         <a class="tp-btn w-100 text-center"
-                                                            href="{{ route('institute-details', $vendor->id) }}">Preview</a>
+                                                            href="{{ route('abc-details', $vendor->id) }}">Preview</a>
                                                     </span>
                                                 </div>
                                             </div>
