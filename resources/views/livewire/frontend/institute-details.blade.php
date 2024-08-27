@@ -15,7 +15,7 @@
                                     </svg></a></span>
                             <span>{{ $vendor->vendors_types }}</span>
                         </div>
-                        <h3 class="tp-breadcrumb__title" style="color: #AB0C2F">{{ $vendor->name }}</h3>
+                        <h1 class="tp-breadcrumb__title" style="color: #AB0C2F">{{ $vendor->name }} - {{ $vendor->vendors_types }}</h1>
                     </div>
                 </div>
             </div>

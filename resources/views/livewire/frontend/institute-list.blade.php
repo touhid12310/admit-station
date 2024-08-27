@@ -131,29 +131,28 @@
                     <div class="tp-grid-sidebar-left">
                         <div class="tp-grid-widget-box">
                             <div class="tp-grid-widget-item">
-                                <h4 class="tp-grid-widget-title">All categories</h4>
+                                <h4 class="tp-grid-widget-title">All Institues</h4>
                                 <div class="tp-grid-widget-content">
                                     <div class="tp-grid-widget-checkbox">
                                         <ul>
-                                            <li wire:key = "School" wire:ignore>
+                                            <li >
                                                 <div class="from-checkbox">
                                                     <input id="remeber" type="checkbox"
-                                                        wire:model.live="selected_schools" wire:ignore>
+                                                        wire:model.live="selected_schools">
                                                     <label for="remeber">School <span>
                                                             ({{ $SchoolCount }})</span></label>
                                                 </div>
                                             </li>
-                                            <li wire:key = "College" wire:ignore>
+                                            <li >
                                                 <div class="from-checkbox">
                                                     <input id="Business" type="checkbox"
-                                                        wire:model.live="selected_colleges" wire:ignore>
+                                                        wire:model.live="selected_colleges">
                                                     <label for="Business">Colleges <span>
                                                             ({{ $CollegeCount }})</span></label>
                                                 </div>
                                             </li>
-                                            <li wire:key = "Universitiy" wire:ignore>
-                                                <div class="from-checkbox" wire:model.live="selected_universitis"
-                                                    wire:ignore>
+                                            <li>
+                                                <div class="from-checkbox" wire:model.live="selected_universitis">
                                                     <input id="Development" type="checkbox">
                                                     <label for="Development">Universitys
                                                         ({{ $UniversityCount }})</label>
@@ -322,51 +321,8 @@
                         <!--/end Single View -->
                     </div>
 
-                    <div class="tp-event-inner-pagination" wire:ignore>
+                    <div class="tp-event-inner-pagination">
                         {{ $vendors->links() }}
-                        {{--   <div class="tp-dashboard-pagination pt-20">
-                            <div class="tp-pagination">
-                                <nav>
-                                    <ul class="justify-content-center">
-                                        <li>
-                                            <a href="course-with-sidebar.html">
-                                                <svg width="15" height="13" viewBox="0 0 15 13"
-                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M1.00017 6.77879L14 6.77879" stroke="currentColor"
-                                                        stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path d="M6.24316 11.9999L0.999899 6.77922L6.24316 1.55762"
-                                                        stroke="currentColor" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="course-with-sidebar.html">1</a>
-                                        </li>
-                                        <li>
-                                            <span class="current">2</span>
-                                        </li>
-                                        <li>
-                                            <a href="course-with-sidebar.html">3</a>
-                                        </li>
-                                        <li>
-                                            <a href="course-with-sidebar.html" class="next page-numbers">
-                                                <svg width="15" height="13" viewBox="0 0 15 13"
-                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M13.9998 6.77883L1 6.77883" stroke="currentColor"
-                                                        stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round"></path>
-                                                    <path d="M8.75684 1.55767L14.0001 6.7784L8.75684 12"
-                                                        stroke="currentColor" stroke-width="1.5"
-                                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                                </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -377,6 +333,13 @@
 </div>
 @script
     <script>
-        $("select").niceSelect();
+        document.addEventListener('picker', function(e) {
+            const status = e.detail[0].status;
+            if (status === 'yes') {
+                setTimeout(() => {
+                    $("select").niceSelect();
+                }, 100);
+            }
+        })
     </script>
 @endscript
