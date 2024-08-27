@@ -57,7 +57,7 @@
                                     <div class="col-12" wire:ignore>
                                         <div class="tp-login-input p-relative tpd-select">
                                             <label for="UserType">Institute Type:</label>
-                                            <select class="wide institute_type " wire:change="institute_type" required>
+                                            <select class="wide institute_type " wire:model="institute_type" required>
                                                 <option value="">Type your institute type</option>
                                                 <option value="University">University</option>
                                                 <option value="Collage">Collage</option>
