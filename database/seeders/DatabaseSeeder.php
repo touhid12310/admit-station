@@ -30,8 +30,8 @@ class DatabaseSeeder extends Seeder
             'email' => 'institute@example.com',
             'password' => Hash::make('323232'),
             'user_type' => 'institute',
-            'photo' => 'uploads/Users/3P4tKc093OAVVmenX0FQymjRzirc4azCqflZjv5M.jpg',
-            'cover_photo' => 'uploads/Users/1kPncNPYihMTKkzbvaAiiF7ZrdeEPYkWEdV9AELI.jpg',
+            'photo' => 'assets/images/institute.jpg',
+            'cover_photo' => 'assets/images/institute-cover.jpg',
         ]);
 
 
