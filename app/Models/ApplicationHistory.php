@@ -11,9 +11,9 @@ class ApplicationHistory extends Model
 
     protected $guarded = [];
 
-    public function vendor()
+    public function institute()
     {
-        return $this->belongsTo(Vendor::class);
+        return $this->belongsTo(Institute::class);
     }
 
     public function user()

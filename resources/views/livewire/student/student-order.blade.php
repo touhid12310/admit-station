@@ -44,8 +44,8 @@
                               <tbody>
                                  @forelse ($applys as $apply)
                                     <tr>
-                                       <td class="tpd-common-text">{{$apply->vendor->name}}</td>
-                                       <td class="tpd-common-text">{{$apply->vendor->vendors_types}}</td>
+                                       <td class="tpd-common-text">{{$apply->institute->name}}</td>
+                                       <td class="tpd-common-text">{{$apply->institute->vendors_types}}</td>
                                        <td class="tpd-common-text">
                                           @if ($apply->status == 'Approved')
                                              <div class="tpd-badge-item">

@@ -89,8 +89,8 @@
                                 </ul>
                             </div>
                             <div class="tp-course-filter-top-result">
-                                <p>Showing {{ $vendors->firstItem() }} to {{ $vendors->lastItem() }} of
-                                    {{ $vendors->total() }} results</p>
+                                <p>Showing {{ $institutes->firstItem() }} to {{ $institutes->lastItem() }} of
+                                    {{ $institutes->total() }} results</p>
                             </div>
                         </div>
                     </div>
@@ -174,21 +174,21 @@
                         <div class="tab-pane fade" id="home" role="tabpanel" aria-labelledby="home-tab">
                             <div class="tp-grid-sidebar-right">
                                 <div class="row">
-                                    @forelse ($vendors as $vendor)
+                                    @forelse ($institutes as $institute)
                                         <div class="col-xl-4 col-md-6">
                                             <div class="tp-course-item p-relative fix mb-30">
                                                 <div class="tp-course-teacher mb-15">
-                                                    <span><img src="{{ $vendor->logo }}" alt="">Hilary
+                                                    <span><img src="{{ $institute->logo }}" alt="">Hilary
                                                         Ouse</span>
                                                 </div>
                                                 <div class="tp-course-thumb sidebar">
-                                                    <a href="{{ route('abc-details', $vendor->id) }}"><img
-                                                            class="course-pink" src="{{ $vendor->thumb_img }}"
+                                                    <a href="{{ route('abc-details', $institute->id) }}"><img
+                                                            class="course-pink" src="{{ $institute->thumb_img }}"
                                                             alt=""></a>
                                                 </div>
                                                 <div class="tp-course-content">
                                                     <div class="tp-course-tag mb-10">
-                                                        <span>{{ $vendor->vendors_types }}</span>
+                                                        <span>{{ $institute->vendors_types }}</span>
                                                     </div>
                                                     <div class="tp-course-meta">
                                                         <span>
@@ -206,7 +206,7 @@
                                                                         stroke-linejoin="round" />
                                                                 </svg>
                                                             </span>
-                                                            {{ $vendor->country }}
+                                                            {{ $institute->country }}
                                                         </span>
                                                         <span>
                                                             <span>
@@ -225,12 +225,12 @@
                                                                         stroke-linejoin="round" />
                                                                 </svg>
                                                             </span>
-                                                            {{ $vendor->city }}
+                                                            {{ $institute->city }}
                                                         </span>
                                                     </div>
                                                     <h4 class="tp-course-title">
                                                         <a
-                                                            href="{{ route('abc-details', $vendor->id) }}">{{ $vendor->name }}</a>
+                                                            href="{{ route('abc-details', $institute->id) }}">{{ $institute->name }}</a>
                                                     </h4>
                                                     <div
                                                         class="tp-course-rating d-flex align-items-end justify-content-between">
@@ -248,7 +248,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="tp-course-btn">
-                                                    <a href="{{ route('abc-details', $vendor->id) }}">
+                                                    <a href="{{ route('abc-details', $institute->id) }}">
                                                         Preview
                                                     </a>
                                                 </div>
@@ -266,30 +266,30 @@
                             aria-labelledby="profile-tab">
                             <div class="tp-list-sidebar-right">
                                 <div class="row">
-                                    @forelse ($vendors as $vendor)
+                                    @forelse ($institutes as $institute)
                                         <div class="tp-course-filter-item mb-25 d-flex">
                                             <div class="tp-course-list-thumb">
-                                                <a href="{{ route('abc-details', $vendor->id) }}"
+                                                <a href="{{ route('abc-details', $institute->id) }}"
                                                     wire:navigate><img class="course-pink"
-                                                        src="{{ $vendor->thumb_img }}" alt=""></a>
+                                                        src="{{ $institute->thumb_img }}" alt=""></a>
                                             </div>
                                             <div class="tp-course-filter-content">
                                                 <div class="tp-course-filter-tag mb-10">
-                                                    <span class="tag-span">{{ $vendor->vendors_types }}</span>
+                                                    <span class="tag-span">{{ $institute->vendors_types }}</span>
                                                 </div>
                                                 <h4 class="tp-course-list-title">
                                                     <a
-                                                        href="{{ route('abc-details', $vendor->id) }}"wire:navigate>{{ $vendor->name }}</a>
+                                                        href="{{ route('abc-details', $institute->id) }}"wire:navigate>{{ $institute->name }}</a>
                                                 </h4>
                                                 <div class="tp-course-filter-meta">
-                                                    <span><img src="{{ $vendor->logo }}" alt=""></span>
+                                                    <span><img src="{{ $institute->logo }}" alt=""></span>
                                                     <span>
                                                         <i class="fa-solid fa-house"></i>
-                                                        {{ $vendor->country }}
+                                                        {{ $institute->country }}
                                                     </span>
                                                     <span>
                                                         <i class="fa-solid fa-location-dot"></i>
-                                                        {{ $vendor->city }}
+                                                        {{ $institute->city }}
                                                     </span>
                                                 </div>
                                                 <div class="tp-course-list-p">
@@ -310,7 +310,7 @@
                                                     </div>
                                                     <span>
                                                         <a class="tp-btn w-100 text-center"
-                                                            href="{{ route('abc-details', $vendor->id) }}">Preview</a>
+                                                            href="{{ route('abc-details', $institute->id) }}">Preview</a>
                                                     </span>
                                                 </div>
                                             </div>
@@ -324,7 +324,7 @@
                     </div>
 
                     <div class="tp-event-inner-pagination">
-                        {{ $vendors->links() }}
+                        {{ $institutes->links() }}
                     </div>
                 </div>
             </div>

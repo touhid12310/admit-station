@@ -13,9 +13,9 @@
                                             d="M8.07207 0C8.19331 0 8.31107 0.0404348 8.40664 0.114882L16.1539 6.14233L15.4847 6.98713L14.5385 6.25079V12.8994C14.538 13.1843 14.4243 13.4574 14.2225 13.6589C14.0206 13.8604 13.747 13.9738 13.4616 13.9743H2.69231C2.40688 13.9737 2.13329 13.8603 1.93146 13.6588C1.72962 13.4573 1.61597 13.1843 1.61539 12.8994V6.2459L0.669148 6.98235L0 6.1376L7.7375 0.114882C7.83308 0.0404348 7.95083 0 8.07207 0ZM8.07694 1.22084L2.69231 5.40777V12.8994H13.4616V5.41341L8.07694 1.22084Z"
                                             fill="currentColor" />
                                     </svg></a></span>
-                            <span>{{ $vendor->vendors_types }}</span>
+                            <span>{{ $institute->vendors_types }}</span>
                         </div>
-                        <h1 class="tp-breadcrumb__title" style="color: #AB0C2F">{{ $vendor->name }} - {{ $vendor->vendors_types }}</h1>
+                        <h1 class="tp-breadcrumb__title" style="color: #AB0C2F">{{ $institute->name }} - {{ $institute->vendors_types }}</h1>
                     </div>
                 </div>
             </div>
@@ -30,10 +30,10 @@
                 <div class="col-lg-9">
                     <div class="tp-course-details-wrapper">
                         <div>
-                            <img src="{{ asset($vendor->thumb_img) }}" alt="" style="width:100%;" wire:ignore>
+                            <img src="{{ asset($institute->thumb_img) }}" alt="" style="width:100%;" wire:ignore>
                         </div>
                         <div class="tp-course-details-heading pt-20">
-                            <h3 class="tp-course-details-title">{{ $vendor->name }}</h3>
+                            <h3 class="tp-course-details-title">{{ $institute->name }}</h3>
                             <p>Earn a bachelor's in computer science degree from Acadia University and develop the
                                 software engineering, project management and programming skills to impact how technology
                                 will change and transform our world.</p>
@@ -57,10 +57,10 @@
                     <div class="tp-course-requrement-widget-box">
                         <div class="tp-course-requrement-widget mb-30">
                             <div class="tp-course-requrement-widget-content">
-                                <a href="#">EIIN : {{$vendor->EIIN}}</a>
-                                <a href="#">ESTD : {{$vendor->E_year}}</a>
-                                <a href="#">Country : {{$vendor->country}}</a>
-                                <a href="#">City :{{$vendor->city}}</a>
+                                <a href="#">EIIN : {{$institute->EIIN}}</a>
+                                <a href="#">ESTD : {{$institute->E_year}}</a>
+                                <a href="#">Country : {{$institute->country}}</a>
+                                <a href="#">City :{{$institute->city}}</a>
                             </div>
                         </div>
                         <div class="tp-course-requrement-widget-btn mb-30">
@@ -69,7 +69,7 @@
                                     <!-- session msg-->
                                     @include('livewire.partials.flash-msg')
                                     <!-- end session msg-->
-                                    <input type="hidden" wire:model="vendor_id" value="{{ $vendor->id }}">
+                                    <input type="hidden" wire:model="institute_id" value="{{ $institute->id }}">
                                     <input type="hidden" wire:model="user_id" value="{{ $user_id }}"> 
                                     @error('vendor_id')
                                         <div class="m-2 text-danger">{{ $message }}</div>
@@ -92,7 +92,7 @@
                         </div>
                         <div class="tp-course-requrement-widget-contact mb-30">
                             <h4 class="tp-course-requrement-widget-contact-title">Contact Us</h4>
-                            <p>{{$vendor->address}}<br>{{$vendor->country_code}}{{$vendor->mobile_no}}</p>
+                            <p>{{$institute->address}}<br>{{$institute->country_code}}{{$institute->mobile_no}}</p>
                             <a href="mailto:admitstation24@gmail.com"><span><svg xmlns="http://www.w3.org/2000/svg"
                                         width="18" height="16" viewBox="0 0 18 16" fill="none">
                                         <path opacity="0.4"
@@ -123,7 +123,7 @@
                                 more questions?</h4>
                             <p>Read our <a href="{{ route('FAQs') }}">FAQ</a></p>
                             <div class="tp-course-requrement-widget-faq-thumb">
-                                <img src="{{ asset($vendor->thumb_img) }}" alt="{{$vendor->thumb_img}}" wire:ignore style="width: 100%">
+                                <img src="{{ asset($institute->thumb_img) }}" alt="{{$institute->thumb_img}}" wire:ignore style="width: 100%">
                             </div>
                         </div> --}}
                     </div>

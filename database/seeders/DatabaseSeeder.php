@@ -2,8 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Institute;
 use App\Models\User;
-use App\Models\Vendor;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -35,6 +35,6 @@ class DatabaseSeeder extends Seeder
         ]);
 
 
-        Vendor::factory(10)->create();
+        Institute::factory(10)->create();
     }
 }

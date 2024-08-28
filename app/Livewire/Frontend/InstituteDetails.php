@@ -3,6 +3,7 @@
 namespace App\Livewire\Frontend;
 
 use App\Models\ApplicationHistory;
+use App\Models\Institute;
 use App\Models\Vendor;
 use Illuminate\Support\Facades\Auth;
 use Livewire\Attributes\Title;
@@ -13,14 +14,14 @@ class InstituteDetails extends Component
 {
 
     public $user_id;
-    public $vendor_id;
+    public $institute_id;
     
     public function apply(){
         
-        if(!ApplicationHistory::where('user_id', Auth::user()->id)->where('vendor_id', $this->vendor_id)->exists()){
+        if(!ApplicationHistory::where('user_id', Auth::user()->id)->where('institute_id', $this->institute_id)->exists()){
             ApplicationHistory::create([
                 'user_id'     => Auth::user()->id,
-                'vendor_id'   => $this->vendor_id,
+                'institute_id'   => $this->institute_id,
             ]);
             
             $this->dispatch('swal', [
@@ -38,14 +39,14 @@ class InstituteDetails extends Component
         
     }
     public function mount($id){
-        $vendor = Vendor::find($id);
-        $this->vendor_id = $id;
+        $vendor = Institute::find($id);
+        $this->institute_id = $id;
     }
 
     public function render()
     {
         return view('livewire.frontend.institute-details', [
-            'vendor' => Vendor::find($this->vendor_id)
+            'institute' => Institute::find($this->institute_id)
         ]);
     }
 }

@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Frontend;
 
+use App\Models\Institute;
 use App\Models\Vendor;
 use Livewire\Attributes\Title;
 use Livewire\Component;
@@ -27,17 +28,17 @@ class InstituteList extends Component
 
     public function render()
     {
-        $this->country   = Vendor::select('country')->distinct()->get('country');
+        $this->country   = Institute::select('country')->distinct()->get('country');
 
-        $SchoolCount     = Vendor::where('vendors_types', 'School')->count();
-        $CollegeCount     = Vendor::where('vendors_types', 'College')->count();
-        $UniversityCount     = Vendor::where('vendors_types', 'University')->count();
+        $SchoolCount     = Institute::where('vendors_types', 'School')->count();
+        $CollegeCount     = Institute::where('vendors_types', 'College')->count();
+        $UniversityCount     = Institute::where('vendors_types', 'University')->count();
 
 
 
         if ($this->country_name) {
             
-            $this->city = Vendor::where('country', $this->country_name)->get();
+            $this->city = Institute::where('country', $this->country_name)->get();
         }
 
 
@@ -131,14 +132,14 @@ class InstituteList extends Component
         // }
 
 
-            $vendors = Vendor::orderBy('id', 'desc')->paginate($this->rows);
+            $Institutes = Institute::orderBy('id', 'desc')->paginate($this->rows);
 
         $this->dispatch('picker', [
             'status' => 'yes',
         ]);
 
         return view('livewire.frontend.institute-list', [
-            'vendors' => $vendors,
+            'institutes' => $Institutes,
             'SchoolCount' =>  $SchoolCount,
             'CollegeCount' =>  $CollegeCount,
             'UniversityCount' =>  $UniversityCount,

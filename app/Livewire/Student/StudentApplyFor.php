@@ -11,7 +11,7 @@ class StudentApplyFor extends Component
 
     public function render()
     {
-        $applys = ApplicationHistory::with(['vendor', 'user'])->where('user_id', auth()->id())->get();
+        $applys = ApplicationHistory::with(['institute', 'user'])->where('user_id', auth()->id())->get();
         //dd($applys);
         return view('livewire.student.student-order',[
             'applys' => $applys
