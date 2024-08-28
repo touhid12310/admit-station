@@ -30,19 +30,14 @@ class InstituteList extends Component
     public function render()
     {
         $this->country   = Institute::select('country')->distinct()->get('country');
-
+        if ($this->country_name) {
+            $this->city = Institute::where('country', $this->country_name)->get();
+        }
         $SchoolCount     = Institute::where('vendors_types', 'School')->count();
         $CollegeCount     = Institute::where('vendors_types', 'College')->count();
         $UniversityCount     = Institute::where('vendors_types', 'University')->count();
 
-
-
-        if ($this->country_name) {
-            $this->city = Institute::where('country', $this->country_name)->get();
-        }
-
         $query = Institute::query();
-
         // Apply search filters if they are provided
         if ($this->search) {
             $query->where(function ($q) {
@@ -79,18 +74,13 @@ class InstituteList extends Component
         if ($this->city_name) {
             $query->where('city', $this->city_name);
         }
-        
 
 
         if ($this->search || $this->selected_schools || $this->selected_colleges || $this->selected_universitis || $this->country_name || $this->city_name) {
             $Institutes = $query->orderBy('id', 'desc')->paginate($this->rows);
-            // $Institutes = $query->orderBy('id', 'desc')->toSql();
-            // dd($Institutes);
         } else {
             $Institutes = Institute::orderBy('id', 'desc')->paginate($this->rows);
         }
-        
-
 
         $this->dispatch('picker', [
             'status' => 'yes',
