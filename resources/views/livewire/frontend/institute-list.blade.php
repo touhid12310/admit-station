@@ -178,12 +178,12 @@
                                         <div class="col-xl-4 col-md-6">
                                             <div class="tp-course-item p-relative fix mb-30">
                                                 <div class="tp-course-teacher mb-15">
-                                                    <span><img src="{{ $institute->logo }}" alt="">Hilary
+                                                    <span><img src="{{ asset($institute->logo) }}" alt="">Hilary
                                                         Ouse</span>
                                                 </div>
                                                 <div class="tp-course-thumb sidebar">
                                                     <a href="{{ route('abc-details', $institute->id) }}"><img
-                                                            class="course-pink" src="{{ $institute->thumb_img }}"
+                                                            class="course-pink" src="{{ asset($institute->thumb_img) }}"
                                                             alt=""></a>
                                                 </div>
                                                 <div class="tp-course-content">
