@@ -17,8 +17,10 @@ class InstituteFactory extends Factory
     public function definition(): array
     {
         return [
+            'slug'           => fake()->slug(),	
             'name'           => fake()->company(),
             'EIIN'           => fake()->unique()->randomNumber(),
+            'description'    => fake()->paragraph(100),
             'E_year'         => fake()->year(),
             'country_code'   => fake()->randomElement(['+1', '+44', '+61', '+91', '+81']),
             'mobile_no'      => fake()->unique()->phoneNumber(),

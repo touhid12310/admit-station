@@ -15,7 +15,9 @@ class InstituteDetails extends Component
 
     public $user_id;
     public $institute_id;
-    
+    public $institute;
+
+
     public function apply(){
         
         if(!ApplicationHistory::where('user_id', Auth::user()->id)->where('institute_id', $this->institute_id)->exists()){
@@ -38,15 +40,13 @@ class InstituteDetails extends Component
         }
         
     }
-    public function mount($id){
-        $vendor = Institute::find($id);
-        $this->institute_id = $id;
+    public function mount($slug){
+        $this->institute = Institute::where('slug', $slug)->first();
+        $this->institute_id = $this->institute->id;
     }
 
     public function render()
     {
-        return view('livewire.frontend.institute-details', [
-            'institute' => Institute::find($this->institute_id)
-        ]);
+        return view('livewire.frontend.institute-details');
     }
 }

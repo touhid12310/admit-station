@@ -1,13 +1,14 @@
 <div>
     <!-- Course details breadcrumb start -->
     <section class="tp-breadcrumb__area pt-160 pb-10 p-relative z-index-1 fix">
-        <div class="tp-breadcrumb__bg" data-background="{{asset('assets/img/breadcrumb/breadcrumb-bg.jpg')}}" wire:ignore></div>
+        <div class="tp-breadcrumb__bg" data-background="{{ asset('assets/img/breadcrumb/breadcrumb-bg.jpg') }}"
+            wire:ignore></div>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-sm-12">
                     <div class="tp-breadcrumb__content">
                         <div class="tp-breadcrumb__list inner-after">
-                            <span><a href="{{ route('abc-list') }}"><svg width="17" height="14"
+                            <span><a href="{{ route('list-institute') }}"><svg width="17" height="14"
                                         viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                             d="M8.07207 0C8.19331 0 8.31107 0.0404348 8.40664 0.114882L16.1539 6.14233L15.4847 6.98713L14.5385 6.25079V12.8994C14.538 13.1843 14.4243 13.4574 14.2225 13.6589C14.0206 13.8604 13.747 13.9738 13.4616 13.9743H2.69231C2.40688 13.9737 2.13329 13.8603 1.93146 13.6588C1.72962 13.4573 1.61597 13.1843 1.61539 12.8994V6.2459L0.669148 6.98235L0 6.1376L7.7375 0.114882C7.83308 0.0404348 7.95083 0 8.07207 0ZM8.07694 1.22084L2.69231 5.40777V12.8994H13.4616V5.41341L8.07694 1.22084Z"
@@ -15,7 +16,8 @@
                                     </svg></a></span>
                             <span>{{ $institute->vendors_types }}</span>
                         </div>
-                        <h1 class="tp-breadcrumb__title" style="color: #AB0C2F">{{ $institute->name }} - {{ $institute->vendors_types }}</h1>
+                        <h1 class="tp-breadcrumb__title" style="color: #AB0C2F">{{ $institute->name }} -
+                            {{ $institute->vendors_types }}</h1>
                     </div>
                 </div>
             </div>
@@ -30,26 +32,13 @@
                 <div class="col-lg-9">
                     <div class="tp-course-details-wrapper">
                         <div>
-                            <img src="{{ asset($institute->thumb_img) }}" alt="" style="width:100%;" wire:ignore>
+                            <img src="{{ asset($institute->thumb_img) }}" alt="" style="width:100%;"
+                                wire:ignore>
                         </div>
                         <div class="tp-course-details-heading pt-20">
                             <h3 class="tp-course-details-title">{{ $institute->name }}</h3>
-                            <p>Earn a bachelor's in computer science degree from Acadia University and develop the
-                                software engineering, project management and programming skills to impact how technology
-                                will change and transform our world.</p>
-                            <div class="tp-course-details-thumb">
-                                <img src="assets/img/course/details/course-details-thumb-1.jpg" alt="">
-                            </div>
-                            <h3 class="tp-course-details-title">Overview</h3>
-                            <p>How we do business, how we communicate and what we do for entertainment are all being
-                                transformed by computer scientists and software developers. Quickly changing landscapes
-                                in these fields and beyond provide opportunities for people with advanced computer
-                                science skills to profoundly impact the world. Biola's computer science major allows
-                                future computer scientists to grow their knowledge in the field of computer science,
-                                while honing their abilities to innovate, program, solve problems and succeed across a
-                                range of careers.
-                            </p>
-                           
+                            {!! $institute->description !!}
+
                         </div>
                     </div>
                 </div>
@@ -57,42 +46,19 @@
                     <div class="tp-course-requrement-widget-box">
                         <div class="tp-course-requrement-widget mb-30">
                             <div class="tp-course-requrement-widget-content">
-                                <a href="#">EIIN : {{$institute->EIIN}}</a>
-                                <a href="#">ESTD : {{$institute->E_year}}</a>
-                                <a href="#">Country : {{$institute->country}}</a>
-                                <a href="#">City :{{$institute->city}}</a>
+                                <a href="#">EIIN : {{ @$institute->EIIN }}</a>
+                                <a href="#">ESTD : {{ @$institute->E_year }}</a>
+                                <a href="#">Country : {{ @$institute->country }}</a>
+                                <a href="#">City : {{ @$institute->city }}</a>
                             </div>
                         </div>
-                        <div class="tp-course-requrement-widget-btn mb-30">
-                            @auth
-                                <form wire:submit.prevent="apply" class="mb-3">
-                                    <!-- session msg-->
-                                    @include('livewire.partials.flash-msg')
-                                    <!-- end session msg-->
-                                    <input type="hidden" wire:model="institute_id" value="{{ $institute->id }}">
-                                    <input type="hidden" wire:model="user_id" value="{{ $user_id }}"> 
-                                    @error('vendor_id')
-                                        <div class="m-2 text-danger">{{ $message }}</div>
-                                    @enderror
-                                    <button class="tp-btn btn-2 w-100 text-center">
-                                        <span wire:loading.remove>Apply Now</span>
-                                        <span wire:loading>
-                                            <div class="spinner-border text-light" role="status">
-                                                <span class="visually-hidden">Loading...</span>
-                                            </div>
-                                        </span>
-                                    </button>
-                                </form>
-                            @else  
-                                <div class="tp-btn btn-2 w-100 text-center">
-                                    <a href="{{ route('login')}}">Apply Now</a>
-                                </div>
-                            @endauth
-                            
-                        </div>
+
                         <div class="tp-course-requrement-widget-contact mb-30">
-                            <h4 class="tp-course-requrement-widget-contact-title">Contact Us</h4>
-                            <p>{{$institute->address}}<br>{{$institute->country_code}}{{$institute->mobile_no}}</p>
+                            <h4 class="tp-course-requrement-widget-contact-title">Institute INFO:</h4>
+                            <p>{{ $institute->address }}<br>{{ $institute->country_code }}{{ $institute->mobile_no }}
+                            </p>
+
+                            <h4 class="tp-course-requrement-widget-contact-title"> Contact us :</h4>
                             <a href="mailto:admitstation24@gmail.com"><span><svg xmlns="http://www.w3.org/2000/svg"
                                         width="18" height="16" viewBox="0 0 18 16" fill="none">
                                         <path opacity="0.4"
@@ -118,7 +84,34 @@
                                             fill="#FFF7F1" />
                                     </svg></span> +880 1839-440444</a>
                         </div>
-                       {{--  <div class="tp-course-requrement-widget-faq">
+                        <div class="tp-course-requrement-widget-btn mb-30">
+                            @auth
+                                <form wire:submit.prevent="apply" class="mb-3">
+                                    <!-- session msg-->
+                                    @include('livewire.partials.flash-msg')
+                                    <!-- end session msg-->
+                                    <input type="hidden" wire:model="institute_id" value="{{ $institute->id }}">
+                                    <input type="hidden" wire:model="user_id" value="{{ $user_id }}">
+                                    @error('vendor_id')
+                                        <div class="m-2 text-danger">{{ $message }}</div>
+                                    @enderror
+                                    <button class="tp-btn btn-2 w-100 text-center">
+                                        <span wire:loading.remove>Apply Now</span>
+                                        <span wire:loading>
+                                            <div class="spinner-border text-light" role="status">
+                                                <span class="visually-hidden">Loading...</span>
+                                            </div>
+                                        </span>
+                                    </button>
+                                </form>
+                            @else
+                                <div class="tp-btn btn-2 w-100 text-center">
+                                    <a href="{{ route('login') }}">Apply Now</a>
+                                </div>
+                            @endauth
+
+                        </div>
+                        {{--  <div class="tp-course-requrement-widget-faq">
                             <h4 class="tp-course-requrement-widget-faq-title">Do you have <br>
                                 more questions?</h4>
                             <p>Read our <a href="{{ route('FAQs') }}">FAQ</a></p>
@@ -132,4 +125,5 @@
         </div>
     </section>
     <!-- Course details area end -->
+    <div style="border: #AB0C2F 2px solid"></div>
 </div>

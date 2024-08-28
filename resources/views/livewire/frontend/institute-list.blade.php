@@ -50,6 +50,12 @@
                                     </button>
                                 </form>
                             </div>
+                            <div wire:loading wire:target="search,selected_schools,selected_colleges,selected_universities,country_name,city_name" class="px-2">
+                                <button class="btn btn-primary" type="button" disabled>
+                                    <span class="spinner-border spinner-border-sm" role="status"
+                                        aria-hidden="true"> </span>
+                                </button>
+                            </div>
                             <div class="tp-course-grid-sidebar-tab tp-tab">
                                 <ul class="nav nav-tabs" id="filterTab" role="tablist">
                                     <li class="nav-item" role="presentation">
@@ -88,9 +94,11 @@
                                     </li>
                                 </ul>
                             </div>
+
                             <div class="tp-course-filter-top-result">
                                 <p>Showing {{ $institutes->firstItem() }} to {{ $institutes->lastItem() }} of
-                                    {{ $institutes->total() }} results</p>
+                                    {{ $institutes->total() }} results
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -98,7 +106,7 @@
                         <div class="tp-course-grid-sidebar-right d-flex justify-content-start justify-content-lg-end">
 
                             <div class="tp-course-grid-select tp-course-grid-sidebar-select">
-                                <select class="wide" wire:model.live="country_name">
+                                <select class="wide country_name" wire:model="country_name">
                                     <option>Select Country</option>
                                     @foreach ($country as $list)
                                         <option value="{{ $list->country }}">{{ $list->country }}</option>
@@ -107,12 +115,12 @@
                             </div>
 
                             <div class="tp-course-grid-select tp-course-grid-sidebar-select ml-10">
-                                <select class="wide">
+                                <select class="wide city_name" wire:model="city_name">
                                     <option>Select City</option>
-                                    @if(isset($all_cities))
-                                    @foreach ($all_cities as $list)
-                                        <option value="{{ $list->city }}">{{ $list->city }}</option>
-                                    @endforeach
+                                    @if (isset($city))
+                                        @foreach ($city as $list)
+                                            <option value="{{ $list->city }}">{{ $list->city }}</option>
+                                        @endforeach
                                     @endif
                                 </select>
                             </div>
@@ -137,7 +145,7 @@
                                 <div class="tp-grid-widget-content">
                                     <div class="tp-grid-widget-checkbox">
                                         <ul>
-                                            <li >
+                                            <li>
                                                 <div class="from-checkbox">
                                                     <input id="remeber" type="checkbox"
                                                         wire:model.live="selected_schools">
@@ -145,7 +153,7 @@
                                                             ({{ $SchoolCount }})</span></label>
                                                 </div>
                                             </li>
-                                            <li >
+                                            <li>
                                                 <div class="from-checkbox">
                                                     <input id="Business" type="checkbox"
                                                         wire:model.live="selected_colleges">
@@ -178,12 +186,14 @@
                                         <div class="col-xl-4 col-md-6">
                                             <div class="tp-course-item p-relative fix mb-30">
                                                 <div class="tp-course-teacher mb-15">
-                                                    <span><img src="{{ asset($institute->logo) }}" alt="">Hilary
+                                                    <span><img src="{{ asset($institute->logo) }}"
+                                                            alt="">Hilary
                                                         Ouse</span>
                                                 </div>
                                                 <div class="tp-course-thumb sidebar">
-                                                    <a href="{{ route('abc-details', $institute->id) }}"><img
-                                                            class="course-pink" src="{{ asset($institute->thumb_img) }}"
+                                                    <a href="{{ route('details-institute', $institute->slug) }}"><img
+                                                            class="course-pink"
+                                                            src="{{ asset($institute->thumb_img) }}"
                                                             alt=""></a>
                                                 </div>
                                                 <div class="tp-course-content">
@@ -230,7 +240,7 @@
                                                     </div>
                                                     <h4 class="tp-course-title">
                                                         <a
-                                                            href="{{ route('abc-details', $institute->id) }}">{{ $institute->name }}</a>
+                                                            href="{{ route('details-institute', $institute->id) }}">{{ $institute->name }}</a>
                                                     </h4>
                                                     <div
                                                         class="tp-course-rating d-flex align-items-end justify-content-between">
@@ -248,7 +258,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="tp-course-btn">
-                                                    <a href="{{ route('abc-details', $institute->id) }}">
+                                                    <a href="{{ route('details-institute', $institute->slug) }}" wire:navigate>
                                                         Preview
                                                     </a>
                                                 </div>
@@ -269,7 +279,7 @@
                                     @forelse ($institutes as $institute)
                                         <div class="tp-course-filter-item mb-25 d-flex">
                                             <div class="tp-course-list-thumb">
-                                                <a href="{{ route('abc-details', $institute->id) }}"
+                                                <a href="{{ route('details-institute', $institute->slug) }}"
                                                     wire:navigate><img class="course-pink"
                                                         src="{{ $institute->thumb_img }}" alt=""></a>
                                             </div>
@@ -279,7 +289,7 @@
                                                 </div>
                                                 <h4 class="tp-course-list-title">
                                                     <a
-                                                        href="{{ route('abc-details', $institute->id) }}"wire:navigate>{{ $institute->name }}</a>
+                                                        href="{{ route('details-institute', $institute->slug) }}"wire:navigate>{{ $institute->name }}</a>
                                                 </h4>
                                                 <div class="tp-course-filter-meta">
                                                     <span><img src="{{ $institute->logo }}" alt=""></span>
@@ -293,8 +303,7 @@
                                                     </span>
                                                 </div>
                                                 <div class="tp-course-list-p">
-                                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                                        Aenean commodo ligula eget dolor. </p>
+                                                    <p>{{ substr($institute->description, 0, 150).'...' }} </p>
                                                 </div>
                                                 <div
                                                     class="tp-course-filter-pricing d-flex align-items-center justify-content-between">
@@ -310,7 +319,7 @@
                                                     </div>
                                                     <span>
                                                         <a class="tp-btn w-100 text-center"
-                                                            href="{{ route('abc-details', $institute->id) }}">Preview</a>
+                                                            href="{{ route('details-institute', $institute->slug) }}" wire:navigate>Preview</a>
                                                     </span>
                                                 </div>
                                             </div>
@@ -338,10 +347,43 @@
         document.addEventListener('picker', function(e) {
             const status = e.detail[0].status;
             if (status === 'yes') {
-                setTimeout(() => {
-                    $("select").niceSelect();
-                }, 100);
+                requestAnimationFrame(() => {
+                    $(".country_name").niceSelect();
+                    $(".city_name").niceSelect();
+                });
             }
-        })
+        });
+
+        $('.country_name').on('change', function() {
+            const countryName = this.value;
+            if (countryName === 'Select Country') {
+                setTimeout(() => {
+                    @this.set('city_name', null);
+                    @this.set('country_name', null);
+                }, 500);
+                setTimeout(() => {
+                    $('.city_name').empty().append('<option value="">Select City</option>');
+                    $('.city_name').val('');
+                    $('.city_name').niceSelect('update');
+                }, 1000);
+            } else {
+                @this.set('city_name', '');
+                @this.set('country_name', countryName);
+                $('.city_name').val('Select City');
+                $('.city_name').niceSelect('update');
+            }
+        });
+
+        $('body').on('change', '.city_name', function() {
+            const cityName = this.value;
+
+            if (cityName === 'Select City') {
+                @this.set('city_name', '');
+                $('.city_name').val('Select City');
+                $('.city_name').niceSelect('update');
+            } else {
+                @this.set('city_name', cityName);
+            }
+        });
     </script>
 @endscript
