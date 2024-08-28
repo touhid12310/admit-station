@@ -20,11 +20,21 @@ class DatabaseSeeder extends Seeder
             'name' => 'Admin',
             'email' => 'admin@admin.com',
             'password' => Hash::make('323232'),
-            'photo' => 'assets/images/dashboard-profile-2.jpg',
             'user_type' => 'student',
+            'photo' => 'assets/images/profile.png',
+            'cover_photo' => 'assets/images/cover.jpg',
+        ]);
+
+        User::factory()->create([
+            'name' => 'Admin',
+            'email' => 'institute@example.com',
+            'password' => Hash::make('323232'),
+            'user_type' => 'institute',
+            'photo' => 'uploads/Users/3P4tKc093OAVVmenX0FQymjRzirc4azCqflZjv5M.jpg',
+            'cover_photo' => 'uploads/Users/1kPncNPYihMTKkzbvaAiiF7ZrdeEPYkWEdV9AELI.jpg',
         ]);
 
 
-        Vendor::factory(30)->create();
+        Vendor::factory(10)->create();
     }
 }

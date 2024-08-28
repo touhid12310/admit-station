@@ -1,14 +1,13 @@
 <?php
 
-namespace App\Livewire\Student;
+namespace App\Livewire\Institute;
 
-use App\Models\User;
 use App\Models\UserSocialProfiles;
-use Illuminate\Support\Facades\Auth;
+use Illuminate\Container\Attributes\Auth;
 use Livewire\Attributes\Title;
 use Livewire\Component;
-#[Title('Student | Social-Profile-Setting')]
-class StudentSocialProfileSetting extends Component
+#[Title('Institute Social Account Setting')]
+class InstituteSocialAccountSetting extends Component
 {
     public $facebook;
     public $twitter;
@@ -55,9 +54,8 @@ class StudentSocialProfileSetting extends Component
             'iconColor' => 'blue',
         ]);
     }
-
     public function render()
     {
-        return view('livewire.student.student-social-profile-setting');
+        return view('livewire.institute.institute-social-account-setting');
     }
 }
