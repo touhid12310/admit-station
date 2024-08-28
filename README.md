@@ -1,4 +1,8 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="{{ asset('assets/images/logo.png') }}" width="400" alt="Laravel Logo"></a></p>
+<p align="center">
+    <a href="" target="_blank">
+        <img src="https://github.com/mannanshihab/admit-station/blob/main/public/assets/images/logo-bg.png?raw=true" width="400" alt="Admit Station Logo">
+    </a>
+</p>
 
 
 ## About Admit-station
