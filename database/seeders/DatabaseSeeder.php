@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Blog;
+use App\Models\BlogCategory;
 use App\Models\Institute;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -36,5 +38,13 @@ class DatabaseSeeder extends Seeder
 
 
         Institute::factory(10)->create();
+
+        Blog::factory(10)->create(); 
+           
+        BlogCategory::factory()->count(3)->sequence(
+            ['name' => 'Web Design'],
+            ['name' => 'Health'],
+            ['name' => 'Lifestyle']
+        )->create();
     }
 }
