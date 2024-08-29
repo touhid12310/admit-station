@@ -5,7 +5,12 @@ export default defineConfig({
     plugins: [
         laravel({
             input: ["resources/assets/scss/main.scss", "resources/js/app.js"],
-            refresh: true,
+            refresh: [
+                'routes/**',
+                'resources/views/**',
+                'app/Http/Livewire/**',
+                'app/Filament/**',
+            ],
         }),
     ],
 });

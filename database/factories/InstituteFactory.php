@@ -17,6 +17,7 @@ class InstituteFactory extends Factory
     public function definition(): array
     {
         return [
+            'institute_type' => fake()->randomElement(['School', 'College', 'University']),
             'slug'           => fake()->slug(),	
             'name'           => fake()->company(),
             'EIIN'           => fake()->unique()->randomNumber(),
