@@ -77,11 +77,11 @@
                   <div class="tp-header-2-contact tp-header-shop d-flex align-items-center justify-content-end">
                     
                      <div class="tp-header-shop-login tp-header-user-hover">
-                        <button>
+                        <button wire:ignore>
                            @if (auth()->user()->photo)
                               <img src="{{ asset( Auth::user()->photo) }}" alt="">
                            @else
-                              <img src="{{ asset('assets/images/profile.png') }}" alt="">
+                              <img src="{{ asset('assets/images/default.jpg') }}" alt="">
                            @endif
                         </button>
                         <div class="tp-header-user-box">
@@ -91,7 +91,7 @@
                                     @if (auth()->user()->photo)
                                        <img src="{{ asset( Auth::user()->photo) }}" alt=""/>
                                     @else
-                                       <img src="{{ asset('assets/images/profile.png') }}" alt="">
+                                       <img src="{{ asset('assets/images/default.jpg') }}" alt="">
                                     @endif
                                  </div>
                                  <div class="tp-header-user-profile-content">

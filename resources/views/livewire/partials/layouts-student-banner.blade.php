@@ -13,7 +13,7 @@
                                     @if (auth()->user()->photo)
                                         <img src="{{ asset( Auth::user()->photo) }}" alt="">
                                     @else
-                                        <img src="{{ asset('assets/images/profile.png') }}" alt="">
+                                        <img src="{{ asset('assets/images/default.jpg') }}" alt="">
                                     @endif
 
                                 </div>

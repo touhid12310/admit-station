@@ -28,7 +28,7 @@ class InstituteFactory extends Factory
             'country'        => fake()->unique()->country(),
             'city'           => fake()->unique()->city(),
             'address'        => fake()->unique()->address(),
-            'logo'           => 'assets/images/profile.png',
+            'logo'           => 'assets/images/instute-logo.jpg',
             'thumb_img'      => fake()->randomElement(['assets/images/hero/hero-image-1.jpg', 'assets/images/hero/hero-image-2.jpg','assets/images/hero/hero-image-3.jpg']),
             'vendors_types'  => fake()->randomElement(['School', 'College', 'University']),
             'app_status'     => fake()->randomElement(['Pending', 'Approved', 'Cancel']),

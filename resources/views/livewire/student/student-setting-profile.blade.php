@@ -31,7 +31,7 @@
                               <!-- end session msg-->
                               <div class="tpd-setting-box profile">
 
-                                 <div class="tp-dashboard-banner-bg profile mb-100" data-background=" @if (auth()->user()->photo) {{ asset($cover_photo) }}  @else {{ asset('assets/images/cover.jpg') }} @endif">
+                                 <div class="tp-dashboard-banner-bg profile mb-100" data-background=" @if (auth()->user()->photo) {{ asset($cover_photo) }}  @else {{ asset('assets/images/cover.jpg') }} @endif" wire:ignore>
                                     <div class="tp-instructor-wrap d-flex justify-content-between">
                                        <div class="tp-instructor-info d-flex">
                                           <div class="tp-instructor-avatar p-relative profile">
