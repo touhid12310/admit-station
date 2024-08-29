@@ -486,18 +486,19 @@
                 </div>
             </div>
             <div class="row">
+
+                @foreach ($blogs as $blog)
                 <div class="col-lg-6">
                     <div class="tp-blog-item text-center mb-40 wow fadeInLeft" data-wow-delay=".4s">
                         <div class="tp-blog-thumb fix">
-                            <a href="{{ route('blog-details') }}">
-                                <img src="{{asset('assets/images/blog/blog-thumb-1.jpg')}}" alt="blog-thumb">
+                            <a href="{{ route('blog-details', $blog->slug) }}">
+                                <img src="{{asset($blog->image)}}" alt="blog-thumb" width="100%" height="100%">
                             </a>
                         </div>
                         <div class="tp-blog-content">
-                            <span class="tp-blog-tag">Video & Tips</span>
+                            <span class="tp-blog-tag">{{ $blog->category->name }}</span>
                             <h4 class="tp-blog-title">
-                                <a href="{{ route('blog-details') }}">The Importance Of Intrinsic Motivation for
-                                    Students</a>
+                                <a href="{{ route('blog-details', $blog->slug) }}"> {{ $blog->title }}</a>
                             </h4>
                             <div class="tp-blog-meta">
                                 <span>
@@ -527,12 +528,12 @@
                                             <path d="M7.5 3.6001V7.5001L10.1 8.8001" stroke="currentColor"
                                                 stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
-                                        Jan 25, 2021
+                                        {{($blog->created_at)->format('F j, Y') }}
                                     </span>
                                 </span>
                             </div>
                             <div class="tp-blog-btn">
-                                <a href="{{ route('blog-details') }}">
+                                <a href="{{ route('blog-details', $blog->slug) }}">
                                     <span class="tp-blog-btn-bg blog-btn-bg"></span>
                                     <span class="tp-blog-btn-border blog-btn-border"></span>
                                     <span class="icon">
@@ -549,69 +550,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="tp-blog-item text-center mb-40 wow fadeInRight" data-wow-delay=".4s">
-                        <div class="tp-blog-thumb fix">
-                            <a href="{{ route('blog-details') }}">
-                                <img src="{{asset('assets/images/blog/blog-thumb-2.jpg')}}" alt="blog-thumb">
-                            </a>
-                        </div>
-                        <div class="tp-blog-content">
-                            <span class="tp-blog-tag">Video & Tips</span>
-                            <h4 class="tp-blog-title">
-                                <a href="{{ route('blog-details') }}">Those Other College Expenses You Aren`t
-                                    Thinking About</a>
-                            </h4>
-                            <div class="tp-blog-meta">
-                                <span>
-                                    <span>
-                                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M13 14.5V13C13 12.2044 12.6839 11.4413 12.1213 10.8787C11.5587 10.3161 10.7956 10 10 10H4C3.20435 10 2.44129 10.3161 1.87868 10.8787C1.31607 11.4413 1 12.2044 1 13V14.5"
-                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path
-                                                d="M7 7C8.65685 7 10 5.65685 10 4C10 2.34315 8.65685 1 7 1C5.34315 1 4 2.34315 4 4C4 5.65685 5.34315 7 7 7Z"
-                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </svg>
-                                        Owen Christ
-                                    </span>
-                                </span>
-                                <span>
-                                    <span>
-                                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M7.5 14C11.0899 14 14 11.0899 14 7.5C14 3.91015 11.0899 1 7.5 1C3.91015 1 1 3.91015 1 7.5C1 11.0899 3.91015 14 7.5 14Z"
-                                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <path d="M7.5 3.6001V7.5001L10.1 8.8001" stroke="currentColor"
-                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                        Jan 25, 2021
-                                    </span>
-                                </span>
-                            </div>
-                            <div class="tp-blog-btn">
-                                <a href="{{ route('blog-details') }}">
-                                    <span class="tp-blog-btn-bg blog-btn-bg"></span>
-                                    <span class="tp-blog-btn-border blog-btn-border"></span>
-                                    <span class="icon">
-                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1 6H11" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M6 1L11 6L6 11" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
+                
             </div>
         </div>
     </section>
