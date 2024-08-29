@@ -321,12 +321,12 @@
         document.addEventListener('picker', function(e) {
             const status = e.detail[0].status;
             if (status === 'yes') {
+                requestAnimationFrame(() => {
                 // setTimeout(() => {
                     $(".country_name").niceSelect();
                     $(".city_name").niceSelect();
                 // },1000)
-                // requestAnimationFrame(() => {
-                // });
+                });
             }
         });
 

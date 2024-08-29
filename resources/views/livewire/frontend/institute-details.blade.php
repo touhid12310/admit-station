@@ -37,8 +37,13 @@
                         </div>
                         <div class="tp-course-details-heading pt-20">
                             <h3 class="tp-course-details-title">{{ $institute->name }}</h3>
-                            {!! $institute->description !!}
-
+                            <div class="tp-course-details-wrapper">
+                                <div class="tp-course-details-heading">
+                                    <div class="tp-postbox-wrapper">
+                                        <p>{!! $institute->description !!}</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
