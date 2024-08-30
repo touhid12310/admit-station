@@ -33,9 +33,9 @@ class InstituteList extends Component
         if ($this->country_name) {
             $this->city = Institute::where('country', $this->country_name)->get();
         }
-        $SchoolCount     = Institute::where('vendors_types', 'School')->count();
-        $CollegeCount     = Institute::where('vendors_types', 'College')->count();
-        $UniversityCount     = Institute::where('vendors_types', 'University')->count();
+        $SchoolCount     = Institute::where('institute_type', 'School')->count();
+        $CollegeCount     = Institute::where('institute_type', 'College')->count();
+        $UniversityCount     = Institute::where('institute_type', 'University')->count();
 
         $query = Institute::query();
         // Apply search filters if they are provided
@@ -62,7 +62,7 @@ class InstituteList extends Component
         }
         
         if (!empty($vendorTypes)) {
-            $query->whereIn('vendors_types', $vendorTypes);
+            $query->whereIn('institute_type', $vendorTypes);
         }
         
         // Apply country filter if provided

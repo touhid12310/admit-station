@@ -47,7 +47,7 @@
                                        <td class="tpd-common-text">
                                           <a href="{{route('details-institute', $apply->institute->slug)}}" class="{{$apply->status == 'Approved' ? 'text-success' : ($apply->status == 'Pending' ? 'text-warning' : 'text-danger')}}">{{$apply->institute->name}}</a>
                                        </td>
-                                       <td class="tpd-common-text">{{$apply->institute->vendors_types}}</td>
+                                       <td class="tpd-common-text">{{$apply->institute->institute_type}}</td>
                                        <td class="tpd-common-text">
                                           @if ($apply->status == 'Approved')
                                              <div class="tpd-badge-item">
@@ -66,7 +66,7 @@
                                     </tr>
                                  @empty
                                     <tr>
-                                       <td class="text-center" rowspan="3">Mark</td>
+                                       <td class="text-center" rowspan="3">Empty</td>
                                     </tr>
                                  @endforelse
                               </tbody>

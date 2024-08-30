@@ -14,3 +14,8 @@ exploring options for studying abroad from Dhaka.
 ## Preload Use 
 
     @include('livewire.partials.layouts-pre-loader')
+
+## Create Resource For Filament-PHP
+
+     php artisan make:filament-resource Blog --generate
+     php artisan make:filament-resource BlogCategory --generate

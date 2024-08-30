@@ -12,6 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('institutes', function (Blueprint $table) {
+
             $table->id();
             $table->string('slug');
             $table->string('name');
@@ -26,7 +27,7 @@ return new class extends Migration
             $table->string('address');
             $table->string('logo')->nullable();
             $table->string('thumb_img')->nullable();
-            $table->enum('vendors_types', ['School', 'College', 'University'])->default('School');
+            $table->enum('institute_type', ['School', 'College', 'University'])->default('School');
             $table->enum('app_status', ['Pending', 'Approved', 'Cancel'])->default('Pending');
             $table->enum('status', ['Active', 'Inactive'])->default('Active');
             $table->timestamps();

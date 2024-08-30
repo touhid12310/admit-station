@@ -17,7 +17,7 @@ class InstituteFactory extends Factory
     public function definition(): array
     {
         return [
-            'institute_type' => fake()->randomElement(['School', 'College', 'University']),
+            
             'slug'           => fake()->slug(),	
             'name'           => fake()->company(),
             'EIIN'           => fake()->unique()->randomNumber(),
@@ -31,7 +31,7 @@ class InstituteFactory extends Factory
             'address'        => fake()->unique()->address(),
             'logo'           => 'assets/images/instute-logo.jpg',
             'thumb_img'      => fake()->randomElement(['assets/images/hero/hero-image-1.jpg', 'assets/images/hero/hero-image-2.jpg','assets/images/hero/hero-image-3.jpg']),
-            'vendors_types'  => fake()->randomElement(['School', 'College', 'University']),
+            'institute_type' => fake()->randomElement(['School', 'College', 'University']),
             'app_status'     => fake()->randomElement(['Pending', 'Approved', 'Cancel']),
         ];
     }

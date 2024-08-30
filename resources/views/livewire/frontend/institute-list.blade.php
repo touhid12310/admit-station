@@ -198,7 +198,7 @@
                                                 </div>
                                                 <div class="tp-course-content">
                                                     <div class="tp-course-tag mb-10">
-                                                        <span>{{ $institute->vendors_types }}</span>
+                                                        <span>{{ $institute->institute_type }}</span>
                                                     </div>
                                                     <div class="tp-course-meta">
                                                         <span>
@@ -259,7 +259,7 @@
                                             </div>
                                             <div class="tp-course-filter-content">
                                                 <div class="tp-course-filter-tag mb-10">
-                                                    <span class="tag-span">{{ $institute->vendors_types }}</span>
+                                                    <span class="tag-span">{{ $institute->institute_type }}</span>
                                                 </div>
                                                 <h4 class="tp-course-list-title">
                                                     <a

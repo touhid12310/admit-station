@@ -53,8 +53,8 @@
                      <div class="tp-postbox-details-thumb pb-60">
                         <img wire:ignore src="{{asset($blog->image)}}" alt="" width="100%" height="80%">
                      </div>
-                    <div class="tp-postbox-details-text">
-                       <p class="tp-dropcap text-1">{!! $blog->description !!}</p>
+                    <div class="tp-postbox-details-text"  width="100%" height="80%">
+                       <p class="tp-dropcap text-1">{!! Str::markdown( $blog ->description )!!}</p>
                     </div>
                  </div>
               </div>
