@@ -86,8 +86,8 @@
 
                                        <div class="col-lg-6">
                                           <div class="tpd-input">
-                                             <label for="">Skill/Occupation</label>
-                                             <input type="text" wire:model="occupation" placeholder="Full Stack Developer">
+                                             <label for="">User Type</label>
+                                             <input type="text" wire:model="user_type" disabled>
                                           </div>
                                        </div>
                                        <div class="col-lg-6">
@@ -105,20 +105,6 @@
                                        </div>
                                     </div>
                                  </div>
-
-                                 
-                                 {{-- <div class="tpd-setting-cartificate">
-                                    <h5 class="tpd-setting-cartificate-title">Cartificate Photo</h5>
-                                    <div class="tpd-setting-cartificate-upload d-flex align-items-center">
-                                       <div class="tpd-setting-cartificate-thumb">
-                                          <img src="{{ asset($photo) }}" alt="" width="50%">
-                                       </div>
-                                       <div class="tpd-setting-cartificate-content pr-100">
-                                          <input id="tpd-setting-cartificate-input" type="file" wire:model="cartificates" multiple>
-                                       </div>
-                                    </div>
-                                 </div> --}}
-
 
                                  <div class="tpd-setting-cartificate">
                                     <div class="tpd-setting-cartificate-btn">

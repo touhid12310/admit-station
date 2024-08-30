@@ -17,6 +17,7 @@ use App\Livewire\Institute\InstituteDashboard;
 use App\Livewire\Institute\InstitutePasswordSetting;
 use App\Livewire\Institute\InstituteProfile;
 use App\Livewire\Institute\InstituteProfileSetting;
+use App\Livewire\Institute\InstituteRegister;
 use App\Livewire\Institute\InstituteSocialAccountSetting;
 use App\Livewire\Student\StudentDashboard;
 use App\Livewire\Student\StudentProfile;
@@ -59,6 +60,7 @@ Route::middleware('auth')->group(function () {
 Route::middleware('auth:institute')->group(function () {
     Route::prefix('institute')->group(function () {
         Route::get('/dashboard', InstituteDashboard::class)->name('institute.dashboard');
+        Route::get('/register', InstituteRegister::class)->name('institute.register');
         Route::get('/profile', InstituteProfile::class)->name('institute.profile');
         Route::get('/profile-setting', InstituteProfileSetting::class)->name('institute.profile-setting');
         Route::get('/password-setting', InstitutePasswordSetting::class)->name('institute.password-setting');

@@ -14,12 +14,12 @@ return new class extends Migration
         Schema::create('institutes', function (Blueprint $table) {
 
             $table->id();
-            $table->string('slug');
+            $table->string('slug')->nullable();
             $table->string('name');
             $table->string('EIIN')->unique(); /* EIIN (Educational Institute Identification Number) */
             $table->string('E_year')->nullable();
-            $table->longText('description')->nullable();;
-            $table->string('country_code');
+            $table->longText('description')->nullable();
+            $table->string('country_code')->nullable();
             $table->string('mobile_no');
             $table->string('email')->unique();
             $table->string('country');
@@ -27,7 +27,7 @@ return new class extends Migration
             $table->string('address');
             $table->string('logo')->nullable();
             $table->string('thumb_img')->nullable();
-            $table->enum('institute_type', ['School', 'College', 'University'])->default('School');
+            $table->enum('institute_type', ['School', 'College', 'University']);
             $table->enum('app_status', ['Pending', 'Approved', 'Cancel'])->default('Pending');
             $table->enum('status', ['Active', 'Inactive'])->default('Active');
             $table->timestamps();

@@ -14,7 +14,7 @@ class InstituteProfileSetting extends Component
     public $name;
     public $email;
     public $phone_no;
-    public $occupation;
+    public $user_type;
     public $bio;
     public $photo;
     public $cover_photo;
@@ -28,7 +28,7 @@ class InstituteProfileSetting extends Component
         $this->name = $user ? $user->name : null;
         $this->email = $user ? $user->email : null;
         $this->phone_no = $user ? $user->phone_no : null;
-        $this->occupation = $user ? $user->occupation : null;
+        $this->user_type = $user ? $user->user_type : null;
         $this->bio = $user ? $user->bio : null;
         $this->photo = $user ? $user->photo : null;
         $this->cover_photo = $user ? $user->cover_photo : null;
@@ -40,7 +40,6 @@ class InstituteProfileSetting extends Component
             'name' => $this->name,
             'email' => $this->email,
             'phone_no' => $this->phone_no,
-            'occupation' => $this->occupation,
             'bio' => $this->bio,
         ]);
       
