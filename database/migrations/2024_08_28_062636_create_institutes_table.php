@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('institutes', function (Blueprint $table) {
 
             $table->id();
-            $table->string('slug')->nullable();
+            $table->string('slug');
             $table->string('name');
             $table->string('EIIN')->unique(); /* EIIN (Educational Institute Identification Number) */
             $table->string('E_year')->nullable();
