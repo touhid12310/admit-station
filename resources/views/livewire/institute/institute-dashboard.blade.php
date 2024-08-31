@@ -31,71 +31,41 @@
                            </div>
                        </div>
                        <div class="row">
+
                            <div class="col-lg-4">
                                <div class="tp-fact-item d-flex align-items-center justify-content-between">
-                               <div class="tp-fact-content">
-                                   <h4 class="tp-fact-count">20</h4>
-                                   <span>Active Courses</span>
-                               </div>
-                               <div class="tp-fact-icon">
-                                   <span><img src="{{ asset('assets/img/dashboard/icon/fact/teacher.svg') }}" alt="fact-icon"></span>
-                               </div>
+                                    <div class="tp-fact-content">
+                                        <h4 class="tp-fact-count">20</h4>
+                                        <span>Active Courses</span>
+                                    </div>
+                                    <div class="tp-fact-icon">
+                                        <span><img src="{{ asset('assets/img/dashboard/icon/fact/teacher.svg') }}" alt="fact-icon"></span>
+                                    </div>
+                                </div>
                            </div>
+
+                           <div class="col-lg-4">
+                                <div class="tp-fact-item d-flex align-items-center justify-content-between">
+                                    <div class="tp-fact-content">
+                                        <h4 class="tp-fact-count">84</h4>
+                                        <span>Enrolled Courses</span>
+                                    </div>
+                                    <div class="tp-fact-icon">
+                                        <span class="common-pale-yellow"><img src="{{ asset('assets/img/dashboard/icon/fact/enroll-icon.svg') }}" alt="fact-icon"></span>
+                                    </div>
+                                </div>
                            </div>
+
                            <div class="col-lg-4">
                                <div class="tp-fact-item d-flex align-items-center justify-content-between">
-                               <div class="tp-fact-content">
-                                   <h4 class="tp-fact-count">84</h4>
-                                   <span>Enrolled Courses</span>
-                               </div>
-                               <div class="tp-fact-icon">
-                                   <span class="common-pale-yellow"><img src="{{ asset('assets/img/dashboard/icon/fact/enroll-icon.svg') }}" alt="fact-icon"></span>
-                               </div>
-                           </div>
-                           </div>
-                           <div class="col-lg-4">
-                               <div class="tp-fact-item d-flex align-items-center justify-content-between">
-                               <div class="tp-fact-content">
-                                   <h4 class="tp-fact-count">42</h4>
-                                   <span>Completed Courses</span>
-                               </div>
-                               <div class="tp-fact-icon">
-                                   <span class="common-pale-pacific"><img src="{{ asset('assets/img/dashboard/icon/fact/cup.svg') }}" alt="fact-icon"></span>
-                               </div>
-                           </div>
-                           </div>
-                           <div class="col-lg-4">
-                               <div class="tp-fact-item d-flex align-items-center justify-content-between">
-                               <div class="tp-fact-content">
-                                   <h4 class="tp-fact-count">145</h4>
-                                   <span>Total Students</span>
-                               </div>
-                               <div class="tp-fact-icon">
-                                   <span class="common-pale-green"><img src="{{ asset('assets/img/dashboard/icon/fact/students.svg') }}" alt="fact-icon"></span>
-                               </div>
-                           </div>
-                           </div>
-                           <div class="col-lg-4">
-                               <div class="tp-fact-item d-flex align-items-center justify-content-between">
-                               <div class="tp-fact-content">
-                                   <h4 class="tp-fact-count">65</h4>
-                                   <span>Total Courses</span>
-                               </div>
-                               <div class="tp-fact-icon">
-                                   <span class="common-pale-blue"><img src="{{ asset('assets/img/dashboard/icon/fact/course-total.svg') }}" alt="fact-icon"></span>
-                               </div>
-                           </div>
-                           </div>
-                           <div class="col-lg-4">
-                               <div class="tp-fact-item d-flex align-items-center justify-content-between">
-                               <div class="tp-fact-content">
-                                   <h4 class="tp-fact-count">26</h4>
-                                   <span>Total Earnings</span>
-                               </div>
-                               <div class="tp-fact-icon">
-                                   <span class="common-pale-purple"><img src="{{ asset('assets/img/dashboard/icon/fact/card-pos.svg') }}" alt="fact-icon"></span>
-                               </div>
-                           </div>
+                                    <div class="tp-fact-content">
+                                        <h4 class="tp-fact-count">42</h4>
+                                        <span>Completed Courses</span>
+                                    </div>
+                                    <div class="tp-fact-icon">
+                                        <span class="common-pale-pacific"><img src="{{ asset('assets/img/dashboard/icon/fact/cup.svg') }}" alt="fact-icon"></span>
+                                    </div>
+                                </div>
                            </div>
                        </div>
                    </section>
