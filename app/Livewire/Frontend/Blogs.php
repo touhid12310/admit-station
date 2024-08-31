@@ -9,7 +9,7 @@ use Livewire\Component;
 use Livewire\WithPagination;
 
 #[Title('Blogs | Admit-Station')]
-class BlogList extends Component
+class Blogs extends Component
 {
     use WithPagination;
     protected $paginationTheme = 'bootstrap';

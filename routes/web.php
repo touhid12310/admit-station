@@ -1,33 +1,36 @@
 <?php
 
+use App\Livewire\Error;
 use App\Livewire\Auth\Login;
 use App\Livewire\Auth\Register;
-use App\Livewire\Frontend\BecomeAAgent;
-use App\Livewire\Frontend\ContactUs;
-use App\Livewire\Error;
 use App\Livewire\Frontend\Faqs;
-use App\Livewire\Frontend\About;
-use App\Livewire\Frontend\BlogDetails;
-use App\Livewire\Frontend\BlogList;
 use App\Livewire\Frontend\Home;
-use App\Livewire\Frontend\InstituteDetails;
+use App\Livewire\Frontend\About;
+use App\Livewire\Frontend\Blogs;
+use App\Livewire\Frontend\ContactUs;
+use Illuminate\Support\Facades\Route;
+use App\Livewire\Frontend\BlogDetails;
+use App\Livewire\Frontend\BecomeAAgent;
 use App\Livewire\Frontend\InstituteList;
 use App\Livewire\Frontend\PrivacyPolicy;
-use App\Livewire\Institute\InstituteDashboard;
-use App\Livewire\Institute\InstitutePasswordSetting;
-use App\Livewire\Institute\InstituteProfile;
-use App\Livewire\Institute\InstituteProfileSetting;
-use App\Livewire\Institute\InstituteRegister;
-use App\Livewire\Institute\InstituteRegisterEdit;
-use App\Livewire\Institute\InstituteSocialAccountSetting;
-use App\Livewire\Student\StudentDashboard;
 use App\Livewire\Student\StudentProfile;
 use App\Livewire\Student\StudentReviews;
-use App\Livewire\Student\StudentSettingProfile;
 use App\Livewire\Student\StudentApplyFor;
+use App\Livewire\Student\StudentDashboard;
+use App\Livewire\Frontend\InstituteDetails;
+use App\Livewire\Institute\InstituteProfile;
+use App\Livewire\Institute\InstituteRegister;
+use App\Livewire\Institute\InstituteDashboard;
+use App\Livewire\Student\StudentSettingProfile;
 use App\Livewire\Student\StudentPasswordSetting;
+use App\Livewire\Institute\InstituteRegisterEdit;
+use App\Livewire\Institute\InstituteProfileSetting;
+use App\Livewire\Institute\InstitutePasswordSetting;
 use App\Livewire\Student\StudentSocialProfileSetting;
-use Illuminate\Support\Facades\Route;
+use App\Livewire\Institute\InstituteSocialAccountSetting;
+
+
+
 
 Route::get('/', Home::class);
 Route::get('/about', About::class)->name('about');
@@ -40,7 +43,7 @@ Route::get('/404', Error::class)->name('4o4-page');
 Route::get('/become-a-agent', BecomeAAgent::class)->name('become-a-agent');
 Route::get('/institute-list', InstituteList::class)->name('list-institute');
 Route::get('/institute-details/{slug}', InstituteDetails::class)->name('details-institute');
-Route::get('/blog-list', BlogList::class)->name('blog-list');
+Route::get('/blog', Blogs::class)->name('blog-list');
 Route::get('/blog-details/{slug}', BlogDetails::class)->name('blog-details');
 
 Route::get('/logout', [Login::class, 'logout'])->name('logout');
@@ -69,6 +72,9 @@ Route::middleware('auth:institute')->group(function () {
         Route::get('/social-account-setting', InstituteSocialAccountSetting::class)->name('institute.social-account-setting');
     });
 });
+
+
+
 
 // Route::fallback(function(){
 //     return redirect()->route('4o4-page');

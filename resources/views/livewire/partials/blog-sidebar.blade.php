@@ -26,7 +26,7 @@
         @endforeach
 
     </div>
-    <div class="tp-sidebar-widget mb-50">
+    {{-- <div class="tp-sidebar-widget mb-50">
         <div class="tp-sidebar-content">
             <h5 class="tp-sidebar-widget-title" style="color: #AB0C2F">Tag</h5>
             <div class="tagcloud">
@@ -43,5 +43,5 @@
                 <a href="#">Team</a>
             </div>
         </div>
-    </div>
+    </div> --}}
 </div>
