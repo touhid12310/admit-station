@@ -240,7 +240,7 @@
                   <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-6">
                      <div class="tp-header-logo-1 tp-header-logo">
                         <!-- logo-1 for default and  logo-2 for scroll-->
-                        <a href="{{ url('/')}}">
+                        <a href="{{ url('/')}}" wire:navigate>
                            <img class="logo-1" src="{{ asset('assets/images/logo.png') }}" alt="logo">
                            <img class="logo-2" src="{{ asset('assets/images/logo.png') }}" alt="logo">
                         </a>
@@ -323,7 +323,7 @@
                <div class="offcanvas__content">
                   <div class="offcanvas__top mb-90 d-flex justify-content-between align-items-center">
                      <div class="offcanvas__logo tp-header-logo">
-                     <a href="{{ url('/')}}">
+                     <a href="{{ url('/')}}" wire:navigate>
                            <img src="{{ asset('assets/images/logo.png') }}" alt="logo">
                      </a>
                      </div>

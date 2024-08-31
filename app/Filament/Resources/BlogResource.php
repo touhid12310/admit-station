@@ -95,7 +95,18 @@ class BlogResource extends Resource
                     Tables\Columns\TextColumn::make('title')
                     ->searchable(),
                 Tables\Columns\ImageColumn::make('image'),
-                Tables\Columns\TextColumn::make('status'),
+                Tables\Columns\TextColumn::make('status')
+                ->badge()
+                ->color(fn (string $state): string => match ($state) {
+                    'Pending' => 'warning',
+                    'Approved' => 'success',
+                    default => 'danger',
+                })
+                ->icon(fn (string $state): string => match ($state) {
+                    'Pending' => 'heroicon-o-clock',
+                    'Approved' => 'heroicon-o-check',
+                    default => 'heroicon-o-x-circle',
+                }),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

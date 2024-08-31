@@ -491,14 +491,14 @@
                 <div class="col-lg-6">
                     <div class="tp-blog-item text-center mb-40 wow fadeInLeft" data-wow-delay=".4s">
                         <div class="tp-blog-thumb fix">
-                            <a href="{{ route('blog-details', $blog->slug) }}">
+                            <a href="{{ route('blog-details', $blog->slug) }}" wire:navigate>
                                 <img src="{{asset($blog->image)}}" alt="blog-thumb" width="100%" height="100%">
                             </a>
                         </div>
                         <div class="tp-blog-content">
                             <span class="tp-blog-tag">{{ $blog->category->name }}</span>
                             <h4 class="tp-blog-title">
-                                <a href="{{ route('blog-details', $blog->slug) }}"> {{ $blog->title }}</a>
+                                <a href="{{ route('blog-details', $blog->slug) }}" wire:navigate> {{ $blog->title }}</a>
                             </h4>
                             <div class="tp-blog-meta">
                                 <span>
@@ -533,7 +533,7 @@
                                 </span>
                             </div>
                             <div class="tp-blog-btn">
-                                <a href="{{ route('blog-details', $blog->slug) }}">
+                                <a href="{{ route('blog-details', $blog->slug) }}" wire:navigate>
                                     <span class="tp-blog-btn-bg blog-btn-bg"></span>
                                     <span class="tp-blog-btn-border blog-btn-border"></span>
                                     <span class="icon">
