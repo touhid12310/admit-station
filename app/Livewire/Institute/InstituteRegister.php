@@ -11,6 +11,7 @@ use Livewire\Features\SupportFileUploads\WithFileUploads;
 class InstituteRegister extends Component
 {
     use WithFileUploads;
+    public $Institute;
 
     public $name;
     public $mobile_no;
@@ -24,6 +25,10 @@ class InstituteRegister extends Component
     public $thumb_img;
     public $description;
     public $address;
+
+    public function mount(){
+        $this->Institute = Institute::where('user_id', auth()->user()->id)->exists();
+    }
     
     public function save()
     {
@@ -47,13 +52,25 @@ class InstituteRegister extends Component
             $thumb_img_Path = $this->thumb_img->store('uploads/institute/thumb_img', 'real_public');
         }
         $slug = Str::slug($this->name);
+
+        $check = Institute::where('email', $this->email)->orWhere('EIIN', $this->EIIN)->orWhere('user_id', auth()->user()->id)->first();
+        if($check){
+            $this->dispatch('swal', [
+                'title' => 'You Already Applied.',
+                'icon' => 'error',
+                'iconColor' => 'red',
+            ]);
+            return;
+        }
         Institute::create([
+            'user_id'       => auth()->user()->id,
             'name'          => $this->name,
             'slug'          => $slug,
             'email'         => $this->email,
             'mobile_no'     => $this->mobile_no,
             'institute_type'     => $this->institute_type,
             'EIIN'          => $this->EIIN,
+            'E_year'          => $this->E_year,
             'country'       => $this->country,
             'city'          => $this->city,
             'address'       => $this->address,
@@ -70,7 +87,9 @@ class InstituteRegister extends Component
         ]);
     }
     public function render()
-    {
-        return view('livewire.institute.institute-register');
+    {   $applys = Institute::with('user')->where('user_id', auth()->id())->get();
+        return view('livewire.institute.institute-register',[
+            'applys' => $applys
+        ]);
     }
 }

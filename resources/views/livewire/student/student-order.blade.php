@@ -33,7 +33,7 @@
                              </div>
                           </div>
                           <div class="bg-white p-5 rounded">
-                           <table class="table table-hover">
+                           <table class="table table-hover table-bordered">
                               <thead>
                                 <tr>
                                     <th scope="col"  class="tpd-table-title">Institute Name</th>
@@ -66,7 +66,7 @@
                                     </tr>
                                  @empty
                                     <tr>
-                                       <td class="text-center" rowspan="3">Empty</td>
+                                       <td class="text-center" colspan="3">Empty</td>
                                     </tr>
                                  @endforelse
                               </tbody>

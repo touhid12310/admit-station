@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('slug');
             $table->string('name');
             $table->string('EIIN')->unique(); /* EIIN (Educational Institute Identification Number) */
-            $table->string('E_year')->nullable();
+            $table->string('E_year')->nullable(); 
             $table->longText('description')->nullable();
             $table->string('country_code')->nullable();
             $table->string('mobile_no');
@@ -27,6 +27,7 @@ return new class extends Migration
             $table->string('address');
             $table->string('logo')->nullable();
             $table->string('thumb_img')->nullable();
+            $table->integer('user_id')->nullable();
             $table->enum('institute_type', ['School', 'College', 'University']);
             $table->enum('app_status', ['Pending', 'Approved', 'Cancel'])->default('Pending');
             $table->enum('status', ['Active', 'Inactive'])->default('Active');
