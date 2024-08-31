@@ -85,6 +85,8 @@ class InstituteRegister extends Component
             'icon' => 'success',
             'iconColor' => 'blue',
         ]);
+
+        return redirect()->route('institute.register');
     }
     public function render()
     {   $applys = Institute::with('user')->where('user_id', auth()->id())->get();

@@ -40,7 +40,7 @@
 
                                                    <div class="col-lg-6">
                                                       <div class="tpd-input">
-                                                         <label for="">Institute Name</label>
+                                                         <label for="Institute Name">Institute Name</label>
                                                          <input type="text" wire:model="name" placeholder="Type Institute Name">
                                                       </div>
                                                       @error('name')
@@ -51,8 +51,8 @@
                                                    
                                                    <div class="col-lg-6">
                                                       <div class="tpd-input">
-                                                         <label for="">Phone Number</label>
-                                                         <input type="text" wire:model="mobile_no" placeholder="(+44) 433 962 004">
+                                                         <label for="Phone Number">Phone Number</label>
+                                                         <input type="number" wire:model="mobile_no" placeholder="(+44) 433 962 004">
                                                       </div>
                                                       @error('mobile_no')
                                                          <div class="m-2 text-danger">{{ $message }}</div>
@@ -62,7 +62,7 @@
 
                                                    <div class="col-lg-6">
                                                       <div class="tpd-input">
-                                                         <label for="">Institute Email</label>
+                                                         <label for="Institute Email">Institute Email</label>
                                                          <input type="text" wire:model="email" placeholder="institute@example.com">
                                                       </div>
                                                       @error('email')
@@ -87,8 +87,8 @@
 
                                                    <div class="col-lg-6">
                                                          <div class="tpd-input">
-                                                            <label for="">EIIN No</label>
-                                                            <input type="text" wire:model="EIIN" placeholder="Type Institute Name">
+                                                            <label for="EIIN No">EIIN No</label>
+                                                            <input type="number" wire:model="EIIN" placeholder="Type Institute Name">
                                                          </div>
                                                          @error('EIIN')
                                                             <div class="m-2 text-danger">{{ $message }}</div>
@@ -96,8 +96,8 @@
                                                       </div>
                                                    <div class="col-lg-6">
                                                          <div class="tpd-date">
-                                                            <label for="">Established Year</label>
-                                                            <input type="date" wire:model="E_year" class="form-control" placeholder="Established Year" min="1900" max="2100" step="1" pattern="[0-9]{4}">
+                                                            <label for="Established Year">Established Year</label>
+                                                            <input type="date" wire:model="E_year" class="form-control" placeholder="Established Year" min="1900" max="{{ date('Y') }}">
                                                          </div>
                                                          @error('E_year')
                                                             <div class="m-2 text-danger">{{ $message }}</div>
@@ -105,7 +105,7 @@
                                                       </div>
                                                    <div class="col-lg-6">
                                                          <div class="tpd-date">
-                                                            <label for="">Country</label>
+                                                            <label for="Country">Country</label>
                                                             <input type="text" wire:model="country" placeholder="Type Country Name">
                                                          </div>
                                                          @error('country')
@@ -114,7 +114,7 @@
                                                       </div>
                                                    <div class="col-lg-6">
                                                          <div class="tpd-date">
-                                                            <label for="">City</label>
+                                                            <label for="City">City</label>
                                                             <input type="text" wire:model="city" placeholder="City">
                                                          </div>
                                                          @error('city')
@@ -123,7 +123,7 @@
                                                    </div>
                                                    <div class="col-lg-12 pt-20">
                                                          <div class="tpd-date">
-                                                            <label for="">Address</label>
+                                                            <label for="Address">Address</label>
                                                             <input type="text" wire:model="address" placeholder="Address">
                                                          </div>
                                                          @error('address')
@@ -134,20 +134,20 @@
 
                                                    <div class="col-lg-6 pt-20">
                                                       <div class="tpd-input">
-                                                         <label for="">Institute logo</label>
+                                                         <label for="Institute logo">Institute logo</label>
                                                          <input type="file" wire:model="logo" class="p-2">
                                                       </div>
                                                    </div>
                                                    <div class="col-lg-6 pt-20">
                                                       <div class="tpd-input">
-                                                         <label for="">Institute Image</label>
+                                                         <label for="Institute Image">Institute Image</label>
                                                          <input type="file" wire:model="thumb_img" class="p-2">
                                                       </div>
                                                    </div>
                                                    
                                                    <div class="col-lg-12 pt-20">
                                                       <div class="tpd-input">
-                                                         <label for="">Description</label>
+                                                         <label for="Description">Description</label>
                                                          <textarea wire:model="description" placeholder="Institute description for London, OR. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences."></textarea>
                                                       </div>
                                                    </div>
@@ -156,7 +156,7 @@
 
                                              <div class="tpd-setting-cartificate">
                                                 <div class="tpd-setting-cartificate-btn">
-                                                   <button> <span wire:loading.remove>Save Changes</span>
+                                                   <button> <span wire:loading.remove>Update</span>
                                                    <span wire:loading>
                                                       <div class="spinner-border text-light" role="status">
                                                             <span class="visually-hidden">Loading...</span>
@@ -195,6 +195,7 @@
                                                       <th scope="col"  class="tpd-table-title text-center">EIIN</th>
                                                       <th scope="col"  class="tpd-table-title text-center">E.Year</th>
                                                       <th scope="col"  class="tpd-table-title text-center">Status</th>
+                                                      <th scope="col"  class="tpd-table-title text-center">Action</th>
                                                 </tr>
                                                 </thead>
                                                 <tbody>
@@ -220,6 +221,13 @@
                                                                   <span class="tpd-badge danger">{{$apply->app_status}}</span>
                                                                </div>
                                                             @endif
+                                                         </td>
+                                                         <td class="tpd-common-text text-center">
+                                                            <a wire:navigate href="{{route('institute.register-edit', $apply->id)}}" class="btn btn-info">
+                                                               <svg width="16" height="18" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                                                               </svg>
+                                                             </a>
                                                          </td>
                                                       </tr>
                                                    @empty
