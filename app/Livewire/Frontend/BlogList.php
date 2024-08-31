@@ -17,19 +17,18 @@ class BlogList extends Component
     public $rows = 5;
 
     public function render()
-    {   
-        
-        if($this->search){
-            $blogs = Blog::where('status', 'Approved')->where('title', 'like', '%'.$this->search.'%')
-            ->orWhere('title', 'like', '%'.$this->search.'%')
-          
-            ->orderBy('id', 'desc')->paginate($this->rows);
-            
-        }else{
+    {
+
+        if ($this->search) {
+            $blogs = Blog::where('status', 'Approved')->where('title', 'like', '%' . $this->search . '%')
+                ->orWhere('title', 'like', '%' . $this->search . '%')
+
+                ->orderBy('id', 'desc')->paginate($this->rows);
+        } else {
             $blogs = Blog::orderBy('id', 'desc')->where('status', 'Approved')->paginate($this->rows);
         }
-      
-        return view('livewire.frontend.blog-list',[
+
+        return view('livewire.frontend.blog-list', [
             'blogs' => $blogs
         ]);
     }

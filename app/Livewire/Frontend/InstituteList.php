@@ -77,9 +77,9 @@ class InstituteList extends Component
 
 
         if ($this->search || $this->selected_schools || $this->selected_colleges || $this->selected_universitis || $this->country_name || $this->city_name) {
-            $Institutes = $query->orderBy('id', 'desc')->paginate($this->rows);
+            $Institutes = $query->where('app_status', 'Approved')->orderBy('id', 'desc')->paginate($this->rows);
         } else {
-            $Institutes = Institute::orderBy('id', 'desc')->paginate($this->rows);
+            $Institutes = Institute::where('app_status', 'Approved')->orderBy('id', 'desc')->paginate($this->rows);
         }
 
         $this->dispatch('picker', [
