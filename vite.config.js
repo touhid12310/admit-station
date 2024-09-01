@@ -18,7 +18,7 @@ const pageJsFiles = GetFilesArray("resources/assets/js/*.js");
 const vendorJsFiles = GetFilesArray("resources/assets/js/vendor/*.js");
 
 /**
- * Scss Files
+ * Css Files
  */
 // Processing Core, Themes & Pages Scss Files
 const LibsCssFiles = GetFilesArray("resources/assets/css/*.css");
