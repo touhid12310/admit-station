@@ -29,7 +29,7 @@
     @livewire('partials.layouts-footer')
 
     <!-- JS here  -->
-    @vite(['resources/assets/js/vendor/jquery.js', 'resources/assets/js/vendor/waypoints.js', 'resources/assets/js/bootstrap-bundle.js', 'resources/assets/js/swiper-bundle.js', 'resources/assets/js/slick.js', 'resources/assets/js/magnific-popup.js', 'resources/assets/js/nice-select.js', 'resources/assets/js/purecounter.js', 'resources/assets/js/wow.js','resources/assets/js/hover-reveal.js', 'resources/assets/js/flatpickr.js', 'resources/assets/js/tween-max.js', 'resources/assets/js/imagesloaded-pkgd.js', 'resources/assets/js/ajax-form.js', 'resources/assets/js/main.js'])
+    @vite(['resources/assets/js/vendor/jquery.js', 'resources/assets/js/vendor/waypoints.js', 'resources/assets/js/bootstrap-bundle.js', 'resources/assets/js/swiper-bundle.js', 'resources/assets/js/slick.js', 'resources/assets/js/magnific-popup.js', 'resources/assets/js/nice-select.js', 'resources/assets/js/purecounter.js', 'resources/assets/js/wow.js', 'resources/assets/js/isotope-pkgd.js', 'resources/assets/js/hover-reveal.js', 'resources/assets/js/flatpickr.js', 'resources/assets/js/tween-max.js', 'resources/assets/js/imagesloaded-pkgd.js', 'resources/assets/js/ajax-form.js', 'resources/assets/js/main.js'])
     @livewireScripts
 </body>
 
