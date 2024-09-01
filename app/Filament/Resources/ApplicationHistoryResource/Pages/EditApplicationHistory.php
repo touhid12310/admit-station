@@ -16,4 +16,5 @@ class EditApplicationHistory extends EditRecord
             Actions\DeleteAction::make(),
         ];
     }
+    
 }

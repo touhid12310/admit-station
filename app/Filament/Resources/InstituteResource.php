@@ -145,8 +145,15 @@ class InstituteResource extends Resource
                     ->numeric()
                     ->sortable(),
 
-                Tables\Columns\TextColumn::make('institute_type'),
-
+                Tables\Columns\TextColumn::make('institute_type')
+                    ->searchable()
+                    ->label('Institute Type')
+                    ->badge()
+                    ->color(fn (string $state): string => match ($state) {
+                        'School' => 'success',
+                        'College' => 'success',
+                        'University' => 'success',
+                    }),
                 Tables\Columns\SelectColumn::make('app_status')
                     ->options([
                         'Pending' => 'Pending',
@@ -163,7 +170,8 @@ class InstituteResource extends Resource
                     ->dateTime()
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
-            ])
+            ])->defaultSort('id', 'desc')
+            
             ->filters([
                 SelectFilter::make('app_status')->options([
                     'Pending' => 'Pending',

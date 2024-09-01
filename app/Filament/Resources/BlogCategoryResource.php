@@ -28,13 +28,12 @@ class BlogCategoryResource extends Resource
         return $form
             ->schema([
                 Grid::make()
-                ->schema([
-                    Forms\Components\TextInput::make('name')
-                        ->required()
-                        ->maxLength(255),
-                ])->columns(1),
-              
-            ]);
+                    ->schema([
+                        Forms\Components\TextInput::make('name')
+                            ->required()
+                            ->maxLength(255),
+                    ])->columns(1),
+            ])->columns(1);
     }
 
     public static function table(Table $table): Table

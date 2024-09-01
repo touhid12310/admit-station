@@ -68,7 +68,7 @@
                                                 <div class="col-lg-6">
                                                    <div class="tpd-input">
                                                       <label for="Institute Email">Institute Email</label>
-                                                      <input type="text" wire:model="email" placeholder="institute@example.com">
+                                                      <input type="email" wire:model="email" placeholder="institute@example.com">
                                                    </div>
                                                    @error('email')
                                                       <div class="m-2 text-danger">{{ $message }}</div>

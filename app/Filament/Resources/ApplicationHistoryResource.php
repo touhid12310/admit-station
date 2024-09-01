@@ -10,6 +10,7 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Support\Enums\ActionSize;
 use Filament\Tables;
+use Filament\Tables\Grouping\Group;
 use Filament\Tables\Actions\ActionGroup;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
@@ -18,35 +19,38 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 
 class ApplicationHistoryResource extends Resource
 {
+    protected static ?string $clusterBreadcrumb = 'cluster';
     protected static ?string $model = ApplicationHistory::class;
     protected static ?string $navigationLabel = 'Application';
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    public static function form(Form $form): Form
-    {
-        return $form
-            ->schema([
-                
-            ]);
-    }
-
+   
     public static function table(Table $table): Table
     {
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('user.name')
                     ->label('User Name')
-                    ->searchable(),
+                    ->searchable()
+                    ->columnSpan(1),
+
+                Tables\Columns\TextColumn::make('user.email')
+                    ->label('User Email')
+                    ->searchable()
+                    ->columnSpan(1),
+                
                 Tables\Columns\TextColumn::make('institute.name')
                     ->label('Institute Name')
                     ->searchable(),
+                
                 Tables\Columns\SelectColumn::make('status')
                     ->options([
                         'Pending' => 'Pending',
                         'Approved' => 'Approved',
                         'Cancel' => 'Cancel',
                     ]),
+
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
@@ -56,6 +60,7 @@ class ApplicationHistoryResource extends Resource
                     ->sortable()
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
+           
             ->filters([
                 SelectFilter::make('status')->options([
                     'Pending' => 'Pending',
@@ -84,8 +89,6 @@ class ApplicationHistoryResource extends Resource
     {
         return [
             'index' => Pages\ListApplicationHistories::route('/'),
-            'create' => Pages\CreateApplicationHistory::route('/create'),
-            'edit' => Pages\EditApplicationHistory::route('/{record}/edit'),
         ];
     }
 }
