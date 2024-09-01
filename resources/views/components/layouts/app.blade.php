@@ -29,7 +29,22 @@
     @livewire('partials.layouts-footer')
 
     <!-- JS here  -->
-    @vite(['resources/assets/js/vendor/jquery.js', 'resources/assets/js/vendor/waypoints.js', 'resources/assets/js/bootstrap-bundle.js', 'resources/assets/js/swiper-bundle.js', 'resources/assets/js/slick.js', 'resources/assets/js/magnific-popup.js', 'resources/assets/js/nice-select.js', 'resources/assets/js/purecounter.js', 'resources/assets/js/wow.js', 'resources/assets/js/isotope-pkgd.js', 'resources/assets/js/hover-reveal.js', 'resources/assets/js/flatpickr.js', 'resources/assets/js/tween-max.js', 'resources/assets/js/imagesloaded-pkgd.js', 'resources/assets/js/ajax-form.js', 'resources/assets/js/main.js'])
+    <script src="{{ asset('assets/js/vendor/jquery.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/waypoints.js') }}"></script>
+    <script src="{{ asset('assets/js/bootstrap-bundle.js') }}"></script>
+    <script src="{{ asset('assets/js/swiper-bundle.js') }}"></script>
+    <script src="{{ asset('assets/js/slick.js') }}"></script>
+    <script src="{{ asset('assets/js/magnific-popup.js') }}"></script>
+    <script src="{{ asset('assets/js/nice-select.js') }}"></script>
+    <script src="{{ asset('assets/js/purecounter.js') }}"></script>
+    <script src="{{ asset('assets/js/wow.js') }}"></script>
+    <script src="{{ asset('assets/js/isotope-pkgd.js') }}"></script>
+    <script src="{{ asset('assets/js/hover-reveal.js') }}"></script>
+    <script src="{{ asset('assets/js/flatpickr.js') }}"></script>
+    <script src="{{ asset('assets/js/tween-max.js') }}"></script>
+    <script src="{{ asset('assets/js/imagesloaded-pkgd.js') }}"></script>
+    <script src="{{ asset('assets/js/ajax-form.js') }}"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
     @livewireScripts
 </body>
 

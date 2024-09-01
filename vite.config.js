@@ -10,23 +10,13 @@ import { glob } from "glob";
 function GetFilesArray(query) {
     return glob.sync(query);
 }
-/**
- * Js Files
- */
-// Page JS Files
-const pageJsFiles = GetFilesArray("resources/assets/js/*.js");
-const vendorJsFiles = GetFilesArray("resources/assets/js/vendor/*.js");
 
-/**
- * Css Files
- */
-// Processing Core, Themes & Pages Scss Files
 const LibsCssFiles = GetFilesArray("resources/assets/css/*.css");
 
 export default defineConfig({
     plugins: [
         laravel({
-            input: [...pageJsFiles, ...vendorJsFiles, ...LibsCssFiles],
+            input: [...LibsCssFiles],
             refresh: true,
         }),
     ],

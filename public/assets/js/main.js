@@ -145,23 +145,26 @@
 
     ////////////////////////////////////////////////////
     // 05. Common Js
-    $("[data-background").each(function () {
-        $(this).css(
-            "background-image",
-            "url( " + $(this).attr("data-background") + "  )"
-        );
-    });
 
-    $("[data-width]").each(function () {
-        $(this).css("width", $(this).attr("data-width"));
-    });
+    document.addEventListener("livewire:navigated", function () {
+        $("[data-background").each(function () {
+            $(this).css(
+                "background-image",
+                "url( " + $(this).attr("data-background") + "  )"
+            );
+        });
 
-    $("[data-bg-color]").each(function () {
-        $(this).css("background-color", $(this).attr("data-bg-color"));
-    });
+        $("[data-width]").each(function () {
+            $(this).css("width", $(this).attr("data-width"));
+        });
 
-    $("[data-text-color]").each(function () {
-        $(this).css("color", $(this).attr("data-text-color"));
+        $("[data-bg-color]").each(function () {
+            $(this).css("background-color", $(this).attr("data-bg-color"));
+        });
+
+        $("[data-text-color]").each(function () {
+            $(this).css("color", $(this).attr("data-text-color"));
+        });
     });
 
     ////////////////////////////////////////////////////
@@ -271,8 +274,11 @@
 
     ////////////////////////////////////////////////////
     // 12. Nice Select Js
-    $("select").niceSelect();
-    $(".tpd-select select").niceSelect();
+
+    // document.addEventListener("livewire:navigated", function () {
+    //     $("select").niceSelect();
+    //     $(".tpd-select select").niceSelect();
+    // });
 
     ////////////////////////////////////////////////////
     // Active Class
@@ -336,19 +342,21 @@
         });
     });
 
-    // home one
-    var slider = new Swiper(".tp-slider-active", {
-        slidesPerView: 1,
-        effect: "fade",
-        loop: true,
-        autoplay: {
-            delay: 3500,
-        },
-        // Navigation arrows
-        pagination: {
-            el: ".tp-program-dot",
-            clickable: true,
-        },
+    document.addEventListener("livewire:navigated", function () {
+        // home one
+        var slider = new Swiper(".tp-slider-active", {
+            slidesPerView: 1,
+            effect: "fade",
+            loop: true,
+            autoplay: {
+                delay: 3500,
+            },
+            // Navigation arrows
+            pagination: {
+                el: ".tp-program-dot",
+                clickable: true,
+            },
+        });
     });
 
     document.addEventListener("livewire:navigated", function () {
@@ -382,118 +390,125 @@
         });
     });
 
-    // home one
-    var swiper = new Swiper(".tp-testimonial-active", {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        loop: true,
-        // Navigation arrows
-        navigation: {
-            nextEl: ".tp-testimonial-next",
-            prevEl: ".tp-testimonial-prev",
-        },
-        autoplay: {
-            delay: 2000,
-        },
-        breakpoints: {
-            1200: {
-                slidesPerView: 1,
+    document.addEventListener("livewire:navigated", function () {
+        var swiper = new Swiper(".tp-testimonial-active", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            // Navigation arrows
+            navigation: {
+                nextEl: ".tp-testimonial-next",
+                prevEl: ".tp-testimonial-prev",
             },
-            992: {
-                slidesPerView: 1,
+            autoplay: {
+                delay: 2000,
             },
-            768: {
-                slidesPerView: 1,
+            breakpoints: {
+                1200: {
+                    slidesPerView: 1,
+                },
+                992: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 1,
+                },
+                576: {
+                    slidesPerView: 1,
+                },
+                0: {
+                    slidesPerView: 1,
+                },
             },
-            576: {
-                slidesPerView: 1,
-            },
-            0: {
-                slidesPerView: 1,
-            },
-        },
+        });
     });
 
-    // home one
-    var swiper = new Swiper(".tp-instagram-active", {
-        slidesPerView: 5,
-        spaceBetween: 10,
-        freeMode: false,
-        loop: true,
-        autoplay: {
-            delay: 3500,
-        },
-        breakpoints: {
-            1200: {
-                slidesPerView: 5,
+    document.addEventListener("livewire:navigated", function () {
+        // instagram
+        var swiper = new Swiper(".tp-instagram-active", {
+            slidesPerView: 5,
+            spaceBetween: 10,
+            freeMode: false,
+            loop: true,
+            autoplay: {
+                delay: 3500,
             },
-            992: {
-                slidesPerView: 4,
+            breakpoints: {
+                1200: {
+                    slidesPerView: 5,
+                },
+                992: {
+                    slidesPerView: 4,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                576: {
+                    slidesPerView: 2,
+                },
+                0: {
+                    slidesPerView: 2,
+                },
             },
-            768: {
-                slidesPerView: 3,
-            },
-            576: {
-                slidesPerView: 2,
-            },
-            0: {
-                slidesPerView: 2,
-            },
-        },
+        });
     });
 
-    // campus life
-    var swiper = new Swiper(".tp-campus-life-active", {
-        slidesPerView: "auto",
-        spaceBetween: 130,
-        loop: true,
-        navigation: {
-            nextEl: ".tp-campus-next",
-            prevEl: ".tp-campus-prev",
-        },
-        breakpoints: {
-            1200: {
-                spaceBetween: 130,
+    document.addEventListener("livewire:navigated", function () {
+        // campus life
+        var swiper = new Swiper(".tp-campus-life-active", {
+            slidesPerView: "auto",
+            spaceBetween: 130,
+            loop: true,
+            navigation: {
+                nextEl: ".tp-campus-next",
+                prevEl: ".tp-campus-prev",
             },
-            768: {
-                spaceBetween: 80,
+            breakpoints: {
+                1200: {
+                    spaceBetween: 130,
+                },
+                768: {
+                    spaceBetween: 80,
+                },
+                400: {
+                    spaceBetween: 50,
+                },
             },
-            400: {
-                spaceBetween: 50,
-            },
-        },
+        });
     });
 
-    // home Two
-    var slider = new Swiper(".tp-team-2-active", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        loop: true,
-        autoplay: {
-            delay: 5000,
-        },
-        // Navigation arrows
-        navigation: {
-            nextEl: ".tp-team-2-next",
-            prevEl: ".tp-team-2-prev",
-        },
-        breakpoints: {
-            1200: {
-                slidesPerView: 4,
+    document.addEventListener("livewire:navigated", function () {
+        // home Two
+        var slider = new Swiper(".tp-team-2-active", {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 5000,
             },
-            992: {
-                slidesPerView: 3,
+            // Navigation arrows
+            navigation: {
+                nextEl: ".tp-team-2-next",
+                prevEl: ".tp-team-2-prev",
             },
-            768: {
-                slidesPerView: 2,
+            breakpoints: {
+                1200: {
+                    slidesPerView: 4,
+                },
+                992: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                576: {
+                    slidesPerView: 2,
+                },
+                0: {
+                    slidesPerView: 1,
+                },
             },
-            576: {
-                slidesPerView: 2,
-            },
-            0: {
-                slidesPerView: 1,
-            },
-        },
+        });
     });
 
     // home Two
@@ -697,7 +712,10 @@
 
     ////////////////////////////////////////////////////
     // 15. Wow Js
-    new WOW().init();
+
+    document.addEventListener("wire:navigated", () => {
+        new WOW().init();
+    });
 
     /////////////////////////////////////////////
     // 16. Ecommerce js
