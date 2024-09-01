@@ -19,9 +19,13 @@
                  <div class="col-lg-9">
 
                     <div class="tpd-course-area">
-                        <!-- dashboard-profile-setting-menu-area-start -->
-                           @livewire('partials.dashboad-setting-menu')
-                        <!--/end dashboard-profile-setting-menu-area-start -->
+                        <div class="row">
+                           <div class="col-lg-6">
+                              <div class="tp-dashboard-section">
+                                 <h2 class="tp-dashboard-title">Change Profile Info</h2>
+                              </div>
+                           </div>
+                        </div>
 
                        <div class="row">
                           <div class="col-12">
