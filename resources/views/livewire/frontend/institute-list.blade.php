@@ -16,7 +16,16 @@
                                     </svg></a></span>
                             <span> Choose Your</span>
                         </div>
-                        <h3 class="tp-breadcrumb__title" style="color: #AB0C2F">Favorite Institute </h3>
+                        <h3 class="tp-breadcrumb__title" style="color: #AB0C2F">Favorite Institute
+                            <div wire:loading
+                                wire:target="search,selected_schools,selected_colleges,selected_universities,country_name,city_name"
+                                class="px-2">
+                                <button class="btn btn-primary" type="button" disabled>
+                                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true">
+                                    </span>
+                                </button>
+                            </div>
+                        </h3>
                     </div>
                 </div>
             </div>
@@ -30,7 +39,7 @@
         <div class="container">
             <div class="tp-course-grid-sidebar p-relative">
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-6">
                         <div class="tp-course-grid-sidebar-left d-flex align-items-center">
                             <div class="tp-course-grid-sidebar-search p-relative mr-30 d-none d-lg-block">
                                 <form action="#">
@@ -50,14 +59,9 @@
                                     </button>
                                 </form>
                             </div>
-                            <div wire:loading wire:target="search,selected_schools,selected_colleges,selected_universities,country_name,city_name" class="px-2">
-                                <button class="btn btn-primary" type="button" disabled>
-                                    <span class="spinner-border spinner-border-sm" role="status"
-                                        aria-hidden="true"> </span>
-                                </button>
-                            </div>
                             <div class="tp-course-grid-sidebar-tab tp-tab">
                                 <ul class="nav nav-tabs" id="filterTab" role="tablist">
+
                                     <li class="nav-item" role="presentation">
                                         <button class="nav-link" id="home-tab" data-bs-toggle="tab"
                                             data-bs-target="#home" type="button" role="tab" aria-controls="home"
@@ -102,24 +106,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="tp-course-grid-sidebar-right d-flex justify-content-start justify-content-lg-end">
-
-                            <div class="tp-course-grid-select tp-course-grid-sidebar-select">
-                                <select class="wide country_name" wire:model="country_name">
+                    <div class="col-lg-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <select class="form-select country_name" wire:model.live="country_name">
                                     <option>Select Country</option>
-                                    @foreach ($country as $list)
-                                        <option value="{{ $list->country }}">{{ $list->country }}</option>
-                                    @endforeach
+                                    @if (isset($country))
+                                        @foreach ($country as $list)
+                                            <option value="{{ $list->country }}">{{ $list->country }}</option>
+                                        @endforeach
+                                    @endif
                                 </select>
                             </div>
 
-                            <div class="tp-course-grid-select tp-course-grid-sidebar-select ml-10">
-                                <select class="wide city_name" wire:model="city_name">
+                            <div class="col-md-6">
+                                <select class="form-select city_name" wire:model="city_name">
                                     <option>Select City</option>
                                     @if (isset($city))
-                                        @foreach ($city as $list)
-                                            <option value="{{ $list->city }}">{{ $list->city }}</option>
+                                        @foreach ($city as $citiys)
+                                            <option>{{ $citiys }}</option>
                                         @endforeach
                                     @endif
                                 </select>
@@ -187,7 +192,8 @@
                                             <div class="tp-course-item p-relative fix mb-30">
                                                 <div class="tp-course-teacher mb-15">
                                                     <span>
-                                                        <img src="{{ asset($institute->logo) }}"alt="">{{ $institute->name }}
+                                                        <img
+                                                            src="{{ asset($institute->logo) }}"alt="">{{ $institute->name }}
                                                     </span>
                                                 </div>
                                                 <div class="tp-course-thumb sidebar">
@@ -232,7 +238,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="tp-course-btn">
-                                                    <a href="{{ route('details-institute', $institute->slug) }}" wire:navigate>
+                                                    <a href="{{ route('details-institute', $institute->slug) }}"
+                                                        wire:navigate>
                                                         Preview
                                                     </a>
                                                 </div>
@@ -277,7 +284,7 @@
                                                     </span>
                                                 </div>
                                                 <div class="tp-course-list-p">
-                                                    <p>{{ substr($institute->description, 0, 150).'...' }} </p>
+                                                    <p>{{ substr($institute->description, 0, 150) . '...' }} </p>
                                                 </div>
                                                 <div
                                                     class="tp-course-filter-pricing d-flex align-items-center justify-content-between">
@@ -293,7 +300,8 @@
                                                     </div>
                                                     <span>
                                                         <a class="tp-btn w-100 text-center"
-                                                            href="{{ route('details-institute', $institute->slug) }}" wire:navigate>Preview</a>
+                                                            href="{{ route('details-institute', $institute->slug) }}"
+                                                            wire:navigate>Preview</a>
                                                     </span>
                                                 </div>
                                             </div>
@@ -318,37 +326,50 @@
 </div>
 @script
     <script>
-        document.addEventListener('picker', function(e) {
-            const status = e.detail[0].status;
-            if (status === 'yes') {
-                requestAnimationFrame(() => {
-                // setTimeout(() => {
-                    $(".country_name").niceSelect();
-                    $(".city_name").niceSelect();
-                // },1000)
-                });
-            }
-        });
+        // document.addEventListener('picker', function(e) {
+        //     const status = e.detail[0].status;
+        //     if (status === 'yes') {
+        //         console.log('robi');
 
-        $('.country_name').on('change', function() {
-            const countryName = this.value;
-            if (countryName === 'Select Country') {
-                setTimeout(() => {
-                    @this.set('city_name', null);
-                    @this.set('country_name', null);
-                }, 500);
-                setTimeout(() => {
-                    $('.city_name').empty().append('<option value="">Select City</option>');
-                    $('.city_name').val('');
-                    $('.city_name').niceSelect('update');
-                }, 1000);
-            } else {
-                @this.set('city_name', '');
-                @this.set('country_name', countryName);
-                $('.city_name').val('Select City');
-                $('.city_name').niceSelect('update');
-            }
-        });
+        //         // requestAnimationFrame(() => {
+        //             const countries = e.detail[0]
+        //                 .countries;
+        //             const selectedCountry = e.detail[0].country_name;
+
+        //             $(".country_name").empty();
+
+        //             $(".country_name").append('<option selected>Select Country</option>');
+        //             countries.forEach(country => {
+        //                 const isSelected = country.country === selectedCountry ? 'selected' : '';
+        //                 $(".country_name").append(
+        //                     `<option value="${country.country}" ${isSelected}>${country.country}</option>`
+        //                 );
+        //             });
+        //             $('.country_name').niceSelect('update');
+        //             $(".city_name").niceSelect();
+        //         // });
+        //     }
+        // });
+
+        // $('.country_name').on('change', function() {
+        //     const countryName = this.value;
+        //     if (countryName === 'Select Country') {
+        //         setTimeout(() => {
+        //             @this.set('city_name', null);
+        //             @this.set('country_name', null);
+        //         }, 500);
+        //         setTimeout(() => {
+        //             $('.city_name').empty().append('<option value="">Select City</option>');
+        //             $('.city_name').val('');
+        //             $('.city_name').niceSelect('update');
+        //         }, 1000);
+        //     } else {
+        //         @this.set('city_name', '');
+        //         @this.set('country_name', countryName);
+        //         $('.city_name').val('Select City');
+        //         $('.city_name').niceSelect('update');
+        //     }
+        // });
 
         $('body').on('change', '.city_name', function() {
             const cityName = this.value;

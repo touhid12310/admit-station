@@ -31,7 +31,7 @@ class InstituteList extends Component
     {
         $this->country   = Institute::select('country')->where('app_status', 'Approved')->distinct()->get('country');
         if ($this->country_name) {
-            $this->city = Institute::where('country', $this->country_name)->get();
+            $this->city = Institute::where('country', $this->country_name)->pluck('city');
         }
         $SchoolCount     = Institute::where('institute_type', 'School')->count();
         $CollegeCount     = Institute::where('institute_type', 'College')->count();
@@ -84,6 +84,8 @@ class InstituteList extends Component
 
         $this->dispatch('picker', [
             'status' => 'yes',
+            'countries' => $this->country,
+            'country_name' => $this->country_name,
         ]);
 
         return view('livewire.frontend.institute-list', [
