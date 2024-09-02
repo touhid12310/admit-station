@@ -29,7 +29,7 @@ class InstituteList extends Component
 
     public function render()
     {
-        $this->country   = Institute::select('country')->distinct()->get('country');
+        $this->country   = Institute::select('country')->where('app_status', 'Approved')->distinct()->get('country');
         if ($this->country_name) {
             $this->city = Institute::where('country', $this->country_name)->get();
         }
