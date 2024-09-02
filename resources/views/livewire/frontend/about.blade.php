@@ -257,7 +257,7 @@
                             </div>
                             <div class="tp-team-2-content">
                                 <h4 class="tp-team-2-title"><a href="my-profile.html">Annette Black</a></h4>
-                                <span>CTO at Admit Station</span>
+                                <span>COO at Admit Station</span>
                             </div>
                         </div>
                     </div>
