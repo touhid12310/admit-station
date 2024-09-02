@@ -230,7 +230,7 @@
                             </div>
                             <div class="tp-team-2-content">
                                 <h4 class="tp-team-2-title"><a href="my-profile.html">Leslie Alexander</a></h4>
-                                <span>Teaches Interior Design</span>
+                                <span>CEO, Admit Station</span>
                             </div>
                         </div>
                     </div>
@@ -257,7 +257,7 @@
                             </div>
                             <div class="tp-team-2-content">
                                 <h4 class="tp-team-2-title"><a href="my-profile.html">Annette Black</a></h4>
-                                <span>Teaches Interior Design</span>
+                                <span>CTO at Admit Station</span>
                             </div>
                         </div>
                     </div>
@@ -284,7 +284,7 @@
                             </div>
                             <div class="tp-team-2-content">
                                 <h4 class="tp-team-2-title"><a href="my-profile.html">Kathryn Murphy</a></h4>
-                                <span>Teaches Interior Design</span>
+                                <span>Teacher at Devstack</span>
                             </div>
                         </div>
                     </div>
@@ -311,7 +311,7 @@
                             </div>
                             <div class="tp-team-2-content">
                                 <h4 class="tp-team-2-title"><a href="my-profile.html">Mina Hollace</a></h4>
-                                <span>Teaches Interior Design</span>
+                                <span>Tech Leader at Admit Station</span>
                             </div>
                         </div>
                     </div>
