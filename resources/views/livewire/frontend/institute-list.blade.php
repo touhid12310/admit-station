@@ -110,7 +110,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <select class="form-select country_name" wire:model.live="country_name">
-                                    <option>Select Country</option>
+                                    <option value>Select Country</option>
                                     @if (isset($country))
                                         @foreach ($country as $list)
                                             <option value="{{ $list->country }}">{{ $list->country }}</option>
@@ -120,8 +120,8 @@
                             </div>
 
                             <div class="col-md-6">
-                                <select class="form-select city_name" wire:model="city_name">
-                                    <option>Select City</option>
+                                <select class="form-select city_name" wire:model.live="city_name">
+                                    <option value>Select City</option>
                                     @if (isset($city))
                                         @foreach ($city as $citiys)
                                             <option>{{ $citiys }}</option>
@@ -321,66 +321,4 @@
             </div>
         </div>
     </section>
-    <!-- grid-sidebar-area-end -->
-
 </div>
-@script
-    <script>
-        // document.addEventListener('picker', function(e) {
-        //     const status = e.detail[0].status;
-        //     if (status === 'yes') {
-        //         console.log('robi');
-
-        //         // requestAnimationFrame(() => {
-        //             const countries = e.detail[0]
-        //                 .countries;
-        //             const selectedCountry = e.detail[0].country_name;
-
-        //             $(".country_name").empty();
-
-        //             $(".country_name").append('<option selected>Select Country</option>');
-        //             countries.forEach(country => {
-        //                 const isSelected = country.country === selectedCountry ? 'selected' : '';
-        //                 $(".country_name").append(
-        //                     `<option value="${country.country}" ${isSelected}>${country.country}</option>`
-        //                 );
-        //             });
-        //             $('.country_name').niceSelect('update');
-        //             $(".city_name").niceSelect();
-        //         // });
-        //     }
-        // });
-
-        // $('.country_name').on('change', function() {
-        //     const countryName = this.value;
-        //     if (countryName === 'Select Country') {
-        //         setTimeout(() => {
-        //             @this.set('city_name', null);
-        //             @this.set('country_name', null);
-        //         }, 500);
-        //         setTimeout(() => {
-        //             $('.city_name').empty().append('<option value="">Select City</option>');
-        //             $('.city_name').val('');
-        //             $('.city_name').niceSelect('update');
-        //         }, 1000);
-        //     } else {
-        //         @this.set('city_name', '');
-        //         @this.set('country_name', countryName);
-        //         $('.city_name').val('Select City');
-        //         $('.city_name').niceSelect('update');
-        //     }
-        // });
-
-        $('body').on('change', '.city_name', function() {
-            const cityName = this.value;
-
-            if (cityName === 'Select City') {
-                @this.set('city_name', '');
-                $('.city_name').val('Select City');
-                $('.city_name').niceSelect('update');
-            } else {
-                @this.set('city_name', cityName);
-            }
-        });
-    </script>
-@endscript
