@@ -24,6 +24,7 @@ class InstituteRegister extends Component
     public $logo;
     public $thumb_img;
     public $description;
+    public $created_at;
     public $address;
 
     public function mount(){

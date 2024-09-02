@@ -157,11 +157,14 @@
                                              <div class="tpd-setting-cartificate">
                                                 <div class="tpd-setting-cartificate-btn">
                                                    <button> <span wire:loading.remove>Update</span>
-                                                   <span wire:loading>
-                                                      <div class="spinner-border text-light" role="status">
-                                                            <span class="visually-hidden">Loading...</span>
-                                                      </div>
-                                                   </span></button>
+                                                      <span wire:loading>
+                                                         <div class="spinner-border text-light" role="status">
+                                                               <span class="visually-hidden">Loading...</span>
+                                                         </div>
+                                                      </span>
+                                                   </button>
+                                                   
+                                                  
                                                 </div>
                                              </div>
 
@@ -177,69 +180,139 @@
                         <!-- form-content-area-end -->
                      @else
                         <!-- List -->
-                        <div class="tpd-content-layout">
-                           <div class="tp-profile-wrapper">
-                              <div class="tp-dashboard-section">
-                                 <h2 class="tp-dashboard-title">Institute List</h2>
-                              </div>
-                              <div class="row">
-                                 <div class="col-12">
-                                    <div class="tp-profile-box">
-                                       <div class="bg-white rounded">
-                                          <div class="table-responsive">
-                                             <table class="table table-hover table-bordered">
-                                                <thead class="bg-light">
-                                                <tr>
-                                                      <th scope="col"  class="tpd-table-title">Institute Name</th>
-                                                      <th scope="col"  class="tpd-table-title text-center">Type</th>
-                                                      <th scope="col"  class="tpd-table-title text-center">EIIN</th>
-                                                      <th scope="col"  class="tpd-table-title text-center">E.Year</th>
-                                                      <th scope="col"  class="tpd-table-title text-center">Status</th>
-                                                      <th scope="col"  class="tpd-table-title text-center">Action</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                   @forelse ($applys as $apply)
-                                                      <tr>
-                                                         <td class="tpd-common-text">
-                                                            <a href="">{{$apply->name}}</a>
-                                                         </td>
-                                                         <td class="tpd-common-text text-center">{{$apply->institute_type}}</td>
-                                                         <td class="tpd-common-text text-center">{{$apply->EIIN}}</td>
-                                                         <td class="tpd-common-text text-center">{{$apply->E_year}}</td>
-                                                         <td class="tpd-common-text text-center">
-                                                            @if ($apply->app_status == 'Approved')
-                                                               <div class="tpd-badge-item">
-                                                                  <span class="tpd-badge bg-success text-white">{{$apply->app_status}}</span>
-                                                               </div>
-                                                            @elseif($apply->app_status == 'Pending')
-                                                               <div class="tpd-badge-item">
-                                                                  <span class="tpd-badge info">{{$apply->app_status}}</span>
-                                                               </div>
-                                                            @else
-                                                               <div class="tpd-badge-item">
-                                                                  <span class="tpd-badge danger">{{$apply->app_status}}</span>
-                                                               </div>
-                                                            @endif
-                                                         </td>
-                                                         <td class="tpd-common-text text-center">
-                                                            <a wire:navigate href="{{route('institute.register-edit', $apply->id)}}" class="btn btn-info">
-                                                               <svg width="16" height="18" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                                                  <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
-                                                               </svg>
-                                                             </a>
-                                                         </td>
-                                                      </tr>
-                                                   @empty
-                                                      <tr>
-                                                         <td class="text-center" colspan="5" disabled>Apply List Empty</td>
-                                                      </tr>
-                                                   @endforelse
-                                                </tbody>
-                                             </table>
+                        <div class="row">
+                           <div class="col-12">
+                              <div class="tp-profile-box">
+                                 <div class="tp-dashboard-section">
+                                    <h2 class="tp-dashboard-title">Institute Info</h2>
+                                 </div>
+                                 <div class="tp-profile-wrap">
+                                    <ul>
+                                       @forelse ($applys as $apply)
+                                       <li>
+                                          <div class="tp-profile-info d-flex">
+                                             <div class="tp-profile-info-tag">
+                                                <span>Registration Date</span>
+                                             </div>
+                                             <div class="tp-profile-info-details">
+                                                <span>{{ $apply->created_at->format('F j, Y g:i A') }}</span>
+                                             </div>
                                           </div>
-                                       </div>
-                                    </div>
+                                       </li>
+                                       <li>
+                                          <div class="tp-profile-info d-flex">
+                                             <div class="tp-profile-info-tag">
+                                                <span>Institute Name</span>
+                                             </div>
+                                             <div class="tp-profile-info-details">
+                                                <span><a href="">{{$apply->name}}</a></span>
+                                             </div>
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="tp-profile-info d-flex">
+                                             <div class="tp-profile-info-tag">
+                                                <span>Institute Type</span>
+                                             </div>
+                                             <div class="tp-profile-info-details">
+                                                <span><a href="">{{$apply->institute_type}}</a></span>
+                                             </div>
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="tp-profile-info d-flex">
+                                             <div class="tp-profile-info-tag">
+                                                <span>EIIN No</span>
+                                             </div>
+                                             <div class="tp-profile-info-details">
+                                                <span><a href="">{{$apply->EIIN}}</a></span>
+                                             </div>
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="tp-profile-info d-flex">
+                                             <div class="tp-profile-info-tag">
+                                                <span>Established Year</span>
+                                             </div>
+                                             <div class="tp-profile-info-details">
+                                                <span><a href="">{{$apply->E_year}}</a></span>
+                                             </div>
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="tp-profile-info d-flex">
+                                             <div class="tp-profile-info-tag">
+                                                <span>Institute Logo</span>
+                                             </div>
+                                             <div class="tp-profile-info-details">
+                                                <span><img src="{{asset($apply->logo)}}" alt="" width="10%" height="10%"></span>
+                                             </div>
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="tp-profile-info d-flex">
+                                             <div class="tp-profile-info-tag">
+                                                <span>Institute Image</span>
+                                             </div>
+                                             <div class="tp-profile-info-details">
+                                                <span><img src="{{asset($apply->thumb_img)}}" alt="" width="30%" height="15%"></span>
+                                             </div>
+                                          </div>
+                                       </li>
+                                       <li>
+                                          <div class="tp-profile-info d-flex">
+                                             <div class="tp-profile-info-tag">
+                                                <span>Status</span>
+                                             </div>
+                                             <div class="tp-profile-info-details p-2">
+                                                @if ($apply->app_status == 'Approved')
+                                                   <div class="tpd-badge-item">
+                                                      <span class="tpd-badge bg-success text-white">{{$apply->app_status}}</span>
+                                                   </div>
+                                                @elseif($apply->app_status == 'Pending')
+                                                   <div class="tpd-badge-item">
+                                                      <span class="tpd-badge info">{{$apply->app_status}}</span>
+                                                   </div>
+                                                @else
+                                                   <div class="tpd-badge-item">
+                                                      <span class="tpd-badge danger">{{$apply->app_status}}</span>
+                                                   </div>
+                                                @endif
+                                             </div>
+                                          </div>
+                                       </li>
+                                       <li @if ($apply->app_status == 'Approved') hidden @endif>
+                                          <div class="tp-profile-info d-flex">
+                                             <div class="tp-profile-info-tag">
+                                                <span>Action</span>
+                                             </div>
+                                             <div class="tp-profile-info-details">
+                                                <span class="tpd-badge-item">
+                                                   <a wire:navigate href="{{route('institute.register-edit', $apply->id)}}" class="tpd-badge info">
+                                                      <svg width="20" height="24" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                                         <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                                                      </svg>
+                                                   </a>
+                                                </span>
+                                             </div>
+                                          </div>
+                                       </li>
+                                       @if ($apply->app_status == 'Approved')
+                                       <li>
+                                          <div class="tp-profile-info d-flex">
+                                             <div class="tp-profile-info-tag">
+                                                <span>Institute Description</span>
+                                             </div>
+                                             <div class="tp-profile-info-details">
+                                                <span>{{ $apply->description }}</span>
+                                             </div>
+                                          </div>
+                                       </li>
+                                       @endif
+                                       @empty
+
+                                       @endforelse
+                                    </ul>
                                  </div>
                               </div>
                            </div>

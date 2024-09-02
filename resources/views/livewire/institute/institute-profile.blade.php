@@ -24,7 +24,7 @@
                           <div class="row">
                              <div class="col-lg-6">
                                 <div class="tp-dashboard-section">
-                                   <h2 class="tp-dashboard-title">Institute Profile</h2>
+                                   <h2 class="tp-dashboard-title">Institute User Profile</h2>
                                 </div>
                              </div>
                           </div>
