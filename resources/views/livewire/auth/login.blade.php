@@ -1,8 +1,8 @@
 <div>
     <!-- login area start -->
-    <section class="tp-login-area p-5">
-        <div class="tp-login-register-box d-flex align-items-center pt-200 pb-80">
-           <div class="tp-login-register-banner-box p-relative" data-background="{{asset('assets/img/login/login-register-bg.jpg')}}" wire:ignore>
+    <section class="tp-login-area">
+        <div class="tp-login-register-box d-flex align-items-center pt-120">
+           <div class="tp-login-register-banner-box p-relative d-none d-md-block" data-background="{{asset('assets/img/login/login-register-bg.jpg')}}" wire:ignore>
               <div class="tp-login-register-logo tp-header-logo">
                  <a href="index.html"><img src="{{asset('assets/images/logo.png')}}" alt=""></a>
               </div>
