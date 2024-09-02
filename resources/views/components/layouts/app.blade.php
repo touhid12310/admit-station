@@ -9,7 +9,6 @@
     <!-- Place favicon.ico in the root directory -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
     <!-- CSS here -->
-
     @vite(['resources/css/app.css'])
     @livewireStyles
 </head>
@@ -23,6 +22,7 @@
     @else
         @livewire('partials.layouts-menu')
     @endif
+
     <main>
         {{ $slot }}
     </main>
