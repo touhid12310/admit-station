@@ -11,6 +11,7 @@ use App\Livewire\Frontend\ContactUs;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Frontend\BlogDetails;
 use App\Livewire\Frontend\BecomeAAgent;
+use App\Livewire\Frontend\BlogCategory;
 use App\Livewire\Frontend\InstituteList;
 use App\Livewire\Frontend\PrivacyPolicy;
 use App\Livewire\Student\StudentProfile;
@@ -44,6 +45,7 @@ Route::get('/become-a-agent', BecomeAAgent::class)->name('become-a-agent');
 Route::get('/institute-list', InstituteList::class)->name('list-institute');
 Route::get('/institute-details/{slug}', InstituteDetails::class)->name('details-institute');
 Route::get('/blog', Blogs::class)->name('blog-list');
+Route::get('/blog-category/{category_id}', BlogCategory::class)->name('blog-category');
 Route::get('/blog-details/{slug}', BlogDetails::class)->name('blog-details');
 
 Route::get('/logout', [Login::class, 'logout'])->name('logout');

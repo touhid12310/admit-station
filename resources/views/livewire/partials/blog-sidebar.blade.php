@@ -4,7 +4,7 @@
             <h5 class="tp-sidebar-widget-title" style="color: #AB0C2F">Categories</h5>
             <ul>
                 @foreach ($categories as $category)
-                    <li><a href="" wire:navigate>{{ $category->name }}
+                    <li><a href="{{ route('blog-category', $category->id) }}" wire:navigate>{{ $category->name }}
                             <span>({{ $category->blogs_count }})</span></a></li>
                 @endforeach
             </ul>

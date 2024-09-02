@@ -16,7 +16,10 @@
                                     </svg></a></span>
                             <span>Our Blog</span>
                         </div>
-                        <h3 class="tp-breadcrumb__title white" style="color: #AB0C2F">Latest Blogs</h3>
+                        <h2>Blog Category:
+                            <h3 class="tp-breadcrumb__title white" style="color: #AB0C2F">
+                                {{ $blogs[0]->category->name }}
+                        </h2>
                     </div>
                 </div>
             </div>
