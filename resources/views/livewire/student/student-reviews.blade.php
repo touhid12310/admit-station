@@ -19,230 +19,112 @@
                  </div>
                  <div class="col-lg-9">
 
-                    <!-- dashboard-content-area-start -->
-                    <div class="tpd-content-layout">
-  
-                       <!-- dashboard-tab-area -->
-                       <div class="tp-dashboard-tab mb-30">
-                          <h2 class="tp-dashboard-tab-title">Reviews</h2>
-                          <div class="tp-dashboard-tab-list">
-                             <ul>
-                                <li>
-                                   <a class="active" href="student-reviews.html">Received  <span>(12)</span></a>
-                                </li>
-                                <li>
-                                   <a href="student-reviews-2.html">Given <span>(08)</span></a>
-                                </li>
-                             </ul>
-                          </div>
-                       </div>
-                       <!-- dashboard-tab-area-end -->
-  
-                       <!-- course-area-start -->
-                       <div class="tpd-table mb-25">
-                          <ul>
-                             <li class="tpd-table-head">
-                                <div class="tpd-table-row">
-                                   <div class="tpd-reviews-student">
-                                      <h4 class="tpd-table-title">Student</h4>
-                                   </div>
-                                   <div class="tpd-reviews-date">
-                                      <h4 class="tpd-table-title">Date</h4>
-                                   </div>
-                                   <div class="tpd-reviews-feedback">
-                                      <h4 class="tpd-table-title">Feedback</h4>
-                                   </div>
-                                </div>
-                             </li>
-                             <li>
-                                <div class="tpd-table-row">
-                                   <div class="tpd-reviews-student">
-                                      <div class="tpd-reviews-profile d-flex align-items-center">
-                                         <div class="tpd-reviews-thumb">
-                                            <img src="assets/img/dashboard/profile/reviews-profile-1.png" alt="">
-                                         </div>
-                                         <h4 class="tpd-reviews-thumb-title">Joss Sticks</h4>
-                                      </div>
-                                   </div>
-                                   <div class="tpd-reviews-date">
-                                      <span>August 27, 2024</span>
-                                      <p>8:31 am</p>
-                                   </div>
-                                   <div class="tpd-reviews-feedback">
-                                      <div class="tp-instructor-rating">
-                                         <i class="fa-solid fa-star"></i>
-                                         <i class="fa-solid fa-star"></i>
-                                         <i class="fa-solid fa-star"></i>
-                                         <i class="fa-solid fa-star"></i>
-                                         <i class="fa-solid fa-star"></i>
-                                      </div>
-                                      <span>Nice Course</span>
-                                      <div class="tpd-course-wrap">
-                                         <span class="tpd-course-name">Course:</span>
-                                         <span class="tpd-course-title">Design Masterclass</span>
-                                      </div>
-                                   </div>
-                                </div>
-                             </li>
-                             <li>
-                                <div class="tpd-table-row">
-                                   <div class="tpd-reviews-student">
-                                      <div class="tpd-reviews-profile d-flex align-items-center">
-                                         <div class="tpd-reviews-thumb">
-                                            <img src="assets/img/dashboard/profile/reviews-profile-2.png" alt="">
-                                         </div>
-                                         <h4 class="tpd-reviews-thumb-title">Benjamin Evalent</h4>
-                                      </div>
-                                   </div>
-                                   <div class="tpd-reviews-date">
-                                      <span>January 30, 2024</span>
-                                      <p>10:21 am</p>
-                                   </div>
-                                   <div class="tpd-reviews-feedback">
-                                      <div class="tp-instructor-rating">
-                                         <i class="fa-solid fa-star"></i>
-                                         <i class="fa-solid fa-star"></i>
-                                         <i class="fa-solid fa-star"></i>
-                                         <i class="fa-solid fa-star"></i>
-                                         <i class="fa-solid fa-star"></i>
-                                      </div>
-                                      <span>Is Great Course!</span>
-                                      <div class="tpd-reviews-course-info">
-                                         <p><span>Course:</span> 3D Motion Design</p>
-                                      </div>
-                                   </div>
-                                </div>
-                             </li>
-                             <li>
-                                <div class="tpd-table-row">
-                                   <div class="tpd-reviews-student">
-                                      <div class="tpd-reviews-profile d-flex align-items-center">
-                                         <div class="tpd-reviews-thumb">
-                                            <img src="assets/img/dashboard/profile/reviews-profile-3.png" alt="">
-                                         </div>
-                                         <h4 class="tpd-reviews-thumb-title">Hanson Deck</h4>
-                                      </div>
-                                   </div>
-                                   <div class="tpd-reviews-date">
-                                      <span>April 20, 2024</span>
-                                      <p>1:05 pm</p>
-                                   </div>
-                                   <div class="tpd-reviews-feedback">
-                                      <div class="tp-instructor-rating">
-                                         <i class="fa-solid fa-star"></i>
-                                         <i class="fa-solid fa-star"></i>
-                                         <i class="fa-solid fa-star"></i>
-                                         <i class="fa-solid fa-star"></i>
-                                         <i class="fa-solid fa-star"></i>
-                                      </div>
-                                      <span>Awesome</span>
-                                      <div class="tpd-reviews-course">
-                                         <p><span>Course:</span>  Graphic Design Masterclass</p>
-                                      </div>
-                                   </div>
-                                </div>
-                             </li>
-                             <li>
-                                <div class="tpd-table-row">
-                                   <div class="tpd-reviews-student">
-                                      <div class="tpd-reviews-profile d-flex align-items-center">
-                                         <div class="tpd-reviews-thumb">
-                                            <img src="assets/img/dashboard/profile/reviews-profile-4.png" alt="">
-                                         </div>
-                                         <h4 class="tpd-reviews-thumb-title">Hanson Violet</h4>
-                                      </div>
-                                   </div>
-                                   <div class="tpd-reviews-date">
-                                      <span>August 27, 2024</span>
-                                      <p>10:21 am</p>
-                                   </div>
-                                   <div class="tpd-reviews-feedback">
-                                      <div class="tp-instructor-rating">
-                                         <i class="fa-solid fa-star"></i>
-                                         <i class="fa-solid fa-star"></i>
-                                         <i class="fa-solid fa-star"></i>
-                                         <i class="fa-solid fa-star"></i>
-                                         <i class="fa-solid fa-star"></i>
-                                      </div>
-                                      <span>Is Great Course!</span>
-                                      <div class="tpd-reviews-course">
-                                         <p><span>Course:</span> Graphic Design Masterclass</p>
-                                      </div>
-                                   </div>
-                                </div>
-                             </li>
-                             <li>
-                                <div class="tpd-table-row">
-                                   <div class="tpd-reviews-student">
-                                      <div class="tpd-reviews-profile d-flex align-items-center">
-                                         <div class="tpd-reviews-thumb">
-                                            <img src="assets/img/dashboard/profile/reviews-profile-5.png" alt="">
-                                         </div>
-                                         <h4 class="tpd-reviews-thumb-title">Indigo Violet</h4>
-                                      </div>
-                                   </div>
-                                   <div class="tpd-reviews-date">
-                                      <span>January 30, 2024</span>
-                                      <p>10:21 am</p>
-                                   </div>
-                                   <div class="tpd-reviews-feedback">
-                                      <div class="tp-instructor-rating">
-                                         <i class="fa-solid fa-star"></i>
-                                         <i class="fa-solid fa-star"></i>
-                                         <i class="fa-solid fa-star"></i>
-                                         <i class="fa-solid fa-star"></i>
-                                         <i class="fa-solid fa-star"></i>
-                                      </div>
-                                      <span>Awesome</span>
-                                      <div class="tpd-reviews-course">
-                                         <p><span>Course:</span> Design System in Figma</p>
-                                      </div>
-                                   </div>
-                                </div>
-                             </li>
-                          </ul>
-                       </div>
-                       <!-- course-area-start-end -->
-  
-                       <!-- pagination-area-start -->
-                       <div class="tp-dashboard-pagination pt-20">
-                          <div class="tp-pagination">
-                             <nav>
-                                <ul class="justify-content-center">
-                                   <li>
-                                      <a href="blog.html" class="tp-pagination-prev prev page-numbers">
-                                         <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M1.00017 6.77879L14 6.77879" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M6.24316 11.9999L0.999899 6.77922L6.24316 1.55762" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                         </svg>
-                                      </a>
-                                   </li>
-                                   <li>
-                                      <a href="#">1</a>
-                                   </li>
-                                   <li>
-                                      <span class="current">2</span>
-                                   </li>
-                                   <li>
-                                      <a href="#">3</a>
-                                   </li>
-                                   <li>
-                                      <a href="#" class="next page-numbers">
-                                         <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M13.9998 6.77883L1 6.77883" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                            <path d="M8.75684 1.55767L14.0001 6.7784L8.75684 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                                         </svg>                                     
-                                      </a>
-                                   </li>
-                                </ul>
-                             </nav>
-                          </div>
-                       </div>
-                       <!-- pagination-area-end -->
-  
-                    </div>
-                    <!-- dashboard-content-area-end -->
+                     <!-- dashboard-content-area-start -->
+                     <div class="tpd-content-layout">
+                        <style>
+                           .tpd-table{
+                              overflow-x:hidden;
+                           }
+                        </style>
 
+                        <!-- review-list-start -->
+                        <div class="tpd-table mb-25 p-0">
+                           <ul>
+                              <li class="tpd-table-head mt-40 ml-20">
+                                 <div class="tpd-table-row">
+                                    <div class="tpd-reviews-student">
+                                       <h4 class="tpd-table-title">Student</h4>
+                                    </div>
+                                    <div class="tpd-reviews-date">
+                                       <h4 class="tpd-table-title">Date</h4>
+                                    </div>
+                                    <div class="tpd-reviews-feedback">
+                                       <h4 class="tpd-table-title">Feedback</h4>
+                                    </div>
+                                 </div>
+                              </li>
+
+                              <li class="ml-20">
+                                 <div class="tpd-table-row">
+                                    <div class="tpd-reviews-student">
+                                       <div class="tpd-reviews-profile d-flex align-items-center">
+                                          <div class="tpd-reviews-thumb">
+                                             <img src="{{asset($photo)}}" alt="">
+                                          </div>
+                                          <h4 class="tpd-reviews-thumb-title">{{$name}}</h4>
+                                       </div>
+                                    </div>
+                                    <div class="tpd-reviews-date" wire:ignore>
+                                       <span>{{ $created_at ? $created_at->format('F j, Y ') : '' }}</span>
+                                       <p>{{ $created_at ? $created_at->format('g:i A') : '' }}</p>
+                                    </div>
+                                    <div class="tpd-reviews-feedback">
+                                       <div class="tp-instructor-rating">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                       </div>
+                                       <span>{{ $reviews_content }}</span>
+                                       <div class="tpd-course-wrap">
+                                          {{-- <span class="tpd-course-name">Course:</span>
+                                          <span class="tpd-course-title">Design Masterclass</span> --}}
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                        <!-- review-list-end -->
+
+                        <!-- pagination-area-start -->
+                        <div class="tp-dashboard-pagination pt-20">
+                           
+                        </div>
+                        <!-- pagination-area-end -->
+                     </div>
+                     <!-- dashboard-content-area-end -->
+                     
+                     <!-- review-Form-start -->
+                     <div class="row">
+                        <div class="col-12">
+                           <form wire:submit.prevent="addReview">
+                              <!-- session msg-->
+                              @include('livewire.partials.flash-msg')
+                              <!-- end session msg-->
+                              <div class="tpd-setting-box pt-120">
+
+                                 <div class="tpd-setting-from p-0">
+                                    <div class="row">
+                                       <div class="col-lg-12">
+                                          <div class="tpd-input">
+                                             <label for="Review"><h4>Add Review</h4></label>
+                                             <textarea wire:model="reviews_content" placeholder="What's Your Mind"></textarea>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+
+
+                                 <div class="tpd-setting-cartificate p-0">
+                                    <div class="tpd-setting-cartificate-btn">
+                                       <button> 
+                                             <span wire:loading.remove>Save</span>
+                                             <span wire:loading>
+                                                <div class="spinner-border text-light" role="status">
+                                                      <span class="visually-hidden">Loading...</span>
+                                                </div>
+                                             </span>
+                                       </button>
+                                    </div>
+                                 </div>
+
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                     <!-- review-Form-start -->
                  </div>
               </div>
            </div>
