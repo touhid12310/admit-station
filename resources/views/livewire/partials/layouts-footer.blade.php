@@ -10,7 +10,10 @@
                           <a href="{{url('/')}}"><img src="{{asset('assets/images/logo.png')}}" alt=""></a>
                        </div>
                        <div class="tp-footer-widget-content">
-                          <p>1st floor,Agrabad shopping complex,1742 Sheikh Mujib Road, Beside Orchid Business Hotel,Chowmuhony,Agrabad , Chittagong, Bangladesh</p>
+                        <p>Dhaka Office: D/16,block -E,zakir Hossain road, bedise king khaled Institute,lalmatia,Mohammadpur,Dhaka-1207 Bangladesh</p>
+                     </div>
+                       <div class="tp-footer-widget-content">
+                          <p>Chattogram Office: 1st floor,Agrabad shopping complex,1742 Sheikh Mujib Road,<br> Beside Orchid Business Hotel,Chowmuhony,Agrabad ,<br> Chittagong, Bangladesh</p>
                        </div>
                        <div class="tp-footer-contact">
                           <span>Got Questions? Call us</span>
