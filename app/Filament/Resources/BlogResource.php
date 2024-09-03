@@ -119,7 +119,7 @@ class BlogResource extends Resource
             ])->defaultSort('id', 'desc')
             
             ->filters([
-                //
+                Tables\Filters\TrashedFilter::make(),
             ])
             ->actions([
                 ActionGroup::make([
@@ -133,9 +133,7 @@ class BlogResource extends Resource
                 ->button()
             ])
             ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
-                ]),
+                Tables\Actions\RestoreBulkAction::make(),
             ]);
     }
 

@@ -42,9 +42,9 @@ class DatabaseSeeder extends Seeder
         Blog::factory(10)->create(); 
            
         BlogCategory::factory()->count(3)->sequence(
-            ['name' => 'Web Design'],
-            ['name' => 'Health'],
-            ['name' => 'Lifestyle']
+            ['name' => 'University'],
+            ['name' => 'School'],
+            ['name' => 'College']
         )->create();
     }
 }

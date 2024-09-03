@@ -180,6 +180,7 @@ class InstituteResource extends Resource
                     'Approved' => 'Approved',
                     'Cancel' => 'Cancel',
                 ]),
+                Tables\Filters\TrashedFilter::make(),
             ])
             ->actions([
                 ActionGroup::make([
@@ -193,9 +194,7 @@ class InstituteResource extends Resource
                     ->button()
             ])
             ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
-                ]),
+                Tables\Actions\RestoreBulkAction::make(),
             ]);
     }
 

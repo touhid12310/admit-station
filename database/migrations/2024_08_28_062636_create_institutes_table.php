@@ -30,7 +30,7 @@ return new class extends Migration
             $table->integer('user_id')->nullable();
             $table->enum('institute_type', ['School', 'College', 'University']);
             $table->enum('app_status', ['Pending', 'Approved', 'Cancel'])->default('Pending');
-            $table->enum('status', ['Active', 'Inactive'])->default('Active');
+            $table->softDeletes();
             $table->timestamps();
         });
     }

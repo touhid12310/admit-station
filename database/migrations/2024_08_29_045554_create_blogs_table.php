@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->longText('description')->nullable();
             $table->enum('status', ['Pending', 'Approved', 'Cancel'])->default('Pending');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
