@@ -33,7 +33,7 @@ use App\Livewire\Institute\InstituteSocialAccountSetting;
 
 
 
-Route::get('/', Home::class);
+Route::get('/', Home::class)->name('home');
 Route::get('/about', About::class)->name('about');
 Route::get('/login', Login::class)->name('login');
 Route::get('/register', Register::class)->name('register');
