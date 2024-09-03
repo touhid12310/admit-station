@@ -13,9 +13,10 @@ return new class extends Migration
     {
         Schema::create('reviews', function (Blueprint $table) {
             $table->id();
-            $table->string('user_id');
-            $table->string('star_given')->nullable();
+            $table->unsignedBigInteger('user_id');
+            $table->enum('rating', ['1', '2', '3', '4', '5'])->nullable();
             $table->text('reviews_content');
+            $table->enum('status', ['Visible', 'Invisibale'])->default('Invisibale');
             $table->timestamps();
         });
     }

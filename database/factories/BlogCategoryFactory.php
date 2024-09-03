@@ -18,6 +18,7 @@ class BlogCategoryFactory extends Factory
     {
         return [
            'name' => fake()->randomElement([ 'Web Design','Health' ,'Lifestyle' ]),
+           'slug' => fake()->slug(),	
         ];
     }
 }

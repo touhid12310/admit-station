@@ -5,9 +5,14 @@ namespace App\Filament\Resources;
 use App\Filament\Resources\BlogCategoryResource\Pages;
 use App\Filament\Resources\BlogCategoryResource\RelationManagers;
 use App\Models\BlogCategory;
+use Illuminate\Support\Str;
 use Filament\Forms;
 use Filament\Forms\Components\Grid;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
+use Filament\Forms\Get;
+use Filament\Forms\Set;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
@@ -29,9 +34,27 @@ class BlogCategoryResource extends Resource
             ->schema([
                 Grid::make()
                     ->schema([
-                        Forms\Components\TextInput::make('name')
+                        TextInput::make('name')
                             ->required()
-                            ->maxLength(255),
+                            ->maxLength(255)
+                            ->live(onBlur: true)
+                            ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
+                        
+                        TextInput::make('slug')
+                            ->required()
+                            ->maxLength(255)
+                            ->disabled()
+                            ->columnSpanFull()
+                            ->dehydrated()
+                            ->unique(BlogCategory::class, 'slug', ignoreRecord: true),
+                        
+                        Select::make('status')
+                            ->options([
+                                'Active' => 'Active',
+                                'Inactive' => 'Inactive',
+                            ])
+                            ->default('Active')
+                            ->preload(),
                     ])->columns(1),
             ])->columns(1);
     }
@@ -42,6 +65,16 @@ class BlogCategoryResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
+                Tables\Columns\TextColumn::make('slug')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('status')
+                    ->badge()
+                    ->color(fn (string $state): string => match ($state){
+                        'Active' => 'success',
+                        'Inactive' => 'danger',
+                    })
+                    ->searchable(),
+               
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()
