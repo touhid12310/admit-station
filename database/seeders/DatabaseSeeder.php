@@ -38,9 +38,7 @@ class DatabaseSeeder extends Seeder
 
 
         Institute::factory(10)->create();
-
-        Blog::factory(10)->create(); 
-           
+         
         BlogCategory::factory()->count(3)->sequence(
             ['name' => 'University'],
             ['name' => 'School'],
