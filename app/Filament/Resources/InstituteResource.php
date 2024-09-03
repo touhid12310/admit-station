@@ -193,8 +193,12 @@ class InstituteResource extends Resource
                     ->color('primary')
                     ->button()
             ])
+           
             ->bulkActions([
-                Tables\Actions\RestoreBulkAction::make(),
+                Tables\Actions\BulkActionGroup::make([
+                    Tables\Actions\DeleteBulkAction::make(),
+                    Tables\Actions\RestoreBulkAction::make(),
+                ]),
             ]);
     }
 
