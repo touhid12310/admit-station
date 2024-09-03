@@ -53,7 +53,7 @@
                                             <a href="{{ route('blog-details', $blog->slug) }}"
                                                 wire:navigate>{{ $blog->title }}</a>
                                         </h3>
-                                        <p>{!! Str::limit( $blog ->description, 50)!!}</p>
+                                        <p>{!! Str::limit( $blog ->description, 100)!!}</p>
                                         <div class="tp-postbox-btn">
                                             <a href="{{ route('blog-details', $blog->slug) }}" wire:navigate>Read More
                                                 <span><svg width="8" height="12" viewBox="0 0 8 12"
