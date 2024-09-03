@@ -240,9 +240,10 @@
                   <div class="col-xxl-2 col-xl-2 col-lg-6 col-md-6 col-6">
                      <div class="tp-header-logo-1 tp-header-logo">
                         <!-- logo-1 for default and  logo-2 for scroll-->
+                       
                         <a href="{{ url('/')}}" wire:navigate>
-                           <img class="logo-1" src="{{ asset('assets/images/logo.png') }}" alt="logo">
-                           <img class="logo-2" src="{{ asset('assets/images/logo.png') }}" alt="logo">
+                           <img class="logo-1" src="{{ asset('assets/images/logo.png') }}" alt="logo" width="100" height="40">
+                           <img class="logo-2" src="{{ asset('assets/images/logo.png') }}" alt="logo" width="100" height="40">
                         </a>
                      </div>
                   </div>
