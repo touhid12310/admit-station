@@ -29,6 +29,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class BlogResource extends Resource
 {
     protected static ?string $model = Blog::class;
+    protected static ?string $recordTitleAttribute = 'title';
     protected static ?string $navigationGroup = 'Blogs';
     protected static ?string $navigationLabel = 'Posts';
     protected static ?int $navigationSort = 2;

@@ -19,3 +19,13 @@ exploring options for studying abroad from Dhaka.
 
      php artisan make:filament-resource Blog --generate
      php artisan make:filament-resource BlogCategory --generate
+
+## Create Overview Stats
+
+    php artisan make:filament-widget InstituteOverview --resource=InstituteResource
+    
+    php artisan make:filament-widget BlogsOverview --resource=BlogResource
+
+    php artisan make:filament-widget ApplyOvervie--resource=ApplicationHistoryResource
+
+    
