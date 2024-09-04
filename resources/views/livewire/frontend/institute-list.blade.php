@@ -192,7 +192,7 @@
                                             <div class="tp-course-item p-relative fix mb-30">
                                                 <div class="tp-course-teacher mb-15">
                                                     <span>
-                                                        <img src="{{ asset($institute->logo) }}" alt="" width="100%" height="100%">
+                                                        <img src="{{ asset($institute->logo) }}" alt="">
                                                     </span>
                                                 </div>
                                                 <div class="tp-course-thumb sidebar">
@@ -275,7 +275,7 @@
                                                         href="{{ route('details-institute', $institute->slug) }}"wire:navigate>{{ $institute->name }}</a>
                                                 </h4>
                                                 <div class="tp-course-filter-meta">
-                                                    <span><img src="{{ $institute->logo }}" alt="" width="100%" height="100%"></span>
+                                                    <span><img src="{{ $institute->logo }}" alt=""></span>
                                                     <span>
                                                         <i class="fa-solid fa-house"></i>
                                                         {{ $institute->country }}
