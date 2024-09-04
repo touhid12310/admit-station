@@ -27,76 +27,28 @@
         <div class="row">
           <div class="col-lg-12">
               <div class="tp-instructor-become-tab">
-                <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Student</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Agent</button>
-                    </li>
-                  </ul>
                   <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                       <div class="row">
-                          <div class="col-lg-4">
-                            <div class="tp-faq-wrap">
-                                <div class="tp-faq-search">
-                                  <div class="tp-header-2-search">
-                                      <form action="#">
-                                        <input type="text" placeholder="Search...">
-                                        <button class="tp-header-2-search-btn" type="submit">
-                                            <span>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                  <path d="M13.3994 13.4004L16.9995 17.0005" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                  <path d="M15.3999 8.20019C15.3999 4.22363 12.1763 1 8.1997 1C4.22314 1 0.999512 4.22363 0.999512 8.20019C0.999512 12.1767 4.22314 15.4004 8.1997 15.4004C12.1763 15.4004 15.3999 12.1767 15.3999 8.20019Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-                                              </svg>
-                                            </span>
-                                        </button>
-                                      </form>
-                                  </div>
-                                </div>
-                                <div class="tp-faq-sidebar">
-                                  <h4 class="tp-faq-sidebar-title">Related Topics</h4>
-                                  <ul>
-                                      <li><a href="my-account.html">Account/Profile (1)</a></li>
-                                      <li><a href="course-with-filter.html">Course Taking (2)</a></li>
-                                      <li><a href="#">Getting Started (1)</a></li>
-                                      <li><a href="#">Mobile (1)</a></li>
-                                      <li><a href="#">Purchase/Refunds (3)</a></li>
-                                      <li><a href="#">Troubleshooting (2)</a></li>
-                                  </ul>
-                                  <div class="tp-faq-sidebar-btn">
-                                      <a class="tp-btn-inner w-100 text-center" href="contact.html">Contact Us</a>
-                                  </div>
-                                </div>
-                            </div>
-                          </div>
-                          <div class="col-lg-8">
+                          <div class="col-lg-10 mx-auto">
                             <div class="tp-faq-box">
                                 <div class="tpd-accordion">
                                   <div class="accordion accordion-flush" id="accordionFlushExample">
-                                      <div class="accordion-item">
-                                        <h2 class="accordion-header">
+                                      
+                                    <div class="accordion-item">
+                                      <h2 class="accordion-header">
                                           <button class="accordion-button faq-expend collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                            What is Emeritus Education System?
+                                            Studying abroad from Bangladesh, but I'm not sure where to start. Can you help me ?
                                             <span class="accordion-btn"></span>
                                           </button>
-                                        </h2>
-                                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                          <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                      </h2>
+                                      <div id="flush-collapseOne" class="accordion-collapse show" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body pt-10">
+                                          We’re here to assist you every step of the way! Our knowledgeable counselors will work closely with you to understand your academic interests, career goals, and financial considerations. Based on this, we’ll recommend the best universities and programs that align with your aspirations. We’ll also support you through the entire application process, ensuring you stay on track with deadlines and meet all the necessary requirements.
                                         </div>
                                       </div>
-                                      <div class="accordion-item expand">
-                                        <h2 class="accordion-header">
-                                          <button class="accordion-button faq-expend" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                            Can I get a refund for my Premium Membership payment?
-                                            <span class="accordion-btn"></span>
-                                          </button>
-                                        </h2>
-                                        <div id="flush-collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
-                                          <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                        </div>
-                                      </div>
+                                    </div>
+                                    
                                       <div class="accordion-item">
                                         <h2 class="accordion-header">
                                           <button class="accordion-button faq-expend collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
@@ -127,106 +79,6 @@
                                           </button>
                                         </h2>
                                         <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                          <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                      <div class="row">
-                          <div class="col-lg-4">
-                            <div class="tp-faq-wrap">
-                                <div class="tp-faq-search">
-                                  <div class="tp-header-2-search">
-                                      <form action="#">
-                                        <input type="text" placeholder="Search...">
-                                        <button class="tp-header-2-search-btn" type="submit">
-                                            <span>
-                                              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                                  <path d="M13.3994 13.4004L16.9995 17.0005" stroke="#031F42" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                                  <path d="M15.3999 8.20019C15.3999 4.22363 12.1763 1 8.1997 1C4.22314 1 0.999512 4.22363 0.999512 8.20019C0.999512 12.1767 4.22314 15.4004 8.1997 15.4004C12.1763 15.4004 15.3999 12.1767 15.3999 8.20019Z" stroke="#031F42" stroke-width="1.5" stroke-linejoin="round"/>
-                                              </svg>
-                                            </span>
-                                        </button>
-                                      </form>
-                                  </div>
-                                </div>
-                                <div class="tp-faq-sidebar">
-                                  <h4 class="tp-faq-sidebar-title">Related Topics</h4>
-                                  <ul>
-                                      <li><a href="#">Account/Profile (1)</a></li>
-                                      <li><a href="#">Course Taking (2)</a></li>
-                                      <li><a href="#">Getting Started (1)</a></li>
-                                      <li><a href="#">Mobile (1)</a></li>
-                                      <li><a href="#">Purchase/Refunds (3)</a></li>
-                                      <li><a href="#">Troubleshooting (2)</a></li>
-                                  </ul>
-                                  <div class="tp-faq-sidebar-btn">
-                                      <a class="tp-btn-inner w-100 text-center" href="#">Contact Us</a>
-                                  </div>
-                                </div>
-                            </div>
-                          </div>
-                          <div class="col-lg-8">
-                            <div class="tp-faq-box">
-                                <div class="tpd-accordion">
-                                  <div class="accordion accordion-flush" id="accordionFlushDemo">
-                                      <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                          <button class="accordion-button faq-expend collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-one" aria-expanded="false" aria-controls="flush-one">
-                                            What is Emeritus Education System?
-                                            <span class="accordion-btn"></span>
-                                          </button>
-                                        </h2>
-                                        <div id="flush-one" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                          <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                        </div>
-                                      </div>
-                                      <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                          <button class="accordion-button faq-expend collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-two" aria-expanded="false" aria-controls="flush-two">
-                                            Can I get a refund for my Premium Membership payment?
-                                            <span class="accordion-btn"></span>
-                                          </button>
-                                        </h2>
-                                        <div id="flush-two" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                          <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                        </div>
-                                      </div>
-                                      <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                          <button class="accordion-button faq-expend collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-three" aria-expanded="false" aria-controls="flush-three">
-                                            How does th Affiliate Program work?
-                                            <span class="accordion-btn"></span>
-                                          </button>
-                                        </h2>
-                                        <div id="flush-three" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                          <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                        </div>
-                                      </div>
-                                      <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                          <button class="accordion-button faq-expend collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-four" aria-expanded="false" aria-controls="flush-four">
-                                            What is included in Standard membership plan?
-                                            <span class="accordion-btn"></span>
-                                          </button>
-                                        </h2>
-                                        <div id="flush-four" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                          <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                        </div>
-                                      </div>
-                                      <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                          <button class="accordion-button faq-expend collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-five" aria-expanded="false" aria-controls="flush-five">
-                                            How to choose the right class for me?
-                                            <span class="accordion-btn"></span>
-                                          </button>
-                                        </h2>
-                                        <div id="flush-five" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                           <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
                                         </div>
                                       </div>
