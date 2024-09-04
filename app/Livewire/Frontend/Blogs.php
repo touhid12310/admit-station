@@ -22,10 +22,9 @@ class Blogs extends Component
         if ($this->search) {
             $blogs = Blog::where('status', 'Approved')->where('title', 'like', '%' . $this->search . '%')
                 ->orWhere('title', 'like', '%' . $this->search . '%')
-
                 ->orderBy('id', 'desc')->paginate($this->rows);
         } else {
-            $blogs = Blog::orderBy('id', 'desc')->where('status', 'Approved')->paginate($this->rows);
+            $blogs = Blog::orderBy('id', 'desc')->where('status', 'Approved')->orderBy('id', 'desc')->paginate($this->rows);
         }
 
         return view('livewire.frontend.blog-list', [
