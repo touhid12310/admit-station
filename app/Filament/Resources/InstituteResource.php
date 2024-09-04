@@ -62,7 +62,6 @@ class InstituteResource extends Resource
                             ->columnSpanFull(),
 
                         TextInput::make('EIIN')
-                            ->required()
                             ->label('EIIN Number')
                             ->maxLength(255),
                         
@@ -76,7 +75,7 @@ class InstituteResource extends Resource
                             ->maxLength(255),
 
                         DatePicker::make('E_year')
-                            ->format('d/m/Y')
+                            ->format('Y')
                             ->required(),
 
                         TextInput::make('country')
