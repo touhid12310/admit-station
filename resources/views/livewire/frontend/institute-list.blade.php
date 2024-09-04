@@ -192,15 +192,16 @@
                                             <div class="tp-course-item p-relative fix mb-30">
                                                 <div class="tp-course-teacher mb-15">
                                                     <span>
-                                                        <img
-                                                            src="{{ asset($institute->logo) }}"alt="">{{ $institute->name }}
+                                                        <img src="{{ asset($institute->logo) }}" alt="" width="100%" height="100%">
                                                     </span>
                                                 </div>
                                                 <div class="tp-course-thumb sidebar">
-                                                    <a href="{{ route('details-institute', $institute->slug) }}"><img
+                                                    <a href="{{ route('details-institute', $institute->slug) }}">
+                                                        <img
                                                             class="course-pink"
                                                             src="{{ asset($institute->thumb_img) }}"
-                                                            alt=""></a>
+                                                            alt="" width="100%" height="100%">
+                                                    </a>
                                                 </div>
                                                 <div class="tp-course-content">
                                                     <div class="tp-course-tag mb-10">
@@ -260,9 +261,10 @@
                                     @forelse ($institutes as $institute)
                                         <div class="tp-course-filter-item mb-25 d-flex">
                                             <div class="tp-course-list-thumb">
-                                                <a href="{{ route('details-institute', $institute->slug) }}"
-                                                    wire:navigate><img class="course-pink"
-                                                        src="{{ $institute->thumb_img }}" alt=""></a>
+                                                <a href="{{ route('details-institute', $institute->slug) }}"wire:navigate>
+                                                    <img class="course-pink"
+                                                        src="{{ $institute->thumb_img }}" alt="" width="1001px" height="801px">
+                                                    </a>
                                             </div>
                                             <div class="tp-course-filter-content">
                                                 <div class="tp-course-filter-tag mb-10">
@@ -273,7 +275,7 @@
                                                         href="{{ route('details-institute', $institute->slug) }}"wire:navigate>{{ $institute->name }}</a>
                                                 </h4>
                                                 <div class="tp-course-filter-meta">
-                                                    <span><img src="{{ $institute->logo }}" alt=""></span>
+                                                    <span><img src="{{ $institute->logo }}" alt="" width="100%" height="100%"></span>
                                                     <span>
                                                         <i class="fa-solid fa-house"></i>
                                                         {{ $institute->country }}
