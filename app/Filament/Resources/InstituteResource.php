@@ -76,6 +76,7 @@ class InstituteResource extends Resource
 
                         DatePicker::make('E_year')
                             ->format('Y')
+                            ->label('Established Year')
                             ->required(),
 
                         TextInput::make('country')
