@@ -184,7 +184,6 @@ class InstituteResource extends Resource
                     'College' => 'College',
                     'University' => 'University',
                 ]),
-                Tables\Filters\TrashedFilter::make(),
             ])
             ->actions([
                 ActionGroup::make([
@@ -199,10 +198,11 @@ class InstituteResource extends Resource
             ])
            
             ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
+                /* Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
                     Tables\Actions\RestoreBulkAction::make(),
-                ]),
+                    Tables\Actions\ForceDeleteBulkAction::make(),
+                ]), */
             ]);
     }
 
