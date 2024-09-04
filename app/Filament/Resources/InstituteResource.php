@@ -180,6 +180,11 @@ class InstituteResource extends Resource
                     'Approved' => 'Approved',
                     'Cancel' => 'Cancel',
                 ]),
+                SelectFilter::make('institute_type')->options([
+                    'School' => 'School',
+                    'College' => 'College',
+                    'University' => 'University',
+                ]),
                 Tables\Filters\TrashedFilter::make(),
             ])
             ->actions([
