@@ -1,5 +1,4 @@
 <div>
-   
     <!-- hero-area-start -->
     <section class="tp-hero-area">
         <div class="swiper tp-slider-active">
@@ -230,8 +229,8 @@
                         <div class="tp-about-exprience">
                             <div class="tp-about-exprience-text d-flex">
                                 <h3 class="tp-about-exprience-count">
-                                    <span data-purecounter-duration="1" data-purecounter-end="27"
-                                        class="purecounter">27</span>
+                                    <span data-purecounter-duration="1" data-purecounter-end="8"
+                                        class="purecounter">8</span>
                                 </h3>
                                 <p>Years of <br> Experience</p>
                             </div>
