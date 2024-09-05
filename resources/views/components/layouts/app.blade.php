@@ -11,7 +11,7 @@
     @if (!empty($meta))
         <x-seo::meta :meta="$meta" />
     @else
-        <title> {{ $title . '-' . ' Admit Station' }} </title>
+        <title> {{ $title }} </title>
     @endif
 
     {{-- @include('components/layouts/seo') --}}
