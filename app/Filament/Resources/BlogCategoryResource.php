@@ -101,7 +101,9 @@ class BlogCategoryResource extends Resource
                     ->button()
             ])
             ->bulkActions([
-                /* Tables\Actions\RestoreBulkAction::make(), */
+                Tables\Actions\BulkActionGroup::make([
+                    Tables\Actions\RestoreBulkAction::make(),
+                ]),
             ]);
     }
 
