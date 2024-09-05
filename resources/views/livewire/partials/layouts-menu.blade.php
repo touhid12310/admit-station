@@ -197,7 +197,7 @@
                   <div class="col-lg-6">
                      <div class="tp-heder-info d-flex justify-content-center justify-content-lg-start align-items-center">
                         <div class="tp-header-info-item d-none d-md-block">
-                           <span><a href="https://www.facebook.com/people/Admit-Station/61563570187566/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>7500k Followers</span>
+                           <span><a href="https://www.facebook.com/admitStation/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>10K+ Followers</span>
                         </div>
                         <div class="tp-header-info-item">
                            <span>
@@ -228,7 +228,6 @@
                         <a href="{{ route('FAQs') }}" wire:navigate>FAQs</a>
                         <a href="{{ route('contact-us') }}" wire:navigate>contact-us</a>
                         <a href="{{ route('privacy-policy') }}"wire:navigate>privacy-policy</a>
-                        <a href=""wire:navigate> Help Desk </a>
                      </div>
                   </div>
                </div>
@@ -262,7 +261,7 @@
                               <li class="has-dropdown">
                                  <a href="#">Application</a>
                                  <ul class="tp-submenu">
-                                    <li><a href="{{ route('list-institute')}}" wire:navigate>Chose an Institute</a></li>
+                                    <li><a href="{{ route('list-institute')}}" wire:navigate>Choose an Institute</a></li>
                                     <li><a href="{{ route('become-a-agent')}}" wire:navigate>Become an Agent</a></li>
                                  </ul>
                               </li>
