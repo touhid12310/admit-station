@@ -18,7 +18,7 @@ class Home extends Component
     {
         seo()
             ->title('Home | Admit-Station')
-            ->description("Admit Station a top consultancy firm in Bangladesh, We're your one-stop solution, whether you're searching for a study abroad consultancy firm near Banani or exploring options for studying abroad from Dhaka.")
+            ->description("Welcome to Admit Station, your trusted partner in navigating the path to studying abroad. We provide comprehensive guidance on admissions, scholarships, and part-time work permits for top universities worldwide. Whether you're a student in Banani, Dhaka, or beyond, our expert team is here to help you achieve your academic goals. Explore our website to find the latest insights and resources tailored to your educational journey. Take the first step towards studying at world-class institutions with Admit Station, where your future starts today.")
             ->image(url('/assets/images/hero/hero-image-1.jpg'))
             ->url(url('/'))
             ->twitter();
