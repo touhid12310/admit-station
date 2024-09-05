@@ -28,6 +28,14 @@ class BlogCategory extends Component
             $blogs = Blog::with('category')->where('blog_category_id', $this->category_id)->orderBy('id', 'desc')->where('status', 'Approved')->paginate($this->rows);
         }
 
+
+        seo()
+            ->title('Blog Category | Admit-Station')
+            ->description("Explore a wide range of categories in our blog, covering essential topics for students aspiring to study abroad. From detailed guides on university admissions and scholarship opportunities to tips on obtaining part-time work permits, our blog categories provide focused insights to help you make informed decisions. Dive into the content that matters most to your educational journey and discover valuable resources tailored to your specific needs.")
+            ->image(url('/assets/images/hero/hero-image-1.jpg'))
+            ->url(url()->current())
+            ->twitter();
+
         return view('livewire.frontend.blog-category', [
             'blogs' => $blogs
         ]);
