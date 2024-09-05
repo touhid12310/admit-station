@@ -331,7 +331,7 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="tp-counter-item item-end text-center">
                             <h3 class="tp-counter-count mb-10">
-                                <span data-purecounter-duration="1" data-purecounter-end="20"
+                                <span data-purecounter-duration="1" data-purecounter-end="150"
                                     class="purecounter">150</span>+
                             </h3>
                             <p>Colleges Listed</p>
