@@ -20,7 +20,7 @@ class Home extends Component
             ->title('Home | Admit-Station')
             ->description('Home | Admit-Station')
             ->twitter()
-            ->image('/assets/images/hero/hero-image-1.jpg');
+            ->image(url('/assets/images/hero/hero-image-1.jpg'));
 
         return view('livewire.frontend.home');
     }
