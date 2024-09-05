@@ -16,6 +16,12 @@ class Home extends Component
     }
     public function render()
     {
+
+        seo()
+            ->title('Home | Admit-Station')
+            ->description('Home | Admit-Station')
+            ->twitter();
+
         return view('livewire.frontend.home');
     }
 }

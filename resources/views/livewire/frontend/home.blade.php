@@ -313,8 +313,8 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="tp-counter-item text-center">
                             <h3 class="tp-counter-count mb-10">
-                                <span data-purecounter-duration="1" data-purecounter-end="50"
-                                    class="purecounter">50</span>K+
+                                <span data-purecounter-duration="1" data-purecounter-end="500"
+                                    class="purecounter">500</span>+
                             </h3>
                             <p>Universitys Listed</p>
                         </div>
@@ -322,8 +322,8 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="tp-counter-item text-center">
                             <h3 class="tp-counter-count mb-10">
-                                <span data-purecounter-duration="1" data-purecounter-end="48"
-                                    class="purecounter">48</span>k+
+                                <span data-purecounter-duration="1" data-purecounter-end="100"
+                                    class="purecounter">100</span>+
                             </h3>
                             <p>Schools Listed</p>
                         </div>
@@ -332,7 +332,7 @@
                         <div class="tp-counter-item item-end text-center">
                             <h3 class="tp-counter-count mb-10">
                                 <span data-purecounter-duration="1" data-purecounter-end="20"
-                                    class="purecounter">20</span>k+
+                                    class="purecounter">150</span>+
                             </h3>
                             <p>Colleges Listed</p>
                         </div>
