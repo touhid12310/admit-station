@@ -19,7 +19,8 @@ class Home extends Component
         seo()
             ->title('Home | Admit-Station')
             ->description('Home | Admit-Station')
-            ->twitter();
+            ->twitter()
+            ->image('/assets/images/hero/hero-image-1.jpg');
 
         return view('livewire.frontend.home');
     }
