@@ -48,7 +48,7 @@ class InstituteList extends Component
                     ->orWhere('city', 'like', '%' . $this->search . '%');
             });
         }
-        
+
         // Apply vendors type filters for multiple selections
         $vendorTypes = [];
         if ($this->selected_schools) {
@@ -60,16 +60,16 @@ class InstituteList extends Component
         if ($this->selected_universitis) {
             $vendorTypes[] = 'University';
         }
-        
+
         if (!empty($vendorTypes)) {
             $query->whereIn('institute_type', $vendorTypes);
         }
-        
+
         // Apply country filter if provided
         if ($this->country_name) {
             $query->where('country', $this->country_name);
         }
-        
+
         // Apply city filter if provided
         if ($this->city_name) {
             $query->where('city', $this->city_name);
@@ -87,6 +87,15 @@ class InstituteList extends Component
             'countries' => $this->country,
             'country_name' => $this->country_name,
         ]);
+
+
+        seo()
+            ->title('Institute Infromation | Admit-Station')
+            ->description("Explore top-ranked schools and universities worldwide for your educational journey. Discover institutes that align with your academic goals and ambitions. Start your path to success with us today.")
+            ->image(url('/assets/images/hero/hero-image-1.jpg'))
+            ->url(url()->current())
+            ->twitter();
+
 
         return view('livewire.frontend.institute-list', [
             'institutes' => $Institutes,
