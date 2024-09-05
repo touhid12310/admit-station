@@ -51,7 +51,6 @@
                     <div class="tp-course-requrement-widget-box">
                         <div class="tp-course-requrement-widget mb-30">
                             <div class="tp-course-requrement-widget-content">
-                                <a href="#">EIIN : {{ @$institute->EIIN }}</a>
                                 <a href="#">ESTD : {{ @$institute->E_year }}</a>
                                 <a href="#">Country : {{ @$institute->country }}</a>
                                 <a href="#">City : {{ @$institute->city }}</a>
