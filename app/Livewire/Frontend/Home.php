@@ -18,7 +18,7 @@ class Home extends Component
     {
         seo()
             ->title('Home | Admit-Station')
-            ->description('Home | Admit-Station')
+            ->description("Admit Station a top consultancy firm in Bangladesh, We're your one-stop solution, whether you're searching for a study abroad consultancy firm near Banani or exploring options for studying abroad from Dhaka.")
             ->twitter()
             ->image(url('/assets/images/hero/hero-image-1.jpg'));
 
