@@ -13,6 +13,7 @@ use Filament\Forms;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Group;
 use Filament\Forms\Components\MarkdownEditor;
+use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
@@ -78,7 +79,7 @@ class BlogResource extends Resource
                     ]),
 
                     Section::make('Description')->schema([
-                        MarkdownEditor::make('description')
+                        RichEditor::make('description')
                         ->columnSpanFull()
                         ->fileAttachmentsDirectory('Blogs'),
                     ]),
