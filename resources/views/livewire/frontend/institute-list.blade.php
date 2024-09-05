@@ -286,7 +286,8 @@
                                                     </span>
                                                 </div>
                                                 <div class="tp-course-list-p">
-                                                    <p>{{ substr($institute->description, 0, 150) . '...' }} </p>
+                                                   {{--  <p>{{ substr($institute->description, 0, 150) . '...' }} </p> --}}
+                                                    <p>{!! Str::limit( $institute ->description, 100)!!}</p>
                                                 </div>
                                                 <div
                                                     class="tp-course-filter-pricing d-flex align-items-center justify-content-between">
