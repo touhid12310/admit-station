@@ -86,15 +86,6 @@
                                                    </div>
 
                                                    <div class="col-lg-6">
-                                                         <div class="tpd-input">
-                                                            <label for="EIIN No">EIIN No</label>
-                                                            <input type="number" wire:model="EIIN" placeholder="Type Institute Name">
-                                                         </div>
-                                                         @error('EIIN')
-                                                            <div class="m-2 text-danger">{{ $message }}</div>
-                                                         @enderror
-                                                      </div>
-                                                   <div class="col-lg-6">
                                                          <div class="tpd-date">
                                                             <label for="Established Year">Established Year</label>
                                                             <input type="date" wire:model="E_year" class="form-control" placeholder="Established Year" min="1900" max="{{ date('Y') }}">
@@ -219,16 +210,7 @@
                                              </div>
                                           </div>
                                        </li>
-                                       <li>
-                                          <div class="tp-profile-info d-flex">
-                                             <div class="tp-profile-info-tag">
-                                                <span>EIIN No</span>
-                                             </div>
-                                             <div class="tp-profile-info-details">
-                                                <span><a href="">{{$apply->EIIN}}</a></span>
-                                             </div>
-                                          </div>
-                                       </li>
+                                       
                                        <li>
                                           <div class="tp-profile-info d-flex">
                                              <div class="tp-profile-info-tag">

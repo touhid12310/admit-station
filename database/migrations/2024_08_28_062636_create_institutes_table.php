@@ -16,7 +16,6 @@ return new class extends Migration
             $table->id();
             $table->string('slug');
             $table->string('name');
-            $table->string('EIIN')->nullable(); /* EIIN (Educational Institute Identification Number) */
             $table->string('E_year')->nullable(); 
             $table->longText('description')->nullable();
             $table->string('country_code')->nullable();

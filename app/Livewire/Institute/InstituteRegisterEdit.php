@@ -17,7 +17,6 @@ class InstituteRegisterEdit extends Component
     public $mobile_no;
     public $email;
     public $institute_type;
-    public $EIIN;
     public $E_year;
     public $country;
     public $city;
@@ -38,7 +37,6 @@ class InstituteRegisterEdit extends Component
         $this->mobile_no = $institute->mobile_no;
         $this->email = $institute->email;
         $this->institute_type = $institute->institute_type;
-        $this->EIIN = $institute->EIIN;
         $this->E_year = $institute->E_year;
         $this->country = $institute->country;
         $this->city = $institute->city;
@@ -58,7 +56,6 @@ class InstituteRegisterEdit extends Component
             'mobile_no' => 'required',
             'email' => 'required',
             'institute_type' => 'required',
-            'EIIN' => 'required',
             'E_year' => 'required',
             'country' => 'required',
             'city' => 'required',
@@ -71,7 +68,6 @@ class InstituteRegisterEdit extends Component
         $institute->mobile_no = $this->mobile_no;
         $institute->email = $this->email;
         $institute->institute_type = $this->institute_type;
-        $institute->EIIN = $this->EIIN;
         $institute->E_year = $this->E_year;
         $institute->country = $this->country;
         $institute->city = $this->city;

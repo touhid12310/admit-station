@@ -61,15 +61,6 @@ class InstituteResource extends Resource
                             ->maxLength(255)
                             ->columnSpanFull(),
 
-                        TextInput::make('EIIN')
-                            ->label('EIIN Number')
-                            ->maxLength(255),
-                        
-                        
-                        TextInput::make('country_code')
-                            ->maxLength(255)
-                            ->default(null),
-
                         TextInput::make('mobile_no')
                             ->required()
                             ->maxLength(255),

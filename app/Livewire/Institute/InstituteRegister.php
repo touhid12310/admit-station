@@ -17,7 +17,6 @@ class InstituteRegister extends Component
     public $mobile_no;
     public $email;
     public $institute_type;
-    public $EIIN;
     public $E_year;
     public $country;
     public $city;
@@ -38,7 +37,6 @@ class InstituteRegister extends Component
             'mobile_no' => 'required',
             'email' => 'required',
             'institute_type' => 'required',
-            'EIIN' => 'required',
             'E_year' => 'required',
             'country' => 'required',
             'city' => 'required',
@@ -54,7 +52,7 @@ class InstituteRegister extends Component
         }
         $slug = Str::slug($this->name);
 
-        $check = Institute::where('email', $this->email)->orWhere('EIIN', $this->EIIN)->orWhere('user_id', auth()->user()->id)->first();
+        $check = Institute::where('email', $this->email)->orWhere('user_id', auth()->user()->id)->first();
         if($check){
             $this->dispatch('swal', [
                 'title' => 'You Already Applied.',
@@ -70,7 +68,6 @@ class InstituteRegister extends Component
             'email'         => $this->email,
             'mobile_no'     => $this->mobile_no,
             'institute_type'     => $this->institute_type,
-            'EIIN'          => $this->EIIN,
             'E_year'          => $this->E_year,
             'country'       => $this->country,
             'city'          => $this->city,
