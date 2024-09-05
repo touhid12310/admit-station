@@ -8,8 +8,11 @@
     <!-- Place favicon.ico in the root directory -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
 
-    <x-seo::meta />
-
+    @if (!empty($meta))
+        <x-seo::meta :meta="$meta" />
+    @else
+        <title> {{ $title . '-' . ' Admit Station' }} </title>
+    @endif
 
     {{-- @include('components/layouts/seo') --}}
     <!-- CSS here -->
