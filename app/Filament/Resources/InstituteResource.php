@@ -175,6 +175,8 @@ class InstituteResource extends Resource
                     'College' => 'College',
                     'University' => 'University',
                 ]),
+
+                Tables\Filters\TrashedFilter::make(),
             ])
             ->actions([
                 ActionGroup::make([
