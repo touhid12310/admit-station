@@ -25,6 +25,7 @@ return new class extends Migration
             $table->string('city');
             $table->string('address');
             $table->string('logo')->nullable();
+            $table->string('pdf')->nullable();
             $table->string('thumb_img')->nullable();
             $table->integer('user_id')->nullable();
             $table->enum('institute_type', ['School', 'College', 'University']);

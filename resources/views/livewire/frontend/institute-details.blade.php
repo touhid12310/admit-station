@@ -114,15 +114,16 @@
                                 </div>
                             @endauth
 
+                            @if (!empty($institute->pdf))
+                                <div class="tp-btn btn-1 text-center mt-20 w-100">
+                                    <a href="{{ asset($institute->pdf) }}" target="_blank">
+                                        <i class="fa-solid fa-eye"></i>
+                                        View More PDF
+                                    </a>
+                                </div>
+                            @endif
+                           
                         </div>
-                        {{--  <div class="tp-course-requrement-widget-faq">
-                            <h4 class="tp-course-requrement-widget-faq-title">Do you have <br>
-                                more questions?</h4>
-                            <p>Read our <a href="{{ route('FAQs') }}">FAQ</a></p>
-                            <div class="tp-course-requrement-widget-faq-thumb">
-                                <img src="{{ asset($institute->thumb_img) }}" alt="{{$institute->thumb_img}}" wire:ignore style="width: 100%">
-                            </div>
-                        </div> --}}
                     </div>
                 </div>
             </div>

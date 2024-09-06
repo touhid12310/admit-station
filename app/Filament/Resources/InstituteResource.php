@@ -99,6 +99,12 @@ class InstituteResource extends Resource
                             ->label('Institute Image')
                             ->disk('real_public')
                             ->directory('Institute'),
+
+                        FileUpload::make('pdf')
+                            ->acceptedFileTypes(['application/pdf'])
+                            ->previewable()
+                            ->directory('Institute')
+                            ->label('Institute PDF')
                     ])->columns(1),
                     Section::make('Status')->schema([ 
                         Select::make('institute_type')
