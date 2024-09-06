@@ -9,9 +9,15 @@ use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Support\Enums\ActionSize;
+use Filament\Support\Enums\FontWeight;
 use Filament\Tables;
 use Filament\Tables\Grouping\Group;
 use Filament\Tables\Actions\ActionGroup;
+use Filament\Tables\Columns\ImageColumn;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Columns\Layout\Split;
+use Filament\Tables\Columns\Layout\Stack;
+use Filament\Tables\Columns\SelectColumn;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
@@ -30,36 +36,47 @@ class ApplicationHistoryResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('user.name')
-                    ->label('User Name')
-                    ->searchable()
-                    ->columnSpan(1),
-
-                Tables\Columns\TextColumn::make('user.email')
-                    ->label('User Email')
-                    ->searchable()
-                    ->columnSpan(1),
-                
-                Tables\Columns\TextColumn::make('institute.name')
-                    ->label('Institute Name')
-                    ->searchable(),
-                
-                Tables\Columns\SelectColumn::make('status')
-                    ->options([
-                        'Pending' => 'Pending',
-                        'Approved' => 'Approved',
-                        'Cancel' => 'Cancel',
+                Split::make([
+                    Stack::make([
+                        ImageColumn::make('user.photo')
+                        ->circular(),
+                        TextColumn::make('user.name')
+                            ->weight(FontWeight::Bold)
+                            ->searchable()
+                            ->sortable(),
+                        TextColumn::make('user.email'),
                     ]),
-
-                Tables\Columns\TextColumn::make('created_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-                Tables\Columns\TextColumn::make('updated_at')
-                    ->dateTime()
-                    ->sortable()
-                    ->toggleable(isToggledHiddenByDefault: true),
-            ])
+                    Stack::make([
+                        ImageColumn::make('institute.thumb_img'),
+                        TextColumn::make('institute.name')
+                        ->weight(FontWeight::Bold)
+                        ->searchable(),
+                        TextColumn::make('institute.email')
+                        ->label('Institute Name')
+                        ->searchable(),
+                    
+                    ]),
+                    Stack::make([
+                        TextColumn::make('status')
+                            ->searchable()
+                            ->label('Status')
+                            ->badge()
+                            ->color(fn (string $state): string => match ($state) {
+                                'Pending' => 'info',
+                                'Approved' => 'success',
+                                'Cancel' => 'danger',
+                            }),
+                    ]),
+                    Stack::make([
+                        SelectColumn::make('status')
+                            ->options([
+                                'Pending' => 'Pending',
+                                'Approved' => 'Approved',
+                                'Cancel' => 'Cancel',
+                            ]),
+                    ]),
+                ])
+            ])->defaultSort('created_at', 'desc')
            
             ->filters([
                 SelectFilter::make('status')->options([
@@ -72,9 +89,7 @@ class ApplicationHistoryResource extends Resource
                 //
             ])
             ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
-                ]),
+                //
             ]);
     }
 

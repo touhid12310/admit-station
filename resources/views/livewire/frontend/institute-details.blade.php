@@ -44,6 +44,16 @@
                                     </div>
                                 </div>
                             </div>
+                           
+                            @if (!empty($institute->pdf))
+                            <p class="mt-20">Want to know more about this {{ $institute->institute_type }}? Please click the below button to download the Document.</p>
+                                <div class="tp-btn btn-1 text-center mt-20 mb-30 w-100">
+                                    <a href="{{ asset($institute->pdf) }}" target="_blank">
+                                        <i class="fa-solid fa-eye"></i>
+                                        Download pdf
+                                    </a>
+                                </div>
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -113,16 +123,6 @@
                                     <a href="{{ route('login') }}">Apply Now</a>
                                 </div>
                             @endauth
-
-                            @if (!empty($institute->pdf))
-                                <div class="tp-btn btn-1 text-center mt-20 w-100">
-                                    <a href="{{ asset($institute->pdf) }}" target="_blank">
-                                        <i class="fa-solid fa-eye"></i>
-                                        View More PDF
-                                    </a>
-                                </div>
-                            @endif
-                           
                         </div>
                     </div>
                 </div>
