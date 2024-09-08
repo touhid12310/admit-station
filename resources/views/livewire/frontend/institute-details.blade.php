@@ -50,7 +50,7 @@
                                 <div class="tp-btn btn-1 text-center mt-20 mb-30 w-100">
                                     <a href="{{ asset($institute->pdf) }}" target="_blank">
                                         <i class="fa-solid fa-eye"></i>
-                                        Download pdf
+                                        Download Fact Sheets
                                     </a>
                                 </div>
                             @endif
