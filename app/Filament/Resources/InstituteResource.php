@@ -103,6 +103,7 @@ class InstituteResource extends Resource
                         FileUpload::make('pdf')
                             ->acceptedFileTypes(['application/pdf'])
                             ->previewable()
+                            ->maxSize(10240) // 10MB
                             ->directory('Institute')
                             ->label('Institute PDF')
                     ])->columns(1),
