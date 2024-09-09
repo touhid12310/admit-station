@@ -32,7 +32,7 @@ use App\Livewire\Institute\InstituteSocialAccountSetting;
 use Illuminate\Support\Facades\Hash;
 
 Route::get('test', function(){
-    Hash::make('123456');
+    echo Hash::make('123456');
 });
 
 Route::get('/', Home::class)->name('home');
