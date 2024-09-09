@@ -20,9 +20,9 @@ class Login extends Component
         ]);
 
         // $student login normal and $institute login guard 
-        if (auth()->attempt(['email' => $this->email, 'password' => $this->password, 'user_type' => 'student'])) {
+        if (auth()->attempt(['email' => $this->email, 'password' => bcrypt($this->password), 'user_type' => 'student'])) {
             return redirect()->route('student.dashboard');
-        } elseif (auth()->guard('institute')->attempt(['email' => $this->email, 'password' => $this->password, 'user_type' => 'institute'])) {
+        } elseif (auth()->guard('institute')->attempt(['email' => $this->email, 'password' => bcrypt($this->password), 'user_type' => 'institute'])) {
             return redirect()->route('institute.dashboard');
         } else {
             $this->dispatch('swal', [
