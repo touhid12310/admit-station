@@ -11,7 +11,7 @@
                             <div class="tp-instructor-info d-flex">
                                 <div class="tp-instructor-avatar">
                                     @if (auth()->user()->photo)
-                                        <img src="{{ asset( Auth::user()->photo) }}" alt="">
+                                        <img src="{{ asset(auth()->user()->photo) }}" alt="">
                                     @else
                                         <img src="{{ asset('assets/images/default.jpg') }}" alt="">
                                     @endif
