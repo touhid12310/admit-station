@@ -14,6 +14,8 @@ class StudentProfile extends Component
     public $bio;
     public $created_at;
     public $user_type;
+    public $photo;
+    public $cover_photo;
     
     public function mount()
     {
@@ -26,6 +28,8 @@ class StudentProfile extends Component
         $this->bio = $user ? $user->bio : null;
         $this->created_at = $user ? $user->created_at : null;
         $this->user_type = $user ? $user->user_type : null;
+        $this->photo = $user ? $user->photo : null;
+        $this->cover_photo = $user ? $user->cover_photo : null;
     }
 
     public function render()

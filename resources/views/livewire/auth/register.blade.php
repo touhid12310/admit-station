@@ -177,7 +177,7 @@
             setTimeout(() => {
                 // $(".user_type").niceSelect();
                 $(".institute_type").niceSelect();
-            }, 700);
+            }, 500);
         })
 
         // Listen to the change event
