@@ -32,6 +32,7 @@ class Register extends Component
         ]);
 
         unset($data['confirmed_password']);
+        $data['password'] = Hash::make($data['password']);
         $data['user_type'] = $this->user_type;
         $data['institute_type'] = $this->institute_type;
         User::create($data);
