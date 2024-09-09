@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="tp-dashboard-banner-bg mt-30" data-background=" @if (auth()->user()->photo) {{ asset($cover_photo) }}  @else {{ asset('assets/images/cover.jpg') }} @endif">
+                        <div class="tp-dashboard-banner-bg mt-30" data-background=" @if (auth()->user()->cover_photo) {{ asset($cover_photo) }}  @else {{ asset('assets/images/cover.jpg') }} @endif">
                         <div class="tp-instructor-wrap d-flex justify-content-between">
                             <div class="tp-instructor-info d-flex">
                                 <div class="tp-instructor-avatar">
