@@ -29,9 +29,11 @@ use App\Livewire\Institute\InstituteProfileSetting;
 use App\Livewire\Institute\InstitutePasswordSetting;
 use App\Livewire\Student\StudentSocialProfileSetting;
 use App\Livewire\Institute\InstituteSocialAccountSetting;
+use Illuminate\Support\Facades\Hash;
 
-
-
+Route::get('test', function(){
+    Hash::make('123456');
+});
 
 Route::get('/', Home::class)->name('home');
 Route::get('/about', About::class)->name('about');
