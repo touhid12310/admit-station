@@ -32,11 +32,11 @@
                        </div>
                        <div class="row">
 
-                           <div class="col-lg-4">
+                           <div class="col-lg-5">
                                <div class="tp-fact-item d-flex align-items-center justify-content-between">
                                     <div class="tp-fact-content">
-                                        <h4 class="tp-fact-count">20</h4>
-                                        <span>Active Courses</span>
+                                        <h4 class="tp-fact-count">{{$instituteAdded}}</h4>
+                                        <span>Institute added</span>
                                     </div>
                                     <div class="tp-fact-icon">
                                         <span><img src="{{ asset('assets/img/dashboard/icon/fact/teacher.svg') }}" alt="fact-icon"></span>
@@ -44,11 +44,11 @@
                                 </div>
                            </div>
 
-                           <div class="col-lg-4">
+                           <div class="col-lg-5">
                                 <div class="tp-fact-item d-flex align-items-center justify-content-between">
                                     <div class="tp-fact-content">
-                                        <h4 class="tp-fact-count">84</h4>
-                                        <span>Enrolled Courses</span>
+                                        <h4 class="tp-fact-count">{{$totalStudentApplied}}</h4>
+                                        <span>Total Student Applied</span>
                                     </div>
                                     <div class="tp-fact-icon">
                                         <span class="common-pale-yellow"><img src="{{ asset('assets/img/dashboard/icon/fact/enroll-icon.svg') }}" alt="fact-icon"></span>
@@ -56,17 +56,6 @@
                                 </div>
                            </div>
 
-                           <div class="col-lg-4">
-                               <div class="tp-fact-item d-flex align-items-center justify-content-between">
-                                    <div class="tp-fact-content">
-                                        <h4 class="tp-fact-count">42</h4>
-                                        <span>Completed Courses</span>
-                                    </div>
-                                    <div class="tp-fact-icon">
-                                        <span class="common-pale-pacific"><img src="{{ asset('assets/img/dashboard/icon/fact/cup.svg') }}" alt="fact-icon"></span>
-                                    </div>
-                                </div>
-                           </div>
                        </div>
                    </section>
                    <!-- fact-area-end -->
