@@ -177,12 +177,11 @@
             setTimeout(() => {
                 // $(".user_type").niceSelect();
                 $(".institute_type").niceSelect();
-            }, 500);
+            }, 700);
         })
 
         // Listen to the change event
         $('body').on('change', '.institute_type', function(e) {
-            alert(this.value);
             @this.set('institute_type', this.value); // Update Livewire model manually
             // setTimeout(() => {
             //     $(".user_type").niceSelect();
