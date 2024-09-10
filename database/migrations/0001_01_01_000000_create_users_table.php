@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('photo')->nullable();
             $table->string('cover_photo')->nullable();
             $table->string('certificate_signature')->nullable();
-            $table->string('certificates_img')->nullable();
+            $table->json('certificates_img')->nullable();
             $table->string('phone_no')->nullable();
             $table->string('occupation')->nullable();
             $table->text('bio')->nullable(); //Biography or About_me

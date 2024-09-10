@@ -11,6 +11,7 @@ class InstituteProfileSetting extends Component
 {
     use WithFileUploads;
 
+    public $user_id;
     public $name;
     public $email;
     public $phone_no;
@@ -24,7 +25,7 @@ class InstituteProfileSetting extends Component
     public function mount()
     {
         $user = auth()->user();
-
+        $this->user_id = $user ? $user->id : null;
         $this->name = $user ? $user->name : null;
         $this->email = $user ? $user->email : null;
         $this->phone_no = $user ? $user->phone_no : null;
@@ -36,7 +37,7 @@ class InstituteProfileSetting extends Component
 
     public function update(){
     
-        User::where('id', auth()->user()->id)->update([
+        User::where('id', $this->user_id)->update([
             'name' => $this->name,
             'email' => $this->email,
             'phone_no' => $this->phone_no,
@@ -58,7 +59,7 @@ class InstituteProfileSetting extends Component
         ]);
 
         $upload = $this->photo->store('uploads/Users', 'real_public');
-        $user = User::where('id', auth()->user()->id)->update([
+        $user = User::where('id', $this->user_id)->update([
             'photo' => $upload
         ]);
 
@@ -66,6 +67,8 @@ class InstituteProfileSetting extends Component
             'title' => 'Photo updated successfully.',
             'icon' => 'success',
         ]);
+
+        return redirect()->route('institute.profile-setting', $this->user_id);
     }
     
     function updatedCoverPhoto()
@@ -76,7 +79,7 @@ class InstituteProfileSetting extends Component
         ]);
 
         $cover_upload = $this->cover_photo->store('uploads/Users', 'real_public');
-        $user = User::where('id', auth()->user()->id)->update([
+        $user = User::where('id', $this->user_id)->update([
             'cover_photo' => $cover_upload
         ]);
 
@@ -84,6 +87,7 @@ class InstituteProfileSetting extends Component
             'title' => 'Cover Photo updated successfully.',
             'icon' => 'success',
         ]);
+        return redirect()->route('institute.profile-setting', $this->user_id);
     }
     public function render()
     {

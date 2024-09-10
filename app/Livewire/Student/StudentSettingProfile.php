@@ -13,7 +13,7 @@ class StudentSettingProfile extends Component
 {
 
     use WithFileUploads;
-
+    public $user_id;
     public $name;
     public $email;
     public $phone_no;
@@ -22,12 +22,13 @@ class StudentSettingProfile extends Component
     public $photo;
     public $cover_photo;
 
-    public $cartificates = [];
+    public $certificates_img = [];
     
     public function mount()
     {
         $user = auth()->user();
 
+        $this->user_id = $user ? $user->id : null;
         $this->name = $user ? $user->name : null;
         $this->email = $user ? $user->email : null;
         $this->phone_no = $user ? $user->phone_no : null;
@@ -35,11 +36,12 @@ class StudentSettingProfile extends Component
         $this->bio = $user ? $user->bio : null;
         $this->photo = $user ? $user->photo : null;
         $this->cover_photo = $user ? $user->cover_photo : null;
+        $this->certificates_img = $user ? $user->certificates_img : null;
     }
 
     public function update(){
     
-        User::where('id', auth()->user()->id)->update([
+        User::where('id', $this->user_id)->update([
             'name' => $this->name,
             'email' => $this->email,
             'phone_no' => $this->phone_no,
@@ -62,7 +64,7 @@ class StudentSettingProfile extends Component
         ]);
 
         $upload = $this->photo->store('uploads/Users', 'real_public');
-        $user = User::where('id', auth()->user()->id)->update([
+        $user = User::where('id', $this->user_id)->update([
             'photo' => $upload
         ]);
 
@@ -70,6 +72,7 @@ class StudentSettingProfile extends Component
             'title' => 'Photo updated successfully.',
             'icon' => 'success',
         ]);
+        return redirect()->route('student-setting-profile', $this->user_id);
     }
     
     function updatedCoverPhoto()
@@ -80,7 +83,7 @@ class StudentSettingProfile extends Component
         ]);
 
         $cover_upload = $this->cover_photo->store('uploads/Users', 'real_public');
-        $user = User::where('id', auth()->user()->id)->update([
+        $user = User::where('id', $this->user_id)->update([
             'cover_photo' => $cover_upload
         ]);
 
@@ -88,8 +91,32 @@ class StudentSettingProfile extends Component
             'title' => 'Cover Photo updated successfully.',
             'icon' => 'success',
         ]);
+        return redirect()->route('student-setting-profile', $this->user_id);
     }
 
+    
+    public function updatedCertificatesImg()
+    {
+
+        $this->validate([
+            'certificates_img.*' => 'image|max:2048', // 2MB Max
+        ]);
+
+        $certificates_upload = [];
+        foreach ($this->certificates_img as $img) {
+            $certificates_upload[] = $img->store('uploads/Users/certificates_img', 'real_public');
+        }
+        $user = User::where('id', $this->user_id)->update([
+            'certificates_img' => json_encode($certificates_upload)
+        ]);
+
+        $this->dispatch('swal', [
+            'title' => 'Certificates updated successfully.',
+            'icon' => 'success',
+        ]);
+        return redirect()->route('student-setting-profile', $this->user_id);
+    }
+    
     public function render()
     {
         return view('livewire.student.student-setting-profile');

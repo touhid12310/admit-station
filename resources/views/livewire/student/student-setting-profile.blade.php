@@ -35,12 +35,12 @@
                               <!-- end session msg-->
                               <div class="tpd-setting-box profile">
 
-                                 <div class="tp-dashboard-banner-bg profile mb-100" data-background=" @if (auth()->user()->photo) {{ asset($cover_photo) }}  @else {{ asset('assets/images/cover.jpg') }} @endif" wire:ignore>
+                                 <div class="tp-dashboard-banner-bg profile mb-100" data-background="@if ($cover_photo) {{ asset($cover_photo) }} @else {{ asset('assets/images/cover.jpg') }} @endif" wire:ignore>
                                     <div class="tp-instructor-wrap d-flex justify-content-between">
                                        <div class="tp-instructor-info d-flex">
                                           <div class="tp-instructor-avatar p-relative profile">
-                                             @if (auth()->user()->photo)
-                                                <img src="{{ asset(auth()->user()->photo) }}" alt="">
+                                             @if ($photo)
+                                                <img src="{{ asset($photo) }}" alt="" wire:ignore>
                                              @else
                                                 <img src="{{ asset('assets/images/default.jpg') }}" alt="">
                                              @endif
@@ -111,17 +111,26 @@
                                  </div>
 
                                  
-                                 {{-- <div class="tpd-setting-cartificate">
+                                 <div class="tpd-setting-cartificate">
                                     <h5 class="tpd-setting-cartificate-title">Cartificate Photo</h5>
-                                    <div class="tpd-setting-cartificate-upload d-flex align-items-center">
-                                       <div class="tpd-setting-cartificate-thumb">
-                                          <img src="{{ asset($photo) }}" alt="" width="50%">
+                                    <div class="tpd-setting-cartificate-upload">
+                                       <div class="tpd-setting-cartificate-thumb d-flex align-items-center">
+                                          @if(is_array($certificates_img))
+                                             @foreach($certificates_img as $img)
+                                                <img src="{{ asset($img) }}" alt="" width="20%" height="100px" class="m-2">
+                                             @endforeach
+                                          @else
+                                             <img src="{{ asset($certificates_img) }}" alt="" width="20%" height="100px">
+                                          @endif
                                        </div>
-                                       <div class="tpd-setting-cartificate-content pr-100">
-                                          <input id="tpd-setting-cartificate-input" type="file" wire:model="cartificates" multiple>
+                                       
+                                       <div class="tpd-setting-cartificate-content pr-100 pt-15">
+                                          <div class="tpd-input">
+                                             <input  class="p-2" type="file" wire:model="certificates_img" multiple>
+                                          </div>
                                        </div>
                                     </div>
-                                 </div> --}}
+                                 </div>
 
 
                                  <div class="tpd-setting-cartificate">

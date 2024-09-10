@@ -20,7 +20,6 @@ class InstituteFactory extends Factory
             
             'slug'           => fake()->slug(),	
             'name'           => fake()->company(),
-            'EIIN'           => fake()->unique()->randomNumber(),
             'description'    => fake()->paragraph(100),
             'E_year'         => fake()->year(),
             'country_code'   => fake()->randomElement(['+1', '+44', '+61', '+91', '+81']),

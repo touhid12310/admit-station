@@ -14,7 +14,10 @@ class User extends Authenticatable implements FilamentUser
 {
     use HasFactory, Notifiable;
     protected $guarded = [];
-
+    protected $casts = [
+        'certificates_img' => 'array',
+    ];
+    
     public function UserSocialProfiles()
     {
         return $this->hasOne(UserSocialProfiles::class);
