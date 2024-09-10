@@ -23,7 +23,7 @@ class StudentSettingProfile extends Component
     public $cover_photo;
 
     public $certificates_img = [];
-    
+
     public function mount()
     {
         $user = auth()->user();
@@ -39,8 +39,9 @@ class StudentSettingProfile extends Component
         $this->certificates_img = $user ? $user->certificates_img : null;
     }
 
-    public function update(){
-    
+    public function update()
+    {
+
         User::where('id', $this->user_id)->update([
             'name' => $this->name,
             'email' => $this->email,
@@ -48,7 +49,7 @@ class StudentSettingProfile extends Component
             'occupation' => $this->occupation,
             'bio' => $this->bio,
         ]);
-      
+
         $this->dispatch('swal', [
             'title' => 'Update Successfully.',
             'icon' => 'success',
@@ -74,7 +75,7 @@ class StudentSettingProfile extends Component
         ]);
         return redirect()->route('student-setting-profile', $this->user_id);
     }
-    
+
     function updatedCoverPhoto()
     {
 
@@ -94,7 +95,7 @@ class StudentSettingProfile extends Component
         return redirect()->route('student-setting-profile', $this->user_id);
     }
 
-    
+
     public function updatedCertificatesImg()
     {
 
@@ -106,17 +107,35 @@ class StudentSettingProfile extends Component
         foreach ($this->certificates_img as $img) {
             $certificates_upload[] = $img->store('uploads/Users/certificates_img', 'real_public');
         }
-        $user = User::where('id', $this->user_id)->update([
-            'certificates_img' => json_encode($certificates_upload)
-        ]);
+
+
+        $check_old_certificates = User::where('id', $this->user_id)
+            ->whereNotNull('certificates_img')
+            ->where('certificates_img', '!=', '')
+            ->first();
+
+        if ($check_old_certificates) {
+            $old_certificates = $check_old_certificates->certificates_img;
+            $new_certificates = $certificates_upload;
+            $final = array_merge($old_certificates, $new_certificates);
+            User::where('id', $this->user_id)->update([
+                'certificates_img' => json_encode($final)
+            ]);
+            $this->certificates_img = $final;
+        } else {
+            User::where('id', $this->user_id)->update([
+                'certificates_img' => json_encode($certificates_upload)
+            ]);
+            $this->certificates_img = $certificates_upload;
+        }
+
 
         $this->dispatch('swal', [
             'title' => 'Certificates updated successfully.',
             'icon' => 'success',
         ]);
-        return redirect()->route('student-setting-profile', $this->user_id);
     }
-    
+
     public function render()
     {
         return view('livewire.student.student-setting-profile');
