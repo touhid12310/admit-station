@@ -47,7 +47,7 @@
 
     <!-- header-area-start -->
     <header class="header-area p-relative">
-      <div id="header-sticky" class="tp-header-2 tp-header-shop">
+      <div id="header-sticky" class="tp-header-2 tp-header-shop"   wire:ignore>
          <div class="container">
             <div class="row align-items-center">
                <div class="col-xxl-4 col-lg-6 col-6">
@@ -76,8 +76,8 @@
                <div class="col-xxl-3 col-lg-6 col-6">
                   <div class="tp-header-2-contact tp-header-shop d-flex align-items-center justify-content-end">
                     
-                     <div class="tp-header-shop-login tp-header-user-hover">
-                        <button wire:ignore>
+                     <div class="tp-header-shop-login tp-header-user-hover" >
+                        <button>
                            @if (auth()->user()->photo)
                               <img src="{{ asset( Auth::user()->photo) }}" alt="">
                            @else

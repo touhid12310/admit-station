@@ -291,17 +291,27 @@
             .removeClass("active");
     });
 
-    if ($(".tp-header-user-hover").length > 0) {
-        window.addEventListener("click", function (e) {
-            let clickedElement = e.target;
-
-            $(".tp-header-user-hover").each(function () {
-                if (this.contains(clickedElement)) {
-                    $(this).toggleClass("active");
-                } else {
-                    $(this).removeClass("active");
-                }
-            });
+    document.addEventListener('livewire:load', function () {
+        if ($(".tp-header-user-hover").length > 0) {
+            window.addEventListener("click", handleUserHoverClick);
+        }
+    });
+    
+    document.addEventListener('livewire:navigated', function () {
+        if ($(".tp-header-user-hover").length > 0 && !window.hasUserHoverClickListener) {
+            window.addEventListener("click", handleUserHoverClick);
+            window.hasUserHoverClickListener = true; // Prevent multiple bindings
+        }
+    });
+    
+    function handleUserHoverClick(e) {
+        let clickedElement = e.target;
+        $(".tp-header-user-hover").each(function () {
+            if (this.contains(clickedElement)) {
+                $(this).toggleClass("active");
+            } else {
+                $(this).removeClass("active");
+            }
         });
     }
 

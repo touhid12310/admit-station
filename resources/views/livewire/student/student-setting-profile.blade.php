@@ -139,17 +139,20 @@
 
 
                                             <div class="tpd-setting-cartificate">
-                                                <h5 class="tpd-setting-cartificate-title">Certificates Photo (Multiple
-                                                    Upload)</h5>
+                                                <h5 class="tpd-setting-cartificate-title">Certificates Photo (Multiple)</h5>
                                                 <div class="tpd-setting-cartificate-upload">
-                                                    <div
-                                                        class="tpd-setting-cartificate-thumb d-flex align-items-center">
+                                                    <div class="tpd-setting-cartificate-thumb row">
                                                         @if (is_array($certificates_img))
-                                                            @foreach ($certificates_img as $img)
-                                                                <a href="{{ asset($img) }}" target="_blank">
-                                                                    <img src="{{ asset($img) }}" alt=""
-                                                                        width="80%" height="100px" class="m-2">
-                                                                </a>
+                                                            @foreach ($certificates_img as $key => $img)
+                                                                <div class="col-3">
+                                                                    <a href="{{ asset($img) }}" target="_blank">
+                                                                        <img src="{{ asset($img) }}" alt=""
+                                                                            width="100%" height="100px" class="m-2" style="border: 1px solid black;">
+                                                                    </a>
+                                                                </div>
+                                                                @if (($key + 1) % 4 == 0)
+                                                                    </div><div class="tpd-setting-cartificate-thumb row">
+                                                                @endif
                                                             @endforeach
                                                         @else
                                                             <p>No Image</p>

@@ -103,7 +103,7 @@
                                                   @if(is_array($certificates_img))
                                                       @foreach($certificates_img as $img)
                                                          <a href="{{ asset($img) }}" target="_blank" class="d-flex justify-content-between">
-                                                             <img src="{{ asset($img) }}" alt="" width="200px" height="100px" class="m-2">
+                                                             <img src="{{ asset($img) }}" alt="" width="50%" height="50%" class="m-2 border" style="border: 5px solid black;">
                                                          </a>
                                                       @endforeach
                                                   @else

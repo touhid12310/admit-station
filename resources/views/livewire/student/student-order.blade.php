@@ -7,98 +7,104 @@
 
         <!-- dashboad-content-box-area-start -->
         <section class="tpd-main pb-75">
-           <div class="container">
-              <div class="row">
-                 <div class="col-lg-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
 
-                    <!-- dashboard-menu-area-start -->
-                    @livewire('partials.layouts-student-aside-menu')
-                    <!-- dashboard-menu-area-end -->
+                        <!-- dashboard-menu-area-start -->
+                        @livewire('partials.layouts-student-aside-menu')
+                        <!-- dashboard-menu-area-end -->
 
-                 </div>
-                 <div class="col-lg-9">
-                    <div class="row">
-                     
                     </div>
-                    <!-- dashboard-content-area-start -->
-                    <div class="tpd-content-layout">
-  
-                       <!-- order-area-start -->
-                       <section class="tpd-order-area">
-                          <div class="row">
-                             <div class="col-lg-6">
-                                <div class="tp-dashboard-section">
-                                   <h2 class="tp-dashboard-title">Application Details</h2>
-                                </div>
-                             </div>
-                          </div>
+                    <div class="col-lg-9">
+                        <div class="row">
 
-                          <div class="row">
-                           <div class="col-12">
-                              <div class="tp-profile-box">
-                                 <div class="tp-profile-wrap">
-                                    <ul>
-                                       <li>
-                                          <div class="bg-white p-5 rounded">
-                                             <table class="table table-hover table-bordered">
-                                                <thead>
-                                                  <tr>
-                                                      <th scope="col"  class="tpd-table-title">Institute Name</th>
-                                                      <th scope="col"  class="tpd-table-title">Type</th>
-                                                      <th scope="col"  class="tpd-table-title">Status</th>
-                                                  </tr>
-                                                </thead>
-                                                <tbody>
-                                                   @forelse ($applys as $apply)
-                                                      <tr>
-                                                         <td class="tpd-common-text">
-                                                            <a href="{{route('details-institute', $apply->institute->slug)}}" class="{{$apply->status == 'Approved' ? 'text-success' : ($apply->status == 'Pending' ? 'text-warning' : 'text-danger')}}">{{$apply->institute->name}}</a>
-                                                         </td>
-                                                         <td class="tpd-common-text">{{$apply->institute->institute_type}}</td>
-                                                         <td class="tpd-common-text">
-                                                            @if ($apply->status == 'Approved')
-                                                               <div class="tpd-badge-item">
-                                                                  <span class="tpd-badge bg-success text-white">{{$apply->status}}</span>
-                                                               </div>
-                                                            @elseif($apply->status == 'Pending')
-                                                               <div class="tpd-badge-item">
-                                                                  <span class="tpd-badge info">{{$apply->status}}</span>
-                                                               </div>
-                                                            @else
-                                                               <div class="tpd-badge-item">
-                                                                  <span class="tpd-badge danger">{{$apply->status}}</span>
-                                                               </div>
-                                                            @endif
-                                                         </td>
-                                                      </tr>
-                                                   @empty
-                                                      <tr>
-                                                         <td class="text-center" colspan="3">Empty</td>
-                                                      </tr>
-                                                   @endforelse
-                                                </tbody>
-                                              </table>
-                                            </div>
-                                       </li>
-                                    </ul>
-                                 </div>
-                              </div>
-                           </div>
                         </div>
+                        <!-- dashboard-content-area-start -->
+                        <div class="tpd-content-layout">
 
-                          
-                         
-                       </section>
-                       <!-- order-area-startend -->
-  
+                            <!-- order-area-start -->
+                            <section class="tpd-order-area">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="tp-dashboard-section">
+                                            <h2 class="tp-dashboard-title">Application Details</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="tp-profile-wrap">
+                                            <ul>
+                                                <li>
+                                                    <div class="bg-white p-5 rounded">
+                                                        <table class="table table-hover table-bordered">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col" class="tpd-table-title">Institute
+                                                                        Name</th>
+                                                                    <th scope="col" class="tpd-table-title">Type</th>
+                                                                    <th scope="col" class="tpd-table-title">Status
+                                                                    </th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                @forelse ($applys as $apply)
+                                                                    <tr>
+                                                                        <td class="tpd-common-text">
+                                                                            <a href="{{ route('details-institute', $apply->institute->slug) }}"
+                                                                                class="{{ $apply->status == 'Approved' ? 'text-success' : ($apply->status == 'Pending' ? 'text-warning' : 'text-danger') }}">{{ $apply->institute->name }}</a>
+                                                                        </td>
+                                                                        <td class="tpd-common-text">
+                                                                            {{ $apply->institute->institute_type }}</td>
+                                                                        <td class="tpd-common-text">
+                                                                            @if ($apply->status == 'Approved')
+                                                                                <div class="tpd-badge-item">
+                                                                                    <span
+                                                                                        class="tpd-badge bg-success text-white">{{ $apply->status }}</span>
+                                                                                </div>
+                                                                            @elseif($apply->status == 'Pending')
+                                                                                <div class="tpd-badge-item">
+                                                                                    <span
+                                                                                        class="tpd-badge info">{{ $apply->status }}</span>
+                                                                                </div>
+                                                                            @else
+                                                                                <div class="tpd-badge-item">
+                                                                                    <span
+                                                                                        class="tpd-badge danger">{{ $apply->status }}</span>
+                                                                                </div>
+                                                                            @endif
+                                                                        </td>
+                                                                    </tr>
+                                                                @empty
+                                                                    <tr>
+                                                                        <td class="text-center" colspan="3">Empty
+                                                                        </td>
+                                                                    </tr>
+                                                                @endforelse
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </section>
+                            <!-- order-area-startend -->
+
+                        </div>
+                        <!-- dashboard-content-area-end -->
+
                     </div>
-                    <!-- dashboard-content-area-end -->
-
-                 </div>
-              </div>
-           </div>
+                </div>
+            </div>
         </section>
         <!-- dashboad-content-box-area-end -->
 
-     </main>
+    </main>
 </div>
