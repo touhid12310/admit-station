@@ -36,17 +36,19 @@
                                         <div class="tpd-setting-box profile">
 
                                             <div class="tp-dashboard-banner-bg profile mb-100"
-                                               style="background-image: url(@if (!empty($cover_photo)) {{ asset($cover_photo) }} @else {{ asset('assets/images/cover.jpg') }} @endif);">
+                                                style="background-image: url(@if (!empty($cover_photo)) {{ asset($cover_photo) }} @else {{ asset('assets/images/cover.jpg') }} @endif);">
                                                 <div class="tp-instructor-wrap d-flex justify-content-between">
                                                     <div class="tp-instructor-info d-flex">
                                                         <div class="tp-instructor-avatar p-relative profile">
                                                             @if ($photo)
-                                                                <img src="{{ asset($photo) }}" alt="">
+                                                                <img src="{{ asset($photo) }}" alt="Profile Photo">
                                                             @else
                                                                 <img src="{{ asset('assets/images/default.jpg') }}"
-                                                                    alt="">
+                                                                    alt="Default Profile Photo">
                                                             @endif
-                                                            <span><svg width="38" height="38" viewBox="0 0 38 38"
+                                                            <label for="photo-upload"
+                                                                style="cursor: pointer; position: absolute; bottom: 0; right: 0;">
+                                                                <svg width="38" height="38" viewBox="0 0 38 38"
                                                                     fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <circle cx="19" cy="19" r="18"
                                                                         fill="white" stroke="#E6E8F0" />
@@ -56,9 +58,13 @@
                                                                     <path
                                                                         d="M19.0035 15.9806C19.8435 15.9806 20.6355 16.2992 21.2275 16.8741C21.8195 17.4568 22.1475 18.2259 22.1475 19.0339C22.1395 19.8808 21.7875 20.6421 21.2195 21.1937C20.6515 21.7454 19.8675 22.0872 19.0035 22.0872C18.1635 22.0872 17.3795 21.7687 16.7795 21.1937C16.1875 20.6111 15.8595 19.8497 15.8595 19.0339C15.8515 18.2259 16.1795 17.4646 16.7715 16.8819C17.3715 16.2992 18.1635 15.9806 19.0035 15.9806ZM19.0035 17.146C18.4835 17.146 17.9955 17.3402 17.6195 17.7054C17.2515 18.0628 17.0515 18.5367 17.0595 19.0262V19.0339C17.0595 19.5389 17.2595 20.0128 17.6275 20.3702C17.9955 20.7276 18.4835 20.9218 19.0035 20.9218C20.0755 20.9218 20.9395 20.075 20.9475 19.0339C20.9475 18.5289 20.7475 18.055 20.3795 17.6976C20.0115 17.3402 19.5235 17.146 19.0035 17.146ZM23.4915 15.7942C23.8915 15.7942 24.2195 16.1127 24.2195 16.5012C24.2195 16.8896 23.8915 17.2004 23.4915 17.2004C23.0915 17.2004 22.7715 16.8896 22.7715 16.5012C22.7715 16.1127 23.0915 15.7942 23.4915 15.7942Z"
                                                                         fill="white" />
-                                                                </svg></span>
+                                                                </svg>
+                                                            </label>
                                                         </div>
+                                                        <input type="file" id="photo-upload" wire:model="photo"
+                                                            style="display: none;" accept="image/*">
                                                     </div>
+
                                                     <div
                                                         class="tp-instructor-course-btn profile tpd-setting-cartificate-content">
                                                         <span class="upload-btn">
@@ -114,12 +120,12 @@
                                                                 placeholder="Full Stack Developer">
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-6">
+                                                    {{-- <div class="col-lg-6">
                                                         <div class="tpd-input">
                                                             <label for="">Profile Photo</label>
                                                             <input type="file" wire:model="photo" class="p-2">
                                                         </div>
-                                                    </div>
+                                                    </div> --}}
 
                                                     <div class="col-lg-12">
                                                         <div class="tpd-input">
@@ -133,7 +139,8 @@
 
 
                                             <div class="tpd-setting-cartificate">
-                                                <h5 class="tpd-setting-cartificate-title">Certificates Photo (Multiple Upload)</h5>
+                                                <h5 class="tpd-setting-cartificate-title">Certificates Photo (Multiple
+                                                    Upload)</h5>
                                                 <div class="tpd-setting-cartificate-upload">
                                                     <div
                                                         class="tpd-setting-cartificate-thumb d-flex align-items-center">

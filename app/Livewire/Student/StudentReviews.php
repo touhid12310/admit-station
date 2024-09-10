@@ -2,37 +2,42 @@
 
 namespace App\Livewire\Student;
 
+use App\Models\ApplicationHistory;
 use App\Models\Review;
 use Livewire\Attributes\Title;
 use Livewire\Component;
+
 #[Title('Student | Reviews')]
 class StudentReviews extends Component
 {
-    public $photo;
-    public $name;
+    public $reviews;
+    public $institutes;
+    public $institute_id;
     public $reviews_content;
-    public $created_at;
 
     public function mount()
-    {   $user = auth()->user();
-        $this->name = $user ? $user->name : null;
-        $this->photo = $user ? $user->photo : null;
-        $this->reviews_content = Review::where('user_id', auth()->id())->value('reviews_content');
-        $this->created_at = Review::where('user_id', auth()->id())->value('created_at');
+    {
+        $this->institutes = ApplicationHistory::with('institute')->where('user_id', auth()->id())->get();
+        $this->reviews = Review::where('user_id', auth()->id())->get();
     }
     public function addReview()
     {
         $this->validate([
+            'institute_id' => 'required',
             'reviews_content' => 'required'
         ]);
 
         Review::updateOrCreate(
             ['user_id' => auth()->id()],
             [
+                'institute_id' => $this->institute_id,
                 'reviews_content'  => $this->reviews_content,
             ]
         );
 
+        $this->institutes = ApplicationHistory::with('institute')->where('user_id', auth()->id())->get();
+        $this->reviews = Review::where('user_id', auth()->id())->get();
+        
         $this->dispatch('swal', [
             'title' => 'Review given Successfully.',
             'icon' => 'success',

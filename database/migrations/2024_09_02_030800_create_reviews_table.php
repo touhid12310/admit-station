@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->unsignedBigInteger('user_id');
             $table->enum('rating', ['1', '2', '3', '4', '5'])->nullable();
+            $table->integer('institute_id');
             $table->text('reviews_content');
             $table->enum('status', ['Visible', 'Invisibale'])->default('Invisibale');
             $table->timestamps();
