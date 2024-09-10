@@ -69,11 +69,12 @@ class StudentSettingProfile extends Component
             'photo' => $upload
         ]);
 
+        $this->photo = $upload;
+
         $this->dispatch('swal', [
             'title' => 'Photo updated successfully.',
             'icon' => 'success',
         ]);
-        return redirect()->route('student-setting-profile', $this->user_id);
     }
 
     function updatedCoverPhoto()
@@ -88,17 +89,17 @@ class StudentSettingProfile extends Component
             'cover_photo' => $cover_upload
         ]);
 
+        $this->cover_photo = $cover_upload;
+
         $this->dispatch('swal', [
             'title' => 'Cover Photo updated successfully.',
             'icon' => 'success',
         ]);
-        return redirect()->route('student-setting-profile', $this->user_id);
     }
 
 
     public function updatedCertificatesImg()
     {
-
         $this->validate([
             'certificates_img.*' => 'image|max:2048', // 2MB Max
         ]);
@@ -107,7 +108,6 @@ class StudentSettingProfile extends Component
         foreach ($this->certificates_img as $img) {
             $certificates_upload[] = $img->store('uploads/Users/certificates_img', 'real_public');
         }
-
 
         $check_old_certificates = User::where('id', $this->user_id)
             ->whereNotNull('certificates_img')
@@ -128,7 +128,6 @@ class StudentSettingProfile extends Component
             ]);
             $this->certificates_img = $certificates_upload;
         }
-
 
         $this->dispatch('swal', [
             'title' => 'Certificates updated successfully.',
