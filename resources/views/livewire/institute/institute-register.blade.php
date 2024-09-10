@@ -306,7 +306,7 @@
                                              </div>
                                           </div>
                                        </li>
-                                       <li @if ($apply->app_status == 'Approved') hidden @endif>
+                                       <li>
                                           <div class="tp-profile-info d-flex">
                                              <div class="tp-profile-info-tag">
                                                 <span>Action</span>

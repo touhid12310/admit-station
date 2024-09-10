@@ -45,16 +45,13 @@ class InstituteRegisterEdit extends Component
         $this->logo = $institute->logo;
         $this->thumb_img = $institute->thumb_img;
 
-        if(empty($this->pdf)){
-            $this->pdf = $institute->pdf ? $institute->pdf : $this->pdf->store('uploads/institute/pdf', 'real_public');
-        }
-       
+        $this->pdf =$institute->pdf;
     }       
 
     public function update()
     {
         
-        $this->validate([
+        $data = $this->validate([
             'name' => 'required',
             'mobile_no' => 'required',
             'email' => 'required',
@@ -66,6 +63,7 @@ class InstituteRegisterEdit extends Component
             'description' => 'required',
         ]);
 
+
         $institute = Institute::find($this->institute_id);
         $institute->name = $this->name;
         $institute->mobile_no = $this->mobile_no;
@@ -76,6 +74,9 @@ class InstituteRegisterEdit extends Component
         $institute->city = $this->city;
         $institute->address = $this->address;
         $institute->description = $this->description;
+        if(@$this->pdf){
+            $institute->pdf = $this->pdf->store('uploads/institute/pdf', 'real_public');
+        }
         
 
         $institute->save();
