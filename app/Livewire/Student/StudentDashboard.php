@@ -11,13 +11,11 @@ class StudentDashboard extends Component
 {
     public $totalApplied;
     public $totalReviews;
-    public function mount()
-    {
-        $this->totalApplied = ApplicationHistory::where('user_id', auth()->id())->count();
-        $this->totalReviews = Review::where('user_id', auth()->id())->count();
-    }
+
     public function render()
     {   
+        $this->totalApplied = ApplicationHistory::where('user_id', auth()->id())->count();
+        $this->totalReviews = Review::where('user_id', auth()->id())->count();
         return view('livewire.student.student-dashboard');
     }
 }

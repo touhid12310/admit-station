@@ -20,7 +20,6 @@ class InstituteProfileSetting extends Component
     public $photo;
     public $cover_photo;
 
-    public $cartificates = [];
     
     public function mount()
     {
@@ -63,12 +62,13 @@ class InstituteProfileSetting extends Component
             'photo' => $upload
         ]);
 
+
+        $this->photo = $upload;
+
         $this->dispatch('swal', [
             'title' => 'Photo updated successfully.',
             'icon' => 'success',
         ]);
-
-        return redirect()->route('institute.profile-setting', $this->user_id);
     }
     
     function updatedCoverPhoto()
@@ -83,11 +83,12 @@ class InstituteProfileSetting extends Component
             'cover_photo' => $cover_upload
         ]);
 
+        $this->cover_photo = $cover_upload;
+
         $this->dispatch('swal', [
             'title' => 'Cover Photo updated successfully.',
             'icon' => 'success',
         ]);
-        return redirect()->route('institute.profile-setting', $this->user_id);
     }
     public function render()
     {

@@ -84,16 +84,7 @@
                                                </div>
                                             </div>
                                          </li>
-                                         <li>
-                                            <div class="tp-profile-info d-flex">
-                                               <div class="tp-profile-info-tag">
-                                                  <span>Skill/Occupation</span>
-                                               </div>
-                                               <div class="tp-profile-info-details">
-                                                  <span>{{$occupation}}</span>
-                                               </div>
-                                            </div>
-                                         </li>
+
                                          <li>
                                             <div class="tp-profile-info d-flex">
                                                <div class="tp-profile-info-tag">

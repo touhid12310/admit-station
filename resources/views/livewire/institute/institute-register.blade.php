@@ -329,7 +329,7 @@
                                                 <span>Institute Description</span>
                                              </div>
                                              <div class="tp-profile-info-details">
-                                                <span>{{ $apply->description }}</span>
+                                                <span>{{ strip_tags($apply->description) }}</span>
                                              </div>
                                           </div>
                                        </li>
