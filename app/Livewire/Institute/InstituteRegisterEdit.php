@@ -81,6 +81,8 @@ class InstituteRegisterEdit extends Component
 
         $institute->save();
     
+
+        
         $this->dispatch('swal', [
             'title' => 'Institute Register Updated successfully.',
             'icon' => 'success',

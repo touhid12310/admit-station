@@ -191,7 +191,7 @@
                                                                         <input type="file" wire:model="pdf"
                                                                             class="p-2">
                                                                     </div>
-                                                                    <div>
+                                                                    {{-- <div>
                                                                         @if (!empty($pdf))
                                                                             <a href="{{ asset($pdf) }}"
                                                                                 target="_blank"
@@ -199,7 +199,7 @@
                                                                         @else
                                                                             <p class="text-center">No PDF</p>
                                                                         @endif
-                                                                    </div>
+                                                                    </div> --}}
                                                                 </div>
                                                                 @error('pdf')
                                                                     <div class="m-2 text-danger">{{ $message }}</div>
