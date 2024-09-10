@@ -134,7 +134,11 @@
                                                       <input type="file" wire:model="logo" class="p-2">
                                                    </div>
                                                    <div>
-                                                      <img src="{{ asset($logo) }}" alt="" width="50%" height="50%" wire:ignore>
+                                                      @if(!empty($logo))
+                                                         <img src="{{ asset($logo) }}" alt="" width="50%" height="50%" wire:ignore>
+                                                      @else
+                                                         <p class="text-center">No Image</p>
+                                                      @endif
                                                    </div>
                                                 </div>
                                                 <div class="col-lg-6 pt-20">
@@ -143,10 +147,29 @@
                                                       <input type="file" wire:model="thumb_img" class="p-2">
                                                    </div>
                                                    <div>
-                                                      <img src="{{ asset($thumb_img) }}" alt="" width="70%" height="70%" wire:ignore>
+                                                      @if(!empty($thumb_img))
+                                                         <img src="{{ asset($thumb_img) }}" alt="" width="70%" height="70%" wire:ignore>
+                                                      @else
+                                                         <p class="text-center">No Image</p>
+                                                      @endif
                                                    </div>
                                                 </div>
-                                                
+                                                <div class="col-lg-12 pt-20">
+                                                   <div class="tpd-input">
+                                                      <label for="pdf">Attach Document</label>
+                                                      <input type="file" wire:model="pdf" class="p-2">
+                                                   </div>
+                                                   <div>
+                                                      @if(!empty($pdf))
+                                                         <a href="{{ asset($pdf) }}" target="_blank" class="btn btn-primary">View PDF</a>
+                                                      @else
+                                                         <p class="text-center">No PDF</p>
+                                                      @endif
+                                                   </div>
+                                                </div>
+                                                @error('pdf')
+                                                   <div class="m-2 text-danger">{{ $message }}</div>
+                                                @enderror
                                                 <div class="col-lg-12 pt-20">
                                                    <div class="tpd-input">
                                                       <label for="Description">Description</label>

@@ -112,15 +112,17 @@
 
                                  
                                  <div class="tpd-setting-cartificate">
-                                    <h5 class="tpd-setting-cartificate-title">Cartificate Photo</h5>
+                                    <h5 class="tpd-setting-cartificate-title">Certificates Photo</h5>
                                     <div class="tpd-setting-cartificate-upload">
                                        <div class="tpd-setting-cartificate-thumb d-flex align-items-center">
                                           @if(is_array($certificates_img))
                                              @foreach($certificates_img as $img)
-                                                <img src="{{ asset($img) }}" alt="" width="20%" height="100px" class="m-2">
+                                                <a href="{{ asset($img) }}" target="_blank">
+                                                    <img src="{{ asset($img) }}" alt="" width="80%" height="100px" class="m-2">
+                                                </a>
                                              @endforeach
                                           @else
-                                             <img src="{{ asset($certificates_img) }}" alt="" width="20%" height="100px">
+                                             <p>No Image</p>
                                           @endif
                                        </div>
                                        

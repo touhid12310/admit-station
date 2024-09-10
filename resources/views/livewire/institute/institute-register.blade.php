@@ -135,7 +135,15 @@
                                                          <input type="file" wire:model="thumb_img" class="p-2">
                                                       </div>
                                                    </div>
-                                                   
+                                                   <div class="col-lg-12 pt-20">
+                                                      <div class="tpd-input">
+                                                         <label for="pdf">Attach Document</label>
+                                                         <input type="file" wire:model="pdf" class="p-2">
+                                                      </div>
+                                                   </div>
+                                                   @error('pdf')
+                                                      <div class="m-2 text-danger">{{ $message }}</div>
+                                                   @enderror
                                                    <div class="col-lg-12 pt-20">
                                                       <div class="tpd-input">
                                                          <label for="Description">Description</label>
@@ -227,7 +235,13 @@
                                                 <span>Institute Logo</span>
                                              </div>
                                              <div class="tp-profile-info-details">
-                                                <span><img src="{{asset($apply->logo)}}" alt="" width="10%" height="10%"></span>
+                                                <span>
+                                                    @if (!empty($apply->logo))
+                                                        <a href="{{asset($apply->logo)}}" target="_blank" rel="noopener noreferrer"><img src="{{asset($apply->logo)}}" alt="" width="10%" height="10%"></a>
+                                                    @else
+                                                        <p>Image Not Upload</p>
+                                                    @endif
+                                                </span>
                                              </div>
                                           </div>
                                        </li>
@@ -237,10 +251,39 @@
                                                 <span>Institute Image</span>
                                              </div>
                                              <div class="tp-profile-info-details">
-                                                <span><img src="{{asset($apply->thumb_img)}}" alt="" width="30%" height="15%"></span>
+                                                <span>
+                                                    @if(!empty($apply->thumb_img))
+                                                        <a href="{{asset($apply->thumb_img)}}" target="_blank" rel="noopener noreferrer"><img src="{{asset($apply->thumb_img)}}" alt="" width="30%" height="15%"></a>
+                                                    @else
+                                                        <p>Image Not Upload</p>
+                                                    @endif
+                                                </span>
                                              </div>
                                           </div>
                                        </li>
+                                       
+                                       <li>
+                                       <li>
+                                          <div class="tp-profile-info d-flex">
+                                             <div class="tp-profile-info-tag">
+                                                <span>Institute PDF Doc</span>
+                                             </div>
+                                             <div class="tp-profile-info-details">
+                                                <span>
+                                                    <a href="{{asset($apply->pdf)}}" target="_blank">
+                                                      @if(!empty($apply->pdf))
+                                                      <div class="tpd-badge-item">
+                                                         <span class="tpd-badge bg-success text-white">View PDF</span>
+                                                      </div>
+                                                      @else
+                                                        <p>PDF Not Upload</p>
+                                                      @endif
+                                                    </a>
+                                                </span>
+                                             </div>
+                                          </div>
+                                       </li>
+
                                        <li>
                                           <div class="tp-profile-info d-flex">
                                              <div class="tp-profile-info-tag">

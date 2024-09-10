@@ -22,6 +22,7 @@ class InstituteRegister extends Component
     public $city;
     public $logo;
     public $thumb_img;
+    public $pdf;
     public $description;
     public $created_at;
     public $address;
@@ -75,6 +76,7 @@ class InstituteRegister extends Component
             'description'   => $this->description,
             'logo'          => @$logoPath,
             'thumb_img'     => @$thumb_img_Path,
+            'pdf' => @$this->pdf->store('uploads/institute/pdf', 'real_public'),
             
         ]);
 

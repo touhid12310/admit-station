@@ -16,6 +16,8 @@ class StudentProfile extends Component
     public $user_type;
     public $photo;
     public $cover_photo;
+
+    public $certificates_img = [];
     
     public function mount()
     {
@@ -30,6 +32,7 @@ class StudentProfile extends Component
         $this->user_type = $user ? $user->user_type : null;
         $this->photo = $user ? $user->photo : null;
         $this->cover_photo = $user ? $user->cover_photo : null;
+        $this->certificates_img = $user ? $user->certificates_img : null;
     }
 
     public function render()

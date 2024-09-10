@@ -97,6 +97,26 @@
                                          <li>
                                             <div class="tp-profile-info d-flex">
                                                <div class="tp-profile-info-tag">
+                                                  <span>Certificates</span>
+                                               </div>
+                                               <div class="tp-profile-info-details">
+                                                  @if(is_array($certificates_img))
+                                                      @foreach($certificates_img as $img)
+                                                         <a href="{{ asset($img) }}" target="_blank" class="d-flex justify-content-between">
+                                                             <img src="{{ asset($img) }}" alt="" width="200px" height="100px" class="m-2">
+                                                         </a>
+                                                      @endforeach
+                                                  @else
+                                                   <div class="tp-profile-info-details">
+                                                      <span>Not upload</span>
+                                                   </div>
+                                                  @endif
+                                               </div>
+                                            </div>
+                                         </li>
+                                         <li>
+                                            <div class="tp-profile-info d-flex">
+                                               <div class="tp-profile-info-tag">
                                                   <span>Biography</span>
                                                </div>
                                                <div class="tp-profile-info-details">
