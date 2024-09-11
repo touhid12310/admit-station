@@ -12,7 +12,7 @@ class Home extends Component
     public $blogs;
     public function mount()
     {
-        $this->blogs = Blog::orderBy('id', 'desc')->take(2)->get();
+        $this->blogs = Blog::orderBy('id', 'desc')->where('status', 'Approved')->take(2)->get();
     }
     public function render()
     {

@@ -31,45 +31,46 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="tp-postbox-wrapper">
-                        @forelse ($blogs as $blog)
-                            <div class="tp-postbox-item p-relative mb-40">
-                                <div class="tp-postbox-item-list-box d-flex align-items-center">
-                                    <div class="tp-postbox-item-list-thumb">
-                                        <a href="{{ route('blog-details', $blog->slug) }}" wire:navigate>
-                                            <img src="{{ asset($blog->image) }}" alt="" width="370px"
-                                                height="270px">
-                                        </a>
-                                    </div>
+                        <div class="row">
+                            @forelse ($blogs as $blog)
+                                <div class="tp-postbox-item p-relative mb-40">
+                                    <div class="tp-postbox-item-list-box d-flex align-items-center">
+                                        <div class="tp-postbox-item-list-thumb">
+                                            <a href="{{ route('blog-details', $blog->slug) }}" wire:navigate>
+                                                <img class="course-pink" src="{{ asset($blog->image) }}" alt="" width="370px" height="270px">
+                                            </a>
+                                        </div>
 
-                                    <div class="tp-postbox-content">
-                                        <div class="tp-blog-stories-tag-wrap d-flex">
-                                            <a href="" wire:navigate>{{ $blog->category->name }}</a>
-                                            <span>{{ $blog->created_at->format('F j, Y') }}</span>
-                                        </div>
-                                        <h3 class="tp-postbox-item-list-title" style="color: #AB0C2F">
-                                            <a href="{{ route('blog-details', $blog->slug) }}"
-                                                wire:navigate>{{ $blog->title }}</a>
-                                        </h3>
-                                        <p>{!! Str::limit( $blog ->description, 100)!!}</p>
-                                        <div class="tp-postbox-btn">
-                                            <a href="{{ route('blog-details', $blog->slug) }}" wire:navigate>Read More
-                                                <span><svg width="8" height="12" viewBox="0 0 8 12"
-                                                        fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M1.5 11L6.5 6L1.5 1" stroke="currentColor"
-                                                            stroke-width="1.5" stroke-linecap="round"
-                                                            stroke-linejoin="round"></path>
-                                                    </svg></span></a>
+                                        <div class="tp-postbox-content">
+                                            <div class="tp-blog-stories-tag-wrap d-flex">
+                                                <a href="" wire:navigate>{{ $blog->category->name }}</a>
+                                                <span>{{ $blog->created_at->format('F j, Y') }}</span>
+                                            </div>
+                                            <h3 class="tp-postbox-item-list-title" style="color: #AB0C2F">
+                                                <a href="{{ route('blog-details', $blog->slug) }}"
+                                                    wire:navigate>{{ $blog->title }}</a>
+                                            </h3>
+                                            <p>{{ Str::limit(strip_tags($blog->description), 150) }}</p>
+                                            <div class="tp-postbox-btn">
+                                                <a href="{{ route('blog-details', $blog->slug) }}" wire:navigate>Read More
+                                                    <span><svg width="8" height="12" viewBox="0 0 8 12"
+                                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M1.5 11L6.5 6L1.5 1" stroke="currentColor"
+                                                                stroke-width="1.5" stroke-linecap="round"
+                                                                stroke-linejoin="round"></path>
+                                                        </svg></span></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        @empty
-                            <div class="tp-postbox-item p-relative mb-40">
-                                <div class="tp-postbox-item-list-thumb">
-                                    <p>Empty.</p>
+                            @empty
+                                <div class="tp-postbox-item p-relative mb-40">
+                                    <div class="tp-postbox-item-list-thumb">
+                                        <p>Empty.</p>
+                                    </div>
                                 </div>
-                            </div>
-                        @endforelse
+                            @endforelse
+                        </div>
                     </div>
                     <div class="tp-event-inner-pagination tp-postbox-item-pagination">
                         <div class="tp-dashboard-pagination">
