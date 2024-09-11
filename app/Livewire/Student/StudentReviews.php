@@ -17,7 +17,9 @@ class StudentReviews extends Component
 
     public function mount()
     {
+
         $this->institutes = ApplicationHistory::with('institute')->where('user_id', auth()->id())->get();
+        
         $this->reviews = Review::where('user_id', auth()->id())->get();
     }
     public function addReview()
