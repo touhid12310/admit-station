@@ -23,6 +23,7 @@ class InstituteRegisterEdit extends Component
     public $address;
     public $description;
     public $pdf;
+    public $pdf_new;
     public $logo;
     public $thumb_img;
     
@@ -74,7 +75,7 @@ class InstituteRegisterEdit extends Component
         $institute->city = $this->city;
         $institute->address = $this->address;
         $institute->description = $this->description;
-        if(@$this->pdf){
+        if(@$this->pdf_new){
             $institute->pdf = $this->pdf->store('uploads/institute/pdf', 'real_public');
         }
         

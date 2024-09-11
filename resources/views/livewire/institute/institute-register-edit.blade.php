@@ -188,7 +188,7 @@
                                                                 <div class="col-lg-12 pt-20">
                                                                     <div class="tpd-input">
                                                                         <label for="pdf">Attach Document</label>
-                                                                        <input type="file" wire:model="pdf"
+                                                                        <input type="file" wire:model="pdf_new"
                                                                             class="p-2">
                                                                     </div>
                                                                     {{-- <div>
@@ -205,9 +205,9 @@
                                                                     <div class="m-2 text-danger">{{ $message }}</div>
                                                                 @enderror
                                                                 <div class="col-lg-12 pt-20">
-                                                                    <div class="tpd-input">
+                                                                    <div class="tpd-input" wire:ignore>
                                                                         <label for="Description">Description</label>
-                                                                        <textarea wire:model.lazy="description" id="default-editor"
+                                                                        <textarea wire:model="description" id="default-editor"
                                                                             placeholder="Institute description for London, OR. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences."></textarea>
                                                                     </div>
                                                                 </div>
@@ -247,3 +247,32 @@
 
 </div>
 
+
+@push('scripts')
+<script src="{{ asset('assets/js/tinymce/tinymce.min.js') }}"></script>
+
+    <script>
+        // livewire:navigated add here
+
+        // document.addEventListener('livewire:navigated', () => {
+        setTimeout(() => {
+
+            tinymce.init({
+                selector: '#default-editor',
+                license_key: 'gpl',
+                plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+                toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+                setup: function(editor) {
+                    editor.on('init change', function() {
+                        editor.save();
+                    });
+                    editor.on('change', function(e) {
+                        @this.set('description', editor.getContent());
+                    });
+                }
+            });
+        }, 700);
+
+        // })
+    </script>
+@endpush

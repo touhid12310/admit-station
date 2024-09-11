@@ -52,16 +52,10 @@
     <script src="{{ asset('assets/js/imagesloaded-pkgd.js') }}"></script>
     <script src="{{ asset('assets/js/ajax-form.js') }}"></script>
     <script src="{{ asset('assets/js/main.js') }}"></script>
-    <script src="{{ asset('assets/js/tinymce/tinymce.min.js') }}"></script>
-    @vite(['resources/js/app.js'])
 
-    <script>
-        tinymce.init({
-          selector: '#default-editor1',
-          plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
-          toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
-        });
-      </script>
+    @stack('scripts')
+
+    @vite(['resources/js/app.js'])
     @livewireScripts
 </body>
 
