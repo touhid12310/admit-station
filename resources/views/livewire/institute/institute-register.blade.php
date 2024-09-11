@@ -144,10 +144,10 @@
                                                    @error('pdf')
                                                       <div class="m-2 text-danger">{{ $message }}</div>
                                                    @enderror
-                                                   <div class="col-lg-12 pt-20">
+                                                   <div class="col-lg-12 pt-20" wire:ignore>
                                                       <div class="tpd-input">
                                                          <label for="Description">Description</label>
-                                                         <textarea wire:model="description" placeholder="Institute description for London, OR. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences."></textarea>
+                                                         <textarea wire:model="description" name="description" placeholder="Institute description for London, OR. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences."></textarea>
                                                       </div>
                                                    </div>
                                                 </div>
@@ -322,7 +322,6 @@
                                              </div>
                                           </div>
                                        </li>
-                                       @if ($apply->app_status == 'Approved')
                                        <li>
                                           <div class="tp-profile-info d-flex">
                                              <div class="tp-profile-info-tag">
@@ -333,7 +332,6 @@
                                              </div>
                                           </div>
                                        </li>
-                                       @endif
                                        @empty
 
                                        @endforelse
@@ -356,4 +354,31 @@
      </main>
 </div>
 
+@push('scripts')
+    <script src="//cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+    <script>
+        setTimeout(() => {
+            CKEDITOR.config.versionCheck = false;
+            const editor = CKEDITOR.replace('description', {
+                filebrowserUploadMethod: 'form',
+                on: {
+                    instanceReady: function(evt) {
+                        // Remove sandbox attribute if it exists
+                        this.dataProcessor.htmlFilter.addRules({
+                            elements: {
+                                iframe: function(element) {
+                                    delete element.attributes.sandbox;
+                                    return element;
+                                }
+                            }
+                        });
+                    }
+                },
+            });
+            editor.on('change', function(event){
+                @this.description = event.editor.getData();
+            });
+        }, 700);
+    </script>
+@endpush
 

@@ -1,4 +1,5 @@
 <div>
+
     <main class="tp-dashboard-body-bg">
 
         <!-- dashboard-banner-area-start -->
@@ -188,7 +189,7 @@
                                                                 <div class="col-lg-12 pt-20">
                                                                     <div class="tpd-input">
                                                                         <label for="pdf">Attach Document</label>
-                                                                        <input type="file" wire:model="pdf"
+                                                                        <input type="file" wire:model="pdf_new"
                                                                             class="p-2">
                                                                     </div>
                                                                     {{-- <div>
@@ -204,10 +205,10 @@
                                                                 @error('pdf')
                                                                     <div class="m-2 text-danger">{{ $message }}</div>
                                                                 @enderror
-                                                                <div class="col-lg-12 pt-20">
+                                                                <div class="col-lg-12 pt-20" wire:ignore>
                                                                     <div class="tpd-input">
                                                                         <label for="Description">Description</label>
-                                                                        <textarea wire:model.lazy="description" id="default-editor"
+                                                                        <textarea wire:model="description" name="description" id="default-editor"
                                                                             placeholder="Institute description for London, OR. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences."></textarea>
                                                                     </div>
                                                                 </div>
@@ -247,3 +248,33 @@
 
 </div>
 
+
+@push('scripts')
+    <script src="//cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
+    <script>
+        // CK Editor
+        setTimeout(() => {
+
+            CKEDITOR.config.versionCheck = false;
+            const editor = CKEDITOR.replace('description', {
+                filebrowserUploadMethod: 'form',
+                on: {
+                    instanceReady: function(evt) {
+                        // Remove sandbox attribute if it exists
+                        this.dataProcessor.htmlFilter.addRules({
+                            elements: {
+                                iframe: function(element) {
+                                    delete element.attributes.sandbox;
+                                    return element;
+                                }
+                            }
+                        });
+                    }
+                },
+            });
+            editor.on('change', function(event){
+                @this.description = event.editor.getData();
+            });
+        }, 700);
+    </script>
+@endpush
