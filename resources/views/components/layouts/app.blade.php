@@ -17,6 +17,8 @@
     {{-- @include('components/layouts/seo') --}}
     <!-- CSS here -->
     @vite(['resources/css/app.css'])
+    
+    @stack('styles')
     @livewireStyles
 </head>
 

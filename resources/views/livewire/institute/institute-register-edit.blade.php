@@ -1,4 +1,5 @@
 <div>
+
     <main class="tp-dashboard-body-bg">
 
         <!-- dashboard-banner-area-start -->
@@ -204,10 +205,10 @@
                                                                 @error('pdf')
                                                                     <div class="m-2 text-danger">{{ $message }}</div>
                                                                 @enderror
-                                                                <div class="col-lg-12 pt-20">
-                                                                    <div class="tpd-input" wire:ignore>
+                                                                <div class="col-lg-12 pt-20" wire:ignore>
+                                                                    <div class="tpd-input">
                                                                         <label for="Description">Description</label>
-                                                                        <textarea wire:model="description" id="default-editor"
+                                                                        <textarea wire:model="description" name="description" id="default-editor"
                                                                             placeholder="Institute description for London, OR. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences."></textarea>
                                                                     </div>
                                                                 </div>
@@ -249,30 +250,31 @@
 
 
 @push('scripts')
-<script src="{{ asset('assets/js/tinymce/tinymce.min.js') }}"></script>
-
+    <script src="//cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
     <script>
-        // livewire:navigated add here
-
-        // document.addEventListener('livewire:navigated', () => {
+        // CK Editor
         setTimeout(() => {
 
-            tinymce.init({
-                selector: '#default-editor',
-                license_key: 'gpl',
-                plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
-                toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
-                setup: function(editor) {
-                    editor.on('init change', function() {
-                        editor.save();
-                    });
-                    editor.on('change', function(e) {
-                        @this.set('description', editor.getContent());
-                    });
-                }
+            CKEDITOR.config.versionCheck = false;
+            const editor = CKEDITOR.replace('description', {
+                filebrowserUploadMethod: 'form',
+                on: {
+                    instanceReady: function(evt) {
+                        // Remove sandbox attribute if it exists
+                        this.dataProcessor.htmlFilter.addRules({
+                            elements: {
+                                iframe: function(element) {
+                                    delete element.attributes.sandbox;
+                                    return element;
+                                }
+                            }
+                        });
+                    }
+                },
+            });
+            editor.on('change', function(event){
+                @this.description = event.editor.getData();
             });
         }, 700);
-
-        // })
     </script>
 @endpush

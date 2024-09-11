@@ -7,7 +7,8 @@ use Livewire\Attributes\Title;
 use Livewire\Component;
 use Illuminate\Support\Str;
 use Livewire\Features\SupportFileUploads\WithFileUploads;
-#[Title('Institute Register')]	
+
+#[Title('Institute Register')]
 class InstituteRegister extends Component
 {
     use WithFileUploads;
@@ -27,10 +28,11 @@ class InstituteRegister extends Component
     public $created_at;
     public $address;
 
-    public function mount(){
+    public function mount()
+    {
         $this->Institute = Institute::where('user_id', auth()->user()->id)->exists();
     }
-    
+
     public function save()
     {
         $this->validate([
@@ -54,7 +56,7 @@ class InstituteRegister extends Component
         $slug = Str::slug($this->name);
 
         $check = Institute::where('email', $this->email)->orWhere('user_id', auth()->user()->id)->first();
-        if($check){
+        if ($check) {
             $this->dispatch('swal', [
                 'title' => 'You Already Applied.',
                 'icon' => 'error',
@@ -62,6 +64,11 @@ class InstituteRegister extends Component
             ]);
             return;
         }
+
+        if ($this->pdf) {
+            $this->pdf->store('uploads/institute/pdf', 'real_public');
+        }
+
         Institute::create([
             'user_id'       => auth()->user()->id,
             'name'          => $this->name,
@@ -76,8 +83,7 @@ class InstituteRegister extends Component
             'description'   => $this->description,
             'logo'          => @$logoPath,
             'thumb_img'     => @$thumb_img_Path,
-            'pdf' => @$this->pdf->store('uploads/institute/pdf', 'real_public'),
-            
+            'pdf' => @$this->pdf,
         ]);
 
         $this->dispatch('swal', [
@@ -89,8 +95,9 @@ class InstituteRegister extends Component
         return redirect()->route('institute.register');
     }
     public function render()
-    {   $applys = Institute::with('user')->where('user_id', auth()->id())->get();
-        return view('livewire.institute.institute-register',[
+    {
+        $applys = Institute::with('user')->where('user_id', auth()->id())->get();
+        return view('livewire.institute.institute-register', [
             'applys' => $applys
         ]);
     }

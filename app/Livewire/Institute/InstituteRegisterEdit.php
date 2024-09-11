@@ -65,6 +65,7 @@ class InstituteRegisterEdit extends Component
         ]);
 
 
+
         $institute = Institute::find($this->institute_id);
         $institute->name = $this->name;
         $institute->mobile_no = $this->mobile_no;
@@ -78,7 +79,8 @@ class InstituteRegisterEdit extends Component
         if(@$this->pdf_new){
             $institute->pdf = $this->pdf->store('uploads/institute/pdf', 'real_public');
         }
-        
+
+        $institute->app_status = 'Pending';
 
         $institute->save();
     
