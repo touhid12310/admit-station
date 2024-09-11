@@ -11,7 +11,7 @@ use Filament\Forms;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Group;
-use Filament\Forms\Components\MarkdownEditor;
+use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
@@ -82,7 +82,7 @@ class InstituteResource extends Resource
                             ->columnSpanFull()
                             ->maxLength(255),
 
-                        MarkdownEditor::make('description')
+                        RichEditor::make('description')
                             ->columnSpanFull()
                             ->fileAttachmentsDirectory('Institute'),  
                     ])->columns(2),

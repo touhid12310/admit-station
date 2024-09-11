@@ -39,7 +39,7 @@ class AgentResource extends Resource
                         ->email()
                         ->required()
                         ->maxLength(255),
-                    Forms\Components\MarkdownEditor::make('bio')
+                    Forms\Components\RichEditor::make('bio')
                         ->columnSpanFull()
                         ->fileAttachmentsDirectory('Agents'),
                 ])->columns(2),
