@@ -34,55 +34,25 @@
                             <div class="tp-faq-box">
                                 <div class="tpd-accordion">
                                   <div class="accordion accordion-flush" id="accordionFlushExample">
-                                      
-                                    <div class="accordion-item">
-                                      <h2 class="accordion-header">
-                                          <button class="accordion-button faq-expend collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                            Studying abroad from Bangladesh, but I'm not sure where to start. Can you help me ?
-                                            <span class="accordion-btn"></span>
-                                          </button>
-                                      </h2>
-                                      <div id="flush-collapseOne" class="accordion-collapse show" data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body pt-10">
-                                          We’re here to assist you every step of the way! Our knowledgeable counselors will work closely with you to understand your academic interests, career goals, and financial considerations. Based on this, we’ll recommend the best universities and programs that align with your aspirations. We’ll also support you through the entire application process, ensuring you stay on track with deadlines and meet all the necessary requirements.
-                                        </div>
-                                      </div>
-                                    </div>
                                     
+                                    @forelse ($faqs as $faq)
                                       <div class="accordion-item">
                                         <h2 class="accordion-header">
-                                          <button class="accordion-button faq-expend collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                            How does th Affiliate Program work?
+                                          <button class="accordion-button faq-expend collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse{{$faq->id}}" aria-expanded="false" aria-controls="flush-collapseThree">
+                                            {{$faq->question}}
                                             <span class="accordion-btn"></span>
                                           </button>
                                         </h2>
-                                        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                          <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                                        <div id="flush-collapse{{$faq->id}}" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                          <div class="accordion-body">{!! $faq->answer !!}</div>
                                         </div>
                                       </div>
-                                      <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                          <button class="accordion-button faq-expend collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsfour" aria-expanded="false" aria-controls="flush-collapsfour">
-                                            What is included in Standard membership plan?
-                                            <span class="accordion-btn"></span>
-                                          </button>
-                                        </h2>
-                                        <div id="flush-collapsfour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                          <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                        </div>
-                                      </div>
-                                      <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                          <button class="accordion-button faq-expend collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                                            How to choose the right class for me?
-                                            <span class="accordion-btn"></span>
-                                          </button>
-                                        </h2>
-                                        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                                          <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                        </div>
-                                      </div>
+                                    @empty
+                                    <div class="accordion-item">
+                                      <p>No data found</p>
                                     </div>
+                                    @endforelse
+                                  </div>
                                 </div>
                             </div>
                           </div>
