@@ -103,7 +103,7 @@
                     <div class="tp-service-item text-center mb-40 wow fadeInUp" data-wow-delay=".3s">
                         <div class="tp-service-wrap">
                             <div class="tp-service-icon">
-                                <span><img src="assets/img/icon/service/service-icon-1.svg" alt="service-icon"></span>
+                                <span><img src="assets/img/icon/service/service-icon-1.svg" alt="service-icon" loading="lazy"></span>
                             </div>
                             <h4 class="tp-service-title"><a href="#">Schooling Visa </a></h4>
                             <div class="tp-service-btn">
@@ -127,7 +127,7 @@
                     <div class="tp-service-item text-center mb-40 wow fadeInUp" data-wow-delay=".5s">
                         <div class="tp-service-wrap">
                             <div class="tp-service-icon">
-                                <span><img src="{{asset('assets/images/service/counter-4-icon-4.svg')}}" alt="service-icon"></span>
+                                <span><img src="{{asset('assets/images/service/counter-4-icon-4.svg')}}" alt="service-icon" loading="lazy"></span>
                             </div>
                             <h4 class="tp-service-title"><a href="#">Dependent Visa</a></h4>
                             <div class="tp-service-btn">
@@ -150,7 +150,7 @@
                     <div class="tp-service-item text-center mb-40 wow fadeInUp" data-wow-delay=".7s">
                         <div class="tp-service-wrap">
                             <div class="tp-service-icon">
-                                <span><img src="{{asset('assets/img/icon/service/service-icon-3.svg')}}" alt="service-icon"></span>
+                                <span><img src="{{asset('assets/img/icon/service/service-icon-3.svg')}}" alt="service-icon" loading="lazy"></span>
                             </div>
                             <h4 class="tp-service-title"><a href="#">Tourist Visa</a></h4>
                             <div class="tp-service-btn">
@@ -173,7 +173,7 @@
                     <div class="tp-service-item text-center mb-40 wow fadeInUp" data-wow-delay=".9s">
                         <div class="tp-service-wrap">
                             <div class="tp-service-icon">
-                                <span><img src="{{asset('assets/images/service/counter-4-icon-2.svg')}}" alt="service-icon"></span>
+                                <span><img src="{{asset('assets/images/service/counter-4-icon-2.svg')}}" alt="service-icon" loading="lazy"></span>
                             </div>
                             <h4 class="tp-service-title"><a href="#">Student Visa</a></h4>
                             <div class="tp-service-btn">
@@ -198,7 +198,7 @@
         </div>
         <div class="tp-service-shape">
             <div class="tp-service-shape-1 wow bounceIn" data-wow-duration="1.5s" data-wow-delay=".4s">
-                <img src="{{asset('assets/img/shape/service/services-shape-1.png')}}" alt="service-shape">
+                <img src="{{asset('assets/img/shape/service/services-shape-1.png')}}" alt="service-shape" loading="lazy">
             </div>
         </div>
     </section>
@@ -212,18 +212,18 @@
                     <div class="tp-about-wrap mb-60 wow fadeInLeft" data-wow-delay=".3s">
                         <div class="tp-about-thumb-wrapper">
                             <div class="tp-about-thumb-1">
-                                <img src="{{asset('assets/images/about/about-thumb-1.jpg')}}" alt="">
+                                <img src="{{asset('assets/images/about/about-thumb-1.jpg')}}" alt="" loading="lazy">
                             </div>
                             <div class="tp-about-thumb-2">
-                                <img src="{{asset('assets/images/about/about-thumb-2.jpg')}}" alt="">
+                                <img src="{{asset('assets/images/about/about-thumb-2.jpg')}}" alt="" loading="lazy">
                             </div>
                         </div>
                         <div class="tp-about-shape">
                             <div class="tp-about-shape-1">
-                                <img src="{{asset('assets/images/about/about-shape-1.jpg')}}" alt="">
+                                <img src="{{asset('assets/images/about/about-shape-1.jpg')}}" alt="" loading="lazy">
                             </div>
                             <div class="tp-about-shape-2">
-                                <img src="{{asset('assets/images/about/about-shape-2.jpg')}}" alt="">
+                                <img src="{{asset('assets/images/about/about-shape-2.jpg')}}" alt="" loading="lazy">
                             </div>
                         </div>
                         <div class="tp-about-exprience">
@@ -257,7 +257,7 @@
                         <div class="tp-about-list">
                             <div class="tp-about-list-item d-flex align-items-center mb-35">
                                 <div class="tp-about-list-icon">
-                                    <span><img src="{{asset('assets/images/about/about-icon-1.svg')}}" alt="about-icon"></span>
+                                    <span><img src="{{asset('assets/images/about/about-icon-1.svg')}}" alt="about-icon" loading="lazy"></span>
                                 </div>
                                 <div class="tp-about-list-content">
                                     <h5 class="tp-about-list-title">Building Trust</h5>
@@ -266,7 +266,7 @@
                             </div>
                             <div class="tp-about-list-item d-flex align-items-center mb-35">
                                 <div class="tp-about-list-icon">
-                                    <span><img src="{{asset('assets/images/about/about-icon-2.svg')}}" alt="about-icon"></span>
+                                    <span><img src="{{asset('assets/images/about/about-icon-2.svg')}}" alt="about-icon" loading="lazy"></span>
                                 </div>
                                 <div class="tp-about-list-content">
                                     <h5 class="tp-about-list-title">Trusted by Students</h5>
@@ -384,14 +384,14 @@
                         </div>
                         <div class="tp-testimonial-shape">
                             <div class="tp-testimonial-shape-1">
-                                <img src="{{asset('assets/images/testimonial/testimonial-shape-1.png')}}" alt="testimonial-shape">
+                                <img src="{{asset('assets/images/testimonial/testimonial-shape-1.png')}}" alt="testimonial-shape" loading="lazy">
                             </div>
                             <div class="tp-testimonial-shape-2">
-                                <img src="{{asset('assets/images/testimonial/testimonial-shape-2.png')}}" alt="testimonial-shape">
+                                <img src="{{asset('assets/images/testimonial/testimonial-shape-2.png')}}" alt="testimonial-shape" loading="lazy">
                             </div>
                             <div class="tp-testimonial-shape-3 wow bounceIn" data-wow-duration="1.5s"
                                 data-wow-delay=".4s">
-                                <img src="{{asset('assets/images/testimonial/testimonial-shape-3.svg')}}" alt="testimonial-shape">
+                                <img src="{{asset('assets/images/testimonial/testimonial-shape-3.svg')}}" alt="testimonial-shape" loading="lazy">
                             </div>
                         </div>
                         <div class="swiper tp-testimonial-active">
@@ -416,7 +416,7 @@
                                 <div class="swiper-slide tp-testimonial-item">
                                     <div class="tp-testimonial-avatar">
                                         <img src="{{asset('assets/images/testimonial/test-2-avatar-5.png')}}"
-                                            alt="testimonial-avatar">
+                                            alt="testimonial-avatar" loading="lazy">
                                     </div>
                                     <div class="tp-testimonial-content">
                                         <p>UKM was my dream, and thanks to the seamless visa process, I was able to make that dream a reality. The support I received was outstanding, making the transition to life in Malaysia effortless. I’m now proud to be an alumnus of such a prestigious institution.”</p>
@@ -491,7 +491,7 @@
                     <div class="tp-blog-item text-center mb-40 wow fadeInLeft" data-wow-delay=".4s">
                         <div class="tp-blog-thumb fix">
                             <a href="{{ route('blog-details', $blog->slug) }}" wire:navigate>
-                                <img src="{{asset($blog->image)}}" alt="blog-thumb" width="100%" height="100%">
+                                <img src="{{asset($blog->image)}}" alt="blog-thumb" width="100%" height="100%" loading="lazy">
                             </a>
                         </div>
                         <div class="tp-blog-content">

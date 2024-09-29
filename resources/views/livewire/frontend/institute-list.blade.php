@@ -192,15 +192,14 @@
                                             <div class="tp-course-item p-relative fix mb-30">
                                                 <div class="tp-course-teacher mb-15">
                                                     <span>
-                                                        <img src="{{ asset($institute->logo) }}" alt="">
+                                                        <img src="{{ asset($institute->logo) }}" alt="" loading="lazy">
                                                     </span>
                                                 </div>
                                                 <div class="tp-course-thumb sidebar">
                                                     <a href="{{ route('details-institute', $institute->slug) }}">
-                                                        <img
-                                                            class="course-pink"
-                                                            src="{{ asset($institute->thumb_img) }}"
-                                                            alt="" width="100%" height="100%">
+                                                        <img class="course-pink"
+                                                            src="{{ asset($institute->thumb_img) }}" alt=""
+                                                            width="100%" height="100%" loading="lazy">
                                                     </a>
                                                 </div>
                                                 <div class="tp-course-content">
@@ -261,10 +260,11 @@
                                     @forelse ($institutes as $institute)
                                         <div class="tp-course-filter-item mb-25 d-flex">
                                             <div class="tp-course-list-thumb">
-                                                <a href="{{ route('details-institute', $institute->slug) }}"wire:navigate>
-                                                    <img class="course-pink"
-                                                        src="{{ $institute->thumb_img }}" alt="" width="1001px" height="801px">
-                                                    </a>
+                                                <a
+                                                    href="{{ route('details-institute', $institute->slug) }}"wire:navigate>
+                                                    <img class="course-pink" src="{{ $institute->thumb_img }}"
+                                                        alt="" width="1001px" height="801px" loading="lazy">
+                                                </a>
                                             </div>
                                             <div class="tp-course-filter-content">
                                                 <div class="tp-course-filter-tag mb-10">
@@ -275,7 +275,7 @@
                                                         href="{{ route('details-institute', $institute->slug) }}"wire:navigate>{{ $institute->name }}</a>
                                                 </h4>
                                                 <div class="tp-course-filter-meta">
-                                                    <span><img src="{{ $institute->logo }}" alt=""></span>
+                                                    <span><img src="{{ $institute->logo }}" alt="" loading="lazy"></span>
                                                     <span>
                                                         <i class="fa-solid fa-house"></i>
                                                         {{ $institute->country }}
@@ -286,8 +286,8 @@
                                                     </span>
                                                 </div>
                                                 <div class="tp-course-list-p">
-                                                   {{--  <p>{{ substr($institute->description, 0, 150) . '...' }} </p> --}}
-                                                    <p>{!! Str::limit( $institute ->description, 100)!!}</p>
+                                                    {{--  <p>{{ substr($institute->description, 0, 150) . '...' }} </p> --}}
+                                                    <p>{!! Str::limit($institute->description, 100) !!}</p>
                                                 </div>
                                                 <div
                                                     class="tp-course-filter-pricing d-flex align-items-center justify-content-between">
