@@ -1,6 +1,8 @@
 <?php
 
+use App\Models\Blog;
 use App\Livewire\Error;
+use App\Models\Institute;
 use App\Livewire\Auth\Login;
 use App\Livewire\Auth\Register;
 use App\Livewire\Frontend\Faqs;
@@ -8,6 +10,7 @@ use App\Livewire\Frontend\Home;
 use App\Livewire\Frontend\About;
 use App\Livewire\Frontend\Blogs;
 use App\Livewire\Frontend\ContactUs;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Frontend\BlogDetails;
 use App\Livewire\Frontend\BecomeAAgent;
@@ -29,7 +32,28 @@ use App\Livewire\Institute\InstituteProfileSetting;
 use App\Livewire\Institute\InstitutePasswordSetting;
 use App\Livewire\Student\StudentSocialProfileSetting;
 use App\Livewire\Institute\InstituteSocialAccountSetting;
-use Illuminate\Support\Facades\Hash;
+
+
+
+
+Route::get('sitemap.xml', function () {
+    return response()->view('sitemap/sitemap')->header('Content-Type', 'text/xml');
+});
+
+Route::get('sitemap-page.xml', function () {
+    return response()->view('sitemap/sitemap-page')->header('Content-Type', 'text/xml');
+});
+
+Route::get('sitemap-posts.xml', function () {
+    $posts = Blog::orderBy('id', 'desc')->where('status', 'Approved')->get();
+    return response()->view('sitemap/sitemap-posts', compact('posts'))->header('Content-Type', 'text/xml');
+});
+
+Route::get('sitemap-institute.xml', function () {
+    $institute = Institute::where('app_status', 'Approved')->orderBy('id', 'desc')->get();
+    return response()->view('sitemap/sitemap-institute', compact('institute'))->header('Content-Type', 'text/xml');
+});
+
 
 Route::get('test', function(){
     echo Hash::make('123456');
