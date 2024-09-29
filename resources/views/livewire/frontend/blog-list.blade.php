@@ -37,7 +37,7 @@
                                     <div class="tp-postbox-item-list-box d-flex align-items-center">
                                         <div class="tp-postbox-item-list-thumb">
                                             <a href="{{ route('blog-details', $blog->slug) }}" wire:navigate>
-                                                <img class="course-pink" src="{{ asset($blog->image) }}" alt="" width="370px" height="270px">
+                                                <img class="course-pink" src="{{ asset($blog->image) }}" alt="" width="370px" height="270px" loading="lazy">
                                             </a>
                                         </div>
 
