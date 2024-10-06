@@ -261,8 +261,8 @@
                               <li class="has-dropdown">
                                  <a href="#">Application</a>
                                  <ul class="tp-submenu">
-                                    <li><a href="{{ route('list-institute')}}" wire:navigate>Choose an Institute</a></li>
-                                    <li><a href="{{ route('become-a-agent')}}" wire:navigate>Become an Agent</a></li>
+                                    <li><a href="{{ route('list-institute')}}" wire:navigate.push>Choose an Institute</a></li>
+                                    <li><a href="{{ route('become-a-agent')}}" wire:navigate.push>Become an Agent</a></li>
                                  </ul>
                               </li>
                               
