@@ -58,6 +58,13 @@
     @stack('scripts')
 
     @vite(['resources/js/app.js'])
+
+    <script>
+        document.addEventListener('livewire:navigate', (event) => {
+            history.pushState({}, '', event.detail.url);
+        });
+        
+    </script>
     @livewireScripts
 </body>
 
