@@ -44,6 +44,9 @@ class InstituteDetails extends Component
     public function mount($slug)
     {
         $this->institute = Institute::where('slug', $slug)->first();
+        if ($this->institute) {
+            $this->institute->description = preg_replace('/<img(.*?)>/i', '<img$1 class="img-fluid">', $this->institute->description);
+        }
         $this->institute_id = $this->institute->id;
         $this->title = $this->institute->name;
     }

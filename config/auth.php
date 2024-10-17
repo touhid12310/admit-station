@@ -43,7 +43,12 @@ return [
         'institute' => [
             'driver' => 'session',
             'provider' => 'institutes',
-        ]
+        ],
+        'admin' => [
+            'driver' => 'session',
+            'provider' => 'admins',
+        ],
+        
     ],
 
     /*
@@ -72,6 +77,11 @@ return [
             'driver' => 'eloquent',
             'model' => env('AUTH_INSTITUTE_MODEL', App\Models\User::class),
         ],
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => env('AUTH_ADMIN_MODEL', App\Models\User::class),
+        ],
+
 
         // 'users' => [
         //     'driver' => 'database',
