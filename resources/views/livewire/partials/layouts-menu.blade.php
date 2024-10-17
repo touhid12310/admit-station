@@ -264,11 +264,7 @@
                                     <li><a href="{{ route('list-institute')}}" wire:navigate>Choose an Institute</a></li>
                                  </ul>
                               </li>
-                              
-                              <li class="tp-static">
-                                 <a class="tp-static" href="{{ route('become-a-agent')}}" wire:navigate>Become an Agent</a>
-                              </li>
-                              
+       
                               <li class="tp-static">
                                  <a class="tp-static" href="{{route('blog-list')}}" wire:navigate>Blog</a>
                               </li>

@@ -55,6 +55,9 @@ Route::get('sitemap-institute.xml', function () {
 });
 
 
+Route::post('ckeditor/upload', [InstituteRegister::class, 'ckeditorUpload'])->name('ckeditor.upload')->withoutMiddleware([\Illuminate\Foundation\Http\Middleware\VerifyCsrfToken::class]);
+
+
 Route::get('test', function(){
     echo Hash::make('123456');
 });

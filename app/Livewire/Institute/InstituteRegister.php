@@ -2,10 +2,11 @@
 
 namespace App\Livewire\Institute;
 
-use App\Models\Institute;
-use Livewire\Attributes\Title;
 use Livewire\Component;
+use App\Models\Institute;
 use Illuminate\Support\Str;
+use Illuminate\Http\Request;
+use Livewire\Attributes\Title;
 use Livewire\Features\SupportFileUploads\WithFileUploads;
 
 #[Title('Institute Register')]
@@ -100,5 +101,28 @@ class InstituteRegister extends Component
         return view('livewire.institute.institute-register', [
             'applys' => $applys
         ]);
+    }
+
+    public function ckeditorUpload(Request $request)
+    {
+        $request->validate([
+            'upload' => 'image|mimes:jpg,jpeg,png,webp',
+        ]);
+
+        if ($request->hasFile('upload')) {
+            $file = $request->file('upload');
+            $originName = $file->getClientOriginalName();
+            $fileName = pathinfo($originName, PATHINFO_FILENAME);
+            $extension = $file->getClientOriginalExtension();
+            $fileName = $fileName . '_' . time() . '.' . $extension;
+            $file->storeAs('uploads/institute/ckeditor', $fileName, 'real_public');
+            $CKEditorFuncNum = $request->input('CKEditorFuncNum');
+            $url = asset('uploads/institute/ckeditor/' . $fileName);
+            $msg = 'Image successfully uploaded';
+            $response = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '$url', '$msg')</script>";
+
+            @header('Content-type: text/html; charset=utf-8');
+            echo $response;
+        }
     }
 }

@@ -16,7 +16,7 @@ class InstituteDashboard extends Component
     public function render()
     {
         $this->instituteAdded = Institute::where('user_id', auth()->id())->first();
-        $this->totalStudentApplied = ApplicationHistory::where('institute_id', $this->instituteAdded->id)->count();
+        $this->totalStudentApplied = ApplicationHistory::where('institute_id', @$this->instituteAdded->id)->count();
         return view('livewire.institute.institute-dashboard');
     }
 }

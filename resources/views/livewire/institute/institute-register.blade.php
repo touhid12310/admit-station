@@ -361,6 +361,7 @@
             CKEDITOR.config.versionCheck = false;
             const editor = CKEDITOR.replace('description', {
                 filebrowserUploadMethod: 'form',
+                filebrowserUploadUrl: '{{ route("ckeditor.upload") }}',
                 on: {
                     instanceReady: function(evt) {
                         // Remove sandbox attribute if it exists
