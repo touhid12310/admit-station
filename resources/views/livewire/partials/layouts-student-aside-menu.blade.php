@@ -113,7 +113,7 @@
                         <ul>
                             <li class="tp-user-menu-title">Welcome</li>
                             <li>
-                                <a class="{{ request()->is('institute.dashboard') ? 'active' : '' }}" href="{{ route('student.dashboard')}}" wire:navigate>
+                                <a class="{{ request()->is('institute.dashboard') ? 'active' : '' }}" href="{{ route('institute.dashboard')}}" wire:navigate>
                                     <span>
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path opacity="0.4" d="M16.0041 5.216V1.584C16.0041 0.456 15.4921 0 14.2201 0H10.9881C9.7161 0 9.2041 0.456 9.2041 1.584V5.208C9.2041 6.344 9.7161 6.792 10.9881 6.792H14.2201C15.4921 6.8 16.0041 6.344 16.0041 5.216Z" fill="currentColor"/>
