@@ -24,7 +24,7 @@
                             </div>
                             <div class="tp-footer-contact">
                                 <span>Got Questions? Call us</span>
-                                <a href="tel:012345678">+880 1839-440444</a>
+                                <a href="tel:012345678">+880 1621-007177</a>
                             </div>
                             <div class="tp-footer-contact-mail">
                                 <a href="mailto:admitstation24@gmail.com">

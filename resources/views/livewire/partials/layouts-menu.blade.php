@@ -201,7 +201,7 @@
                         </div>
                         <div class="tp-header-info-item">
                            <span>
-                              <a href="tel:+880 1839-440444"><i><img src="{{asset('assets/img/icon/calling.svg')}}" alt="phone-img"></i> +880 1839-440444</a>
+                              <a href="tel:+880 1621-007177"><i><img src="{{asset('assets/img/icon/calling.svg')}}" alt="phone-img"></i> +880 1621-007177</a>
                            </span>
                         </div>
                         <div class="tp-header-info-item">
@@ -333,7 +333,7 @@
                      <div class="offcanvas-contact">
                         <h3 class="offcanvas-title sm">Information</h3>
                         <ul>
-                              <li><a href="tel:+880 1839-440444">+880 1839-440444</a></li>
+                              <li><a href="tel:+880 1621-007177">+880 1621-007177</a></li>
                               <li><a href="mailto:admitstation24@gmail.com">admitstation24@gmail.com</a></li>
                               <li class="mt-10"><a href="#">1st floor,Agrabad shopping complex,1742 Sheikh Mujib Road, Beside Orchid Business Hotel,Chowmuhony,Agrabad , Chittagong, Bangladesh</a></li>
                         </ul>

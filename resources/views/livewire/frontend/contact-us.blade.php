@@ -143,7 +143,7 @@
                           </div>
                           <h4 class="tp-contact-info-title">Call Us</h4>
                           <p>Sat-Fri from 8am to 8pm</p>
-                          <a href="tel:01839440444">+880 1839-440444</a>
+                          <a href="tel:01839440444">+880 1621-007177</a>
                        </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
