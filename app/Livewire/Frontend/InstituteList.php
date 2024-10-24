@@ -31,7 +31,7 @@ class InstituteList extends Component
     {
         $this->country   = Institute::select('country')->where('app_status', 'Approved')->distinct()->get('country');
         if ($this->country_name) {
-            $this->city = Institute::where('country', $this->country_name)->pluck('city');
+            $this->city = Institute::where('country', $this->country_name)->distinct()->pluck('city');
         }
         $SchoolCount     = Institute::where('institute_type', 'School')->count();
         $CollegeCount     = Institute::where('institute_type', 'College')->count();
