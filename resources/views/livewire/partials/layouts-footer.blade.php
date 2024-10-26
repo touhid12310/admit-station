@@ -20,7 +20,7 @@
                             </div>
                             <div class="tp-footer-widget-content">
                                 <p>Malaysia Office: Suite 6.10, I-01-05, 6th Floor, Block I, Setiawalk, Persiaran
-                                    Wawasan, Pusat Bandar, Puchong, 47160 Puchong, Selangor, Malaysia asdfasdfdas</p>
+                                    Wawasan, Pusat Bandar, Puchong, 47160 Puchong, Selangor, Malaysia</p>
                             </div>
                             <div class="tp-footer-contact">
                                 <span>Got Questions? Call us</span>
