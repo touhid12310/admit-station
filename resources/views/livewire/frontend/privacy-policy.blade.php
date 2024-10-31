@@ -1,73 +1,197 @@
 <div>
-   <main>
-      <!-- privacy policy stat -->
-      <section class="tp-privacy-area pt-150 pb-120">
-         <div class="container">
-            <div class="row justify-content-center">
-               <div class="col-lg-10">
-                  <div class="tp-privacy-heading pt-50 ">
-                     <h3 class="tp-privacy-title" style="color: #AB0C2F">Privacy Policy </h3>
-                  </div>
-               </div>
-               <div class="col-lg-10">
-                  <div class="tp-privacy-box shadow-lg">
-                     <div class="tp-privacy-content">
-                        <h4 class="tp-privacy-content-title">Introduction</h4>
-                        <p>At Admit Station, we value your privacy and are committed to protecting your personal information. This Privacy Policy is designed to help you understand how we collect, use, disclose, and safeguard your data. By using our website or services, you consent to the practices described in this policy.</p>
-                     </div>
-                     <div class="tp-privacy-content">
-                        <h4 class="tp-privacy-content-title">Information We Collect</h4>
-                        <p>We may collect various types of information from you, including:</p>
+    <main>
+        <!-- privacy policy stat -->
+        <section class="tp-privacy-area pt-150 pb-120">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="tp-privacy-heading pt-50 ">
+                            <h3 class="tp-privacy-title" style="color: #AB0C2F">Privacy Policy </h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <strong>Privacy Policy</strong>
+                        <p>
+                            This privacy policy applies to the Admit Station app (hereby referred to
+                            as "Application") for mobile devices that was created by Touhidul Ahmed
+                            Robi (hereby referred to as "Service Provider") as a Free service. This
+                            service is intended for use "AS IS".
+                        </p>
+                        <br /><strong>Information Collection and Use</strong>
+                        <p>
+                            The Application collects information when you download and use it. This
+                            information may include information such as
+                        </p>
                         <ul>
-                           <li>Personal Information: Name, email address, contact details.</li>
-                           <li>Billing Information: Payment card details, billing address.</li>
-                           <li>Usage Data: Information about how you use our website.</li>
-                           <li>Cookies and Tracking Data: Data collected through cookies, web beacons, and similar technologies.</li>
+                            <li>Your device's Internet Protocol address (e.g. IP address)</li>
+                            <li>
+                                The pages of the Application that you visit, the time and date of your
+                                visit, the time spent on those pages
+                            </li>
+                            <li>The time spent on the Application</li>
+                            <li>The operating system you use on your mobile device</li>
                         </ul>
-                     </div>
-                     <div class="tp-privacy-content">
-                        <h4 class="tp-privacy-content-title">How We Use Your Information</h4>
-                        <p>We use your information for the following purposes:</p>
+                        <p></p>
+                        <br />
+                        <p>
+                            The Application does not gather precise information about the location of
+                            your mobile device.
+                        </p>
+                        <div style="display: none">
+                            <p>
+                                The Application collects your device's location, which helps the Service
+                                Provider determine your approximate geographical location and make use
+                                of in below ways:
+                            </p>
+                            <ul>
+                                <li>
+                                    Geolocation Services: The Service Provider utilizes location data to
+                                    provide features such as personalized content, relevant
+                                    recommendations, and location-based services.
+                                </li>
+                                <li>
+                                    Analytics and Improvements: Aggregated and anonymized location data
+                                    helps the Service Provider to analyze user behavior, identify trends,
+                                    and improve the overall performance and functionality of the
+                                    Application.
+                                </li>
+                                <li>
+                                    Third-Party Services: Periodically, the Service Provider may transmit
+                                    anonymized location data to external services. These services assist
+                                    them in enhancing the Application and optimizing their offerings.
+                                </li>
+                            </ul>
+                        </div>
+                        <br />
+                        <p>
+                            The Service Provider may use the information you provided to contact you
+                            from time to time to provide you with important information, required
+                            notices and marketing promotions.
+                        </p>
+                        <br />
+                        <p>
+                            For a better experience, while using the Application, the Service Provider
+                            may require you to provide us with certain personally identifiable
+                            information. The information that the Service Provider request will be
+                            retained by them and used as described in this privacy policy.
+                        </p>
+                        <br /><strong>Third Party Access</strong>
+                        <p>
+                            Only aggregated, anonymized data is periodically transmitted to external
+                            services to aid the Service Provider in improving the Application and
+                            their service. The Service Provider may share your information with third
+                            parties in the ways that are described in this privacy statement.
+                        </p>
+                        <div>
+                            <br />
+                            <p>
+                                Please note that the Application utilizes third-party services that have
+                                their own Privacy Policy about handling data. Below are the links to the
+                                Privacy Policy of the third-party service providers used by the
+                                Application:
+                            </p>
+                            <ul>
+                                <li>
+                                    <a href="https://www.google.com/policies/privacy/" target="_blank"
+                                        rel="noopener noreferrer">Google Play Services</a>
+                                </li>
+                                <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+                            </ul>
+                        </div>
+                        <br />
+                        <p>
+                            The Service Provider may disclose User Provided and Automatically
+                            Collected Information:
+                        </p>
                         <ul>
-                           <li>To provide, maintain, and improve our services.</li>
-                           <li>To process transactions and send transaction notifications.</li>
-                           <li>To respond to your requests, comments, or questions.</li>
-                           <li>To personalize your user experience.</li>
-                           <li>To send you important information and updates.</li>
+                            <li>
+                                as required by law, such as to comply with a subpoena, or similar legal
+                                process;
+                            </li>
+                            <li>
+                                when they believe in good faith that disclosure is necessary to protect
+                                their rights, protect your safety or the safety of others, investigate
+                                fraud, or respond to a government request;
+                            </li>
+                            <li>
+                                with their trusted services providers who work on their behalf, do not
+                                have an independent use of the information we disclose to them, and have
+                                agreed to adhere to the rules set forth in this privacy statement.
+                            </li>
                         </ul>
-                     </div>
-                     <div class="tp-privacy-content">
-                        <h4 class="tp-privacy-content-title"> Information Sharing</h4>
-                        <p>We do not sell, trade, or otherwise transfer your personal information to outside parties. We may share your information with trusted third parties who assist us in operating our website and services, as long as they agree to keep this information confidential. </p>
-                     </div>
-                     <div class="tp-privacy-content">
-                        <h4 class="tp-privacy-content-title">Data Security</h4>
-                        <p>We implement a variety of security measures to protect your personal information. We use encryption, secure socket layer technology, and regular security audits to safeguard your data.</p>
-                     </div>
-                     <div class="tp-privacy-content">
-                        <h4 class="tp-privacy-content-title">Cookies and Tracking Technologies</h4>
-                        <p>We use cookies and similar tracking technologies to enhance your user experience. You can choose to disable cookies through your browser settings; however, this may affect your ability to use our website.</p>
-                     </div>
-                     <div class="tp-privacy-content">
-                        <h4 class="tp-privacy-content-title">Your Choices</h4>
-                        <p>You can choose not to provide certain information; however, this may limit your access to some features of our website.</p>
-                     </div>
-                     <div class="tp-privacy-content">
-                        <h4 class="tp-privacy-content-title">Changes to this Privacy Policy</h4>
-                        <p>We reserve the right to update or change this Privacy Policy at any time. When we do, we will revise the "Effective Date" at the beginning of this policy. We encourage you to periodically review this page for the latest information on our privacy practices.</p>
-                     </div>
-                     <div class="tp-privacy-content">
-                        <h4 class="tp-privacy-content-title">Contact Us</h4>
-                        <p>If you have any questions or concerns regarding this Privacy Policy, please contact us at admitstation24@gmail.com</p>
-                     </div>
-                     <div class="tp-privacy-content-bottom mt-30">
-                        <p>Last updated on {{date('M-d-Y')}}.<a href="https://leetwise.com/" target="_balnk">Leetwise</a> reserves the right to change or modify the above contents at any time without any prior notice.</p>
-                     </div>
-                  </div>
-               </div>
+                        <p></p>
+                        <br /><strong>Opt-Out Rights</strong>
+                        <p>
+                            You can stop all collection of information by the Application easily by
+                            uninstalling it. You may use the standard uninstall processes as may be
+                            available as part of your mobile device or via the mobile application
+                            marketplace or network.
+                        </p>
+                        <br /><strong>Data Retention Policy</strong>
+                        <p>
+                            The Service Provider will retain User Provided data for as long as you use
+                            the Application and for a reasonable time thereafter. If you'd like them
+                            to delete User Provided Data that you have provided via the Application,
+                            please contact them at admitstation24@gmail.com and they will respond in a
+                            reasonable time.
+                        </p>
+                        <br /><strong>Children</strong>
+                        <p>
+                            The Service Provider does not use the Application to knowingly solicit
+                            data from or market to children under the age of 13.
+                        </p>
+                        <div>
+                            <br />
+                            <p>
+                                The Application does not address anyone under the age of 13. The Service
+                                Provider does not knowingly collect personally identifiable information
+                                from children under 13 years of age. In the case the Service Provider
+                                discover that a child under 13 has provided personal information, the
+                                Service Provider will immediately delete this from their servers. If you
+                                are a parent or guardian and you are aware that your child has provided
+                                us with personal information, please contact the Service Provider
+                                (admitstation24@gmail.com) so that they will be able to take the
+                                necessary actions.
+                            </p>
+                        </div>
+                        <!----><br /><strong>Security</strong>
+                        <p>
+                            The Service Provider is concerned about safeguarding the confidentiality
+                            of your information. The Service Provider provides physical, electronic,
+                            and procedural safeguards to protect information the Service Provider
+                            processes and maintains.
+                        </p>
+                        <br /><strong>Changes</strong>
+                        <p>
+                            This Privacy Policy may be updated from time to time for any reason. The
+                            Service Provider will notify you of any changes to the Privacy Policy by
+                            updating this page with the new Privacy Policy. You are advised to consult
+                            this Privacy Policy regularly for any changes, as continued use is deemed
+                            approval of all changes.
+                        </p>
+                        <br />
+                        <p>This privacy policy is effective as of 2024-10-31</p>
+                        <br /><strong>Your Consent</strong>
+                        <p>
+                            By using the Application, you are consenting to the processing of your
+                            information as set forth in this Privacy Policy now and as amended by us.
+                        </p>
+                        <br /><strong>Contact Us</strong>
+                        <p>
+                            If you have any questions regarding privacy while using the Application,
+                            or have questions about the practices, please contact the Service Provider
+                            via email at admitstation24@gmail.com.
+                        </p>
+                        <hr />
+                        <p>
+                            This privacy policy page was generated by
+                            <a href="https://app-privacy-policy-generator.nisrulz.com/" target="_blank"
+                                rel="noopener noreferrer">App Privacy Policy Generator</a>
+                        </p>
+                    </div>
+                </div>
             </div>
-         </div>
-      </section>
-      <!-- privacy policy end -->
-   </main>
+        </section>
+        <!-- privacy policy end -->
+    </main>
 </div>
