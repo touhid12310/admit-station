@@ -13,8 +13,7 @@
                         <strong>Privacy Policy</strong>
                         <p>
                             This privacy policy applies to the Admit Station app (hereby referred to
-                            as "Application") for mobile devices that was created by Touhidul Ahmed
-                            Robi (hereby referred to as "Service Provider") as a Free service. This
+                            as "Application") for mobile devices that was created by Rahat Akber (hereby referred to as "Service Provider") as a Free service. This
                             service is intended for use "AS IS".
                         </p>
                         <br /><strong>Information Collection and Use</strong>
