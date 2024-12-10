@@ -17,7 +17,7 @@
     {{-- @include('components/layouts/seo') --}}
     <!-- CSS here -->
     @vite(['resources/css/app.css'])
-    
+
     @stack('styles')
     @livewireStyles
 </head>
@@ -36,6 +36,40 @@
         {{ $slot }}
     </main>
     @livewire('partials.layouts-footer')
+
+    <div class="menu-container">
+        <div class="menu-box">
+            <div class="menu-icons">
+                <!-- Home -->
+                <div class="menu-item move-left {{ request()->is('/') ? 'active' : '' }}">
+                    <a href="{{ url('/') }}" wire:navigate>
+                        <i class="fas fa-home"></i>
+                    </a>
+                </div>
+                <!-- Institute List -->
+                <div class="menu-item move-left {{ request()->is('institute-list') ? 'active' : '' }}">
+                    <a href="{{ url('institute-list') }}" wire:navigate>
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </a>
+                </div>
+                <!-- Campus -->
+                <div class="menu-item move-right {{ request()->is('login') ? 'active' : '' }}">
+                    <a href="{{ url('login') }}" wire:navigate>
+                        <i class="fa-solid fa-user"></i>
+                    </a>
+                </div>
+                <!-- Blog -->
+                <div class="menu-item move-right {{ request()->is('blog') ? 'active' : '' }}">
+                    <a href="{{ url('blog') }}" wire:navigate>
+                        <i class="fas fa-info-circle"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <!-- JS here  -->
     <script src="{{ asset('assets/js/vendor/jquery.js') }}"></script>
@@ -63,7 +97,24 @@
         document.addEventListener('livewire:navigate', (event) => {
             history.pushState({}, '', event.detail.url);
         });
-        
+
+
+        const button = document.querySelector(".main-circle");
+        const circles = document.querySelectorAll(".circles");
+        const cross = document.querySelector(".cross");
+        const crossbg = document.querySelector(".bg");
+        const menuIcons = document.querySelectorAll(".menu-icons svg");
+
+        button.addEventListener("click", function() {
+            cross.classList.toggle("show");
+            crossbg.classList.toggle("show");
+            circles.forEach((element) => {
+                element.classList.toggle("show");
+            });
+            menuIcons.forEach((element) => {
+                element.classList.toggle("colorchange");
+            });
+        });
     </script>
     @livewireScripts
 </body>
