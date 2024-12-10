@@ -65,7 +65,7 @@
   },
   "resources/assets/img/live/check.svg": {
     "file": "assets/check-CNVNQ61Q.svg",
-    "src": "resources/assets/img/live/check.svg"
+    "src": "resources/assets/img/shop/check.svg"
   },
   "resources/assets/img/live/halp-check.svg": {
     "file": "assets/halp-check-VPBU23GY.svg",
@@ -89,15 +89,15 @@
   },
   "resources/assets/img/shop/check.svg": {
     "file": "assets/check-CNVNQ61Q.svg",
-    "src": "resources/assets/img/live/check.svg"
+    "src": "resources/assets/img/shop/check.svg"
   },
   "resources/css/app.css": {
-    "file": "assets/app-DPbW-VFI.css",
+    "file": "assets/app-CUR5gH5s.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/app.js": {
-    "file": "assets/app-CnlvDEtl.js",
+    "file": "assets/app-DZBQnWyJ.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true
