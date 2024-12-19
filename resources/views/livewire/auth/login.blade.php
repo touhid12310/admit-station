@@ -78,7 +78,7 @@
                                  </div>
                                  <div class="col-6">
                                     <div class="tp-login-input-remeber text-end">
-                                       <a href="#">Forgot Password?</a>
+                                       <a href="{{route('forgot')}}" wire:navigate>Forgot Password?</a>
                                     </div>
                                  </div>
                               </div>

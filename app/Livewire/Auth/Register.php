@@ -10,7 +10,7 @@ use Livewire\Component;
 #[Title('Register')]
 class Register extends Component
 {
-    public $user_type;
+    public $user_type = 'Student';
     public $institute_type;
     public $name;
     public $email;

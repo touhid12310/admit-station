@@ -39,10 +39,10 @@
 
                                 <div class="col-12">
                                     <div class="tp-login-input p-relative tpd-select" wire:ignore>
-                                        <label for="UserType">User Type:</label>
+                                        <label for="UserType">Select Student / Institute:</label>
                                         <select class="wide user_type " wire:model="user_type" required>
                                             <option value="">Select your type</option>
-                                            <option value="student">Student</option>
+                                            <option value="student" selected>Student</option>
                                             <option value="institute">Inistitute</option>
                                         </select>
                                     </div>
@@ -55,7 +55,7 @@
                                 @if ($user_type == 'institute')
                                     <!-- Student register area end -->
                                     <div class="col-12" wire:ignore>
-                                        <div class="tp-login-input p-relative tpd-select">
+                                        <div class="tp-login-input p-relative ">
                                             <label for="UserType">Institute Type:</label>
                                             <select class="wide institute_type " wire:model="institute_type" required>
                                                 <option value="">Type your institute type</option>
@@ -177,7 +177,7 @@
             setTimeout(() => {
                 // $(".user_type").niceSelect();
                 $(".institute_type").niceSelect();
-            }, 500);
+            }, 400);
         })
 
         // Listen to the change event

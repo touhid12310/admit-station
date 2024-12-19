@@ -4,6 +4,7 @@ use App\Models\Blog;
 use App\Livewire\Error;
 use App\Models\Institute;
 use App\Livewire\Auth\Login;
+use App\Livewire\Auth\Forgot;
 use App\Livewire\Auth\Register;
 use App\Livewire\Frontend\Faqs;
 use App\Livewire\Frontend\Home;
@@ -65,6 +66,8 @@ Route::get('test', function(){
 Route::get('/', Home::class)->name('home');
 Route::get('/about', About::class)->name('about');
 Route::get('/login', Login::class)->name('login');
+Route::get('/forgot', Forgot::class)->name('forgot');
+Route::get('forgot-password/{token}', [Forgot::class, 'forgotPassword'])->name('forgot-password');
 Route::get('/register', Register::class)->name('register');
 Route::get('/Faqs', Faqs::class)->name('FAQs');
 Route::get('/contact-us', ContactUs::class)->name('contact-us');
