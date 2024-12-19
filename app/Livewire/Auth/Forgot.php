@@ -5,6 +5,7 @@ use Livewire\Attributes\Title;
 use Livewire\Component;
 use App\Models\User;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Mail;
 
 #[Title('Forgot | Admit-Station')]
 class Forgot extends Component
@@ -39,7 +40,7 @@ class Forgot extends Component
             'forgot_password_token' => Str::random(32),
         ]);
 
-        $mail = new \App\Mail\ForgotPassword($user);
+        $mail = Mail::to($user->email)->send(new \App\Mail\ForgotPassword($user));
 
         $this->dispatch('swal', [
             'title' => 'Password reset link sent to your email',

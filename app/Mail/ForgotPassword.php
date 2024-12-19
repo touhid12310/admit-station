@@ -37,12 +37,9 @@ class ForgotPassword extends Mailable
      */
     public function content(): Content
     {
-        
         return new Content(
-            view: 'auth.mail.reset-pass-mail',
-            data: [
-                'user' => $this->user,
-            ],
+            view: 'livewire.auth.mail.reset-pass-mail',
+            with: ['user' => $this->user]
         );
     }
 
